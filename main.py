@@ -12,7 +12,7 @@ def mainscr():
     mainframe.columnconfigure(0, weight=1)
     mainframe.rowconfigure(0, weight=1)
 
-    ttk.Label(mainframe, text="Welcome to ebookbuild").grid(columnspan=3, row=1, pady=4)
+    ttk.Label(mainframe, text="Welcome to ebookbuild").grid(columnspan=3, row=1, pady=4) #Eventually make this bold.
     ttk.Button(mainframe, text="Import", command=chooseimportscr).grid(column=1, row=2)
     ttk.Button(mainframe, text="Export").grid(column=2, row=2)
     ttk.Label(mainframe, text="V0.1").grid(column=1, row=3)
