@@ -13,4 +13,6 @@ def chooseimportscr():
 
     ttk.Label(mainframe, text="Import").grid(columnspan=3, row=1, pady=4)
     ttk.Button(mainframe, text="Import via document", command=importfilescr).grid(column=1, row=2)
-    ttk.Button(mainframe, text="Import via OCR", state=DISABLED).grid(column=2, row=2) #Currently disabled, will be implemented in a future update using Tesseract.
+    ttk.Button(mainframe, text="Import via PDF").grid(column=2, row=2) #Adobe Portable Document File, *.pdf
+    ttk.Button(mainframe, text="Import via OCR", state=DISABLED).grid(column=1, row=3) #Currently disabled, will be implemented in a future update using Tesseract.
+    
