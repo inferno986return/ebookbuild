@@ -1,31 +1,34 @@
 from tkinter import *
 from tkinter import ttk
-'''import pypandoc
+import os
+import pypandoc
+
+os.environ.setdefault('PYPANDOC_PANDOC', '/home/x/whatever/pandoc')
 
 #Debugging info for pypandoc
 print(pypandoc.get_pandoc_version())
 print(pypandoc.get_pandoc_path())
-print(pypandoc.get_pandoc_formats())'''
+print(pypandoc.get_pandoc_formats())
 
 from tkinter.filedialog import askopenfilename
 
 
 def openfile():
-     
+
      name = askopenfilename(initialdir="~", filetypes=(("Office 2007+ Open XML Document", "*.docx"), ("OpenDocument Text File", "*.odt"), ("LaTeX Source File", "*.tex"), ("MarkDown Source File", "*.md"), ("DocBook File", "*.docbook")), title="Choose a document...")
      #Will add more extensions in future.
      print(name) #Debugging
 
 def convertfile(name):
-     
+
      try:
           return pypandoc.convert(name, 'rst')
      except Exception:
           return None
-     
+
      name.close()
      output.close()
-     
+
 def importfilescr():
 
      name = "Choose a document..."
