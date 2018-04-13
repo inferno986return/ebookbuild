@@ -14,9 +14,10 @@ Programmed in Python + tkinter for GUI, although there are considerations to pos
 
 | Cover | Title/Website                                                         | Author     |
 |:-----:|:---------------------------------------------------------------------:|:----------:|
-|       | How we are Entertained: The Consequences of the 1983 Video Game Crash | Hal Motley |
-|       | Soldering is Easy: Here's How to Do It (Extended Version) | Mitch Altman, Andie Nordgren, Jeff Keyzer |
-|       | Making Games with Python & Pygame (Unofficial 2018 Edition) | Al Sweigart, Hal Motley |
+|       | [How we are Entertained: The Consequences of the 1983 Video Game Crash](https://github.com/inferno986return/1983VideoGameCrash-Book) | Hal Motley |
+|       | [Soldering is Easy: Here's How to Do It (Extended Version)](https://github.com/inferno986return/FullSolderComic-ebook) | Mitch Altman, Andie Nordgren, Jeff Keyzer |
+|       | [Making Games with Python & Pygame (Unofficial 2018 Edition)](https://github.com/inferno986return/Pygame-ebook) | Al Sweigart, Hal Motley |
+|       | [Linux is Badass: Slightly More Badass Edition](https://github.com/inferno986return/LinuxIsBadass) | Bryan Lunduke |
 
 ## License
 
