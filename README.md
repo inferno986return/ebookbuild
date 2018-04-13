@@ -10,6 +10,11 @@ Programmed in Python + tkinter for GUI, although there are considerations to pos
 
 ### Commercial
 
+| Cover | Title/Website                                                         | Author     |
+|:-----:|:---------------------------------------------------------------------:|:----------:|
+|       | A Treatise on MonoCulture: The Salvation of Society | Sander Laanemaa, Wesley Messamore |
+|       | Karl Marx Never Bathed: The Staggeringly Messed Up Life of The World’s First Social Justice Warrior  | Sander Laanemaa, Wesley Messamore |
+
 ### Free
 
 | Cover | Title/Website                                                         | Author     |
