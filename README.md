@@ -19,6 +19,7 @@ Programmed in Python + tkinter for GUI, although there are considerations to pos
 
 | Title/Website | Author | Description |
 |:-------------:|:--------------------:|:----------:|
+|[The Cathedral and the Bazaar](https://github.com/inferno986return/cathedral-bazaar-ebook) | Eric S. Raymond | |
 |[How we are Entertained: The Consequences of the 1983 Video Game Crash](https://github.com/inferno986return/1983VideoGameCrash-Book) | Hal Motley | |
 |[Soldering is Easy: Here's How to Do It (Extended Version)](https://github.com/inferno986return/FullSolderComic-ebook) | Mitch Altman, Andie Nordgren, Jeff Keyzer | |
 |[Making Games with Python & Pygame (Unofficial 2018 Edition)](https://github.com/inferno986return/Pygame-ebook) | Al Sweigart, Hal Motley | |
