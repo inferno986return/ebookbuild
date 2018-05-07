@@ -1,10 +1,10 @@
 # ebookbuild
 
-A very WIP cross-platform FOSS tool to create e-books properly (meaning that ePubs and possibly Mobis generated with ebookbuild comply fully with their respective standards).
+A very WIP cross-platform FOSS tool to create e-books properly.
 
-Currently the code doesn't work, added to GitHub to centralise development.
+Currently the code is found in individual repositories. The latest e-book is *The Cathedral and the Bazaar*, the version of ebookbuild's main script `CreateE-book.py` is 0.8 (needs to support nested pages and the ePub 3.0+ standard for 1.0).
 
-Programmed in Python + tkinter for GUI, although there are considerations to possibly switch language for speed improvements.
+Programmed in Python, although there are considerations to possibly switch language for speed improvements. I may use tkinter to develop a GUI.
 
 ## Examples
 
