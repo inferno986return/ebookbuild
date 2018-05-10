@@ -1,12 +1,27 @@
 # ebookbuild
 
-A very WIP cross-platform FOSS tool to create e-books properly. Currently makes both reflowable and fixed-layout ePub 2.0.1 e-books.
+A very WIP cross-platform FOSS tool to create e-books properly, built entirely with FOSS technologies (so no vendor lock-in). Currently ebookbuild makes both reflowable and fixed-layout ePub 2.0.1 e-books.
 
 Currently the code is found in individual repositories rather than centralised here in this repository. The latest e-book is *The Cathedral and the Bazaar*, the version of ebookbuild's main script `CreateE-book.py` is 0.8 (needs to support nested pages, compression and the ePub 3.0+ standard for 1.0).
 
 ebookbuild is programmed in Python 3, although there are considerations to possibly switch language for speed improvements. I may use tkinter to develop a GUI.
 
+## Features
+
+### Current features (v0.8)
+* Supports ePub 2.0.1.
+* Supports reflowable and fixed-layout e-books.
+* Supports anchor tags in toc.ncx.
+* Books generated convert nicely to .Mobi in Kindle Previewer.
+
+### Planned features
+* Support ePub 3.1 and any future ePub releases.
+* Support nested pages.
+* Support compression (particularly desirable for image-heavy e-books)
+* Support the ONiX 3 standard fully within the `metadata.json`.
+
 ## Examples
+ebookbuild has been used to make the following e-books. Projects can be commercial or freely available to download.
 
 ### Commercial
 
@@ -28,8 +43,3 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 ## License
 
 ebookbuild is currently licensed under GNU GPLv3. See LICENSE.md for further information.
-
-## Dependencies
-
-* Python
-* tkinter
