@@ -15,6 +15,7 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 * Books generated convert nicely to .Mobi in Kindle Previewer.
 
 ### Planned features
+* Get the script to run in IDLE and Thonny again (a strange bug means it won't run in those IDEs, yet runs in GNU Bash perfectly).
 * Support ePub 3.1 and any future ePub releases.
 * Support nested pages in the `toc.ncx`.
 * Support compression (particularly desirable for image-heavy e-books)
