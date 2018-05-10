@@ -18,7 +18,7 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 * Support ePub 3.1 and any future ePub releases.
 * Support nested pages in the `toc.ncx`.
 * Support compression (particularly desirable for image-heavy e-books)
-* Support the ONiX 3 standard fully within the `metadata.json`.
+* Support the ONIX 3 standard fully within the `metadata.json`.
 
 ## Examples
 ebookbuild has been used to make the following e-books. Projects can be commercial or freely available to download.
