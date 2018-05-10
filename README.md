@@ -11,12 +11,12 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 ### Current features (v0.8)
 * Supports ePub 2.0.1.
 * Supports reflowable and fixed-layout e-books.
-* Supports anchor tags in toc.ncx.
+* Supports anchor tags in the `toc.ncx`.
 * Books generated convert nicely to .Mobi in Kindle Previewer.
 
 ### Planned features
 * Support ePub 3.1 and any future ePub releases.
-* Support nested pages.
+* Support nested pages in the `toc.ncx`.
 * Support compression (particularly desirable for image-heavy e-books)
 * Support the ONiX 3 standard fully within the `metadata.json`.
 
