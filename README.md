@@ -16,6 +16,7 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 
 ### Planned features
 * Get the script to run in IDLE and Thonny again (a strange bug means it won't run in those IDEs, yet runs in GNU Bash perfectly).
+* Show the MD5 and SHA256 hashes of the ePub file at the end output (the built-in datestamp and timestamp will ensure different hashes for each ePub generated).
 * Support ePub 3.1 and any future ePub releases.
 * Support nested pages in the `toc.ncx`.
 * Support compression (particularly desirable for image-heavy e-books)
