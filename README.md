@@ -32,6 +32,8 @@ ebookbuild has been used to make the following e-books. Projects can be commerci
 |:------------:|:------:|:-----------:|
 | A Treatise on MonoCulture: The Salvation of Society (2nd Edition) | Sander Laanemaa, Wesley Messamore |
 | Karl Marx Never Bathed: The Staggeringly Messed Up Life of The World’s First Social Justice Warrior (2nd Edition) | Sander Laanemaa, Wesley Messamore |
+| Professor Hoffman's Patience Games | Professor Hoffman, Hal Motley | |
+| The Fall of Western Man | Mark Collett | |
 
 ### Free
 
@@ -42,7 +44,12 @@ ebookbuild has been used to make the following e-books. Projects can be commerci
 |[Soldering is Easy: Here's How to Do It (Extended Version)](https://github.com/inferno986return/FullSolderComic-ebook) | Mitch Altman, Andie Nordgren, Jeff Keyzer | |
 |[Making Games with Python & Pygame (Unofficial 2018 Edition)](https://github.com/inferno986return/Pygame-ebook) | Al Sweigart, Hal Motley | |
 |[Linux is Badass: Slightly More Badass Edition](https://github.com/inferno986return/LinuxIsBadass) | Bryan Lunduke | |
-|[The Illustrated Book of Patience Games](https://github.com/inferno986return/Illustrated-Patience-Games-ebook) | Professor Hoffman | 
+
+### Templates
+
+| Title/Website | Author | Description |
+|:-------------:|:--------------------:|:----------:|
+|[The Illustrated Book of Patience Games](https://github.com/inferno986return/Illustrated-Patience-Games-ebook) | Professor Hoffman | |
 
 ## Licensing
 
