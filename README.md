@@ -12,9 +12,9 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 * Supports ePub 2.0.1.
 * Supports reflowable and fixed-layout e-books.
 * Supports anchor tags in the `toc.ncx`.
-* Books generated convert nicely to .Mobi in Kindle Previewer.
+* Books generated convert nicely to .Mobi in Kindle Previewer (though images need to be centred with CSS `text-align: center;`).
 * Runs on GNU Bash, IDLE and Thonny (for now).
-* Shows MD5 and SHA512 hashes of the ePub file at the end output (the built-in datestamp and timestamp will ensure different hashes for each ePub generated).
+* Shows MD5 and SHA512 hashes of the ePub file at the end output (the built-in datestamp and timestamp will ensure different hashes for each ePub generated) and saves them to `checksums.txt`.
 
 ### Planned features
 
@@ -33,7 +33,6 @@ ebookbuild has been used to make the following e-books. Projects can be commerci
 |:------------:|:------:|:-----------:|
 | A Treatise on MonoCulture: The Salvation of Society (2nd Edition) | Sander Laanemaa, Wesley Messamore |
 | Karl Marx Never Bathed: The Staggeringly Messed Up Life of The World’s First Social Justice Warrior (2nd Edition) | Sander Laanemaa, Wesley Messamore |
-| Professor Hoffman's Patience Games | Professor Hoffman, Hal Motley | |
 | The Fall of Western Man | Mark Collett | |
 
 ### Free
@@ -59,5 +58,3 @@ ebookbuild is currently licensed under GNU GPLv3. See LICENSE.md for further inf
 ## And finally...
 
 If ebookbuild has helped you and you want to give back, buy me a coffee (or two) via https://www.paypal.me/HalMotley.
-
-
