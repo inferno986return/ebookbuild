@@ -2,7 +2,7 @@
 
 A very WIP cross-platform FOSS tool to create e-books properly, built entirely with FOSS technologies (so no vendor lock-in). Currently ebookbuild makes both reflowable and fixed-layout ePub 2.0.1 e-books.
 
-Currently the code is found in individual repositories rather than centralised here in this repository. The latest e-book is *The Cathedral and the Bazaar*, the version of ebookbuild's main script `CreateE-book.py` is 0.8 (needs to support nested pages, compression and the ePub 3.0+ standard for 1.0).
+Currently the code is found in individual repositories rather than centralised here in this repository. The latest e-book is *The Fall of Western Man*, the version of ebookbuild's main script `CreateE-book.py` is 0.8 (needs to support nested pages, compression and the ePub 3.0+ standard for 1.0).
 
 ebookbuild is programmed in Python 3, although there are considerations to possibly switch language for speed improvements. I may use tkinter to develop a GUI.
 
