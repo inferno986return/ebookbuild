@@ -8,13 +8,14 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 
 ## Features
 
-### Current features (v0.81)
+### Current features (v0.811)
 * Supports ePub 2.0.1.
 * Supports reflowable and fixed-layout e-books.
 * Supports anchor tags in the `toc.ncx`.
 * Books generated convert nicely to .Mobi in Kindle Previewer (though images need to be centred with CSS `text-align: center;`).
 * Runs on GNU Bash, IDLE and Thonny (for now).
 * Shows MD5 and SHA512 hashes of the ePub file at the end output (the built-in datestamp and timestamp will ensure different hashes for each ePub generated) and saves them to `checksums.txt`.
+* Fixed a bug so that any number of .otf/.ttf fonts can be added to an ePub. 
 
 ### Planned features
 
