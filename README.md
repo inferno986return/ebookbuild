@@ -4,7 +4,7 @@
 
 A very WIP cross-platform FOSS tool to create e-books properly, built entirely with FOSS technologies (so no vendor lock-in). Currently ebookbuild makes both reflowable and fixed-layout ePub 2.0.1 e-books.
 
-Currently the code is found in individual repositories rather than centralised here in this repository. The latest e-book is *The Fall of Western Man*, the version of ebookbuild's main script `CreateE-book.py` is 0.8 (needs to support nested pages, compression and the ePub 3.0+ standard for 1.0).
+Currently the code is found in individual repositories rather than centralised here in this repository. The latest e-book is *The Fall of Western Man*, the version of ebookbuild's main script `CreateE-book.py` is 0.811 (needs to support nested pages, compression and the ePub 3.0+ standard for 1.0).
 
 ebookbuild is programmed in Python 3, although there are considerations to possibly switch language for speed improvements. I may use tkinter to develop a GUI.
 
@@ -13,7 +13,7 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 ### Current features (v0.811)
 * Supports ePub 2.0.1.
 * Supports reflowable and fixed-layout e-books.
-* Supports anchor tags in the `toc.ncx`.
+* Supports 1 layer of anchor tags in the `toc.ncx`.
 * Books generated convert nicely to .Mobi in Kindle Previewer (though images need to be centred with CSS `text-align: center;`).
 * Runs on GNU Bash, IDLE and Thonny (for now).
 * Shows MD5 and SHA512 hashes of the ePub file at the end output (the built-in datestamp and timestamp will ensure different hashes for each ePub generated) and saves them to `checksums.txt`.
@@ -23,6 +23,7 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 
 * Support ePub 3.1 and any future ePub releases.
 * Support nested pages in the `toc.ncx`.
+* Support 3 layers of anchor tags in the `toc.ncx`.
 * Support XHTML and CSS minification and obfuscation.
 * Support compression (particularly desirable for image-heavy e-books).
 * Support the ONIX 3 standard fully within the `metadata.json`.
