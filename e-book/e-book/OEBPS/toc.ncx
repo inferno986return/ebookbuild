@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd"><ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<head>
+	<meta name="dtb:uid" content="-" />
+	<meta name="dtb:depth" content="1" />
+	<meta name="dtb:totalPageCount" content="0" />
+	<meta name="dtb:maxPageNumber" content="0" />
+</head>
+<docTitle>
+	<text>Karl Marx Never Bathed</text>
+</docTitle>
+<navMap>
+	<navPoint id="navpoint-1" playOrder="1">
+		<navLabel>
+			<text>Front Cover</text>
+		</navLabel>
+		<content src="bookcover.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-2" playOrder="2">
+		<navLabel>
+			<text>Title</text>
+		</navLabel>
+		<content src="title.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-3" playOrder="3">
+		<navLabel>
+			<text>Indicia</text>
+		</navLabel>
+		<content src="indicia.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-4" playOrder="4">
+		<navLabel>
+			<text>Table of Contents</text>
+		</navLabel>
+		<content src="toc.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-5" playOrder="5">
+		<navLabel>
+			<text>Foreword</text>
+		</navLabel>
+		<content src="foreword.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-6" playOrder="6">
+		<navLabel>
+			<text>About the Authors</text>
+		</navLabel>
+		<content src="abouttheauthor.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-7" playOrder="7">
+		<navLabel>
+			<text>Introduction</text>
+		</navLabel>
+		<content src="introduction.xhtml" />
+		<navPoint id="navpoint-8" playOrder="8">
+				<navLabel>
+					<text>The Setting For This Book</text>
+				</navLabel>
+				<content src="introduction.xhtml#the-setting-for-this-book" />
+		</navPoint>
+		<navPoint id="navpoint-9" playOrder="9">
+				<navLabel>
+					<text>&#8220;Why This Book Now?&#8221;</text>
+				</navLabel>
+				<content src="introduction.xhtml#why-this-book-now" />
+		</navPoint>
+		<navPoint id="navpoint-10" playOrder="10">
+				<navLabel>
+					<text>Crisis on Campus</text>
+				</navLabel>
+				<content src="introduction.xhtml#crisis-on-campus" />
+		</navPoint>
+	</navPoint>
+	<navPoint id="navpoint-11" playOrder="11">
+		<navLabel>
+			<text>Essay 1: Karl Marx, The Disturbed Youth</text>
+		</navLabel>
+		<content src="essay1.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-12" playOrder="12">
+		<navLabel>
+			<text>Essay 2: Karl Marx, The Dysfunctional Adult</text>
+		</navLabel>
+		<content src="essay2.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-13" playOrder="13">
+		<navLabel>
+			<text>Essay 3: Karl Marx, The Impotent Radical</text>
+		</navLabel>
+		<content src="essay3.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-14" playOrder="14">
+		<navLabel>
+			<text>Essay 4: The Red Nightmare</text>
+		</navLabel>
+		<content src="essay4.xhtml" />
+	</navPoint>
+	<navPoint id="navpoint-15" playOrder="15">
+		<navLabel>
+			<text>Conclusion</text>
+		</navLabel>
+		<content src="conclusion.xhtml" />
+		<navPoint id="navpoint-16" playOrder="16">
+				<navLabel>
+					<text>The American Dream</text>
+				</navLabel>
+				<content src="conclusion.xhtml#the-american-dream" />
+		</navPoint>
+	</navPoint>
+	<navPoint id="navpoint-17" playOrder="17">
+		<navLabel>
+			<text>Culture Wars Cashback Card</text>
+		</navLabel>
+		<content src="culturewarscard.xhtml" />
+	</navPoint>
+</navMap>
+</ncx>

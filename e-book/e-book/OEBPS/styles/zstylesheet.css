@@ -1,0 +1,581 @@
+/*Zylon Stylesheet CSS - zstylesheet.css - v0.1
+-------------------------------------------
+
+Part of Project Zylon though licensed under Creative Commons Zero 1.0 Universal (CC0 1.0). License can be viewed at: https://creativecommons.org/publicdomain/zero/1.0/
+Need help? Refer to the Zylon Guide at: (ebookbuild.github.io/ - link doesn't work yet)
+
+Exact values are recommended. Avoid using words such as small to describe the size of a font or red for the colour.
+Use ems instead of percentages.
+
+-------------------------------------------*/
+
+/*Book covers*/
+
+div.book-cover
+{
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.cover
+{
+	display: block;
+	height: 500px;
+	width: 313px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Titles*/
+
+h1.title
+{
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 0em;
+}
+
+h2.title
+{
+	font-size: 1.5em;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0em;
+}
+
+h3.title
+{
+	font-size: 1.5em;
+	font-family: sans-serif;
+	font-weight: normal;
+	text-align: center;
+	font-variant: normal;
+	margin-top: 2em;
+	margin-bottom: 2.5em;
+}
+
+h4.title
+{
+	margin-top: 7em;
+	font-size: 1.5em;
+	font-weight: normal;
+	text-align: center;
+}
+
+hr.title
+{
+	border-color: #007BA7;
+	border-width: 2px;
+	border-style: solid;
+	width: 100%;
+}
+
+/*Indicia Headings*/
+
+h1.indicia-heading
+{
+	text-align: center;
+	font-size: small; /*small works best here rather than a specific em*/
+	font-family: sans-serif;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+/* Apple iBooks honours formatting for headings. */
+h2.indicia, .indicia
+{
+	font-size: small; /*0.8em or small*/
+	font-family: sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	text-align: center !important;
+	text-indent: 0em !important;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/*Chapter Headings*/
+
+h1.heading
+{
+	font-size: 1.4em;
+	font-family: sans-serif;
+	font-variant: normal;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+hr.heading
+{
+	border-color: #007BA7;
+	border-width: 2px;
+	border-style: solid;
+	width: 100%;
+	margin-bottom: 1em;
+}
+
+/*Contents headings*/
+
+h1.toc
+{
+	margin: 0em;
+	font-size: 1.1em;
+	text-align: left;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-variant: none;
+	margin-top: 1em;
+	margin-bottom: 0em;
+}
+
+h2.toc
+{
+	text-indent: 1em;
+	text-align: left;
+	font-size: 1em;
+	font-family: sans-serif;
+	font-variant: none;
+	font-weight: normal;
+	text-decoration: normal;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+h1.indent, h2.indent
+{
+	margin: 0em;
+	text-indent: 1em;
+}
+
+/*Sub Headings*/
+
+h1.subheading
+{
+	font-size: 1.1em;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0em;
+}
+
+h2.subheading
+{
+	font-size: 1em;
+	font-weight: bold;
+	text-align: left;
+	font-variant: none;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+h3.subheading
+{
+	font-size: 1em;
+	font-weight: bold;
+	text-align: left;
+	font-variant: none;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+/*Paragraphs*/
+
+p
+{
+	font-size: 1em;
+	text-align: left;
+	margin: 0px 0em 0em 0em;
+	text-align: justify;
+	text-indent: 1em;
+	hyphens: none;
+}
+
+li.nobullet
+{
+	text-indent: 0em;
+	margin-left: 1em;
+	display:list;
+	list-style-type: none;
+}
+
+li.nobullet2
+{
+	text-indent: 0em;
+	margin-left: 2em;
+	display:list;
+	list-style-type: none;
+}
+
+p.small-text, .small-text /*For the indicia*/
+{
+	font-size: 0.7em; /*0.8em or small*/
+}
+
+p.noindent, .noindent /*Every starting paragraph should start with this.*/
+{
+	text-indent: 0em !important;
+}
+
+p.top, .top
+{
+	margin-top: 1em;
+}
+
+p.top2, .top2
+{
+	margin-top: 2em;
+}
+
+p.top3, .top3
+{
+	margin-top: 3em !important;
+}
+
+p.bottom, .bottom
+{
+	margin-bottom: 1em;
+}
+
+p.bottom2, .bottom2
+{
+	margin-bottom: 2em;
+}
+
+p.left, .left
+{
+	text-align: left;
+}
+
+p.center, .center
+{
+	text-align: center !important;
+  text-indent: 0em !important;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+p.right, .right
+{
+	text-align: right;
+}
+
+p.sans, .sans
+{
+	font-family: sans-serif;
+}
+
+p.mono, .mono
+{
+	font-family: monospace;
+}
+
+/*Quotes*/
+/*Quotes are used to show a quote by a person or source. Recommended to write the quote in italics, though this isn't set in the CSS by default.*/
+
+p.noindent-quote
+{
+	text-align: justify;
+	text-indent: 0em;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+p.quote
+{
+	text-align: justify;
+	text-indent: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+p.quote2
+{
+	text-align: justify;
+	text-indent: 2em;
+	margin-left: 1em;
+	margin-right: 1em;
+	font-size: 0.9em;
+	font-style: normal;
+}
+
+/*References*/
+
+p.ref, .ref
+{
+	margin-left: 0em;
+	font-size: 0.9em;
+}
+
+/*Initial Letter*/
+/*Intial letters (also known as dropcaps or illuminated letters) are the large letters used at the start of a chapter for emphasis.*/
+
+.initial /*Code snagged from Wikipedia.*/
+{
+	float: left;
+	font-size: 4em;
+	line-height: 0.95em;
+	vertical-align: baseline;
+}
+
+.sc-initial
+{
+	font-size: 1.1em;
+	font-family: serif;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+/*Formatting*/
+/*Use <span></span> tags use these for formatting the e-book’s text*/
+
+.sc /*Adds small caps to text*/
+{
+	font-variant: small-caps;
+}
+
+.uli /*Underlines text*/
+{
+	text-decoration: underline;
+}
+
+.st /* Strikes through the text */
+{
+	text-decoration: line-through;
+}
+
+/*Text Alignment*/
+
+/*Lists (Ordered and Unordered)*/
+
+ol, ul
+{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+li
+{
+  margin-bottom: 0em;
+  hyphens: none;
+}
+
+p.sublist, .sublist
+{
+	margin: 0em;
+}
+
+/*Tables*/
+table
+{
+  margin-top: 2em;
+  margin-bottom: 2em;
+	/*margin-left: auto;
+	margin-right: auto;*/
+	width: 100%;
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 0.1em;
+	border-color: #000;
+}
+
+td, th
+{
+  text-indent: 0em !important;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  padding-top: 0.2em;
+  margin-left: 0em;
+  margin-right: 0em;
+  vertical-align: top;
+  text-align: center;
+  page-break-inside: avoid;
+  hyphens: none;
+  font-size: 0.9em;
+	border-style: solid;
+	border-width: 0.2em;
+	border-color: #000;
+}
+
+/*Images*/
+
+.image-center
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	/*border: solid 2px; Useful for debugging.*/
+}
+
+.title-logo
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/*width: 15em; 80% of 370px = 296px*/
+	height: 5em; /*80% of 119px = 95px*/
+}
+
+.image-sander
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15em; /*80% of 370px = 296px*/
+	height: 20em; /*80% of 119px = 95px*/
+}
+
+
+.image-wesley
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15em; /*80% of 370px = 296px*/
+	height: 20em; /*80% of 119px = 95px*/
+}
+
+
+.image-left
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-right: 0.5em;
+	float: left;
+	width: 10em;
+	height: 20em;
+	/*border: solid 2px; Useful for debugging.*/
+}
+
+.image-right
+{
+	margin-top: 0em;
+	margin-bottom: 0em;
+	margin-left: 0.5em;
+	float: right;
+	/*width: 10em;
+	height: 15em;
+	border: solid 2px; Useful for debugging.*/
+}
+
+.license-image
+{
+	display: block;
+	margin: auto;
+}
+
+.half-image
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.xkcd-image
+{
+	width: 100%;
+}
+
+.image
+{
+	display: block;
+	width: 100%;
+}
+
+.book
+{
+	display: block;
+	margin: auto;
+}
+
+.figure-caption
+{
+	margin-bottom: 1em;
+	font-size: 0.9em;
+	text-align: center !important;
+	color: #808080;
+	/*border: solid 1px;*/
+}
+
+/*Colours*/
+.red
+{
+	color: #F00;
+}
+
+/*Book specific divs and spans*/
+
+div.python-shell
+{
+	margin-top: 1em;
+	border: solid #000 2px;
+	padding: 0.2em;
+	margin-bottom: 1em;
+}
+
+div.bookshelf
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border: solid red 1px;
+}
+
+div.book
+{
+	border: solid black 1px;
+	display: inline-block;
+}
+
+div.scene-break
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+p.scene-break-asterisk
+{
+	text-align: center;
+}
+
+span.line-number
+{
+	font-family: monospace;
+	color: #808080;
+}
+
+span.comment
+{
+	font-family: monospace;
+	color: #F00;
+}
+
+span.keyword
+{
+	font-family: monospace;
+	/*color: orange;*/
+}
+
+span.string
+{
+	font-family: monospace;
+	/*color: green;*/
+}
+
+/*RTL (Right-to-Left) - For Arabic, Persian, Hebrew, etc...*/
+
+p.rtl, .rtl
+{
+	direction: rtl;
+}

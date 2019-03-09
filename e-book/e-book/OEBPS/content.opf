@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title>Karl Marx Never Bathed: The Staggeringly Messed Up Life of The World’s First Social Justice Warrior</dc:title>
+		<dc:creator>Sander Laanemaa, Wesley Messamore</dc:creator>
+		<dc:subject>Politics</dc:subject>
+		<dc:publisher>Culture-Wars</dc:publisher>
+		<dc:identifier id="bookid">-</dc:identifier>
+		<dc:date>2019-03-08T21:35:48</dc:date>
+		<dc:language>en</dc:language>
+		<dc:rights>All rights reserved.</dc:rights>
+		<meta content="cover" name="cover"/>
+	</metadata>
+	<manifest>
+		<item href="styles/zstylesheet.css" id="css0" media-type="text/css"/>
+		<item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+		<item href="images/sander.jpg" id="image0" media-type="image/jpeg"/>
+		<item href="images/wesley.jpg" id="image1" media-type="image/jpeg"/>
+		<item href="images/card.jpg" id="image2" media-type="image/jpeg"/>
+		<item href="images/culture-wars_logo.png" id="image3" media-type="image/png"/>
+		<item href="images/cover.jpg" id="cover" media-type="image/jpeg"/>
+		<item href="bookcover.xhtml" id="bookcover" media-type="application/xhtml+xml"/>
+		<item href="title.xhtml" id="title" media-type="application/xhtml+xml"/>
+		<item href="indicia.xhtml" id="indicia" media-type="application/xhtml+xml"/>
+		<item href="toc.xhtml" id="toc" media-type="application/xhtml+xml"/>
+		<item href="foreword.xhtml" id="foreword" media-type="application/xhtml+xml"/>
+		<item href="abouttheauthor.xhtml" id="abouttheauthor" media-type="application/xhtml+xml"/>
+		<item href="introduction.xhtml" id="introduction" media-type="application/xhtml+xml"/>
+		<item href="essay1.xhtml" id="essay1" media-type="application/xhtml+xml"/>
+		<item href="essay2.xhtml" id="essay2" media-type="application/xhtml+xml"/>
+		<item href="essay3.xhtml" id="essay3" media-type="application/xhtml+xml"/>
+		<item href="essay4.xhtml" id="essay4" media-type="application/xhtml+xml"/>
+		<item href="conclusion.xhtml" id="conclusion" media-type="application/xhtml+xml"/>
+		<item href="culturewarscard.xhtml" id="culturewarscard" media-type="application/xhtml+xml"/>
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="bookcover"/>
+		<itemref idref="title"/>
+		<itemref idref="indicia"/>
+		<itemref idref="toc"/>
+		<itemref idref="foreword"/>
+		<itemref idref="abouttheauthor"/>
+		<itemref idref="introduction"/>
+		<itemref idref="essay1"/>
+		<itemref idref="essay2"/>
+		<itemref idref="essay3"/>
+		<itemref idref="essay4"/>
+		<itemref idref="conclusion"/>
+		<itemref idref="culturewarscard"/>
+	</spine>
+</package>

@@ -1,0 +1,127 @@
+{
+		"comment0": "Metadata.json - Insert the e-book's metadata here, so that the content.opf and toc.ncx files can be filled. May use data for ONIX3 too. WIP",
+
+		"comment1": "Folder metadata - This contains the names of the technical folders, if you change the default names please update them here.",
+		"containerFolder": "OEBPS",
+		"cssFolder": "styles",
+		"imagesFolder": "images",
+		"fontsFolder": "fonts",
+
+		"comment2": "Technical metadata - This is the where the cover image is specified. Recommended to use ePub V2.0.1 over 3.0 for epubVersion and Reflowable rather than Fixed for textPresentation (unless doing a project that requires a specific layout). mobiCover and generateKindle are currently unused but added for futureproofing.",
+		"epubCover": "cover.jpg",
+		"mobiCover": "cover.jpg",
+		"fileName": "KarlMarxNeverBathed",
+		"epubVersion": "2.0.1",
+		"textPresentation": "Reflowable",
+		"generateKindle": "no",
+		"generateGoogle": "yes",
+
+		"comment3": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. ISBN number can be declared, as well as the Amazon ASIN. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
+		"title": "Karl Marx Never Bathed: The Staggeringly Messed Up Life of The World’s First Social Justice Warrior",
+		"titleShort": "Karl Marx Never Bathed",
+		"creator": "Sander Laanemaa, Wesley Messamore",
+		"subject": "Politics",
+		"publisher": "Culture-Wars",
+		"ISBN": "-",
+		"ASIN": "B0722GYT9B",
+		"language": "en",
+		"rights": "All rights reserved.",
+
+		"comment4": "This is the page order that the e-book has. The first number before the colon is the page order, the second is the indentation (default is 1, allowed upto 4), third is the page name and fourth is file itself.",
+		"pages": [
+					{
+						"pageNumber": "0",
+						"indentation": "1",
+						"pageName": "Front Cover",
+						"fileName": "bookcover.xhtml"
+					},
+					{
+						"pageNumber": "1",
+						"indentation": "1",
+						"pageName": "Title",
+						"fileName": "title.xhtml"
+					},
+					{
+						"pageNumber": "2",
+						"indentation": "1",
+						"pageName": "Indicia",
+						"fileName": "indicia.xhtml"
+					},
+					{
+						"pageNumber": "3",
+						"indentation": "1",
+						"pageName": "Table of Contents",
+						"fileName": "toc.xhtml"
+					},
+					{
+						"pageNumber": "4",
+						"indentation": "1",
+						"pageName": "Foreword",
+						"fileName": "foreword.xhtml"
+					},
+					{
+						"pageNumber": "5",
+						"indentation": "1",
+						"pageName": "About the Authors",
+						"fileName": "abouttheauthor.xhtml"
+					},
+					{
+						"pageNumber": "6",
+						"indentation": "1",
+						"pageName": "Introduction",
+						"fileName": "introduction.xhtml",
+						"anchorNames": {
+							"anchorName0": "The Setting For This Book",
+							"anchorName1": "&#8220;Why This Book Now?&#8221;",
+							"anchorName2": "Crisis on Campus"
+						},
+						"anchorLinks": {
+							"anchorLink0": "#the-setting-for-this-book",
+							"anchorLink1": "#why-this-book-now",
+							"anchorLink2": "#crisis-on-campus"
+						}
+					},
+					{
+						"pageNumber": "7",
+						"indentation": "1",
+						"pageName": "Essay 1: Karl Marx, The Disturbed Youth",
+						"fileName": "essay1.xhtml"
+					},
+					{
+						"pageNumber": "8",
+						"indentation": "1",
+						"pageName": "Essay 2: Karl Marx, The Dysfunctional Adult",
+						"fileName": "essay2.xhtml"
+					},
+					{
+						"pageNumber": "9",
+						"indentation": "1",
+						"pageName": "Essay 3: Karl Marx, The Impotent Radical",
+						"fileName": "essay3.xhtml"
+					},
+					{
+						"pageNumber": "10",
+						"indentation": "1",
+						"pageName": "Essay 4: The Red Nightmare",
+						"fileName": "essay4.xhtml"
+					},
+					{
+						"pageNumber": "11",
+						"indentation": "1",
+						"pageName": "Conclusion",
+						"fileName": "conclusion.xhtml",
+						"anchorNames": {
+							"anchorName0": "The American Dream"
+						},
+						"anchorLinks": {
+							"anchorLink0": "#the-american-dream"
+						}
+					},
+					{
+						"pageNumber": "12",
+						"indentation": "1",
+						"pageName": "Culture Wars Cashback Card",
+						"fileName": "culturewarscard.xhtml"
+					}
+				]
+}
