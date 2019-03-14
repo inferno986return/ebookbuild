@@ -325,6 +325,8 @@ p.ref, .ref
 	font-size: 4em;
 	line-height: 0.95em;
 	vertical-align: baseline;
+	margin-right: 0.08em;
+	margin-bottom: 0em;
 }
 
 .sc-initial
@@ -419,6 +421,15 @@ td, th
 	/*border: solid 2px; Useful for debugging.*/
 }
 
+.center-image
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: solid 2px; Useful for debugging.*/
+}
+
 .title-logo
 {
 	display: block;
@@ -428,23 +439,22 @@ td, th
 	height: 5em; /*80% of 119px = 95px*/
 }
 
-.image-sander
+.image-indicia
 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 15em; /*80% of 370px = 296px*/
-	height: 20em; /*80% of 119px = 95px*/
+	width: 6em; /*80% of 370px = 296px*/
+	height: 2em; /*80% of 119px = 95px*/
 }
 
-
-.image-wesley
+.image-hal
 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 15em; /*80% of 370px = 296px*/
-	height: 20em; /*80% of 119px = 95px*/
+	width: 10em; /*80% of 370px = 296px*/
+	height: 12em; /*80% of 119px = 95px*/
 }
 
 
