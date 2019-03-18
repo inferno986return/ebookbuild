@@ -317,8 +317,9 @@ p.quote2
 
 p.ref, .ref
 {
-	margin-left: 0em;
+	text-indent: 0em;
 	font-size: 0.9em;
+	margin-bottom: 0.5em;
 }
 
 /*Initial Letter*/
