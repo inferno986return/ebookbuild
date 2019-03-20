@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?><html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/>
+<link href="styles/zstylesheet.css" rel="stylesheet" type="text/css"/>
+<title>Appendix</title>
+</head>
+
+<body>
+	<h1 class="heading">Appendix</h1>
+
+	<h1 class="subheading">HTML entities cheatsheet</h1>
+
+	<p class="noindent top">As mentioned in the Introduction to XHTML chapter, both HTML and XHTML reserve metacharacters so to use a metacharacter literally its entity must be used. Almost all common characters in ASCII and Unicode have entities, but only a comparitive few characters cannot be used literally. I have made my own cheatsheat in the table below:</p>
+
+	<table>
+		<tr><th colspan="4">HTML entities cheatsheet</th></tr>
+		<tr><th colspan="4">Mandatory entities (these characters cannot be used literally)</th></tr>
+		<tr><th>Name entity</th> <th>Number entity</th> <th>Character</th> <th>Name</th></tr>
+		<tr><td><span class="mono">&amp;amp;</span></td> <td><span class="mono">&amp;#38;</span></td> <td>&amp;</td> <td>Ampersand</td></tr>
+		<tr><td><span class="mono">&amp;lt;</span></td> <td><span class="mono">&amp;#60;</span></td> <td>&lt;</td> <td>Less than</td></tr>
+		<tr><td><span class="mono">&amp;gt;</span></td> <td><span class="mono">&amp;#61;</span></td> <td>&gt;</td> <td>Greater than</td></tr>
+		<tr><th colspan="4">Punctuation</th></tr>
+		<tr><th>Name entity</th> <th>Number entity</th> <th>Character</th> <th>Name</th></tr>
+		<tr><td><span class="mono">&amp;apos;</span></td> <td><span class="mono">&amp;#39;</span></td> <td>'</td> <td>Single straight quote/apostrophe</td></tr>
+		<tr><td><span class="mono">&amp;quot;</span></td> <td><span class="mono">&amp;#34;</span></td> <td>"</td> <td>Double straight quote</td></tr>
+		<tr><td><span class="mono">&amp;lsquo;</span></td> <td><span class="mono">&amp;#38;</span></td> <td>‘</td> <td>Single curly left quote</td></tr>
+		<tr><td><span class="mono">&amp;rsquo;</span></td> <td><span class="mono">&amp;#38;</span></td> <td>’</td> <td>Single curly right quote/apostrophe</td></tr>
+		<tr><td><span class="mono">&amp;ldquo;</span></td> <td><span class="mono">&amp;#38;</span></td> <td>"</td> <td>Double curly left quote</td></tr>
+		<tr><td><span class="mono">&amp;rdquo;</span></td> <td><span class="mono">&amp;#38;</span></td> <td>"</td> <td>Double curly right quote</td></tr>
+	</table>
+
+	<h1 class="subheading">Regular Expressions cheatsheet</h1>
+
+	<p class="noindent top">When I worked as a professional e-book developer we would keep a regular expressions cheatsheet handy and pass a printout around the office. I have made my own cheatsheat in the table below:</p>
+
+	<table>
+		<tr><th colspan="2">Simplified Regular Expressions cheatsheet</th></tr>
+		<tr><th colspan="2">Anchors</th></tr>
+		<tr><td>^</td> <td>Start of line +</td></tr>
+		<tr><td>$</td> <td>End of line +</td></tr>
+		<tr><th colspan="2">Character Classes</th></tr>
+		<tr><td></td> <td></td></tr>
+		<tr><th colspan="2">String Replacement</th></tr>
+		<tr><td>$1 or \1</td> <td>Returns a capture<a href="appendix.xhtml#ref-1" id="cit-1"><sup>1</sup></a></td></tr>
+		<tr><th colspan="2">Metacharacters (must be escaped)</th></tr>
+		<tr><td>[</td> <td>]</td></tr>
+		<tr><td>^</td> <td>$</td></tr>
+		<tr><td>{</td> <td>}</td></tr>
+		<tr><td>(</td> <td>)</td></tr>
+		<tr><td>.</td> <td>+</td></tr>
+		<tr><td>\</td> <td>*</td></tr>
+	</table>
+
+	<p class="center">This cheatsheet is derived from the regular expressions cheatsheet by David Child of <a href="https://www.addedbytes.com/">AddedBytes.com</a>.<a href="appendix.xhtml#ref-2" id="cit-2"><sup>2</sup></a></p>
+
+	<hr/>
+	<p class="ref noindent"><a href="appendix.xhtml#cit-1" id="ref-1">1.</a> As mentioned previously in the chapter on regular expressions, the metacharacter for returning captures varies. It can be a dollar (<span class="mono">$</span>) such as in Atom or a backslash (<span class="mono">\</span>) such as in Notepad++.</p>
+	<p class="ref noindent"><a href="appendix.xhtml#cit-2" id="ref-2">2.</a> The PDF of the cheatsheet can be downloaded from the old website of the Technical University of Denmark: <a href="http://www.cbs.dtu.dk/courses/27610/regular-expressions-cheat-sheet-v2.pdf">http://www.cbs.dtu.dk/courses/27610/regular-expressions-cheat-sheet-v2.pdf</a></p>
+</body>
+</html>
