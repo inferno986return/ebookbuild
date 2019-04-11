@@ -12,8 +12,9 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 
 ### v0.8111 Features (current)
 * Added a GNU GPL-compliant (I hope) header to `ebookbuild` when run on the command-line.
+* Changed SHA512 to SHA256 (apparently it requires less resources to generate and is a common standard anyway, I am happy to discuss this and might include all three if desired).
 
-### v0.811 Features
+### v0.811 Features (and prior versions)
 * Supports ePub 2.0.1.
 * Supports reflowable and fixed-layout e-books.
 * Supports 1 layer of anchor tags in the `toc.ncx`.
