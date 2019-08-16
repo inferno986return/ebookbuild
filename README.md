@@ -10,8 +10,12 @@ ebookbuild is programmed in Python 3, although there are considerations to possi
 
 ## Features
 
-### v0.8113 Features (current)
-* Changed script name from `CreateE-book.py` to a simpler `ebookbuild.py`.
+### v0.8114 Features (current)
+* Fixed SHA-256 generation. I have tested the checksums with the Bash `sha256sum` and PowerShell `Get-FileHash` commands.
+* Added timestamp for the checksums in UTC.
+
+### v0.8113 Features
+* Changed script name from `CreateE-book.py` to the simpler `ebookbuild.py`.
 * Saves MD5, SHA-256 and SHA-512 checksums with a datestamps and timestamps.
 
 ### v0.8112 Features
