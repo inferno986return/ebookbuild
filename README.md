@@ -8,7 +8,10 @@ Currently the code is found in individual repositories rather than centralised h
 
 ebookbuild is programmed in Python 3, although there are considerations to possibly switch language for speed improvements. I may use tkinter to develop a GUI.
 
+I may develop several scripts related to e-book development under the ebookbuild name.
+
 ## Features
+*NOTE: ebookbuild has a bug where it generates backslashes on Windows for the Content.opf. So I recommend compiling e-books using Windows Subsystem for Linux on Windows, or via the native macOS / GNU/Linux terminal.*
 
 ### v0.8114 Features (current)
 * Fixed SHA-256 generation. I have tested the checksums with the Bash `sha256sum` and PowerShell `Get-FileHash` commands.
