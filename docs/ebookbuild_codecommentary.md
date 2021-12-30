@@ -20,18 +20,18 @@ This is a comment that introduces the program’s name, purpose, and version to 
 
 This comment declares ebookbuild is licenced under GNU GPLv3 to anyone reading the ebookbuild.py file which is another requirement of using the licence.
 
-`#opf = "OEBPS/content.opf"`
-`#ncx = "OEBPS/toc.ncx"`
+`#opf = "OEBPS/content.opf"`<br/>
+`#ncx = "OEBPS/toc.ncx"`<br/>
 
 This is a reference for the OPF and NCX files which are generated later on by the ebookbuild.py script. As a reminder, the OPF file is a manifest that declares all the metadata and files inside the ePub. The NCX is a now-deprecated file that informs the ePub reader what the order of the files is.
 
-`import os`
-`import datetime, time`
-`import json`
-`from collections import OrderedDict`
-`import re`
-`import zipfile`
-`import hashlib`
+`import os`<br/>
+`import datetime, time`<br/>
+`import json`<br/>
+`from collections import OrderedDict`<br/>
+`import re`<br/>
+`import zipfile`<br/>
+`import hashlib`<br/>
 
 The `import` keyword in Python is used to add functionality from libraries. Currently, ebookbuild.py only uses standard libraries. The `re` library is used for regular expressions (regex) and can probably be removed from the script.
 
