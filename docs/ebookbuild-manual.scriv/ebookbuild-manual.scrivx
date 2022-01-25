@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-01-25 13:55:06 +0000" ModID="E134E9B1-9204-4AEB-8ED2-B771AC7FD382">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-01-25 20:56:41 +0000" ModID="36DDA6FF-3440-4899-B09C-06AE75BA4FB9">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
             <Title>Draft</Title>
@@ -7,12 +7,13 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <Children>
-                <BinderItem UUID="DA8FD144-AEE3-48E4-A3F9-3394F12D2A60" Type="Text" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
+                <BinderItem UUID="DA8FD144-AEE3-48E4-A3F9-3394F12D2A60" Type="Text" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-25 20:56:24 +0000">
+                    <Title>HTML entity tables</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>0,0</TextSelection>
+                        <TextSelection>20,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -139,11 +140,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="370" Characters="2402" Date="2022-01-25 13:55:06 +0000"/>
+        <PreviousSession Words="492" Characters="3171" Date="2022-01-25 20:56:41 +0000"/>
     </ProjectTargets>
     <RecentWritingHistory Date="2022-01-25 00:00:00 +0000">
-        <DraftWordCount>0</DraftWordCount>
-        <DraftCharCount>0</DraftCharCount>
+        <DraftWordCount>122</DraftWordCount>
+        <DraftCharCount>769</DraftCharCount>
         <OtherWordCount>370</OtherWordCount>
         <OtherCharCount>2402</OtherCharCount>
     </RecentWritingHistory>
