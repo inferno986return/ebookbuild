@@ -9,7 +9,7 @@
             <ItemID>C8BC8F14-C5A8-4C2C-9645-062BF504A309</ItemID>
         </ExpandedItems>
         <Selection>
-            <ItemID>DA8FD144-AEE3-48E4-A3F9-3394F12D2A60</ItemID>
+            <ItemID>9C43D21D-C973-4DD8-857E-08EB9C396879</ItemID>
         </Selection>
         <SearchResultsSort Titles="Ascending" Dates="Ascending">None</SearchResultsSort>
     </Binder>
@@ -63,9 +63,9 @@
                 <CurrentViewMode>Single</CurrentViewMode>
                 <SelectionAffects>Current</SelectionAffects>
                 <Content>
-                    <ItemID>DA8FD144-AEE3-48E4-A3F9-3394F12D2A60</ItemID>
+                    <ItemID>9C43D21D-C973-4DD8-857E-08EB9C396879</ItemID>
                 </Content>
-                <NavigationHistory CurrentIndex="58">
+                <NavigationHistory CurrentIndex="60">
                     <HistoryItem Type="BinderItems" ViewMode="Single">DA8FD144-AEE3-48E4-A3F9-3394F12D2A60</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Corkboard">C8BC8F14-C5A8-4C2C-9645-062BF504A309</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Single">1B67AA19-6CBA-493E-AEBF-1E45B25BE441</HistoryItem>
@@ -125,6 +125,8 @@
                     <HistoryItem Type="BinderItems" ViewMode="Single">9C43D21D-C973-4DD8-857E-08EB9C396879</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Single">1B67AA19-6CBA-493E-AEBF-1E45B25BE441</HistoryItem>
                     <HistoryItem Type="BinderItems" ViewMode="Single">DA8FD144-AEE3-48E4-A3F9-3394F12D2A60</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">1B67AA19-6CBA-493E-AEBF-1E45B25BE441</HistoryItem>
+                    <HistoryItem Type="BinderItems" ViewMode="Single">9C43D21D-C973-4DD8-857E-08EB9C396879</HistoryItem>
                 </NavigationHistory>
             </View>
             <Text>
@@ -132,7 +134,7 @@
                 <PageLayout Facing="No">No</PageLayout>
                 <TypewriterScrolling>No</TypewriterScrolling>
                 <LineNumbers Interval="1">No</LineNumbers>
-                <Selection>20,0</Selection>
+                <Selection>930,0</Selection>
             </Text>
             <Outliner>
                 <Columns>
