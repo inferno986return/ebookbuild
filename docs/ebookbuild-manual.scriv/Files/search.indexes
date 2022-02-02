@@ -103,7 +103,50 @@ YouTube - Odysseus</Text>
         </Document>
         <Document ID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F">
             <Title>Google Keep notes</Title>
-            <Text>Introduction to typographySerifSans-serifMonospace (or fixed width)E-book reader fontsUnicodeLatinMonotonic/Polytonic GreekCyrillicScene breakDropcapsFunction keys on a keyboard </Text>
+            <Text>
+Documents vs e-books
+Fixed and reflowable ePubs
+Introduction to typography
+Serif
+Sans-serif
+Monospace (or fixed-width)
+E-book reader fonts
+Unicode
+Latin
+Monotonic/Polytonic Greek
+Cyrillic
+Scene break
+Dropcaps
+Function keys on a keyboard
+Anatomy of a book
+The ePub standard documentation - epubcheck
+Openness and transparency
+How I got into e-book production – learnt at my first job where I attempted an apprenticeship.
+I refer to Andy as mentor, after playing a lot of Assassin's Creed when I was conceptualising this book.
+Steal this e-book with tape and crossbones
+From what I understand reading about Eric S. Raymond and Richard Stallman, your approach and principles to software development stem from the environment you worked in.
+The old system was a mixture of several programming languages, as well as a dependency on a popular productivity suite. To me this is an unnecessary dependency that creates vendor lock-in and limits portability.
+Why use ebookbuild - vendor lock-in
+The satisfaction of creating my open-source watchface Pokétch Digital and having it forked.
+Daniel Pink on Drive and agile development
+Harvard and numerical referencing
+Plenty of examples of how to use tags
+UTF-8, Unicode, and ASCII
+Software - Text editors, ... One that is recommended and then others.
+Create your own documentation and pull-request back stuff that is useful. Taken a gnuplot approach to development.
+Notetaking via OneNote, though GitHub/GitLab have wiki pages.
+
+&quot;XML is a very simple syntax resembling HTML — angle-bracketed tags and ampersand-led literal
+sequences. It is about as simple as a plain-text markup can be and yet express recursively nested
+data structures. XML is just a low-level syntax; it requires a document type definition (such as
+XHTML) and associated application logic to give it semantics.&quot;
+-Eric S. Raymond, Art of Unix Programming
+
+
+
+Future: ONIX, ePub 3, Bookscanning and OCR, 4 levels of indentation, GUI frontend for ebookbuild, ebookbuild rewrite, typesetting using InDesign or Affinity Publisher, audiobook production, distribution via Amazon Kindle, Google Play and itch.io, DRM
+
+Related formats such as cbz?</Text>
         </Document>
         <Document ID="93C40D99-4B3D-4900-9243-676053C92F0D">
             <Title>Future content</Title>
@@ -112,9 +155,34 @@ YouTube - Odysseus</Text>
 Bookscanning and OCR
 
 In my last job my boss used an inverted “V” cradle made from glass and metal, then would take a photograph of each page using a DSLR camera. The photos would be imported into ABBYY FineReader for the text to be extracted using optical character recognition (OCR), before exporting to a Microsoft Word document. He considered this a significant improvement over the previous method of destructively removing each page individually from the binding and then scanning them with a flatbed scanner.
-I am still developing my bookscanning process. I have been looking into free software alternatives to ABBYY FineReader such as Google’s Tesseract. I often make use of Google Photos’ own OCR engine and find it highly accurate. In the long-term I plan on purchasing and testing the CZUR book scanner.
+I am still developing my bookscanning process. I have been looking into free software alternatives to ABBYY FineReader such as Google’s Tesseract which is used in OpenOCR. I often make use of Google Photos’ own OCR engine and find it highly accurate. In the long-term I plan on purchasing and testing the CZUR book scanner.
 
-</Text>
+Typesetting
+
+Affinity Publisher (recommended)
+Adobe InDesign
+
+E-book distribution
+
+You now have a finished ePub. But how do you sell it?
+
+Amazon Kindle - Kindle Unlimited
+Google Play Books
+Apple Books
+Kobo
+itch.io
+
+Digital Rights Management (DRM)
+
+The ePub standard is intentionally neutral on the application of digital rights management (DRM) which controls how customers interact with their e-book purchase.
+
+Adobe DRM (ADEPT)
+Amazon DRM - AZW, KFX
+
+ONIX for Books
+
+ONIX for Books is an XML-based standard for sharing book data between publishers, distributors and retailers using predefined fields and categories (defined as “code lists”).
+I plan on creating my own libre ONIX editor and documentation for the perfect ONIX document. However, for the time being I recommend looking into ONIXEdit or creating your own ONIX record using spreadsheet software such as Microsoft Excel.</Text>
         </Document>
         <Document ID="9C43D21D-C973-4DD8-857E-08EB9C396879">
             <Title>Preface</Title>
@@ -171,10 +239,14 @@ Another desire, was to release the source code publicly under a licence approved
 
 //Picture of the Pokétch Digital watchface
 
-The old tools that used and I can barely speak of in fear of reprisal weren’t ideal and violated principles I had become accustomed to when reading about the history and philosophy of free software (as defined by Richard Stallman and the GNU project). I wanted something I had complete control over that could grow into a useful set of tools that anyone with a desire for control could have.
+The old tools that used and I can barely speak of in fear of reprisal weren’t ideal and violated core principles. I had become accustomed to these principles when reading about the history and philosophy of free software (as defined by Richard Stallman and the GNU project), so I wanted something I had complete control over that could grow into a useful set of tools for anyone with an interest in creating e-books from scratch.
 I created the ebookbuild so it had no proprietary dependencies and could be used cross-platform. Then made it available under GNU General Public License 3 (GPLv3) to encourage, but also enforce sharing the tool to make it available to as many interested people as possible.
+
+#
+Much of the ebookbuild project is licenced under GNU GPLv3.
+
 One of the prerequisites for free software is good documentation. So I have created an e-book that references as much as I have learnt in my one year in commercial e-book development, but the many years after. I want to make it accessible as possible so I have released it under a Creative Commons licence to encourage mass-sharing. The source code is on GitHub and I encourage raising issues and pull requests.
-Lastly, the project files that facilitate creating e-books outside of the content itself such as XHTML, CSS and JSON files are released under the Creative Commons Zero (CC0) licence, effectively public domain. I don’t think the code used for these files isn’t particularly special or unique, so they can be re-purposed outside of ebookbuild uncredited, though credit is appreciated.
+Lastly, I released technical files that are required for e-book production such as XHTML, CSS and JSON files under the Creative Commons Zero (CC0) licence, making them effectively public domain. I don’t think the code used for these files isn’t particularly special or unique, so they can be re-purposed outside of ebookbuild uncredited, though credit is appreciated.
 
 
 References:
@@ -185,8 +257,8 @@ References:
 You may have paid money to get copies of a free program, or you may have obtained copies at no charge. But regardless of how you got your copies, you always have the freedom to copy and change the software, even to sell copies.
 
 3. It’s worth juxtaposing copyleft with copyfree.
-	Copyleft ensures all publicly released copies of a program must have their source code available with the permission to make alterations and compile them into a new program.
-	Copyfree ensures the developer who first modifies the source code has control over the availability of the source code, alterations made to it and distribution of the new program.
+	Copyleft licencing such as GPLv3 ensures all publicly released copies of a program must have their source code available with the permission to make alterations and compile them into a new program.
+	Copyfree licencing such as MIT ensures the developer who first modifies the source code has control over the availability of the source code, alterations made to it and distribution of the new program.
 
 
 
