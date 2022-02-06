@@ -5,7 +5,7 @@
             <Title>Outline</Title>
             <Text>Outline
 E-book formats
-ePub
+EPub
 Mobi
 Legacy formats
 Required and recommended software
@@ -94,12 +94,78 @@ Annotated keyboard diagram
 Explain the 
 Regular expression cheatsheet
 HTML entity table
-Full CSS reference
+HTML tag reference
+Full zstylsheet CSS reference
 ebookbuild code commentary
 Background music suggestions
 SOMA fm
 Spotify
 YouTube - Odysseus</Text>
+        </Document>
+        <Document ID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8">
+            <Title>Introduction to XHTML</Title>
+            <Text>Introduction to XHTML
+
+&quot;XML is a very simple syntax resembling HTML — angle-bracketed tags and ampersand-led literal
+sequences. It is about as simple as a plain-text markup can be and yet express recursively nested
+data structures. XML is just a low-level syntax; it requires a document type definition (such as
+XHTML) and associated application logic to give it semantics.&quot; —Eric S. Raymond, Art of Unix Programming
+
+XHTML (eXtensible HyperText Markup Language) is the recommended language for creating the actual chapters of an e-book, it combines regular HTML (HyperText Markup Language) that is used to create webpages with XML (eXtensible Markup Language). Alternatively, you can use regular HTML though you can’t define custom tags (or can you?) and web browsers are more tolerant of obvious syntax errors when testing.
+So what is XHTML? To start with I have used Eric S. Raymond’s definition of XML as a springboard. All three standards are markup languages this means that the developer has to define what the file’s content will look like using some kind of syntax (if you understand LaTeX or Markdown this should be familiar), which in this case are tags.
+Tags are made using a less-than symbol (&lt;) followed by one word, abbreviation or letter then by a greater-than symbol (&gt;), the text content itself is then written inside the tag and then closed with a closing tag that is identical though with a forward slash (/) after the less-than symbol. Some tags are “self-closing” this means that they are defined in just one tag with a less-than symbol, tag name, then the forward slash and the greater-than symbol. Each tag represents a specific type of content such as headings, paragraphs, images, tables, or numbered and bullet point lists. 
+I would recommend taking a look at one of the .xhtml files of this e-book while I explain the concepts. 
+There are 3 parts to an XHTML file:
+
+Declaration - defines to the web browser or e-reader what the file is, what standard of HTML/XML and what character encoding it uses.
+Head - defines to the web browser or e-reader, the files and metadata the XHTML file uses.
+Body - defines the actual content that the user will see in their web browser or e-reader.
+
+Declaration
+We start the file with a declaration to let the e-reader or web browser know this is an XHTML file. I usually copy-paste this and leave it alone.
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot; ?&gt;&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+
+I always use UTF-8 as it has a large language support including accented Latin characters, Greek and Cyrillic (the writing system used in Russia, Ukraine and several Baltic states).
+
+Head
+The head defines information about the XHTML file that the user doesn’t see. Similarly to the declaration, I barely change this except for the optional title tag so I can see the chaper’s name in my web browser during testing.
+
+&lt;head&gt;
+	&lt;meta content=&quot;http://www.w3.org/1999/xhtml; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;/&gt;
+	&lt;link href=&quot;styles/zstylesheet.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+	&lt;title&gt;Acknowledgements&lt;/title&gt;
+&lt;/head&gt;
+
+The head tag is where external CSS (Cascading StyleSheets) files (that use the .css file extensions) are declared.
+
+Body
+The body is all the content that the user will see (with the exception of comments) and is the majority of the XHTML file.
+
+Heading tags
+There are 6 tags for defining headings &lt;h1&gt;&lt;/h1&gt;, &lt;h2&gt;&lt;/h2&gt;, &lt;h3&gt;&lt;/h3&gt;, &lt;h4&gt;&lt;/h4&gt;, &lt;h5&gt;&lt;/h5&gt; and &lt;h6&gt;&lt;/h6&gt;. I don’t think I’ve used all of them in just one project though because there are classes defined for their specific use…
+
+Paragraph tags
+
+Image tag
+
+Bullet point list tags
+
+Numbered list tags
+
+Table tags
+Tables are a bit more difficult to define in XHTML, so I recommend arranging them neatly to avoid getting confused. There are 4 tags for defining tables &lt;table&gt;&lt;/table&gt;, &lt;tr&gt;&lt;/tr&gt;, &lt;th&gt;&lt;/th&gt; and &lt;td&gt;&lt;/td&gt;.
+
+&lt;table&gt;&lt;/table&gt; behaves like a division tag and are the parent tags for the whole table. All table content will go inside these.
+
+&lt;tr&gt;&lt;/tr&gt; are the table row tags and define each row.
+
+&lt;th&gt;&lt;/th&gt; are the optional table heading tags.
+
+&lt;td&gt;&lt;/td&gt; are the table data tags which defines each cell.
+
+
+</Text>
         </Document>
         <Document ID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F">
             <Title>Google Keep notes</Title>
@@ -144,18 +210,45 @@ XHTML) and associated application logic to give it semantics.&quot;
 
 
 
-Future: ONIX, ePub 3, Bookscanning and OCR, 4 levels of indentation, GUI frontend for ebookbuild, ebookbuild rewrite, typesetting using InDesign or Affinity Publisher, audiobook production, distribution via Amazon Kindle, Google Play and itch.io, DRM
+Future: ONIX, ePub 3, Bookscanning and OCR, 4 levels of indentation, GUI frontend for ebookbuild, ebookbuild rewrite, typesetting using InDesign or Affinity Publisher, audiobook production, distribution via Amazon Kindle, Google Play and itch.io, DRM, anti-piracy manifesto
 
 Related formats such as cbz?</Text>
+        </Document>
+        <Document ID="7433E120-006A-4AE3-BCA4-90A934374CA0">
+            <Title>Introduction to Typography</Title>
+            <Text>Introduction to Typography
+
+Typography has been an important part of book design since its inception and remains significant when typesetting. 
+In the case of e-books usually the default fonts are selected by the e-reader’s developer.
+
+Serif
+Serif fonts have a stroke at the end of each letter and number, as well as other characters. 
+
+2015 was a big year in e-book typography because Google and Amazon commissioned bespoke fonts designed for long reading sessions on a screen.
+
+Amazon has its own bespoke Bookerly font since 2015 primarily for its Kindle e-readers and reading apps.
+
+Google has its own bespoke Literata font family…
+
+Sans-serif
+Monospaced (or fixed width)
+Monospaced (also called fixed-width) fonts have each letter, number and symbol as the same width to assist with readability. They are usually used for technical purposes…
+
+Historically, Courier and its successor Courier New which were modelled from typewriters were prominent examples of monospaced typography. 
+Nowadays there are plenty of monospaced fonts to choose from that are either preinstalled on the operating system or can be downloaded for free.
+
+JetBrains Mono is my current choice of monospaced font.</Text>
         </Document>
         <Document ID="93C40D99-4B3D-4900-9243-676053C92F0D">
             <Title>Future content</Title>
             <Text>Future Content
+These are chapters I don’t have much content for at the moment. Stay tuned!
 
 Bookscanning and OCR
 
 In my last job my boss used an inverted “V” cradle made from glass and metal, then would take a photograph of each page using a DSLR camera. The photos would be imported into ABBYY FineReader for the text to be extracted using optical character recognition (OCR), before exporting to a Microsoft Word document. He considered this a significant improvement over the previous method of destructively removing each page individually from the binding and then scanning them with a flatbed scanner.
 I am still developing my bookscanning process. I have been looking into free software alternatives to ABBYY FineReader such as Google’s Tesseract which is used in OpenOCR. I often make use of Google Photos’ own OCR engine and find it highly accurate. In the long-term I plan on purchasing and testing the CZUR book scanner.
+https://www.diybookscanner.org/en/index.html has instructions on a homemade bookscanner. The website looks to have been neglected for a significant period of time and has missing images. Check https://archive.is/
 
 Typesetting
 
@@ -182,7 +275,20 @@ Amazon DRM - AZW, KFX
 ONIX for Books
 
 ONIX for Books is an XML-based standard for sharing book data between publishers, distributors and retailers using predefined fields and categories (defined as “code lists”).
-I plan on creating my own libre ONIX editor and documentation for the perfect ONIX document. However, for the time being I recommend looking into ONIXEdit or creating your own ONIX record using spreadsheet software such as Microsoft Excel.</Text>
+I plan on creating my own libre ONIX editor and documentation for the perfect ONIX document. However, for the time being I recommend looking into ONIXEdit or creating your own ONIX record using spreadsheet software such as Microsoft Excel.
+https://www.editeur.org/14/Code-Lists/
+
+Source code obfuscation
+“In software development, obfuscation is the deliberate act of creating source or machine code that is difficult for humans to understand.” -Obfuscation (software) article on Wikipedia
+
+Source code obfuscation in software development makes it trickier to reverse-engineer a compile executable to find the original source code. Usually these are alterations made before or during compile time which don’t alter functionality.
+While ebookbuild is libre software, I am interested in ways of achieving this for users who want an output that hides the exact XHTML and CSS code from a tinkering end-user.
+After giving this process some thought I can only think of using Calibre ( ironically given ebookbuild’s goal to avoid autogenerated “meatground” code inside its ePub output). Calibre in my experience has a complex structure to its XHTML and CSS structure.
+
+Fingerprinting
+
+Fingerprinting is a method for identifying unique builds of an e-book. This could be used for review copies or ARC (advanced reader copies) to identify who leaked an e-book prior to release.
+So far my only approach is to rely on checksums as they are unique to each build. Another way is to add comments referring to the reviewer in the XHTML or CSS code.</Text>
         </Document>
         <Document ID="9C43D21D-C973-4DD8-857E-08EB9C396879">
             <Title>Preface</Title>

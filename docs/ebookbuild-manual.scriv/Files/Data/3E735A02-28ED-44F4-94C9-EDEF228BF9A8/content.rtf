@@ -1,0 +1,70 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0
+{\fonttbl{\f0\fmodern\fcharset0\fprq2 Sitka Text;}{\f1\fmodern\fcharset0\fprq2 SegoeUI-Bold;}{\f2\fmodern\fcharset0\fprq2 SegoeUI;}{\f3\fmodern\fcharset0\fprq2 JetBrainsMono-Regular;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red128\green128\blue128;}
+{\*\listtable
+{\list\listtemplateid1\listhybrid
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\f2\fs24\b0\i0\fi-667\li960\lin960}{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\f0\fs24\cf0
+\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f1\fs36\b1\i0 Introduction to XHTML}
+\par\pard\plain \ltrch\loch \f2\fs22\b0\i0
+\par\plain {\f2\fs22\b0\i0 "XML is a very simple syntax resembling HTML \hich\f2 \emdash \loch\f2  angle-bracketed tags and ampersand-led literal}
+\par\plain {\f2\fs22\b0\i0 sequences. It is about as simple as a plain-text markup can be and yet express recursively nested}
+\par\plain {\f2\fs22\b0\i0 data structures. XML is just a low-level syntax; it requires a document type definition (such as}
+\par\plain {\f2\fs22\b0\i0 XHTML) and associated application logic to give it semantics." \hich\f2 \emdash \loch\f2 Eric S. Raymond, Art of Unix Programming}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f1\fs28\b1\i0
+\par\plain {\f2\fs24\b0\i0 XHTML (eXtensible HyperText Markup Language) is the recommended language for creating the actual chapters of an e-book, it combines regular HTML (HyperText Markup Language) that is used to create webpages with XML (eXtensible Markup Language). Alternatively, you can use regular HTML though you can\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t define custom tags (or can you?) and web browsers are more tolerant of obvious syntax errors when testing.}
+\par\plain {\f2\fs24\b0\i0 So what is XHTML? To start with I have used Eric S. Raymond\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s definition of XML as a springboard. All three standards are markup languages this means that the developer has to define what the file\u8217\'92s content will look like using some kind of syntax (if you understand LaTeX or Markdown this should be familiar), which in this case are tags.}
+\par\plain {\f2\fs24\b0\i0 Tags are made using a less-than symbol (<) followed by one word, abbreviation or letter then by a greater-than symbol (>), the text content itself is then written inside the tag and then closed with a closing tag that is identical though with a forward slash (/) after the less-than symbol. Some tags are \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93self-closing\u8221\'94 this means that they are defined in just one tag with a less-than symbol, tag name, then the forward slash and the greater-than symbol. Each tag represents a specific type of content such as headings, paragraphs, images, tables, or numbered and bullet point lists. }
+\par\plain {\f2\fs24\b0\i0 I would recommend taking a look at one of the .xhtml files of this e-book while I explain the concepts. }
+\par\plain {\f2\fs24\b0\i0 There are 3 parts to an XHTML file:}
+\par\plain \f2\fs24\b0\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls1\ilvl0{\listtext	\f2\fs24\b0\i0 1.	}{\f1\fs24\b1\i0 Declaration}{\f2\fs24\b0\i0  - defines to the web browser or e-reader what the file is, what standard of HTML/XML and what character encoding it uses.}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 2.	}{\f1\fs24\b1\i0 Head}{\f2\fs24\b0\i0  - defines to the web browser or e-reader, the files and metadata the XHTML file uses.}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 3.	}{\f1\fs24\b1\i0 Body}{\f2\fs24\b0\i0  - defines the actual content that the user will see in their web browser or e-reader.}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Declaration}
+\par\plain {\f2\fs24\b0\i0 We start the file with a declaration to let the e-reader or web browser know this is an XHTML file. I usually copy-paste this and leave it alone.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f3\fs22\b0\i0 <?xml version="1.0" encoding="UTF-8" standalone="no" ?><html xmlns="http://www.w3.org/1999/xhtml">}
+\par\plain \f3\fs22\b0\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch {\f2\fs24\b0\i0 I always use UTF-8 as it has a large language support including accented Latin characters, Greek and Cyrillic (the writing system used in Russia, Ukraine and several Baltic states).}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Head}
+\par\plain {\f2\fs24\b0\i0 The head defines information about the XHTML file that the user doesn\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t see. Similarly to the declaration, I barely change this except for the optional title tag so I can see the chaper\u8217\'92s name in my web browser during testing.}
+\par\plain \f2\fs24\b0\i0
+\par\pard\plain \ltrch\loch {\f3\fs22\b0 <head>}
+\par\plain {\f3\fs22\b0 \tab <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/>}
+\par\plain {\f3\fs22\b0 \tab <link href="styles/zstylesheet.css" rel="stylesheet" type="text/css"/>}
+\par\plain {\f3\fs22\b0 \tab <title>Acknowledgements</title>}
+\par\plain {\f3\fs22\b0 </head>}
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \f3\fs22\b0\i0
+\par\plain {\f2\fs24\b0\i0 The head tag is where external CSS (Cascading StyleSheets) files (that use the .css file extensions) are declared.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Body}
+\par\plain {\f2\fs24\b0\i0 The body is all the content that the user will see (with the exception of comments) and is the majority of the XHTML file.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Heading tags}
+\par\plain {\f2\fs24\b0\i0 There are 6 tags for defining headings <h1></h1>, <h2></h2>, <h3></h3>, <h4></h4>, <h5></h5> and <h6></h6>. I don\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t think I\u8217\'92ve used all of them in just one project though because there are classes defined for their specific use\u8230\'85}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Paragraph tags}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Image tag}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Bullet point list tags}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Numbered list tags}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Table tags}
+\par\plain {\f2\fs24\b0\i0 Tables are a bit more difficult to define in XHTML, so I recommend arranging them neatly to avoid getting confused. There are 4 tags for defining tables <table></table>, <tr></tr>, <th></th> and <td></td>.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 <table></table> behaves like a division tag and are the parent tags for the whole table. All table content will go inside these.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 <tr></tr> are the table row tags and define each row.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 <th></th> are the optional table heading tags.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 <td></td> are the table data tags which defines each cell.}
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0}

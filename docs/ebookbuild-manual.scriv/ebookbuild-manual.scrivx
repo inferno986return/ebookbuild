@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-02 17:51:00 +0000" ModID="24CBA2B2-7A13-4A2E-BEE9-8ABE56AB306F">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-06 01:31:13 +0000" ModID="2E557E3E-EBD1-43EB-A857-D0F385BC9EE1">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
             <Title>Draft</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
-            <Children>
-                <BinderItem UUID="AA04C080-54B1-4AA8-993B-21F0F0F09032" Type="Text" Created="2022-01-27 13:35:50 +0000" Modified="2022-02-02 17:37:15 +0000">
-                    <Title>Preface</Title>
-                    <MetaData>
-                        <IncludeInCompile>Yes</IncludeInCompile>
-                    </MetaData>
-                    <TextSettings>
-                        <TextSelection>3967,0</TextSelection>
-                    </TextSettings>
-                </BinderItem>
-            </Children>
+        </BinderItem>
+        <BinderItem UUID="AA04C080-54B1-4AA8-993B-21F0F0F09032" Type="Text" Created="2022-01-27 13:35:50 +0000" Modified="2022-02-02 17:37:15 +0000">
+            <Title>Preface</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>3967,0</TextSelection>
+            </TextSettings>
         </BinderItem>
         <BinderItem UUID="DA8FD144-AEE3-48E4-A3F9-3394F12D2A60" Type="Text" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-27 12:23:49 +0000">
             <Title>HTML entity tables</Title>
@@ -25,6 +23,24 @@
             </MetaData>
             <TextSettings>
                 <TextSelection>85,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="7433E120-006A-4AE3-BCA4-90A934374CA0" Type="Text" Created="2022-02-06 00:23:12 +0000" Modified="2022-02-06 00:44:46 +0000">
+            <Title>Introduction to Typography</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>1188,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8" Type="Text" Created="2022-02-06 00:45:13 +0000" Modified="2022-02-06 01:31:12 +0000">
+            <Title>Introduction to XHTML</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>4104,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="C8BC8F14-C5A8-4C2C-9645-062BF504A309" Type="ResearchFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
@@ -39,13 +55,13 @@
                 </CorkboardSettings>
             </CorkboardAndOutliner>
             <Children>
-                <BinderItem UUID="1B67AA19-6CBA-493E-AEBF-1E45B25BE441" Type="Text" Created="2022-01-24 14:45:18 +0000" Modified="2022-01-25 13:54:20 +0000">
+                <BinderItem UUID="1B67AA19-6CBA-493E-AEBF-1E45B25BE441" Type="Text" Created="2022-01-24 14:45:18 +0000" Modified="2022-02-06 01:16:09 +0000">
                     <Title>Outline</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>8,0</TextSelection>
+                        <TextSelection>1936,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="9C43D21D-C973-4DD8-857E-08EB9C396879" Type="Text" Created="2022-01-24 14:50:21 +0000" Modified="2022-01-27 13:35:32 +0000">
@@ -66,13 +82,13 @@
                         <TextSelection>0,18</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="93C40D99-4B3D-4900-9243-676053C92F0D" Type="Text" Created="2022-01-25 10:51:19 +0000" Modified="2022-02-02 17:50:33 +0000">
+                <BinderItem UUID="93C40D99-4B3D-4900-9243-676053C92F0D" Type="Text" Created="2022-01-25 10:51:19 +0000" Modified="2022-02-06 00:22:20 +0000">
                     <Title>Future content</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>1325,0</TextSelection>
+                        <TextSelection>90,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -83,13 +99,13 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
         </BinderItem>
-        <BinderItem UUID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F" Type="Text" Created="2022-01-25 11:32:37 +0000" Modified="2022-02-02 17:38:32 +0000">
+        <BinderItem UUID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F" Type="Text" Created="2022-01-25 11:32:37 +0000" Modified="2022-02-06 00:17:19 +0000">
             <Title>Google Keep notes</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>569,0</TextSelection>
+                <TextSelection>1467,393</TextSelection>
             </TextSettings>
         </BinderItem>
     </Binder>
@@ -149,13 +165,13 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="463" Characters="3047" Date="2022-02-02 17:51:00 +0000"/>
+        <PreviousSession Words="425" Characters="2572" Date="2022-02-06 01:31:13 +0000"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-02-02 00:00:00 +0000">
-        <DraftWordCount>21</DraftWordCount>
-        <DraftCharCount>133</DraftCharCount>
-        <OtherWordCount>435</OtherWordCount>
-        <OtherCharCount>2863</OtherCharCount>
+    <RecentWritingHistory Date="2022-02-06 00:00:00 +0000">
+        <DraftWordCount>0</DraftWordCount>
+        <DraftCharCount>0</DraftCharCount>
+        <OtherWordCount>1121</OtherWordCount>
+        <OtherCharCount>6915</OtherCharCount>
     </RecentWritingHistory>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="iso-a4" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>
