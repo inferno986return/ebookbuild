@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-06 01:31:13 +0000" ModID="2E557E3E-EBD1-43EB-A857-D0F385BC9EE1">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-08 11:48:46 +0000" ModID="897B23D6-6A86-4B27-94C9-770057059E24">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
             <Title>Draft</Title>
@@ -82,13 +82,13 @@
                         <TextSelection>0,18</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="93C40D99-4B3D-4900-9243-676053C92F0D" Type="Text" Created="2022-01-25 10:51:19 +0000" Modified="2022-02-06 00:22:20 +0000">
+                <BinderItem UUID="93C40D99-4B3D-4900-9243-676053C92F0D" Type="Text" Created="2022-01-25 10:51:19 +0000" Modified="2022-02-08 11:48:45 +0000">
                     <Title>Future content</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>90,0</TextSelection>
+                        <TextSelection>1675,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
             </Children>
@@ -165,13 +165,13 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="425" Characters="2572" Date="2022-02-06 01:31:13 +0000"/>
+        <PreviousSession Words="228" Characters="1523" Date="2022-02-08 11:48:46 +0000"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-02-06 00:00:00 +0000">
+    <RecentWritingHistory Date="2022-02-08 00:00:00 +0000">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
-        <OtherWordCount>1121</OtherWordCount>
-        <OtherCharCount>6915</OtherCharCount>
+        <OtherWordCount>227</OtherWordCount>
+        <OtherCharCount>1521</OtherCharCount>
     </RecentWritingHistory>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="iso-a4" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>

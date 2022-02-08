@@ -267,10 +267,21 @@ itch.io
 
 Digital Rights Management (DRM)
 
-The ePub standard is intentionally neutral on the application of digital rights management (DRM) which controls how customers interact with their e-book purchase.
+The ePub standard is intentionally neutral on the use of digital rights management (DRM) to control how customers interact with their e-book purchase. I am personally hostile to DRM because I find it inconvenient for the customer and most e-book DRM standards are bypassable anyway with freely-available public tools.
+In my own research the DRM scheme I found the most difficult to bypass was VitalSource’s e-book file .vbk. Previously it was possible to see the XHTML source with the Chrome inspector, though that was patched recently after.
 
 Adobe DRM (ADEPT)
+
+Adobe DRM is used by Google Play Books and several other distributors, allowing offline reading on Adobe Digital Editions and Bluefire. It requires the user to activate Adobe Digital Editions with their Adobe ID (or create one), then authorise their computer. Once authorised download the .acsm file and then import it to download the actual ePub.
+
+Adobe allow a total of 6 authorisations and it seems that resetting this amount requires contacting their customer support: https://community.adobe.com/t5/digital-editions-discussions/i-need-to-have-my-authorizations-reset-for-digital-editions-but-cannot-contact-anyone-at-adobe/td-p/5511638
+
+From personal experience I have found Adobe DRM to be difficult to use requiring first contacting Google’s customer support and then on online forums for activation.
+Keep in mind that when distributing using Adobe Digital Editions the XHTML and CSS code is accessible by extracting the ePub using an archiving program like 7-Zip.
+
 Amazon DRM - AZW, KFX
+
+Amazon use their own DRM for their Kindle e-books. The current standard is (KFX). Amazon provide reading apps on the web, smartphone/tablet and on Windows and macOS…
 
 ONIX for Books
 
