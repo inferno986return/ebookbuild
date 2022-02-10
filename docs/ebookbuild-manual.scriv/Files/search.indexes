@@ -108,6 +108,18 @@ YouTube - Odysseus</Text>
 
 The Chicago Manual of Style is a popular standard and reference book for formal writing that used worldwide. Taking inspiration from this I want to define best practices that aren’t necessarily confined to just e-book development.
 
+Text formatting:
+
+Italic:
+Italic is used as alternative to bold for emphasis to make a particular word or phrase more prominent to a reader. It is also common to italicise the names of works such as books, films, music and video games.
+
+Superscript:
+Superscripting makes the font smaller and places it above. It is commonly used for numerical ordinals such as 1st, 2nd, 3rd and 4th.
+
+Subscript:
+Subscripting makes the font smaller and places it below the baseline. It is commonly used for chemical formulae such as CO2.
+
+
 Symbols:
 
 Hyphens, en dashes and em dashes
@@ -130,7 +142,7 @@ Double speech marks (“, ”, &quot;)
 Double speech marks (or quote marks) are used for speech in most European languages and can be used for defining attributes in XHTML. There are three double quote marks, a left quote (“), right quote (”) and a straight quote (&quot;). I prefer to use the curled left and right quote marks as they look more presentable. Some books such as How I Live Now by Meg Rossoff forgo speech marks entirely.
 There are languages such as German, Hungarian and Polish that use different quote marks with the left pair sitting on the baseline.
 
-Single speech marks ()
+Single speech marks (‘, ‘, ‘)
 Double speech marks (or quote marks) are also used for speech in most European languages and can also be used for defining attributes in XHTML. There are three double quote marks, a left quote (‘), right quote (‘) and a straight quote (‘). 
 
 Guillemets («, »)
@@ -139,7 +151,7 @@ Guillemets are used for speech by some languages such as French, Italian and Gre
 Single guillemets (‹, ›)
  Single guillemets are reportedly used for nested quotes (quotes within quotes) though I haven’t used them.
 
-Pilcrow ()
+Pilcrow (¶)
 The pilcrow (¶) is a mostly obsolete symbol used for defining the start of paragraphs. Nowadays it is used for stylistic purposes. It can also be used as a fourth symbol in For example, in the 1931 book An Essay on Typography by Eric Gill starts each paragraph with a pilcrow:
 
 “¶ The theme of this book is Typography, and Typography as it is affected by the conditions of the year 1931. The conflict between industrialism &amp; the ancient methods of handicraftsmen which resulted in the muddle of the 19th century is now coming to its term.”
@@ -156,12 +168,16 @@ Double dagger (‡)
 The double dagger (‡) is commonly used for the third reference in a chapter that uses citational referencing.
 
 Triple dagger
-There is a triple dagger symbol though it has not been approved by Unicode and few fonts support it. If it does get ratified by the Unicode Consortium it could be used as a potential fourth symbol in citational referencing.
+There is a triple dagger symbol, though it has not been approved by Unicode and few fonts support it. If it does get ratified by the Unicode Consortium it could be used as a potential fourth symbol in citational referencing.
 
 At symbol (@)
 The at symbol (@) is mostly used for separating the mailbox name from the domain name in e-mail addresses. Some brands use…
 
+Hash symbol (#)
+The hash symbol (#) (also called the pound sign) is commonly used for hashtags.
 
+Ampersand (&amp;)
+The ampersand (&amp;) is commonly used to…
 
 
 
