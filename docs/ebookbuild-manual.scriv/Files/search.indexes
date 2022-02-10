@@ -140,18 +140,26 @@ Single guillemets (‹, ›)
  Single guillemets are reportedly used for nested quotes (quotes within quotes) though I haven’t used them.
 
 Pilcrow ()
-The pilcrow (¶) is a mostly obsolete symbol used for defining the start of paragraphs. Nowadays it is used for stylistic purposes. For example, in the 1931 book An Essay on Typography by Eric Gill starts each paragraph with a pilcrow:
+The pilcrow (¶) is a mostly obsolete symbol used for defining the start of paragraphs. Nowadays it is used for stylistic purposes. It can also be used as a fourth symbol in For example, in the 1931 book An Essay on Typography by Eric Gill starts each paragraph with a pilcrow:
 
 “¶ The theme of this book is Typography, and Typography as it is affected by the conditions of the year 1931. The conflict between industrialism &amp; the ancient methods of handicraftsmen which resulted in the muddle of the 19th century is now coming to its term.”
 
 Some typefaces such as Doves Type and Lyon Display have distinctive pilcrow symbols. //diagram
 
 Asterisk (*)
-The asterisk (*) means “little star” in Greek and is commonly used as the first reference in a chapter that uses citational referencing.
+The asterisk (*) means “little star” in Greek and is commonly used as the first reference in a chapter that uses citational referencing. It is also used a lot for print advertising such as billboards, posters and magazines.
 
-Dagger ()
+Dagger (†)
+The dagger (†) is commonly used for marking deceased people or extinct species to the right of their name. It is also used as the second reference in a chapter that uses citational referencing.
 
-Double dagger ()
+Double dagger (‡)
+The double dagger (‡) is commonly used for the third reference in a chapter that uses citational referencing.
+
+Triple dagger
+There is a triple dagger symbol though it has not been approved by Unicode and few fonts support it. If it does get ratified by the Unicode Consortium it could be used as a potential fourth symbol in citational referencing.
+
+At symbol (@)
+The at symbol (@) is mostly used for separating the mailbox name from the domain name in e-mail addresses. Some brands use…
 
 
 
