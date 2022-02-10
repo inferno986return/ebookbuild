@@ -102,6 +102,67 @@ SOMA fm
 Spotify
 YouTube - Odysseus</Text>
         </Document>
+        <Document ID="25AA13C0-6D21-4383-A6B6-50B28003E7F9">
+            <Title>Manual of Style</Title>
+            <Text>Manual of Style
+
+The Chicago Manual of Style is a popular standard and reference book for formal writing that used worldwide. Taking inspiration from this I want to define best practices that aren’t necessarily confined to just e-book development.
+
+Symbols:
+
+Hyphens, en dashes and em dashes
+When I started my first job I used a hyphen every time I wanted a dash. There are actually 3 types of dash and they each have a specific purpose:
+
+Hyphen (-)
+A hyphen is used to join (or concatenate) words together. For example: 
+	e-mail, e-book
+
+En dash (–)
+An en dash gets its name because is the same width as a lowercase “n”. En dashes are used to join statements or to provide a numerical range. Using the English civil war Wikipedia page as an example, notice how the dates are connected with an en dash:
+
+“The English Civil War (1642–1651) was a series of civil wars and political machinations between Parliamentarians (&quot;Roundheads&quot;) and Royalists (&quot;Cavaliers&quot;),”
+
+Em dash (—)
+An em dash is the same width as a lowercase “m”. Em dashes are used for quote attribution, such as:
+“I am not young enough to know everything.” —J.M. Barrie
+
+Double speech marks (“, ”, &quot;)
+Double speech marks (or quote marks) are used for speech in most European languages and can be used for defining attributes in XHTML. There are three double quote marks, a left quote (“), right quote (”) and a straight quote (&quot;). I prefer to use the curled left and right quote marks as they look more presentable. Some books such as How I Live Now by Meg Rossoff forgo speech marks entirely.
+There are languages such as German, Hungarian and Polish that use different quote marks with the left pair sitting on the baseline.
+
+Single speech marks ()
+Double speech marks (or quote marks) are also used for speech in most European languages and can also be used for defining attributes in XHTML. There are three double quote marks, a left quote (‘), right quote (‘) and a straight quote (‘). 
+
+Guillemets («, »)
+Guillemets are used for speech by some languages such as French, Italian and Greek. They are functionally identical to double speech marks.
+
+Single guillemets (‹, ›)
+ Single guillemets are reportedly used for nested quotes (quotes within quotes) though I haven’t used them.
+
+Pilcrow ()
+The pilcrow (¶) is a mostly obsolete symbol used for defining the start of paragraphs. Nowadays it is used for stylistic purposes. For example, in the 1931 book An Essay on Typography by Eric Gill starts each paragraph with a pilcrow:
+
+“¶ The theme of this book is Typography, and Typography as it is affected by the conditions of the year 1931. The conflict between industrialism &amp; the ancient methods of handicraftsmen which resulted in the muddle of the 19th century is now coming to its term.”
+
+Some typefaces such as Doves Type and Lyon Display have distinctive pilcrow symbols. //diagram
+
+Asterisk (*)
+The asterisk (*) means “little star” in Greek and is commonly used as the first reference in a chapter that uses citational referencing.
+
+Dagger ()
+
+Double dagger ()
+
+
+
+
+
+
+References:
+https://www.grammarly.com/blog/en-dash/
+https://www.grammarly.com/blog/why-you-should-love-the-em-dash/
+https://en.wikipedia.org/wiki/Quotation_mark</Text>
+        </Document>
         <Document ID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8">
             <Title>Introduction to XHTML</Title>
             <Text>Introduction to XHTML
@@ -218,13 +279,20 @@ Related formats such as cbz?</Text>
             <Title>Introduction to Typography</Title>
             <Text>Introduction to Typography
 
-Typography has been an important part of book design since its inception and remains significant when typesetting. 
+Let’s start with some definitions:
+
+Fonts are representation of a typeface for a specific use such as on a computer.
+Typography refers to the study, use and creation of typefaces.
+Typefaces are lettering designs
+
+Typography has been an important part of book design since its inception and remains significant when typesetting books and documents for either print or screen. 
 In the case of e-books usually the default fonts are selected by the e-reader’s developer.
+Classifications:
 
 Serif
 Serif fonts have a stroke at the end of each letter and number, as well as other characters. 
 
-2015 was a big year in e-book typography because Google and Amazon commissioned bespoke fonts designed for long reading sessions on a screen.
+2015 was a big year in the world of e-book typography because Google and Amazon commissioned bespoke fonts designed for long reading sessions on a screen.
 
 Amazon has its own bespoke Bookerly font since 2015 primarily for its Kindle e-readers and reading apps.
 
@@ -232,12 +300,26 @@ Google has its own bespoke Literata font family…
 
 Sans-serif
 Monospaced (or fixed width)
-Monospaced (also called fixed-width) fonts have each letter, number and symbol as the same width to assist with readability. They are usually used for technical purposes…
+Monospaced (also called fixed-width) fonts have each letter, number and symbol as the same width to assist with readability. They are usually used for technical purposes such as for programming or scriptwriting.
+The two best known monospaced fonts are Courier and its sucessor Courier New.
+Historically, Courier was designed by IBM for typewriters but was development into a computer font in the 1990s. Courier wasn’t trademarked, so there are many derivatives. 
+Courier New was a redesign by legendary typographer Adrian Frutiger for Monotype with improved punctuation and to include support for more languages. It has been pre-installed as a system font since Microsoft Windows 3.1 and is a popular choice for programmers.
+Nowadays, there are plenty of monospaced fonts to choose from that are either pre-installed on the operating system or can be downloaded for free.
 
-Historically, Courier and its successor Courier New which were modelled from typewriters were prominent examples of monospaced typography. 
-Nowadays there are plenty of monospaced fonts to choose from that are either preinstalled on the operating system or can be downloaded for free.
+JetBrains Mono is my current choice of monospaced font as it has clear lettering and is readable. When choosing a monospaced font for e-book development I would recommend checking the quote marks as they are often not clear at smaller sizes. //example
 
-JetBrains Mono is my current choice of monospaced font.</Text>
+A comparison of Roboto Mono and JetBrains Mono.
+
+Script
+
+Display
+Display fonts are decorative and designed for use at large sizes.
+
+
+References:
+https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New
+https://www.fonts.com/content/learning/fontology/level-1/type-anatomy
+https://www.toptal.com/designers/typography/typeface-classification</Text>
         </Document>
         <Document ID="93C40D99-4B3D-4900-9243-676053C92F0D">
             <Title>Future content</Title>
