@@ -106,18 +106,28 @@ YouTube - Odysseus</Text>
             <Title>Manual of Style</Title>
             <Text>Manual of Style
 
-The Chicago Manual of Style is a popular standard and reference book for formal writing that used worldwide. Taking inspiration from this I want to define best practices that aren’t necessarily confined to just e-book development.
+The Chicago Manual of Style is a popular standard and reference book for formal writing that used worldwide. Taking inspiration from this I want to define best practices for writing that aren’t necessarily confined to just e-book development.
+
+Paragraph alignment:
 
 Text formatting:
 
 Italic:
-Italic is used as alternative to bold for emphasis to make a particular word or phrase more prominent to a reader. It is also common to italicise the names of works such as books, films, music and video games.
+Italic is used as alternative to bold for emphasis to make a particular word or phrase more prominent to a reader. It is also common to italicise the names of works such as books, films, music and video games. For example I italicised the Chicago Manual of Style in this chapter’s introductory paragraph.
 
 Superscript:
-Superscripting makes the font smaller and places it above. It is commonly used for numerical ordinals such as 1st, 2nd, 3rd and 4th.
+Superscripting makes the font smaller and places it above the cap height. It is commonly used for numerical ordinals such as 1st, 2nd, 3rd and 4th.
 
 Subscript:
-Subscripting makes the font smaller and places it below the baseline. It is commonly used for chemical formulae such as CO2.
+Subscripting makes the font smaller and places it below the baseline. It is commonly used for chemical formulae such as carbon dioxide (CO2) or sulphuric acid (H2SO4).
+
+Small caps:
+Small caps (Small Caps) are capital letters that are the same height as the lowercase letters (i.e. the font’s x-height).
+They are commonly used stylistically for the names of people as a form of emphasis. For example, in some Christian Bible translations the word “Lord” is written in small caps such as in this Bible passage:
+
+“12 Now the Lord had said unto Abram, Get thee out of thy country, and from thy kindred, and from thy father's house, unto a land that I will shew thee:” —Genesis 12:1, King James Version (KJV)
+
+Unfortunately, some e-book reading software such as Adobe Digital Editions do not support small caps and ignores them. I don’t recommend relying on small caps compatibility for digital documents.
 
 
 Symbols:
@@ -152,7 +162,8 @@ Single guillemets (‹, ›)
  Single guillemets are reportedly used for nested quotes (quotes within quotes) though I haven’t used them.
 
 Pilcrow (¶)
-The pilcrow (¶) is a mostly obsolete symbol used for defining the start of paragraphs. Nowadays it is used for stylistic purposes. It can also be used as a fourth symbol in For example, in the 1931 book An Essay on Typography by Eric Gill starts each paragraph with a pilcrow:
+The pilcrow (¶) is a mostly obsolete symbol used for defining the start of paragraphs. Pilcrows can be enabled in word processors such as Microsoft Word to assist with document layout.
+A pilcrow is commonly used for stylistic purposes. For example, in the 1931 book An Essay on Typography by Eric Gill starts each paragraph with a pilcrow:
 
 “¶ The theme of this book is Typography, and Typography as it is affected by the conditions of the year 1931. The conflict between industrialism &amp; the ancient methods of handicraftsmen which resulted in the muddle of the 19th century is now coming to its term.”
 
@@ -160,6 +171,7 @@ Some typefaces such as Doves Type and Lyon Display have distinctive pilcrow symb
 
 Asterisk (*)
 The asterisk (*) means “little star” in Greek and is commonly used as the first reference in a chapter that uses citational referencing. It is also used a lot for print advertising such as billboards, posters and magazines.
+Three asterisks in a series is often used to denote a scene break (***) between paragraphs.
 
 Dagger (†)
 The dagger (†) is commonly used for marking deceased people or extinct species to the right of their name. It is also used as the second reference in a chapter that uses citational referencing.
@@ -174,10 +186,14 @@ At symbol (@)
 The at symbol (@) is mostly used for separating the mailbox name from the domain name in e-mail addresses. Some brands use…
 
 Hash symbol (#)
-The hash symbol (#) (also called the pound sign) is commonly used for hashtags.
+The hash symbol (#) (also called the pound sign) is commonly used for hashtags. As well as for deno…
+In e-book development, the hash symbol used for declaring numerical entities in XHTML by following the ampersand (&amp;). For example the entity &amp;#160; is for a non-breaking space. The hash symbol is also used in CSS to declare a hexadecimal colour. For example, the colour red is #FF0000.
 
 Ampersand (&amp;)
 The ampersand (&amp;) is commonly used to…
+
+Ellipsis (…)
+The ellipsis (…) is a series of three dots without a space and usually used to denote a quote or phrase which has more content.
 
 
 
@@ -287,6 +303,8 @@ Software - Text editors, ... One that is recommended and then others.
 Create your own documentation and pull-request back stuff that is useful. Taken a gnuplot approach to development.
 Notetaking via OneNote, though GitHub/GitLab have wiki pages.
 
+I am very grateful to Wikipedia and Wikicommons for information and diagrams. This book is inspired by that by being Creative Commons licenced. Refer to Daniel Pink’s chapter in Drive about Wikipedia vs Encarta.
+
 &quot;XML is a very simple syntax resembling HTML — angle-bracketed tags and ampersand-led literal
 sequences. It is about as simple as a plain-text markup can be and yet express recursively nested
 data structures. XML is just a low-level syntax; it requires a document type definition (such as
@@ -328,7 +346,7 @@ Monospaced (also called fixed-width) fonts have each letter, number and symbol a
 The two best known monospaced fonts are Courier and its sucessor Courier New.
 Historically, Courier was designed by IBM for typewriters but was development into a computer font in the 1990s. Courier wasn’t trademarked, so there are many derivatives. 
 Courier New was a redesign by legendary typographer Adrian Frutiger for Monotype with improved punctuation and to include support for more languages. It has been pre-installed as a system font since Microsoft Windows 3.1 and is a popular choice for programmers.
-Nowadays, there are plenty of monospaced fonts to choose from that are either pre-installed on the operating system or can be downloaded for free.
+Nowadays, there are plenty of monospaced fonts to choose from that are either pre-installed on the operating system or can be downloaded for free. Examples include Consolas, IBM Plex Mono, Ubuntu Mono, 
 
 JetBrains Mono is my current choice of monospaced font as it has clear lettering and is readable. When choosing a monospaced font for e-book development I would recommend checking the quote marks as they are often not clear at smaller sizes. //example
 
