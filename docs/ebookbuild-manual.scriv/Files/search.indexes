@@ -8,10 +8,11 @@
 “Regular expressions describe patterns that may either match or fail to match against strings. The simplest regular-expression tool is grep(1), a filter that passes through to its output every line in its input matching a specified regexp.” —Eric S. Raymond, Art of Unix Programming
 
 Regular expression (or simply regex) is a programming language designed to match text via patterns rather than an exact string. Regular expressions have been incorporated into the find &amp; replace function of many text editors including Visual Studio Code, Atom and Notepad++.
-Regular expression uses symbols called wildcards to represent characters within a text file such as: spaces, tabs, words and end of lines.
-Try not to be put off by the intimidating syntax of regex because learning it is one of the best ways to save time and be efficient in e-book production.
+Most of the syntax uses symbols called wildcards to represent characters within a text file such as: spaces, tabs, words and end of lines.
+Try not to be put off by the intimidating syntax of regex because learning it is one of the best ways to save time and be efficient in e-book production. Back at Oxford eBooks, my colleague and I would frequently pass around a printout of Dave Child’s Regex cheatsheet (archive).
+I recommend trying these examples yourself. You can modify an XHTML file or instead use RegEx Pal to test each regular expression safely away from your production code.
 
-Tabs and spaces
+Tabs
 
 Let’s start by adding two tabs to indent our indented paragraphs that use the &lt;p&gt;&lt;/p&gt; tags.    Type this in the find textbox within the Find function:
 
@@ -23,6 +24,16 @@ Now for the regex to add the two tabs:
 \t\t&lt;p&gt;
 
 The \t wildcard represents a tab, so I’ve added two of them. Doing this indents your XHTML code nicely making it much easier to read. Try and imitate the indentation the text uses in the web browser to make debugging a lot easier.
+You can recreate this example on RegEx Pal by typing this in the Test String box:
+
+&lt;p&gt;
+
+Spaces
+
+
+Further reading
+
+Introducing Regular Expressions (2012), Michael Fitzgerald, O’Reilly Publishing, ISBN: 978-1-449-39268-0
 
 
 
@@ -603,27 +614,29 @@ The basics of Git
 
 I find the easiest metaphor to describe Git is to think of a filing cabinet.
 The repository is the cabinet itself and a branch is each drawer. You pull out a filing cabinet draw to access its contents, make your changes to the drawer, then note them down as a commit and you push the drawer closed when you are finished. A pull request in this analogy would be when one office worker requests access to another filing cabinet to alter a few files inside.
-Here is a glossary of common terms used by Git:
+Here is a glossary of common terms used by Git with its corresponding icon on GitHub:
 
-Repository – A repository is an instance of Git that covers an entire folder and its files. This is where a project will be placed and all the source code files and resources that make it.
+# Repository – A repository is an instance of Git that covers an entire folder and its files. This is where a project will be placed and all the source code files and resources that make it.
 
-Branch – A branch is the part of the repository where commits are added. By default, a Git repository uses the master (or main) branch and for basic Git use by an individual developer, this shouldn’t be a concern. 
+# Branch – A branch is the part of the repository where commits are added. By default, a Git repository uses the master (or main) branch and for basic Git use by an individual developer, this shouldn’t be a concern. 
 For more complicated development, separate branches are used for development and testing. A branch can be merged bringing those changes to another branch or the branch can be split off. The way Git handles branching is the reason Git is referred to as a distributed source code management system.
 
-Commit – A commit is an alteration made to the repository that has been accepted by the developer. This includes any changes made to the files and folders including editing the text files, adding files, deleting files, deleting files, etc. 
-Most clients will show the differences between the files using colour-coding. A commit requires a short title for the Git log and optionally a longer description which can be handy for keeping track of development and writing notes.
+# Commit – A commit is an alteration made to the repository that has been accepted by the developer. This includes any changes made to the files and folders including editing the text files, adding files, deleting files, moving files, etc. 
+Most Git clients will show the differences between the files using colour-coding. A commit requires a short title for the Git commit log and an optional description which can be handy for keeping track of development and writing notes.
 
-Push – A push is the process of sending the commit from the development machine to the Git server.
+# Push – A push is the process of sending the commit from the development machine to the Git server.
 
-Pull – A pull is the process of retrieving previously pushed data to the Git server back onto the development machine. Through a combination of pushing and pulling a developer can work on the same code on multiple machines.
+# Pull – A pull is the process of retrieving previously pushed data to the Git server back onto the development machine. Through a combination of pushing and pulling a developer can work on the same code on multiple machines.
 
-Pull Request – A pull request is specific to Git hosting websites where a user requests permission for their commit to be pulled into the repository they don't have direct access to.
+# Pull Request – A pull request is specific to Git hosting websites where a user requests permission for their commit to be pulled into the repository they don't have direct access to.
+
+# Fork – A fork is a copy of the repository made from the latest commit to another user. Usually forks are made to preserve a repository or make alterations to the original in the form of a pull request.
 
 
 Clone a repository from GitHub using GitHub Desktop
 
-
-As mentioned earlier, setting up GitHub Desktop with GitHub is a snap. First and foremost you need to decide if the repository is already on GitHub or you want to add a repository to GitHub.
+As mentioned earlier, setting up GitHub Desktop with GitHub is a snap. 
+First and foremost you need to decide if the repository is already on GitHub or you want to add a repository to GitHub.
 
 
 If the repository is already on GitHub, you can make a local copy of that repository on your development machine’s hard drive:
