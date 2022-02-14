@@ -146,7 +146,7 @@ YouTube - Odysseus</Text>
             <Title>Manual of Style</Title>
             <Text>Manual of Style
 
-The Chicago Manual of Style is a popular standard and reference book for formal writing that used worldwide. Taking inspiration from this I want to define best practices for writing that aren’t necessarily confined to just e-book development.
+The Chicago Manual of Style is a popular reference book for formal writing that is used worldwide. Taking inspiration from this I want to define best practices for writing that aren’t necessarily confined to just e-book development.
 
 Paragraph alignment:
 
@@ -156,7 +156,7 @@ Italic:
 Italic is used as alternative to bold for emphasis to make a particular word or phrase more prominent to a reader. It is also common to italicise the names of works such as books, films, music and video games. For example I italicised the Chicago Manual of Style in this chapter’s introductory paragraph.
 
 Superscript:
-Superscripting makes the font smaller and places it above the cap height. It is commonly used for numerical ordinals such as 1st, 2nd, 3rd and 4th.
+Superscripting makes the font smaller and places it above the cap height. It is commonly used for numerical ordinals such as 1st, 2nd, 3rd and 4th. As well as citational references, as you’ll have noticed throughout this book.
 
 Subscript:
 Subscripting makes the font smaller and places it below the baseline. It is commonly used for chemical formulae such as carbon dioxide (CO2) or sulphuric acid (H2SO4).
@@ -167,7 +167,7 @@ They are commonly used stylistically for the names of people as a form of emphas
 
 “12 Now the Lord had said unto Abram, Get thee out of thy country, and from thy kindred, and from thy father's house, unto a land that I will shew thee:” —Genesis 12:1, King James Version (KJV)
 
-Unfortunately, some e-book reading software such as Adobe Digital Editions do not support small caps and ignores them. I don’t recommend relying on small caps compatibility for digital documents.
+Unfortunately, some e-book reading software such as Adobe Digital Editions does not support small caps and ignores them. I don’t recommend relying on small caps compatibility for digital documents unless a supported font has been embedded.
 
 
 Symbols:
@@ -235,10 +235,18 @@ The ampersand (&amp;) is commonly used to…
 Ellipsis (…)
 The ellipsis (…) is a series of three dots without a space and usually used to denote a quote or phrase which has more content.
 
+Referencing:
+In formal writing there are two types of referencing, citational and parenthetical.
+
+Citational references uses either a number or symbol at the end of a sentence, or in some cases at the end of a word. Usually this citation number is superscripted, though Wikipedia uses square brackets instead.
+
+Parenthetical referencing uses… It’s best known as Harvard referencing as it was popularised by a Harvard University zoological paper… 
+
 
 
 
 References:
+https://www.biblegateway.com/passage/?search=Genesis+12&amp;version=KJV
 https://www.grammarly.com/blog/en-dash/
 https://www.grammarly.com/blog/why-you-should-love-the-em-dash/
 https://en.wikipedia.org/wiki/Quotation_mark</Text>
@@ -343,6 +351,8 @@ Software - Text editors, ... One that is recommended and then others.
 Create your own documentation and pull-request back stuff that is useful. Taken a gnuplot approach to development.
 Notetaking via OneNote, though GitHub/GitLab have wiki pages.
 
+ASCII table appendix?
+
 I am very grateful to Wikipedia and Wikicommons for information and diagrams. This book is inspired by that by being Creative Commons licenced. Refer to Daniel Pink’s chapter in Drive about Wikipedia vs Encarta.
 
 &quot;XML is a very simple syntax resembling HTML — angle-bracketed tags and ampersand-led literal
@@ -363,13 +373,23 @@ Related formats such as cbz?</Text>
 
 Let’s start with some definitions:
 
-Fonts are representation of a typeface for a specific use such as on a computer.
+Fonts are a representation of a typeface for a specific use such as on a computer.
 Typography refers to the study, use and creation of typefaces.
-Typefaces are lettering designs
+Typefaces are lettering designs which can be upright or slanted, with different stroke thickness
+
+Typography relies on several imaginary lines to ensure each glyph is positioned appropriately.
+
+#
+The different typographical lines and how they relate to the position of the word “Sphinx”
+
+Baseline is the line which all letters sit upon.
+Ascender is the line above the cap height. For example, letters that have a tall stem such as “h”, “b” and “d”.
+Descender is the line below the baseline. For example, letters such as “p” and “q” .
+X-height is the height of the lowercase “x” and most other lowercase letters.
 
 Typography has been an important part of book design since its inception and remains significant when typesetting books and documents for either print or screen. 
 In the case of e-books usually the default fonts are selected by the e-reader’s developer.
-Classifications:
+Typographical classifications:
 
 Serif
 Serif fonts have a stroke at the end of each letter and number, as well as other characters. 
@@ -397,6 +417,12 @@ Script
 Display
 Display fonts are decorative and designed for use at large sizes.
 
+Character encoding standards:
+To make writing systems work on computers there were two standards designed, the American Standard Code for Information Interchange (ASCII) and it’s successor Unicode.
+ASCII was simplistic and only defined the uppercase and lowercase English alphabet, numbers, a select group of symbols and a set of invisible control characters.
+
+#
+These are all of the printable ASCII characters
 
 References:
 https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New
@@ -753,6 +779,9 @@ Symbol entities
 EPub
 Amazon Kindle
 The other formats</Text>
+        </Document>
+        <Document ID="FE5C06C7-3D7B-46D6-BE96-8034DA158070">
+            <Title>List of Illustrations</Title>
         </Document>
     </Documents>
 </SearchIndexes>
