@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
+        <Document ID="0E872B99-EAAB-4308-B919-44645867118A">
+            <Title>Introduction to Regular Expressions</Title>
+            <Text>Introduction to Regular Expression
+
+“Regular expressions describe patterns that may either match or fail to match against strings. The simplest regular-expression tool is grep(1), a filter that passes through to its output every line in its input matching a specified regexp.” —Eric S. Raymond, Art of Unix Programming
+
+Regular expression (or simply regex) is a programming language designed to match text via patterns rather than an exact string. Regular expressions have been incorporated into the find &amp; replace function of many text editors including Visual Studio Code, Atom and Notepad++.
+Regular expression uses symbols called wildcards to represent characters within a text file such as: spaces, tabs, words and end of lines.
+Try not to be put off by the intimidating syntax of regex because learning it is one of the best ways to save time and be efficient in e-book production.
+
+Tabs and spaces
+
+Let’s start by adding two tabs to indent our indented paragraphs that use the &lt;p&gt;&lt;/p&gt; tags.    Type this in the find textbox within the Find function:
+
+^&lt;p&gt;
+
+This is a very simple piece of regex that only uses the caret (^) wildcard which represents the beginning of a line. This regex assumes there is no spacing or tabs prior to the start of the &lt;p&gt; tag.
+Now for the regex to add the two tabs:
+
+\t\t&lt;p&gt;
+
+The \t wildcard represents a tab, so I’ve added two of them. Doing this indents your XHTML code nicely making it much easier to read. Try and imitate the indentation the text uses in the web browser to make debugging a lot easier.
+
+
+
+
+
+</Text>
+        </Document>
         <Document ID="1B67AA19-6CBA-493E-AEBF-1E45B25BE441">
             <Title>Outline</Title>
             <Text>Outline
@@ -207,10 +236,10 @@ https://en.wikipedia.org/wiki/Quotation_mark</Text>
             <Title>Introduction to XHTML</Title>
             <Text>Introduction to XHTML
 
-&quot;XML is a very simple syntax resembling HTML — angle-bracketed tags and ampersand-led literal
+“XML is a very simple syntax resembling HTML — angle-bracketed tags and ampersand-led literal
 sequences. It is about as simple as a plain-text markup can be and yet express recursively nested
 data structures. XML is just a low-level syntax; it requires a document type definition (such as
-XHTML) and associated application logic to give it semantics.&quot; —Eric S. Raymond, Art of Unix Programming
+XHTML) and associated application logic to give it semantics.” —Eric S. Raymond, Art of Unix Programming
 
 XHTML (eXtensible HyperText Markup Language) is the recommended language for creating the actual chapters of an e-book, it combines regular HTML (HyperText Markup Language) that is used to create webpages with XML (eXtensible Markup Language). Alternatively, you can use regular HTML though you can’t define custom tags (or can you?) and web browsers are more tolerant of obvious syntax errors when testing.
 So what is XHTML? To start with I have used Eric S. Raymond’s definition of XML as a springboard. All three standards are markup languages this means that the developer has to define what the file’s content will look like using some kind of syntax (if you understand LaTeX or Markdown this should be familiar), which in this case are tags.
@@ -515,15 +544,17 @@ You may have paid money to get copies of a free program, or you may have obtaine
 Before Git
 
 Back at Oxford eBooks we simply mounted shared folders from a company network-attached storage (NAS) server onto our work computers using the Server Message Block (SMB) protocol. We then altered the contents of the e-book project directly using File Explorer.
-Presumably, this NAS server was configured with multiple hard drives in a redundant arrangement of independent disks (RAID) configuration followed by regular backups to reduce data loss. In simple terms, RAID combines hard drives together to make them work more efficiently. The company had a strict on-premises data policy and use of the cloud was avoided due to concern of a data breach.
-While a NAS solution is acceptable for an individual or small team, I prefer using a version control system such as Git which is connected to a cloud hosting service such as GitHub or GitLab for the following reasons:
+Presumably, this NAS server was configured with multiple hard drives in a redundant arrangement of independent disks (RAID) configuration. It would then have regular backups to reduce data loss. In simple terms, RAID combines hard drives together to make them work more efficiently. The company had a strict on-premises data policy and use of the cloud was avoided due to concern of a possible data breach.
+While a NAS solution is acceptable for an individual or small team developing e-books, I prefer using a version control system such as Git which is connected to a cloud hosting service such as GitHub or GitLab for the following reasons:
 
-Allows developers to log alterations made with commit logs and clearly shows differences between each commit.
+Allows developers to log alterations made with commit logs and clearly shows differences between each commit
+Commits can be reverted easily without guesswork as to what was changed previously
 Easily syncronises the data between multiple servers and user computers
-Designed specifically for collaboration.
+Designed specifically for collaboration
 Cross-platform (i.e. works on Microsoft Windows, macOS and GNU/Linux)
-Several clients such as GitHub Desktop and GitKraken are easy to use.
+Several Git clients such as GitHub Desktop and GitKraken are easy to use.
 It’s fast to use
+E-book projects don’t tend to have very large files, which is a notable shortcoming of Git
 
 What is Git?
 
@@ -531,7 +562,11 @@ What is Git?
 The Git logo
 
 Git is a version control system and a popular way of managing software development by ensuring code is backed up and easily retrievable. 
-The Git project itself was designed by none other than Linus Torvalds himself who needed a way to manage the development of the Linux kernel because the BitKeeper version control system used at the time had pulled their free service after Andrew Tridgell reverse-engineered their proprietary protocol (he would later do the same to the aformentioned SMB protocol and call it Samba).
+The Git project itself was designed by none other than Linus Torvalds himself who needed a way to manage the development of the Linux kernel because the current BitKeeper version control system used at the time had pulled their free service, after Andrew Tridgell reverse-engineered their proprietary protocol (he would later do the same to the aforementioned SMB protocol and call it Samba).
+
+#
+Linus Torvalds invented the Linux kernel, Git and a diving app called Subsurface
+
 Git’s unusual name was explained by Linus Torvalds in the project’s README file:
 
 GIT - the stupid content tracker
@@ -546,21 +581,15 @@ GIT - the stupid content tracker
 This is a stupid (but extremely fast) directory content manager. It doesn't do a whole lot, but what it _does_ do is track directory contents efficiently. 
 
 Git can be used in the cloud via a dedicated hosting service such as GitHub, GitLab or BitBucket which I recommend for convenience. Alternatively, Git servers can be created on-premises via software such as Bonobo, Gogs or even GitLab.
-
 Use of Git is mandatory for anyone using GitHub and GitLab, as well as being supported by other source code hosting sites such as BitBucket. 
-
-
 I recommend Git for e-book development because it is fast and e-book projects don’t tend to have large files (more than 50MB) or empty folders, which are some of Git's notable shortcomings.
-
-
 This chapter will give a basic outline of how Git works and how to use it. However, Git is very popular and there’s plenty of documentation available for it, including an official book (which is available for free on the official Git website) – I won't make this guide completely definitive.
 
 
 Using Git at first may seem intimidating as there are a lot of jargon words to learn. However, I will explain each core feature and by the end, you should be able to start setting up your first repository with some confidence.
 
 
-## Git clients
-
+Git clients
 
 To get started, I recommend using a Git client. There are a lot of Git clients, and official Git website keeps a list of them.
 
@@ -570,36 +599,28 @@ My personal choice of client is GitHub Desktop. GitHub Desktop is free and open-
 
 GitKraken is also a superb client with a beautiful user interface and has official builds for Windows, macOS and Ubuntu. However, for commercial use you must pay $50 per year.
 
-
-## Using Git 101
-
+The basics of Git
 
 I find the easiest metaphor to describe Git is to think of a filing cabinet.
-
-
 The repository is the cabinet itself and a branch is each drawer. You pull out a filing cabinet draw to access its contents, make your changes to the drawer, then note them down as a commit and you push the drawer closed when you are finished. A pull request in this analogy would be when one office worker requests access to another filing cabinet to alter a few files inside.
+Here is a glossary of common terms used by Git:
 
+Repository – A repository is an instance of Git that covers an entire folder and its files. This is where a project will be placed and all the source code files and resources that make it.
 
-*Repository* - A repository is an instance of Git that covers an entire folder and its files. This is where a project will be placed and all the source code files and resources that make it.
+Branch – A branch is the part of the repository where commits are added. By default, a Git repository uses the master (or main) branch and for basic Git use by an individual developer, this shouldn’t be a concern. 
+For more complicated development, separate branches are used for development and testing. A branch can be merged bringing those changes to another branch or the branch can be split off. The way Git handles branching is the reason Git is referred to as a distributed source code management system.
 
-
-*Commit* - A commit is an alteration made to the repository that has been accepted by the developer. This includes any changes made to the files and folders including editing the text files, adding files, deleting files, deleting files, etc. 
+Commit – A commit is an alteration made to the repository that has been accepted by the developer. This includes any changes made to the files and folders including editing the text files, adding files, deleting files, deleting files, etc. 
 Most clients will show the differences between the files using colour-coding. A commit requires a short title for the Git log and optionally a longer description which can be handy for keeping track of development and writing notes.
 
+Push – A push is the process of sending the commit from the development machine to the Git server.
 
-*Push* - A push is the process of sending the commit from the development machine to the Git server.
+Pull – A pull is the process of retrieving previously pushed data to the Git server back onto the development machine. Through a combination of pushing and pulling a developer can work on the same code on multiple machines.
 
-
-*Pull* - A pull is the process of retrieving previously pushed data to the Git server back onto the development machine. Through a combination of pushing and pulling a developer can work on the same code on multiple machines.
-
-
-*Pull Request* – A pull request is specific to Git hosting websites where a user requests permission for their commit to be pulled into the repository they don't have direct access to.
+Pull Request – A pull request is specific to Git hosting websites where a user requests permission for their commit to be pulled into the repository they don't have direct access to.
 
 
-*Branch* - A branch is a particular version of a repository. By default, a Git repository uses the master (or main) branch and for basic Git use by an individual developer, this shouldn’t be a concern. For more complicated development, a branch can be merged bringing those changes to another branch or the branch can be split off. The way Git handles branching is the reason Git is referred to as a distributed source code management system.
-
-
-## Clone a repository from GitHub using GitHub Desktop
+Clone a repository from GitHub using GitHub Desktop
 
 
 As mentioned earlier, setting up GitHub Desktop with GitHub is a snap. First and foremost you need to decide if the repository is already on GitHub or you want to add a repository to GitHub.
@@ -613,22 +634,25 @@ If the repository is already on GitHub, you can make a local copy of that reposi
 3. Sign in to GitHub using your account.
 4. Choose a repository to clone and the preferred folder for the repository on your development machine’s storage (by default, it’s placed in Documents/GitHub).
 
+After that you can open the repository’s folder in your file manager (such as File Explorer or Finder) or preferred text editor (such as Visual Studio Code or Atom).
 
-## Clone a repository from GitLab using GitHub Desktop
 
+Clone a repository from GitLab using GitHub Desktop
 
 If the repository is already on GitLab it requires more involvement to make a copy on the development machine’s hard drive:
 
 
-1. Login to GitLab.com in your preferred web browser, then select your preferred repository and copy the HTTPS link under the repository's name and description.
-2. Create a SSH key to authenticate GitLab with GitHub desktop. This is done by opening up the Git Bash (Windows/macOS/GNU-Linux) or Terminal (macOS/GNU-Linux) then running this command (replace the e-mail in double-quotes with the GitLab account e-mail address): ssh-keygen -t rsa -C &quot;your.email@example.com&quot; -b 4096 then save the public-private key as a .pub file.
-3. Authenticate the generated key by going to GitLab.com in your preferred browser and to your account’s settings and select “SSH Keys”. Add a new key by copying and pasting the public key half from the generated .pub file which begins with “ssh-rsa” into the text field then give it a name.
-4. Go to File → Clone repository… (Ctrl-Shift-O).
-5. Select the “URL” tab and paste the HTTPS link from earlier. Login to GitLab and then choose which repository to clone and where on the development machine’s hard drive to clone it to (the default is Documents/GitHub, but I rename it to Documents/GitLab).
+Login to GitLab.com in your preferred web browser, then select your preferred repository and copy the HTTPS link under the repository's name and description.
 
+Create a SSH key to authenticate GitLab with GitHub desktop. This is done by opening up the Git Bash (Windows/macOS/GNU-Linux) or Terminal (macOS/GNU-Linux) then running this command (replace the e-mail in double-quotes with the GitLab account e-mail address): ssh-keygen -t rsa -C &quot;your.email@example.com&quot; -b 4096 then save the public-private key as a .pub file.
 
-## Committing and pushing to a repository in GitHub Desktop
+Authenticate the generated key by going to GitLab.com in your preferred browser and to your account’s settings and select “SSH Keys”. Add a new key by copying and pasting the public key half from the generated .pub file which begins with “ssh-rsa” into the text field then give it a name.
 
+Go to File → Clone repository… (Ctrl-Shift-O).
+
+Select the “URL” tab and paste the HTTPS link from earlier. Login to GitLab and then choose which repository to clone and where on the development machine’s hard drive to clone it to (the default is Documents/GitHub, but I rename it to Documents/GitLab).
+
+Committing and pushing to a repository in GitHub Desktop
 
 Once changes have been made to the development machine’s copy of the repository, they can be committed to the repository on the Git server. GitHub Desktop makes committing a repository easy to do.
 
@@ -642,10 +666,10 @@ References:
 
 https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README
 
-## Further reading
+Further reading
+Git’s popularity means there is a lot of documentation that goes into a more detail than I have in this chapter:
 
-
-* (Wikipedia page for Git)[https://en.wikipedia.org/wiki/Git], (archive)[https://archive.ph/Sm4Yf]
+(Wikipedia page for Git)[https://en.wikipedia.org/wiki/Git], (archive)[https://archive.ph/Sm4Yf]
 * (Git-SCM.com)[https://www.git-scm.com/] – the official website for the Git source code management tool with documentation on Git, a list of Git clients and a download for the current version.
 * (Pro Git)[https://git-scm.com/book/en/v2] – the official and freely available book (and e-book) for Git which is available in multiple languages.
 * (Learn Git)[https://try.github.io/] – GitHub’s official documentation on Git with many learning resources

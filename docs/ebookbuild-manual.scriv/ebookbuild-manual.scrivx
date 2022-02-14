@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-13 17:39:53 +0000" ModID="3EA640B3-27AB-4CF3-918C-4BDD65A8EAAF">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-14 12:19:18 +0000" ModID="5B0A3162-E298-4D18-93AC-CC1A48C16442">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
             <Title>Draft</Title>
@@ -34,22 +34,31 @@
                 <TextSelection>1880,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8" Type="Text" Created="2022-02-06 00:45:13 +0000" Modified="2022-02-06 01:31:12 +0000">
+        <BinderItem UUID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8" Type="Text" Created="2022-02-06 00:45:13 +0000" Modified="2022-02-14 12:10:04 +0000">
             <Title>Introduction to XHTML</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>4104,0</TextSelection>
+                <TextSelection>24,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="ACD131AA-5177-42FB-8152-CC3A73D2FF81" Type="Text" Created="2022-02-13 17:12:01 +0000" Modified="2022-02-13 17:39:53 +0000">
+        <BinderItem UUID="ACD131AA-5177-42FB-8152-CC3A73D2FF81" Type="Text" Created="2022-02-13 17:12:01 +0000" Modified="2022-02-14 11:59:42 +0000">
             <Title>Introduction to Git</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>4444,0</TextSelection>
+                <TextSelection>7849,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="0E872B99-EAAB-4308-B919-44645867118A" Type="Text" Created="2022-02-14 12:00:12 +0000" Modified="2022-02-14 12:19:11 +0000">
+            <Title>Introduction to Regular Expressions</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>1542,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="25AA13C0-6D21-4383-A6B6-50B28003E7F9" Type="Text" Created="2022-02-10 13:46:28 +0000" Modified="2022-02-13 17:04:31 +0000">
@@ -183,13 +192,13 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="1962" Characters="12045" Date="2022-02-13 17:39:53 +0000"/>
+        <PreviousSession Words="447" Characters="2766" Date="2022-02-14 12:19:18 +0000"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-02-13 00:00:00 +0000">
+    <RecentWritingHistory Date="2022-02-14 00:00:00 +0000">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
-        <OtherWordCount>1962</OtherWordCount>
-        <OtherCharCount>12045</OtherCharCount>
+        <OtherWordCount>382</OtherWordCount>
+        <OtherCharCount>2195</OtherCharCount>
     </RecentWritingHistory>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="iso-a4" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>

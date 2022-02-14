@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0
+{\fonttbl{\f0\fmodern\fcharset0\fprq2 Sitka Text;}{\f1\fmodern\fcharset0\fprq2 SegoeUI-Bold;}{\f2\fmodern\fcharset0\fprq2 SegoeUI;}{\f3\fmodern\fcharset0\fprq2 SegoeUI-Italic;}{\f4\fmodern\fcharset0\fprq2 JetBrainsMono-Regular;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red128\green128\blue128;}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\f0\fs24\cf0
+\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f1\fs28\b1\i0 Introduction to Regular Expression}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs22\b0\i0 \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93Regular expressions describe patterns that may either match or fail to match against strings. The simplest regular-expression tool is grep(1), a filter that passes through to its output every line in its input matching a specified regexp.\u8221\'94 \hich\f2 \emdash \loch\f2 Eric S. Raymond, }{\f3\fs22\b0\i1 Art of Unix Programming}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Regular expression (or simply regex) is a programming language designed to match text via patterns rather than an exact string. Regular expressions have been incorporated into the find & replace function of many text editors including Visual Studio Code, Atom and Notepad++.}
+\par\plain {\f2\fs24\b0\i0 Regular expression uses symbols called wildcards to represent characters within a text file such as: spaces, tabs, words and end of lines.}
+\par\plain {\f2\fs24\b0\i0 Try not to be put off by the intimidating syntax of regex because learning it is one of the best ways to save time and be efficient in e-book production.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Tabs and spaces}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Let\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s start by adding two tabs to indent our indented paragraphs that use the <p></p> tags.    Type this in the find textbox within the Find function:}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f4\fs22\b0\i0 ^<p>}
+\par\plain \f4\fs22\b0\i0
+\par\plain {\f2\fs24\b0\i0 This is a very simple piece of regex that only uses the caret (^) wildcard which represents the beginning of a line. This regex assumes there is no spacing or tabs prior to the start of the }{\f4\fs22\b0\i0 <p>}{\f2\fs24\b0\i0  tag.}
+\par\plain {\f2\fs24\b0\i0 Now for the regex to add the two tabs:}
+\par\plain \f2\fs24\b0\i0
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f4\fs22\b0\i0 \\t\\t<p>}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f4\fs22\b0\i0
+\par\plain {\f2\fs24\b0\i0 The \\t wildcard represents a tab, so I\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92ve added two of them. Doing this indents your XHTML code nicely making it much easier to read. Try and imitate the indentation the text uses in the web browser to make debugging a lot easier.}
+\par\plain \f4\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0}

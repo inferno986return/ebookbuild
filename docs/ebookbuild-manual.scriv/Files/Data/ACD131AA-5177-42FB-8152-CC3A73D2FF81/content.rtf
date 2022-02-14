@@ -1,12 +1,16 @@
 {\rtf1\ansi\ansicpg1252\uc1\deff0
-{\fonttbl{\f0\fmodern\fcharset0\fprq2 Sitka Text;}{\f1\fmodern\fcharset0\fprq2 SegoeUI-Bold;}{\f2\fmodern\fcharset0\fprq2 SegoeUI;}}
+{\fonttbl{\f0\fmodern\fcharset0\fprq2 Sitka Text;}{\f1\fmodern\fcharset0\fprq2 SegoeUI-Bold;}{\f2\fmodern\fcharset0\fprq2 SegoeUI;}{\f3\fmodern\fcharset0\fprq2 SegoeUI-Italic;}{\f4\fmodern\fcharset0\fprq2 JetBrainsMono-Regular;}}
 {\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red128\green128\blue128;}
 {\*\listtable
 {\list\listtemplateid1\listhybrid
-{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\loch\af0\hich\af0\dbch\af0\uc1\u8226\'95;}{\levelnumbers;}\f2\fs24\b0\i0\fi-667\li960\lin960}{\listname ;}\listid1}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\loch\af0\hich\af0\dbch\af0\uc1\u8226\'95;}{\levelnumbers;}\f2\fs24\b0\i0\fi-889\li1280\lin1280}{\listname ;}\listid1}
 {\list\listtemplateid2\listhybrid
-{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\f2\fs24\b0\i0\fi-667\li960\lin960}{\listname ;}\listid2}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\f2\fs24\b0\i0\fi-667\li960\lin960}{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\f0\fs24\b0\i0\fi-889\li1280\lin1280}{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\f2\fs24\b0\i0\fi-667\li960\lin960}{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
 \paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\f0\fs24\cf0
 \pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f1\fs28\b1\i0 Introduction to Git}
 \par\plain \f2\fs24\b0\i0
@@ -14,52 +18,52 @@
 \par\plain {\f1\fs24\b1\i0 Before Git}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Back at Oxford eBooks we simply mounted shared folders from a company network-attached storage (NAS) server onto our work computers using the Server Message Block (SMB) protocol. We then altered the contents of the e-book project directly using File Explorer.}
-\par\plain {\f2\fs24\b0\i0 Presumably, this NAS server was configured with multiple hard drives in a redundant arrangement of independent disks (RAID) configuration followed by regular backups to reduce data loss. In simple terms, RAID combines hard drives together to make them work more efficiently. The company had a strict on-premises data policy and use of the cloud was avoided due to concern of a data breach.}
-\par\plain {\f2\fs24\b0\i0 While a NAS solution is acceptable for an individual or small team, I prefer using a version control system such as Git which is connected to a cloud hosting service such as GitHub or GitLab for the following reasons:}
+\par\plain {\f2\fs24\b0\i0 Presumably, this NAS server was configured with multiple hard drives in a redundant arrangement of independent disks (RAID) configuration. It would then have regular backups to reduce data loss. In simple terms, RAID combines hard drives together to make them work more efficiently. The company had a strict on-premises data policy and use of the cloud was avoided due to concern of a possible data breach.}
+\par\plain {\f2\fs24\b0\i0 While a NAS solution is acceptable for an individual or small team developing e-books, I prefer using a version control system such as Git which is connected to a cloud hosting service such as GitHub or GitLab for the following reasons:}
 \par\plain \f2\fs24\b0\i0
-\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls1\ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Allows developers to log alterations made with commit logs and clearly shows differences between each commit.}
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls1\ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Allows developers to log alterations made with commit logs and clearly shows differences between each commit}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Commits can be reverted easily without guesswork as to what was changed previously}
 \par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Easily syncronises the data between multiple servers and user computers}
-\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Designed specifically for collaboration.}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Designed specifically for collaboration}
 \par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Cross-platform (i.e. works on Microsoft Windows, macOS and GNU/Linux)}
-\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Several clients such as GitHub Desktop and GitKraken are easy to use.}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Several Git clients such as GitHub Desktop and GitKraken are easy to use.}
 \par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 It\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s fast to use}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 E-book projects don\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t tend to have very large files, which is a notable shortcoming of Git}
 \par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
 \par\plain {\f1\fs28\b1\i0 What is Git?}
 \par\plain \f2\fs24\b0\i0
 \par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\qc\ltrch\loch {\f2\fs24\b0\i0 \{$SCRImageLink[w:300;h:125]=C:/Users/hmotley/GitHub/ebookbuild/docs/assets/Git-Logo-2Color.png\}}
-\par\plain {\f2\fs24\b0\i0 The Git logo}
+\par\plain {\f2\fs22\b0\i0 The Git logo}
 \par\plain \f2\fs24\b0\i0
 \par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f2\fs24\b0\i0 Git is a version control system and a popular way of managing software development by ensuring code is backed up and easily retrievable. }
-\par\plain {\f2\fs24\b0\i0 The Git project itself was designed by none other than Linus Torvalds himself who needed a way to manage the development of the Linux kernel because the BitKeeper version control system used at the time had pulled their free service after Andrew Tridgell reverse-engineered their proprietary protocol (he would later do the same to the aformentioned SMB protocol and call it Samba).}
+\par\plain {\f2\fs24\b0\i0 The Git project itself was designed by none other than Linus Torvalds himself who needed a way to manage the development of the Linux kernel because the current BitKeeper version control system used at the time had pulled their free service, after Andrew Tridgell reverse-engineered their proprietary protocol (he would later do the same to the aforementioned SMB protocol and call it Samba).}
+\par\plain \f2\fs24\b0\i0
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\qc\ltrch\loch {\f2\fs24\b0\i0 \{$SCRImageLink[w:200;h:300]=C:/Users/hmotley/GitHub/ebookbuild/docs/assets/LinuxCon_Europe_Linus_Torvalds_03.jpg\}}
+\par\plain {\f2\fs22\b0\i0 Linus Torvalds invented the Linux kernel, Git and a diving app called Subsurface}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Git\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s unusual name was explained by Linus Torvalds in the project\u8217\'92s README file:}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs22\b0\i0 GIT - the stupid content tracker}
 \par\plain \f2\fs22\b0\i0
 \par\plain {\f2\fs22\b0\i0 "git" can mean anything, depending on your mood.}
 \par\plain \f2\fs22\b0\i0
-\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f2\fs22\b0\i0 - random three-letter combination that is pronounceable, and not actually used by any common UNIX command.  The fact that it is a mispronounciation of "get" may or may not be relevant.}
-\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f2\fs22\b0\i0 - stupid. contemptible and despicable. simple. Take your pick from the dictionary of slang.}
-\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f2\fs22\b0\i0 - "global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.}
+\par\plain {\f2\fs22\b0\i0 - random three-letter combination that is pronounceable, and not actually used by any common UNIX command.  The fact that it is a mispronounciation of "get" may or may not be relevant.}
+\par\plain {\f2\fs22\b0\i0 - stupid. contemptible and despicable. simple. Take your pick from the dictionary of slang.}
+\par\plain {\f2\fs22\b0\i0 - "global information tracker": you're in a good mood, and it actually works for you. Angels sing, and a light suddenly fills the room.}
 \par\plain {\f2\fs22\b0\i0 - "goddamn idiotic truckload of sh*t": when it breaks}
-\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs22\b0\i0 This is a stupid (but extremely fast) directory content manager. It doesn't do a whole lot, but what it _does_ do is track directory contents efficiently. }
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Git can be used in the cloud via a dedicated hosting service such as GitHub, GitLab or BitBucket which I recommend for convenience. Alternatively, Git servers can be created on-premises via software such as Bonobo, Gogs or even GitLab.}
-\par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Use of Git is mandatory for anyone using GitHub and GitLab, as well as being supported by other source code hosting sites such as BitBucket. }
-\par\plain \f2\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 I recommend Git for e-book development because it is fast and e-book projects don\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t tend to have large files (more than 50MB) or empty folders, which are some of Git's notable shortcomings.}
-\par\plain \f2\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 This chapter will give a basic outline of how Git works and how to use it. However, Git is very popular and there\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s plenty of documentation available for it, including an official book (which is available for free on the official Git website) \endash  I won't make this guide completely definitive.}
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Using Git at first may seem intimidating as there are a lot of jargon words to learn. However, I will explain each core feature and by the end, you should be able to start setting up your first repository with some confidence.}
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 ## Git clients}
-\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Git clients}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 To get started, I recommend using a Git client. There are a lot of Git clients, and official Git website keeps a list of them.}
 \par\plain \f2\fs24\b0\i0
@@ -69,36 +73,28 @@
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 GitKraken is also a superb client with a beautiful user interface and has official builds for Windows, macOS and Ubuntu. However, for commercial use you must pay $50 per year.}
 \par\plain \f2\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 ## Using Git 101}
-\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 The basics of Git}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 I find the easiest metaphor to describe Git is to think of a filing cabinet.}
-\par\plain \f2\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 The repository is the cabinet itself and a branch is each drawer. You pull out a filing cabinet draw to access its contents, make your changes to the drawer, then note them down as a commit and you push the drawer closed when you are finished. A pull request in this analogy would be when one office worker requests access to another filing cabinet to alter a few files inside.}
+\par\plain {\f2\fs24\b0\i0 Here is a glossary of common terms used by Git:}
 \par\plain \f2\fs24\b0\i0
+\par\plain {\f3\fs24\b0\i1 Repository}{\f2\fs24\b0\i0  \endash  A repository is an instance of Git that covers an entire folder and its files. This is where a project will be placed and all the source code files and resources that make it.}
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 *Repository* - A repository is an instance of Git that covers an entire folder and its files. This is where a project will be placed and all the source code files and resources that make it.}
+\par\plain {\f3\fs24\b0\i1 Branch}{\f2\fs24\b0\i0  \endash  A branch is the part of the repository where commits are added. By default, a Git repository uses the master (or main) branch and for basic Git use by an individual developer, this shouldn\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t be a concern. }
+\par\plain {\f2\fs24\b0\i0 For more complicated development, separate branches are used for development and testing. A branch can be merged bringing those changes to another branch or the branch can be split off. The way Git handles branching is the reason Git is referred to as a distributed source code management system.}
 \par\plain \f2\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 *Commit* - A commit is an alteration made to the repository that has been accepted by the developer. This includes any changes made to the files and folders including editing the text files, adding files, deleting files, deleting files, etc. }
+\par\plain {\f3\fs24\b0\i1 Commit}{\f2\fs24\b0\i0  \endash  A commit is an alteration made to the repository that has been accepted by the developer. This includes any changes made to the files and folders including editing the text files, adding files, deleting files, deleting files, etc. }
 \par\plain {\f2\fs24\b0\i0 Most clients will show the differences between the files using colour-coding. A commit requires a short title for the Git log and optionally a longer description which can be handy for keeping track of development and writing notes.}
 \par\plain \f2\fs24\b0\i0
+\par\plain {\f3\fs24\b0\i1 Push}{\f2\fs24\b0\i0  \endash  A push is the process of sending the commit from the development machine to the Git server.}
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 *Push* - A push is the process of sending the commit from the development machine to the Git server.}
+\par\plain {\f3\fs24\b0\i1 Pull}{\f2\fs24\b0\i0  \endash  A pull is the process of retrieving previously pushed data to the Git server back onto the development machine. Through a combination of pushing and pulling a developer can work on the same code on multiple machines.}
 \par\plain \f2\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 *Pull* - A pull is the process of retrieving previously pushed data to the Git server back onto the development machine. Through a combination of pushing and pulling a developer can work on the same code on multiple machines.}
-\par\plain \f2\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 *Pull Request* \endash  A pull request is specific to Git hosting websites where a user requests permission for their commit to be pulled into the repository they don't have direct access to.}
+\par\plain {\f3\fs24\b0\i1 Pull Request}{\f2\fs24\b0\i0  \endash  A pull request is specific to Git hosting websites where a user requests permission for their commit to be pulled into the repository they don't have direct access to.}
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 *Branch* - A branch is a particular version of a repository. By default, a Git repository uses the master (or main) branch and for basic Git use by an individual developer, this shouldn\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t be a concern. For more complicated development, a branch can be merged bringing those changes to another branch or the branch can be split off. The way Git handles branching is the reason Git is referred to as a distributed source code management system.}
-\par\plain \f2\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 ## Clone a repository from GitHub using GitHub Desktop}
+\par\plain {\f1\fs24\b1\i0 Clone a repository from GitHub using GitHub Desktop}
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 As mentioned earlier, setting up GitHub Desktop with GitHub is a snap. First and foremost you need to decide if the repository is already on GitHub or you want to add a repository to GitHub.}
@@ -112,22 +108,25 @@
 \par\plain {\f2\fs24\b0\i0 3. Sign in to GitHub using your account.}
 \par\plain {\f2\fs24\b0\i0 4. Choose a repository to clone and the preferred folder for the repository on your development machine\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s storage (by default, it\u8217\'92s placed in Documents/GitHub).}
 \par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 After that you can open the repository\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s folder in your file manager (such as File Explorer or Finder) or preferred text editor (such as Visual Studio Code or Atom).}
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 ## Clone a repository from GitLab using GitHub Desktop}
 \par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Clone a repository from GitLab using GitHub Desktop}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 If the repository is already on GitLab it requires more involvement to make a copy on the development machine\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s hard drive:}
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 1. Login to GitLab.com in your preferred web browser, then select your preferred repository and copy the HTTPS link under the repository's name and description.}
-\par\plain {\f2\fs24\b0\i0 2. Create a SSH key to authenticate GitLab with GitHub desktop. This is done by opening up the Git Bash (Windows/macOS/GNU-Linux) or Terminal (macOS/GNU-Linux) then running this command (replace the e-mail in double-quotes with the GitLab account e-mail address): ssh-keygen -t rsa -C "your.email@example.com" -b 4096 then save the public-private key as a .pub file.}
-\par\plain {\f2\fs24\b0\i0 3. Authenticate the generated key by going to GitLab.com in your preferred browser and to your account\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s settings and select \u8220\'93SSH Keys\u8221\'94. Add a new key by copying and pasting the public key half from the generated .pub file which begins with \u8220\'93ssh-rsa\u8221\'94 into the text field then give it a name.}
-\par\plain {\f2\fs24\b0\i0 4. Go to File \loch\af2\hich\af2\dbch\af2\uc1\u8594\'3F Clone repository\u8230\'85 (Ctrl-Shift-O).}
-\par\plain {\f2\fs24\b0\i0 5. Select the \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93URL\u8221\'94 tab and paste the HTTPS link from earlier. Login to GitLab and then choose which repository to clone and where on the development machine\u8217\'92s hard drive to clone it to (the default is Documents/GitHub, but I rename it to Documents/GitLab).}
-\par\plain \f2\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 ## Committing and pushing to a repository in GitHub Desktop}
-\par\plain \f2\fs24\b0\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls2\ilvl0{\listtext	\f2\fs24\b0\i0 1.	}{\f2\fs24\b0\i0 Login to GitLab.com in your preferred web browser, then select your preferred repository and copy the HTTPS link under the repository's name and description.}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls2\ilvl0{\listtext	\f2\fs24\b0\i0 2.	}{\f2\fs24\b0\i0 Create a SSH key to authenticate GitLab with GitHub desktop. This is done by opening up the Git Bash (Windows/macOS/GNU-Linux) or Terminal (macOS/GNU-Linux) then running this command (replace the e-mail in double-quotes with the GitLab account e-mail address): }{\f4\fs22\b0\i0 ssh-keygen -t rsa -C "your.email@example.com" -b 4096}{\f2\fs24\b0\i0  then save the public-private key as a .pub file.}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls2\ilvl0{\listtext	\f2\fs24\b0\i0 3.	}{\f2\fs24\b0\i0 Authenticate the generated key by going to GitLab.com in your preferred browser and to your account\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s settings and select \u8220\'93SSH Keys\u8221\'94. Add a new key by copying and pasting the public key half from the generated .pub file which begins with \u8220\'93ssh-rsa\u8221\'94 into the text field then give it a name.}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls2\ilvl0{\listtext	\f2\fs24\b0\i0 4.	}{\f2\fs24\b0\i0 Go to File \loch\af2\hich\af2\dbch\af2\uc1\u8594\'3F Clone repository\u8230\'85 (Ctrl-Shift-O).}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls2\ilvl0{\listtext	\f2\fs24\b0\i0 5.	}{\f2\fs24\b0\i0 Select the \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93URL\u8221\'94 tab and paste the HTTPS link from earlier. Login to GitLab and then choose which repository to clone and where on the development machine\u8217\'92s hard drive to clone it to (the default is Documents/GitHub, but I rename it to Documents/GitLab).}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Committing and pushing to a repository in GitHub Desktop}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Once changes have been made to the development machine\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s copy of the repository, they can be committed to the repository on the Git server. GitHub Desktop makes committing a repository easy to do.}
 \par\plain \f2\fs24\b0\i0
@@ -139,16 +138,16 @@
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 References:}
 \par\plain \f2\fs24\b0\i0
-\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls2\ilvl0{\listtext	\f2\fs24\b0\i0 1.	}{\field{\*\fldinst HYPERLINK "https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README"}{\fldrslt\f0\fs24 https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README}}
-\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch 
-\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f2\fs24\b0\i0 ## Further reading}
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls3\ilvl0{\listtext	\f0\fs24\b0\i0 1.	}{\field{\*\fldinst HYPERLINK "https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README"}{\fldrslt\f0\fs24\b0\i0 https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README}}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f0\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Further reading}
+\par\plain {\f2\fs24\b0\i0 Git\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s popularity means there is a lot of documentation that goes into a more detail than I have in this chapter:}
 \par\plain \f2\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 * (Wikipedia page for Git)[https://en.wikipedia.org/wiki/Git], (archive)[https://archive.ph/Sm4Yf]}
-\par\plain {\f2\fs24\b0\i0 * (Git-SCM.com)[https://www.git-scm.com/] \endash  the official website for the Git source code management tool with documentation on Git, a list of Git clients and a download for the current version.}
-\par\plain {\f2\fs24\b0\i0 * (Pro Git)[https://git-scm.com/book/en/v2] \endash  the official and freely available book (and e-book) for Git which is available in multiple languages.}
-\par\plain {\f2\fs24\b0\i0 * (Learn Git)[https://try.github.io/] \endash  GitHub\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s official documentation on Git with many learning resources}
-\par\plain {\f2\fs24\b0\i0 * (Git Cheat Sheet)[https://about.gitlab.com/images/press/git-cheat-sheet.pdf] \endash  a quick point of reference provided by GitLab showing a wide-range of common Git commands and what they do.}
-\par\plain {\f2\fs24\b0\i0 * (Git vs SVN)[https://backlog.com/blog/git-vs-svn-version-control-system/], (archive)[https://archive.ph/ysbaQ] \endash  an insightful through rather advanced comparison of Git and SVN that suggests that one isn't necessarily superior to the other.}
-\par\plain \f2\fs24\b0\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls4\ilvl0{\listtext	\f2\fs24\b0\i0 1.	}{\f2\fs24\b0\i0 (Wikipedia page for Git)[https://en.wikipedia.org/wiki/Git], (archive)[https://archive.ph/Sm4Yf]}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 2.	}{\f2\fs24\b0\i0 * (Git-SCM.com)[https://www.git-scm.com/] \endash  the official website for the Git source code management tool with documentation on Git, a list of Git clients and a download for the current version.}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 3.	}{\f2\fs24\b0\i0 * (Pro Git)[https://git-scm.com/book/en/v2] \endash  the official and freely available book (and e-book) for Git which is available in multiple languages.}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 4.	}{\f2\fs24\b0\i0 * (Learn Git)[https://try.github.io/] \endash  GitHub\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s official documentation on Git with many learning resources}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 5.	}{\f2\fs24\b0\i0 * (Git Cheat Sheet)[https://about.gitlab.com/images/press/git-cheat-sheet.pdf] \endash  a quick point of reference provided by GitLab showing a wide-range of common Git commands and what they do.}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 6.	}{\f2\fs24\b0\i0 * (Git vs SVN)[https://backlog.com/blog/git-vs-svn-version-control-system/], (archive)[https://archive.ph/ysbaQ] \endash  an insightful through rather advanced comparison of Git and SVN that suggests that one isn't necessarily superior to the other.}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0}
