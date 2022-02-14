@@ -654,7 +654,6 @@ Clone a repository from GitLab using GitHub Desktop
 
 If the repository is already on GitLab it requires more involvement to make a copy on the development machine’s hard drive:
 
-
 Login to GitLab.com in your preferred web browser, then select your preferred repository and copy the HTTPS link under the repository's name and description.
 
 Create a SSH key to authenticate GitLab with GitHub desktop. This is done by opening up the Git Bash (Windows/macOS/GNU-Linux) or Terminal (macOS/GNU-Linux) then running this command (replace the e-mail in double-quotes with the GitLab account e-mail address): ssh-keygen -t rsa -C &quot;your.email@example.com&quot; -b 4096 then save the public-private key as a .pub file.
@@ -664,6 +663,11 @@ Authenticate the generated key by going to GitLab.com in your preferred browser 
 Go to File → Clone repository… (Ctrl-Shift-O).
 
 Select the “URL” tab and paste the HTTPS link from earlier. Login to GitLab and then choose which repository to clone and where on the development machine’s hard drive to clone it to (the default is Documents/GitHub, but I rename it to Documents/GitLab).
+
+I also recommend creating an access token on GitLab which you can use for GitHub Desktop and other third-party apps that need access to your GitLab account.
+
+Go to your profile name and icon → Preferences
+Access Token…
 
 Committing and pushing to a repository in GitHub Desktop
 
