@@ -5,11 +5,12 @@
             <Title>Introduction to Regular Expressions</Title>
             <Text>Introduction to Regular Expression
 
-“Regular expressions describe patterns that may either match or fail to match against strings. The simplest regular-expression tool is grep(1), a filter that passes through to its output every line in its input matching a specified regexp.” —Eric S. Raymond, Art of Unix Programming
+“Regular expressions describe patterns that may either match or fail to match against strings. The simplest regular-expression tool is grep(1), a filter that passes through to its output every line in its input matching a specified regexp.”
+—Eric S. Raymond, Art of Unix Programming
 
 Regular expression (or simply regex) is a programming language designed to match text via patterns rather than an exact string. Regular expressions have been incorporated into the find &amp; replace function of many text editors including Visual Studio Code, Atom and Notepad++.
 Most of the syntax uses symbols called wildcards to represent characters within a text file such as: spaces, tabs, words and end of lines.
-Try not to be put off by the intimidating syntax of regex because learning it is one of the best ways to save time and be efficient in e-book production. Back at Oxford eBooks, my colleague and I would frequently pass around a printout of Dave Child’s Regex cheatsheet (archive).
+Try not to be put off by the intimidating syntax of regex because learning it is one of the best ways to save time and be efficient in e-book production. When I worked in commercial e-book development my colleague and I would frequently pass around a printout of Dave Child’s Regex cheatsheet (archive).
 I recommend trying these examples yourself. You can modify an XHTML file or instead use RegEx Pal to test each regular expression safely away from your production code.
 
 Tabs
@@ -186,8 +187,10 @@ An en dash gets its name because is the same width as a lowercase “n”. En da
 
 Em dash (—)
 An em dash is the same width as a lowercase “m”. Em dashes are used for quote attribution, such as:
+
 “I am not young enough to know everything.” —J.M. Barrie
 
+Speech marks:
 Double speech marks (“, ”, &quot;)
 Double speech marks (or quote marks) are used for speech in most European languages and can be used for defining attributes in XHTML. There are three double quote marks, a left quote (“), right quote (”) and a straight quote (&quot;). I prefer to use the curled left and right quote marks as they look more presentable. Some books such as How I Live Now by Meg Rossoff forgo speech marks entirely.
 There are languages such as German, Hungarian and Polish that use different quote marks with the left pair sitting on the baseline.
@@ -201,6 +204,8 @@ Guillemets are used for speech by some languages such as French, Italian and Gre
 Single guillemets (‹, ›)
  Single guillemets are reportedly used for nested quotes (quotes within quotes) though I haven’t used them.
 
+Paragraph symbols:
+
 Pilcrow (¶)
 The pilcrow (¶) is a mostly obsolete symbol used for defining the start of paragraphs. Pilcrows can be enabled in word processors such as Microsoft Word to assist with document layout.
 A pilcrow is commonly used for stylistic purposes. For example, in the 1931 book An Essay on Typography by Eric Gill starts each paragraph with a pilcrow:
@@ -208,6 +213,13 @@ A pilcrow is commonly used for stylistic purposes. For example, in the 1931 book
 “¶ The theme of this book is Typography, and Typography as it is affected by the conditions of the year 1931. The conflict between industrialism &amp; the ancient methods of handicraftsmen which resulted in the muddle of the 19th century is now coming to its term.”
 
 Some typefaces such as Doves Type and Lyon Display have distinctive pilcrow symbols. //diagram
+
+Section (§)
+The section symbol is used to mark individual numbered sections of a large document and is commonly used in the law profession. For example, section 1201 of Title 17 expressly forbids the circumvention of digital rights management (DRM) systems:
+
+“17 U.S. Code § 1201 - Circumvention of copyright protection systems”
+
+It is also the Simoleon currency symbol in the video game series SimCity and The Sims.
 
 Asterisk (*)
 The asterisk (*) means “little star” in Greek and is commonly used as the first reference in a chapter that uses citational referencing. It is also used a lot for print advertising such as billboards, posters and magazines.
@@ -235,6 +247,35 @@ The ampersand (&amp;) is commonly used to…
 Ellipsis (…)
 The ellipsis (…) is a series of three dots without a space and usually used to denote a quote or phrase which has more content.
 
+Basic mathematical symbols:
+These are the simple mathematical symbols for arithmetic usage which most fonts are likely to support.
+
+Multiplication (×)
+The multiplication symbol is used for multiplying values together. It’s also the correct way to write out screen resolutions. For example:
+
+“A high definition monitor supports the 1920 x 1080 resolution.”
+
+Divide ()
+
+Minus ()
+
+Plus (+)
+
+Tilde (~)
+The tilde is used for approximation. It is also used as a diacritic in some languages such as Spanish and Portuguese.
+
+Brackets
+
+Square brackets ([, ])
+Square brackets are used to provide commentary when quoting an original source. For example, adding an extra word within a quote to provide better clarity, such as with this quote. I have left my contribution unitalicised to further state it’s not part of the original quote:
+
+“The greatest hypnotist on planet Earth is an oblong box [television] in the corner of the room. It is constantly telling people what to believe is real!” —David Icke
+
+Another use of square brackets in this way is to quote a misspelling, incorrect grammar or nonsensical content verbatim using [sic].
+
+
+
+
 Referencing:
 In formal writing there are two types of referencing, citational and parenthetical.
 
@@ -258,7 +299,8 @@ https://en.wikipedia.org/wiki/Quotation_mark</Text>
 “XML is a very simple syntax resembling HTML — angle-bracketed tags and ampersand-led literal
 sequences. It is about as simple as a plain-text markup can be and yet express recursively nested
 data structures. XML is just a low-level syntax; it requires a document type definition (such as
-XHTML) and associated application logic to give it semantics.” —Eric S. Raymond, Art of Unix Programming
+XHTML) and associated application logic to give it semantics.” 
+—Eric S. Raymond, Art of Unix Programming
 
 XHTML (eXtensible HyperText Markup Language) is the recommended language for creating the actual chapters of an e-book, it combines regular HTML (HyperText Markup Language) that is used to create webpages with XML (eXtensible Markup Language). Alternatively, you can use regular HTML though you can’t define custom tags (or can you?) and web browsers are more tolerant of obvious syntax errors when testing.
 So what is XHTML? To start with I have used Eric S. Raymond’s definition of XML as a springboard. All three standards are markup languages this means that the developer has to define what the file’s content will look like using some kind of syntax (if you understand LaTeX or Markdown this should be familiar), which in this case are tags.
@@ -371,11 +413,15 @@ Related formats such as cbz?</Text>
             <Title>Introduction to Typography</Title>
             <Text>Introduction to Typography
 
+“Let’s kick off with the basics: what actually is typography? In essence, typography is the art of arranging letters and text in a way that makes the copy legible, clear, and visually appealing to the reader. Typography involves font style, appearance, and structure, which aims to elicit certain emotions and convey specific messages. In short, typography is what brings the text to life.” 
+—Career Foundry, What Is Typography, And Why Is It Important? [2022 Guide]
+
 Let’s start with some definitions:
 
 Fonts are a representation of a typeface for a specific use such as on a computer.
 Typography refers to the study, use and creation of typefaces.
 Typefaces are lettering designs which can be upright or slanted, with different stroke thickness
+Glyphs are each character, number, letter or symbol within a typeface.
 
 Typography relies on several imaginary lines to ensure each glyph is positioned appropriately.
 
@@ -424,10 +470,14 @@ ASCII was simplistic and only defined the uppercase and lowercase English alphab
 #
 These are all of the printable ASCII characters
 
+Unicode is instead a more complete representation of the world’s writing systems and supports an impressive x amount of languages. 
+Each supported glyph with Unicode is part of a group of glyphs called a block. As it’s a superset of ASCII, the first block called Basic Latin contains all the ASCII characters.
+
 References:
 https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New
 https://www.fonts.com/content/learning/fontology/level-1/type-anatomy
-https://www.toptal.com/designers/typography/typeface-classification</Text>
+https://www.toptal.com/designers/typography/typeface-classification
+https://unicode.org/charts/PDF/U0000.pdf</Text>
         </Document>
         <Document ID="93C40D99-4B3D-4900-9243-676053C92F0D">
             <Title>Future content</Title>
@@ -731,7 +781,7 @@ As mentioned previously I try to avoid using too many entities as it can make th
 
 Reserved entities
 
-The following characters must be used as entities, as they form the HTML syntax and would otherwise result in an invalid page.
+The following characters must be used as entities because they form the HTML syntax and would otherwise result in an invalid page.
 
 
 Character
