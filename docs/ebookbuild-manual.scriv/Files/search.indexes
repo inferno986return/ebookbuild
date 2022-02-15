@@ -458,20 +458,16 @@ JetBrains Mono is my current choice of monospaced font as it has clear lettering
 
 A comparison of Roboto Mono and JetBrains Mono.
 
-Script
-
-Display
-Display fonts are decorative and designed for use at large sizes.
-
 Character encoding standards:
-To make writing systems work on computers there were two standards designed, the American Standard Code for Information Interchange (ASCII) and it’s successor Unicode.
+To make writing systems work on computers there are two main standards for character encoding, the American Standard Code for Information Interchange (ASCII) and it’s successor Unicode.
 ASCII was simplistic and only defined the uppercase and lowercase English alphabet, numbers, a select group of symbols and a set of invisible control characters.
 
 #
 These are all of the printable ASCII characters
 
-Unicode is instead a more complete representation of the world’s writing systems and supports an impressive x amount of languages. 
-Each supported glyph with Unicode is part of a group of glyphs called a block. As it’s a superset of ASCII, the first block called Basic Latin contains all the ASCII characters.
+Unicode is instead a more complete representation of the world’s writing systems and supports over 150 different languages both modern and ancient.
+Each supported glyph within Unicode is part of a group of glyphs called a block. As it’s a superset of ASCII, the first block called Basic Latin contains all the ASCII characters. If you need a particular character it is likely already available in a Unicode block, though keep in mind very few fonts support Unicode completely.
+It’s also worth knowing about Windows Glyph List (WGL) fonts
 
 References:
 https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New
@@ -483,6 +479,17 @@ https://unicode.org/charts/PDF/U0000.pdf</Text>
             <Title>Future content</Title>
             <Text>Future Content
 These are chapters I don’t have much content for at the moment. Stay tuned!
+
+Other typographical classifications:
+
+Script
+
+Display
+Display fonts are decorative and designed for use at large sizes.
+
+Blackletter
+Blackletter fonts are calligraphic and originate from Western Europe in the 12th century.
+They aren’t used very often because they aren’t easy to read.
 
 Bookscanning and OCR
 
@@ -523,6 +530,20 @@ Amazon DRM - AZW, KFX
 
 Amazon use their own DRM for their Kindle e-books. The current standard is (KFX). Amazon provide reading apps on the web, smartphone/tablet and on Windows and macOS…
 
+Copyright infringement of e-books (piracy)
+
+“Piracy's a crime and crime doesn't pay
+	And we go home poor at the end of the day
+But I'd rather live my life in rags
+	Than be chained to a desk with a wife that's a hag”
+Drink, Alestorm
+
+I plan on this to be either a subset of my piracy manifesto or just copied verbatim. I like the idea of using the Alestorm lyrics to introduce this chapter.
+
+Currently, my TL;DR on e-book piracy is that most DRM for e-books is technically ineffective and can be inconvenient for users. If you want DRM that actually works I recommend distributing on Vitalsource’s Bookshelf store.
+I think it’s better to reduce DRM and foster goodwill with users. Humble (formerly Humble Bundle) and O’Reilly have demonstrated that DRM-free is a viable option that doesn’t result in sudden bankruptcy.
+Also much of the data on piracy is surprising including that pirates buy more content and is more nuanced than what large publishers, movie studios and record labels purport.
+
 ONIX for Books
 
 ONIX for Books is an XML-based standard for sharing book data between publishers, distributors and retailers using predefined fields and categories (defined as “code lists”).
@@ -530,7 +551,8 @@ I plan on creating my own libre ONIX editor and documentation for the perfect ON
 https://www.editeur.org/14/Code-Lists/
 
 Source code obfuscation
-“In software development, obfuscation is the deliberate act of creating source or machine code that is difficult for humans to understand.” -Obfuscation (software) article on Wikipedia
+“In software development, obfuscation is the deliberate act of creating source or machine code that is difficult for humans to understand.” 
+-Obfuscation (software) article on Wikipedia
 
 Source code obfuscation in software development makes it trickier to reverse-engineer a compile executable to find the original source code. Usually these are alterations made before or during compile time which don’t alter functionality.
 While ebookbuild is libre software, I am interested in ways of achieving this for users who want an output that hides the exact XHTML and CSS code from a tinkering end-user.
