@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-15 09:33:12 +0000" ModID="5229417F-E5F6-484A-82BC-594C56EB9951">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-20 15:59:55 +0000" ModID="7DF671DE-B5E2-4D87-8562-9B61AF33FEDC">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
             <Title>Draft</Title>
@@ -43,13 +43,13 @@
                 <TextSelection>376,1</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="ACD131AA-5177-42FB-8152-CC3A73D2FF81" Type="Text" Created="2022-02-13 17:12:01 +0000" Modified="2022-02-14 14:55:41 +0000">
-            <Title>Introduction to Git</Title>
+        <BinderItem UUID="ACD131AA-5177-42FB-8152-CC3A73D2FF81" Type="Text" Created="2022-02-13 17:12:01 +0000" Modified="2022-02-17 14:04:19 +0000">
+            <Title>Introduction to Git and GitHub</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>9622,0</TextSelection>
+                <TextSelection>4048,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="0E872B99-EAAB-4308-B919-44645867118A" Type="Text" Created="2022-02-14 12:00:12 +0000" Modified="2022-02-14 19:07:44 +0000">
@@ -72,6 +72,23 @@
         </BinderItem>
         <BinderItem UUID="FE5C06C7-3D7B-46D6-BE96-8034DA158070" Type="Text" Created="2022-02-14 15:21:48 +0000" Modified="2022-02-14 15:21:57 +0000">
             <Title>List of Illustrations</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>0,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="394DAC75-CF1D-4F47-9D22-8608BA998D6C" Type="Text" Created="2022-02-20 14:45:49 +0000" Modified="2022-02-20 15:59:41 +0000">
+            <Title>Essay: A Pragmatic Approach to Piracy</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>7852,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="37F16950-E69B-4500-A55A-EAE8596C6A1E" Type="Text" Created="2022-02-20 15:29:49 +0000" Modified="2022-02-20 15:29:49 +0000">
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
@@ -201,13 +218,13 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="243" Characters="1463" Date="2022-02-15 09:33:12 +0000"/>
+        <PreviousSession Words="2496" Characters="17420" Date="2022-02-20 15:59:55 +0000"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-02-15 00:00:00 +0000">
+    <RecentWritingHistory Date="2022-02-20 00:00:00 +0000">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
-        <OtherWordCount>240</OtherWordCount>
-        <OtherCharCount>1444</OtherCharCount>
+        <OtherWordCount>2486</OtherWordCount>
+        <OtherCharCount>17348</OtherCharCount>
     </RecentWritingHistory>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="iso-a4" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>
