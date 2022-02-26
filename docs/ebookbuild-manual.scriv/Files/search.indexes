@@ -157,19 +157,31 @@ Italic:
 Italic is used as alternative to bold for emphasis to make a particular word or phrase more prominent to a reader. It is also common to italicise the names of works such as books, films, music and video games. For example I italicised the Chicago Manual of Style in this chapter’s introductory paragraph.
 
 Superscript:
-Superscripting makes the font smaller and places it above the cap height. It is commonly used for numerical ordinals such as 1st, 2nd, 3rd and 4th. As well as citational references, as you’ll have noticed throughout this book.
+Superscripting makes the font smaller and places it above the cap height. It is commonly used for numerical ordinals such as 1st, 2nd, 3rd and 4th. As well as citational references inside paragraphs, as you’ll have noticed throughout this book.
 
 Subscript:
 Subscripting makes the font smaller and places it below the baseline. It is commonly used for chemical formulae such as carbon dioxide (CO2) or sulphuric acid (H2SO4).
 
 Small caps:
 Small caps (Small Caps) are capital letters that are the same height as the lowercase letters (i.e. the font’s x-height).
-They are commonly used stylistically for the names of people as a form of emphasis. For example, in some Christian Bible translations the word “Lord” is written in small caps such as in this Bible passage:
+They are commonly used stylistically for the names of people as a form of emphasis. For example, in some Christian Bible translations the word “Lord” is written in small caps such as in this Bible passage taken from Bible Gateway:
 
 “12 Now the Lord had said unto Abram, Get thee out of thy country, and from thy kindred, and from thy father's house, unto a land that I will shew thee:” —Genesis 12:1, King James Version (KJV)
 
 Unfortunately, some e-book reading software such as Adobe Digital Editions does not support small caps and ignores them. I don’t recommend relying on small caps compatibility for digital documents unless a supported font has been embedded.
 
+Hyperlinks:
+Hyperlinks are used to connect text, images or other content to an external resource. In most webpages and documents, hyperlinks appear underlined blue for unvisited and then turn purple once clicked.
+
+For web hyperlinks, I try to use HyperText Transport Protocol Secure (HTTPS) to force security on the web browser such as Brave, Chrome or Firefox.
+I also add an archive link in parentheses from archive.today (or one of its aliases such as archive.is or archive.me) or alternatively from archive.org’s Wayback Machine to prevent link rot. I have an explanation of link rot in my example below:
+
+Link rot (Wikipedia article, archive) is a situation when a hyperlink no longer brings a person to the correct webpage on the internet. This is a concern for any kind of project that relies on websites for researching information, therefore I recommend making use of archive websites (such as archive.today or the Wayback Machine) to preserve references. One alternative to archive websites is to save each required webpage as a PDF file.
+
+For e-mail addresses there is a “mailto:” prefix instead of the usual “http” or “https”. From there a web browser and certain e-reader software (not Google Play Books) can open the user’s e-mail client or at least ask the user what to do with e-mail address links.
+
+In print media I keep the hyperlink underlined and in black for greyscale printing (retain the blue for colour) with the linked pathname written out as concisely as possible. 
+For example, hyperlinks to a product page on Amazon can be written concisely with “dp” (I assume this means “display product”) then the Amazon Standard Identification Number (ASIN): https://www.amazon.co.uk/dp/B00QMW6LQC
 
 Symbols:
 
@@ -400,9 +412,15 @@ XHTML) and associated application logic to give it semantics.”
 —Eric S. Raymond, Art of Unix Programming
 
 XHTML (eXtensible HyperText Markup Language) is the recommended language for creating the actual chapters of an e-book, it combines regular HTML (HyperText Markup Language) that is used to create webpages with XML (eXtensible Markup Language). Alternatively, you can use regular HTML though you can’t define custom tags (or can you?) and web browsers are more tolerant of obvious syntax errors when testing.
+
 So what is XHTML? To start with I have used Eric S. Raymond’s definition of XML as a springboard. All three standards are markup languages this means that the developer has to define what the file’s content will look like using some kind of syntax (if you understand LaTeX or Markdown this should be familiar), which in this case are tags.
+
 Tags are made using a less-than symbol (&lt;) followed by one word, abbreviation or letter then by a greater-than symbol (&gt;), the text content itself is then written inside the tag and then closed with a closing tag that is identical though with a forward slash (/) after the less-than symbol. Some tags are “self-closing” this means that they are defined in just one tag with a less-than symbol, tag name, then the forward slash and the greater-than symbol. Each tag represents a specific type of content such as headings, paragraphs, images, tables, or numbered and bullet point lists. 
+
+Attributes are parameters used by tags. Some attributes such as “class” are applicable to most tags and other attributes are specific to the individual tag.
+
 I would recommend taking a look at one of the .xhtml files of this e-book while I explain the concepts. 
+
 There are 3 parts to an XHTML file:
 
 Declaration - defines to the web browser or e-reader what the file is, what standard of HTML/XML and what character encoding it uses.
@@ -417,7 +435,8 @@ We start the file with a declaration to let the e-reader or web browser know thi
 I always use UTF-8 as it has a large language support including accented Latin characters, Greek and Cyrillic (the writing system used in Russia, Ukraine and several Baltic states).
 
 Head
-The head defines information about the XHTML file that the user doesn’t see. Similarly to the declaration, I barely change this except for the optional title tag so I can see the chaper’s name in my web browser during testing.
+
+The head defines information about the XHTML file that the user doesn’t see. Similarly to the declaration, I barely change this except for the optional title tag so I can see the chapter’s name in my web browser during testing.
 
 &lt;head&gt;
 	&lt;meta content=&quot;http://www.w3.org/1999/xhtml; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;/&gt;
@@ -425,23 +444,85 @@ The head defines information about the XHTML file that the user doesn’t see. S
 	&lt;title&gt;Acknowledgements&lt;/title&gt;
 &lt;/head&gt;
 
-The head tag is where external CSS (Cascading StyleSheets) files (that use the .css file extensions) are declared.
+The head tag is where external CSS (Cascading StyleSheets) files (that use the .css file extension) are declared, more on that in the Introduction to Cascading Stylesheets chapters.
 
 Body
-The body is all the content that the user will see (with the exception of comments) and is the majority of the XHTML file.
+The body is all the content that the user will see (with the exception of comments) and is the majority of the XHTML file. Each piece of content is separated into tags depending on what the content is and where it should go on the page. XHTML is interpreted linearly by the web browser and e-reader starting from top to bottom.
 
-Heading tags
-There are 6 tags for defining headings &lt;h1&gt;&lt;/h1&gt;, &lt;h2&gt;&lt;/h2&gt;, &lt;h3&gt;&lt;/h3&gt;, &lt;h4&gt;&lt;/h4&gt;, &lt;h5&gt;&lt;/h5&gt; and &lt;h6&gt;&lt;/h6&gt;. I don’t think I’ve used all of them in just one project though because there are classes defined for their specific use…
+Some tags can be used on their own, though most require text content between the tags and specific attributes and classes in order to work correctly.
 
-Paragraph tags
+Headings
+There are six separate tags for declaring headings in XHTML and regular HTML, which go as follows: &lt;h1&gt;&lt;/h1&gt;, &lt;h2&gt;&lt;/h2&gt;, &lt;h3&gt;&lt;/h3&gt;, &lt;h4&gt;&lt;/h4&gt;, &lt;h5&gt;&lt;/h5&gt; and &lt;h6&gt;&lt;/h6&gt;. 
 
-Image tag
+I haven’t used all six heading tags in a project because CSS allows me to define what size each heading should be, as well as whether it uses emphasis (bold, italic or none) and want font type (sans-serif or serif).
 
-Bullet point list tags
+Paragraphs
+Paragraphs and other areas of the book that solely display text are declared with the &lt;p&gt;&lt;/p&gt; tags.
 
-Numbered list tags
+I also use paragraph tags to force images to be centred.
 
-Table tags
+Bold
+Bold is declared within content using the &lt;b&gt;&lt;/b&gt;. Historically, bold was declared with &lt;strong&gt;&lt;/strong&gt; tags and they should also theoretically work.
+
+Italic
+Italic is declared with content using the &lt;i&gt;&lt;/i&gt;. Historically, bold was declared with &lt;em&gt;&lt;/em&gt; tags and they should also theoretically work.
+
+Spans
+Span tags are used to add CSS formating to specified content within other tags. Some formatting such as text colour, underlining and strikethroughs have no specific tag. For example, I have this sentence:
+
+This text is red and underlined.
+
+The simplest way to put this sentence into XHTML is with the following:
+
+&lt;p&gt;This text is &lt;span class=”red-word”&gt;red&lt;/span&gt; and underlined.&lt;/p&gt;
+
+The CSS class is as follows:
+
+.red-word {
+  color: #f00;
+  font-weight: bold;
+  text-underline: underline;
+}
+
+Images
+Images are declared with the self-closing &lt;img/&gt; tag. The &lt;img/&gt; tag requires several attributes to work which are “src” and “alt”. For example I want to embed a photograph of a flower into a XHTML page:
+
+&lt;img src=”images/flower.jpg” alt=””/&gt;
+
+The “src” attribute is the source, it takes a filepath to the image that is to be displayed starting from the location of the .xhtml file. In this example the flower image is in an appropriately named “images” folder.
+
+The “alt” attribute is used to define alternative text in the even the image doesn’t load and is mandatory within the ePub standard (not sure why as the image should be part of the ePub file).
+
+There are additional attributes such as “width” and “height” which define dimensions, though I prefer to crop down to the desired dimensions to ensure my ePub’s file size isn’t excessively large.
+
+Bullet point lists
+Bullet point lists are referred to as “unordered lists” and use the &lt;ul&gt;&lt;/ul&gt; tags, followed by &lt;li&gt;&lt;/li&gt; for each bullet point. Using CSS it is possible to specify which type of bullet should precede each list entry.
+
+For example, take this list of ingredients for a Victoria sponge cake:
+
+&lt;ul&gt;
+ &lt;li&gt;Unsalted butter&lt;/li&gt;
+	 &lt;li&gt;Castor sugar&lt;/li&gt;
+ &lt;li&gt;Flour&lt;/li&gt;
+&lt;/ul&gt;
+
+Which creates the following list:
+
+Unsalted butter
+Castor sugar
+Flour
+
+Numbered lists
+Numbered lists are referred to as “unordered lists” and use the &lt;ol&gt;&lt;/ol&gt; tags, as well as &lt;li&gt;&lt;/li&gt; for each bullet point. Using CSS it is possible to specify which type of numbering (such as the Latin alphabet or Roman numerals) should be used for each entry. 
+
+For example, take this list of ingredients for a Victoria sponge cake:
+
+The &lt;ol&gt;&lt;/ol&gt; tag has an addition attribute called “start” which defines where the numbering should start. Keep in mind support for this is subject to the e-reader.
+
+&lt;ol start=”5”&gt;
+&lt;/ol&gt;
+
+Tables
 Tables are a bit more difficult to define in XHTML, so I recommend arranging them neatly to avoid getting confused. There are 4 tags for defining tables &lt;table&gt;&lt;/table&gt;, &lt;tr&gt;&lt;/tr&gt;, &lt;th&gt;&lt;/th&gt; and &lt;td&gt;&lt;/td&gt;.
 
 &lt;table&gt;&lt;/table&gt; behaves like a division tag and are the parent tags for the whole table. All table content will go inside these.
@@ -451,6 +532,10 @@ Tables are a bit more difficult to define in XHTML, so I recommend arranging the
 &lt;th&gt;&lt;/th&gt; are the optional table heading tags.
 
 &lt;td&gt;&lt;/td&gt; are the table data tags which defines each cell.
+
+Further reading
+
+Several websites have exhaustive documentation of each HTML/XHTML tag, its attributes and compatibility across different web browsers. Visual Studio Code includes hyperlinks to Mozilla’s documentation and in the past I would refer to W3Schools for information of each tag.
 
 
 </Text>
@@ -680,11 +765,17 @@ Google has its own bespoke Literata font family…
 
 Sans-serif
 Monospaced (or fixed width)
+
+#
+As you can see when comparing Times New Roman and Consolas, each glyph in a monospaced font takes up the same amount of space. 
+
 Monospaced (also called fixed-width) fonts have each letter, number and symbol as the same width to assist with readability. They are usually used for technical purposes such as for programming or scriptwriting.
-The two best known monospaced fonts are Courier and its sucessor Courier New.
+The two best known monospaced fonts are Courier and its successor Courier New.
 Historically, Courier was designed by IBM for typewriters but was development into a computer font in the 1990s. Courier wasn’t trademarked, so there are many derivatives. 
-Courier New was a redesign by legendary typographer Adrian Frutiger for Monotype with improved punctuation and to include support for more languages. It has been pre-installed as a system font since Microsoft Windows 3.1 and is a popular choice for programmers.
-Nowadays, there are plenty of monospaced fonts to choose from that are either pre-installed on the operating system or can be downloaded for free. Examples include Consolas, IBM Plex Mono, Ubuntu Mono, 
+Courier New was a redesign by legendary typographer Adrian Frutiger for Monotype with improved punctuation and to include support for more languages. It has been pre-installed as a system font since Microsoft Windows 3.1 and is a popular choice, particularly for older programmers.
+Nowadays, there are many monospaced fonts to choose from that are either pre-installed on the operating system or can be downloaded for free. Since the mid-2000s it is common to include monospaced counterparts to proportional designs. Examples include Consolas, IBM Plex Mono, Ubuntu Mono, Fira Mono.
+
+‘’Diagram comparing Consolas to Calibri, IBM Plex Sans Mono to IBM Plex Sans, Ubuntu to Ubuntu Mono, Fira Mono to Fira Sans, Roboto Mono to Roboto, Amazon Ember to Amazon Ember Mono.
 
 JetBrains Mono is my current choice of monospaced font as it has clear lettering and is readable. When choosing a monospaced font for e-book development I would recommend checking the quote marks as they are often not clear at smaller sizes. //example
 
@@ -696,10 +787,35 @@ ASCII was simplistic and only defined the uppercase and lowercase English alphab
 
 #
 These are all of the printable ASCII characters
+//I’ll redo this diagram
 
 Unicode is instead a more complete representation of the world’s writing systems and supports over 150 different languages both modern and ancient.
 Each supported glyph within Unicode is part of a group of glyphs called a block. As it’s a superset of ASCII, the first block called Basic Latin contains all the ASCII characters. If you need a particular character it is likely already available in a Unicode block, though keep in mind very few fonts support Unicode completely.
 It’s also worth knowing about Windows Glyph List (WGL) fonts
+
+Ligatures
+
+Ligatures are two or more conjoined glyphs that usually (though not always) provide improved readability and are used for aesthetic purposes. As with any typographical feature, it’s support may vary between each e-reader.
+
+//Ligature example diagram
+The letters “fi” and “fl” are commonly presented as a ligature
+
+In software development there is are certainly monospaced fonts that support ligature symbols such as Fira Code (a modification of Fira Mono) and JetBrains Mono. Most programming languages rely on certain sequences of symbols as part of the syntax such as “!=”, “==” and “++”.
+
+//Symbol ligature example diagram
+
+Text figures
+
+Text figures are numerals with alternating dimensions for readability within paragraphs. They are mostly historic, though some fonts such as Georgia support them by default or as stylistic alternates.
+
+//
+
+Lining figures
+
+Tabular figures
+
+Stylistic alternates
+
 
 References:
 https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New
@@ -828,7 +944,7 @@ I have written this preface to explain the my justification for the ebookbuild p
 
 Welcome to e-book development
 
-By reading this book you are at least curious about the process of e-book development and the best way to have complete control over your project.
+By reading this book you are at least curious about the process of e-book development and the best way to have complete control over your next project.
 
 Why ebookbuild?
 

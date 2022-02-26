@@ -1,10 +1,12 @@
 {\rtf1\ansi\ansicpg1252\uc1\deff0
 {\fonttbl{\f0\fmodern\fcharset0\fprq2 Sitka Text;}{\f1\fmodern\fcharset0\fprq2 SegoeUI-Bold;}{\f2\fmodern\fcharset0\fprq2 SegoeUI;}{\f3\fmodern\fcharset0\fprq2 SegoeUI-Italic;}{\f4\fmodern\fcharset0\fprq2 JetBrainsMono-Regular;}}
-{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red128\green128\blue128;}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red128\green128\blue128;\red255\green38\blue29;}
 {\*\listtable
 {\list\listtemplateid1\listhybrid
-{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\f1\fs24\b1\i0\fi-1185\li1707\lin1707}{\listname ;}\listid1}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\f1\fs24\b1\i0\fi-1580\li2276\lin2276}{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\loch\af0\hich\af0\dbch\af0\uc1\u8226\'95;}{\levelnumbers;}\f2\fs24\b0\i0\fi-667\li960\lin960}{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
 \paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\f0\fs24\cf0
 \pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f1\fs36\b1\i0 Introduction to XHTML}
 \par\pard\plain \ltrch\loch \f2\fs22\b0\i0
@@ -15,9 +17,15 @@
 \par\pard\plain \qr\ltrch\loch {\f2\fs22\b0\i0 \hich\f2 \emdash \loch\f2 Eric S. Raymond, }{\f3\fs22\b0\i1 Art of Unix Programming}
 \par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f1\fs28\b1\i0
 \par\plain {\f2\fs24\b0\i0 XHTML (eXtensible HyperText Markup Language) is the recommended language for creating the actual chapters of an e-book, it combines regular HTML (HyperText Markup Language) that is used to create webpages with XML (eXtensible Markup Language). Alternatively, you can use regular HTML though you can\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t define custom tags (or can you?) and web browsers are more tolerant of obvious syntax errors when testing.}
+\par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 So what is XHTML? To start with I have used Eric S. Raymond\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s definition of XML as a springboard. All three standards are markup languages this means that the developer has to define what the file\u8217\'92s content will look like using some kind of syntax (if you understand LaTeX or Markdown this should be familiar), which in this case are tags.}
+\par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Tags are made using a less-than symbol (<) followed by one word, abbreviation or letter then by a greater-than symbol (>), the text content itself is then written inside the tag and then closed with a closing tag that is identical though with a forward slash (/) after the less-than symbol. Some tags are \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93self-closing\u8221\'94 this means that they are defined in just one tag with a less-than symbol, tag name, then the forward slash and the greater-than symbol. Each tag represents a specific type of content such as headings, paragraphs, images, tables, or numbered and bullet point lists. }
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Attributes are parameters used by tags. Some attributes such as \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93class\u8221\'94 are applicable to most tags and other attributes are specific to the individual tag.}
+\par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 I would recommend taking a look at one of the .xhtml files of this e-book while I explain the concepts. }
+\par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 There are 3 parts to an XHTML file:}
 \par\plain \f2\fs24\b0\i0
 \par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls1\ilvl0{\listtext	\f1\fs24\b1\i0 1.	}{\f1\fs24\b1\i0 Declaration}{\f2\fs24\b0\i0  - defines to the web browser or e-reader what the file is, what standard of HTML/XML and what character encoding it uses.}
@@ -32,7 +40,8 @@
 \par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch {\f2\fs24\b0\i0 I always use UTF-8 as it has a large language support including accented Latin characters, Greek and Cyrillic (the writing system used in Russia, Ukraine and several Baltic states).}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f1\fs24\b1\i0 Head}
-\par\plain {\f2\fs24\b0\i0 The head defines information about the XHTML file that the user doesn\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t see. Similarly to the declaration, I barely change this except for the optional title tag so I can see the chaper\u8217\'92s name in my web browser during testing.}
+\par\plain \f1\fs24\b1\i0
+\par\plain {\f2\fs24\b0\i0 The head defines information about the XHTML file that the user doesn\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t see. Similarly to the declaration, I barely change this except for the optional title tag so I can see the chapter\u8217\'92s name in my web browser during testing.}
 \par\plain \f2\fs24\b0\i0
 \par\pard\plain \ltrch\loch {\f4\fs22\b0\i0 <head>}
 \par\plain {\f4\fs22\b0\i0 \tab <meta content="http://www.w3.org/1999/xhtml; charset=utf-8" http-equiv="Content-Type"/>}
@@ -40,23 +49,85 @@
 \par\plain {\f4\fs22\b0\i0 \tab <title>Acknowledgements</title>}
 \par\plain {\f4\fs22\b0\i0 </head>}
 \par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \f4\fs22\b0\i0
-\par\plain {\f2\fs24\b0\i0 The head tag is where external CSS (Cascading StyleSheets) files (that use the .css file extensions) are declared.}
+\par\plain {\f2\fs24\b0\i0 The head tag is where external CSS (Cascading StyleSheets) files (that use the .css file extension) are declared, more on that in the Introduction to Cascading Stylesheets chapters.}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f1\fs24\b1\i0 Body}
-\par\plain {\f2\fs24\b0\i0 The body is all the content that the user will see (with the exception of comments) and is the majority of the XHTML file.}
+\par\plain {\f2\fs24\b0\i0 The body is all the content that the user will see (with the exception of comments) and is the majority of the XHTML file. Each piece of content is separated into tags depending on what the content is and where it should go on the page. XHTML is interpreted linearly by the web browser and e-reader starting from top to bottom.}
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 Heading tags}
-\par\plain {\f2\fs24\b0\i0 There are 6 tags for defining headings <h1></h1>, <h2></h2>, <h3></h3>, <h4></h4>, <h5></h5> and <h6></h6>. I don\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t think I\u8217\'92ve used all of them in just one project though because there are classes defined for their specific use\u8230\'85}
+\par\plain {\f2\fs24\b0\i0 Some tags can be used on their own, though most require text content between the tags and specific attributes and classes in order to work correctly.}
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 Paragraph tags}
+\par\plain {\f2\fs24\b0\i0 Headings}
+\par\plain {\f2\fs24\b0\i0 There are six separate tags for declaring headings in XHTML and regular HTML, which go as follows: <h1></h1>, <h2></h2>, <h3></h3>, <h4></h4>, <h5></h5> and <h6></h6>. }
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 Image tag}
+\par\plain {\f2\fs24\b0\i0 I haven\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t used all six heading tags in a project because CSS allows me to define what size each heading should be, as well as whether it uses emphasis (bold, italic or none) and want font type (sans-serif or serif).}
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 Bullet point list tags}
+\par\plain {\f2\fs24\b0\i0 Paragraphs}
+\par\plain {\f2\fs24\b0\i0 Paragraphs and other areas of the book that solely display text are declared with the <p></p> tags.}
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 Numbered list tags}
+\par\plain {\f2\fs24\b0\i0 I also use paragraph tags to force images to be centred.}
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 Table tags}
+\par\plain {\f2\fs24\b0\i0 Bold}
+\par\plain {\f2\fs24\b0\i0 Bold is declared within content using the <b></b>. Historically, bold was declared with <strong></strong> tags and they should also theoretically work.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Italic}
+\par\plain {\f2\fs24\b0\i0 Italic is declared with content using the <i></i>. Historically, bold was declared with <em></em> tags and they should also theoretically work.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Spans}
+\par\plain {\f2\fs24\b0\i0 Span tags are used to add CSS formating to specified content within other tags. Some formatting such as text colour, underlining and strikethroughs have no specific tag. For example, I have this sentence:}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 This text is }{\f1\fs24\b1\i0\ul\ulc0\cf4 red}{\f2\fs24\b0\i0  and underlined.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 The simplest way to put this sentence into XHTML is with the following:}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 <p>This text is <span class=\loch\af2\hich\af2\dbch\af2\uc1\u8221\'94red-word\u8221\'94>red</span> and underlined.</p>}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 The CSS class is as follows:}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f4\fs24\b0\i0 .red-word \{}
+\par\plain {\f4\fs24\b0\i0   color: #f00;}
+\par\plain {\f4\fs24\b0\i0   font-weight: bold;}
+\par\plain {\f4\fs24\b0\i0   text-underline: underline;}
+\par\plain {\f4\fs24\b0\i0 \}}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Images}
+\par\plain {\f2\fs24\b0\i0 Images are declared with the self-closing <img/> tag. The <img/> tag requires several attributes to work which are \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93src\u8221\'94 and \u8220\'93alt\u8221\'94. For example I want to embed a photograph of a flower into a XHTML page:}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 <img src=\loch\af2\hich\af2\dbch\af2\uc1\u8221\'94images/flower.jpg\u8221\'94 alt=\u8221\'94\u8221\'94/>}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 The \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93src\u8221\'94 attribute is the source, it takes a filepath to the image that is to be displayed starting from the location of the .xhtml file. In this example the flower image is in an appropriately named \u8220\'93images\u8221\'94 folder.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 The \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93alt\u8221\'94 attribute is used to define alternative text in the even the image doesn\u8217\'92t load and is mandatory within the ePub standard (not sure why as the image should be part of the ePub file).}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 There are additional attributes such as \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93width\u8221\'94 and \u8220\'93height\u8221\'94 which define dimensions, though I prefer to crop down to the desired dimensions to ensure my ePub\u8217\'92s file size isn\u8217\'92t excessively large.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Bullet point lists}
+\par\plain {\f2\fs24\b0\i0 Bullet point lists are referred to as \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93unordered lists\u8221\'94 and use the <ul></ul> tags, followed by <li></li> for each bullet point. Using CSS it is possible to specify which type of bullet should precede each list entry.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 For example, take this list of ingredients for a Victoria sponge cake:}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f4\fs24\b0\i0 <ul>}
+\par\plain {\f4\fs24\b0\i0  <li>Unsalted butter</li>}
+\par\plain {\f4\fs24\b0\i0 \tab  <li>Castor sugar</li>}
+\par\plain {\f4\fs24\b0\i0  <li>Flour</li>}
+\par\plain {\f4\fs24\b0\i0 </ul>}
+\par\plain \f4\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Which creates the following list:}
+\par\plain \f2\fs24\b0\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls2\ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Unsalted butter}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Castor sugar}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 Flour}
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Numbered lists}
+\par\plain {\f2\fs24\b0\i0 Numbered lists are referred to as \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93unordered lists\u8221\'94 and use the <ol></ol> tags, as well as <li></li> for each bullet point. Using CSS it is possible to specify which type of numbering (such as the Latin alphabet or Roman numerals) should be used for each entry. }
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 For example, take this list of ingredients for a Victoria sponge cake:}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 The <ol></ol> tag has an addition attribute called \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93start\u8221\'94 which defines where the numbering should start. Keep in mind support for this is subject to the e-reader.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 <ol start=\loch\af2\hich\af2\dbch\af2\uc1\u8221\'945\u8221\'94>}
+\par\plain {\f2\fs24\b0\i0 </ol>}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Tables}
 \par\plain {\f2\fs24\b0\i0 Tables are a bit more difficult to define in XHTML, so I recommend arranging them neatly to avoid getting confused. There are 4 tags for defining tables <table></table>, <tr></tr>, <th></th> and <td></td>.}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 <table></table> behaves like a division tag and are the parent tags for the whole table. All table content will go inside these.}
@@ -66,6 +137,10 @@
 \par\plain {\f2\fs24\b0\i0 <th></th> are the optional table heading tags.}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 <td></td> are the table data tags which defines each cell.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Further reading}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Several websites have exhaustive documentation of each HTML/XHTML tag, its attributes and compatibility across different web browsers. Visual Studio Code includes hyperlinks to Mozilla\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s documentation and in the past I would refer to W3Schools for information of each tag.}
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0}
