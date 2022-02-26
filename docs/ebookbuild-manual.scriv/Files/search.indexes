@@ -183,6 +183,11 @@ For e-mail addresses there is a “mailto:” prefix instead of the usual “htt
 In print media I keep the hyperlink underlined and in black for greyscale printing (retain the blue for colour) with the linked pathname written out as concisely as possible. 
 For example, hyperlinks to a product page on Amazon can be written concisely with “dp” (I assume this means “display product”) then the Amazon Standard Identification Number (ASIN): https://www.amazon.co.uk/dp/B00QMW6LQC
 
+Redaction
+Redaction is obfuscation of text for confidentiality purposes.
+
+Pixelation has be proven to not be secure… F-Secure also has a great video on this.
+
 Symbols:
 
 Hyphens, en dashes and em dashes
@@ -286,8 +291,6 @@ Square brackets are used to provide commentary when quoting an original source. 
 Another use of square brackets in this way is to quote a misspelling, incorrect grammar or nonsensical content verbatim using [sic].
 
 
-
-
 Referencing:
 In formal writing there are two types of referencing, citational and parenthetical.
 
@@ -295,7 +298,12 @@ Citational references uses either a number or symbol at the end of a sentence, o
 
 Parenthetical referencing uses… It’s best known as Harvard referencing as it was popularised by a Harvard University zoological paper… 
 
+Miscellaneous:
 
+Checksums:
+Checksums are used for verifying file integrity (though not folders) to ensure it has not been altered in transmission.
+
+The Message Digest 5 (MD5) algorithm has been proven to be vulnerable to malicious alternation and shouldn’t be trusted. I may remove MD5 support from ebookbuild in the future.
 
 
 References:
@@ -304,7 +312,18 @@ https://www.grammarly.com/blog/en-dash/
 https://www.grammarly.com/blog/why-you-should-love-the-em-dash/
 https://en.wikipedia.org/wiki/Quotation_mark</Text>
         </Document>
-        <Document ID="37F16950-E69B-4500-A55A-EAE8596C6A1E"/>
+        <Document ID="37F16950-E69B-4500-A55A-EAE8596C6A1E">
+            <Title>Epigraph?</Title>
+            <Text>“It's easier to complicate than simplify.
+
+Simple ideas enter the brain quicker and stay there longer. 
+
+Brutal simplicity of thought is therefore a painful necessity.”
+
+—Brutal Simplicity as defined on the reception wall at M&amp;C Saatchi, London
+
+</Text>
+        </Document>
         <Document ID="394DAC75-CF1D-4F47-9D22-8608BA998D6C">
             <Title>Essay: A Pragmatic Approach to Piracy</Title>
             <Text>A Pragmatic Approach to Piracy
@@ -484,6 +503,32 @@ The CSS class is as follows:
   text-underline: underline;
 }
 
+Hyperlinks
+Hyperlinks are declared with the anchor tags &lt;a&gt;&lt;/a&gt;. The anchor tags require the “href” attribute to define an internal or external hyperlink.
+
+Internal links can refer to a particular XHTML file within the ePub just like an image source declaration:
+
+//
+
+Alternatively an internal hyperlink can refer to a specific position within the current XHTML file using the hash (#) symbol.
+
+//
+
+External links can be declared using HyperText Transfer Protocol Secure (HTTPS) or regular HTTP (which isn’t secure). 
+
+//
+
+E-mail addresses can be hyperlinked using mailto: 
+
+&lt;p&gt;E-mail: &lt;a href=”mailto:hal@example.com”&gt;hal@example.com&lt;/a&gt;&lt;/p&gt;
+
+Superscripting and subscripting
+Superscript and subscript have their own tags which are &lt;sup&gt;,&lt;/sup&gt; and &lt;sub&gt;&lt;/sub&gt; respectively. For example:
+
+&lt;p&gt;Payday is each 1&lt;sup&gt;st&lt;/sup&gt; of the month.&lt;/p&gt;
+
+&lt;p&gt;The chemical formula to carbon dioxide is CO&lt;sub&gt;2&lt;/sub&gt;.&lt;/p&gt;
+
 Images
 Images are declared with the self-closing &lt;img/&gt; tag. The &lt;img/&gt; tag requires several attributes to work which are “src” and “alt”. For example I want to embed a photograph of a flower into a XHTML page:
 
@@ -525,7 +570,7 @@ The &lt;ol&gt;&lt;/ol&gt; tag has an addition attribute called “start” which
 Tables
 Tables are a bit more difficult to define in XHTML, so I recommend arranging them neatly to avoid getting confused. There are 4 tags for defining tables &lt;table&gt;&lt;/table&gt;, &lt;tr&gt;&lt;/tr&gt;, &lt;th&gt;&lt;/th&gt; and &lt;td&gt;&lt;/td&gt;.
 
-&lt;table&gt;&lt;/table&gt; behaves like a division tag and are the parent tags for the whole table. All table content will go inside these.
+&lt;table&gt;&lt;/table&gt; are the parent tags for the whole table. All table content will go inside these.
 
 &lt;tr&gt;&lt;/tr&gt; are the table row tags and define each row.
 
@@ -972,7 +1017,7 @@ I created the ebookbuild so it had no proprietary dependencies and could be used
 #
 Much of the ebookbuild project is licenced under GNU GPLv3.
 
-One of the prerequisites for free software is good documentation. So I have created an e-book that references as much as I have learnt in my one year in commercial e-book development, but the many years after. I want to make it accessible as possible so I have released it under a Creative Commons licence to encourage mass-sharing. The source code is on GitHub and I encourage raising issues and pull requests.
+One of the prerequisites for free software is thorough documentation, preferably easy to understand. So I have created an e-book that references as much as I have learnt in my one year in commercial e-book development, as well as what I have found out on my own since then. I want to make it accessible as possible so I have released it under a Creative Commons licence to encourage mass-sharing. The source code is on GitHub and I encourage raising issues and pull requests.
 Lastly, I released technical files that are required for e-book production such as XHTML, CSS and JSON files under the Creative Commons Zero (CC0) licence, making them effectively public domain. I don’t think the code used for these files isn’t particularly special or unique, so they can be re-purposed outside of ebookbuild uncredited, though credit is appreciated.
 
 
@@ -995,7 +1040,7 @@ You may have paid money to get copies of a free program, or you may have obtaine
         </Document>
         <Document ID="ACD131AA-5177-42FB-8152-CC3A73D2FF81">
             <Title>Introduction to Git and GitHub</Title>
-            <Text>Introduction to Git
+            <Text>Introduction to Git and GitHub
 
 
 Before Git
@@ -1048,36 +1093,37 @@ Using Git at first may seem intimidating as there are a lot of jargon words to l
 
 Git clients
 
+
 To get started, I recommend using a Git client. There are a lot of Git clients, and official Git website keeps a list of them.
-
-
 My personal choice of client is GitHub Desktop. GitHub Desktop is free and open-source with ports for Windows and macOS (and also albeit unofficially Debian, Fedora and AppImage). As its name heavily implies the client is owned by GitHub (now Microsoft) and connects with GitHub seamlessly, however it also supports connecting to other Git hosting services such as GitLab and Bitbucket along with self-hosted Git servers.
-
-
 GitKraken is also a superb client with a beautiful user interface and has official builds for Windows, macOS and Ubuntu. However, for commercial use you must pay $50 per year.
+
 
 The basics of Git
 
 I find the easiest metaphor to describe Git is to think of a filing cabinet.
-The repository is the cabinet itself and a branch is each drawer. You pull out a filing cabinet draw to access its contents, make your changes to the drawer, then note them down as a commit and you push the drawer closed when you are finished. A pull request in this analogy would be when one office worker requests access to another filing cabinet to alter a few files inside.
-Here is a glossary of common terms used by Git with its corresponding icon on GitHub:
+The repository is the cabinet itself and a branch is each drawer. You pull out a filing cabinet draw to access its contents, make your changes to the drawer, then note down the changes as a commit and you push the drawer closed when you are finished. A pull request in this analogy would be when one office worker requests access to another filing cabinet to alter a few files inside.
+Here is a glossary of common terms used by Git with its corresponding icon on GitHub Desktop:
 
-# Repository – A repository is an instance of Git that covers an entire folder and its files. This is where a project will be placed and all the source code files and resources that make it.
+# Repository – A repository is the of Git that holds a project and covers an entire folder and its contents including files and subfolders. This is where a project will be placed and all the source code files and resources that make it.
 
-# Branch – A branch is the part of the repository where commits are added. By default, a Git repository uses the master (or main) branch and for basic Git use by an individual developer, this shouldn’t be a concern. 
+# Branch – A branch is the part of the repository where commits are added. By default, a Git repository uses the master (or main) branch and for basic Git use by an individual developer, this shouldn’t be a concern.
 For more complicated development, separate branches are used for development and testing. A branch can be merged bringing those changes to another branch or the branch can be split off. The way Git handles branching is the reason Git is referred to as a distributed source code management system.
 
-# Commit – A commit is an alteration made to the repository that has been accepted by the developer. This includes any changes made to the files and folders including editing the text files, adding files, deleting files, moving files, etc. 
+# Commit – A commit is an alteration made to the repository that has been accepted by the developer. This includes any changes made to the files and folders including editing the text files, adding files, deleting files, moving files, etc.
 Most Git clients will show the differences between the files using colour-coding. A commit requires a short title for the Git commit log and an optional description which can be handy for keeping track of development and writing notes.
+
+# Publish – A publish is when the repository is being pushed from a Git client for the first time.
 
 # Push – A push is the process of sending the commit from the development machine to the Git server.
 
 # Pull – A pull is the process of retrieving previously pushed data to the Git server back onto the development machine. Through a combination of pushing and pulling a developer can work on the same code on multiple machines.
 
+# Issue – An issue is a request raised by another user on a Git hosting website such as GitHub or GitLab. An issue could be for an additional feature or to report a bug.
+
 # Pull Request – A pull request is specific to Git hosting websites where a user requests permission for their commit to be pulled into the repository they don't have direct access to.
 
-# Fork – A fork is a copy of the repository made from the latest commit to another user. Usually forks are made to preserve a repository or make alterations to the original in the form of a pull request.
-
+# Fork – A fork is a copy of the repository made from the latest commit to another user. Usually forks are made to preserve a repository or to make alterations to the original in the form of a pull request.
 
 Clone a repository from GitHub using GitHub Desktop
 
