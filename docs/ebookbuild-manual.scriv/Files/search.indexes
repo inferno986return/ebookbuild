@@ -324,7 +324,7 @@ https://www.grammarly.com/blog/why-you-should-love-the-em-dash/
 https://en.wikipedia.org/wiki/Quotation_mark</Text>
         </Document>
         <Document ID="37F16950-E69B-4500-A55A-EAE8596C6A1E">
-            <Title>Epigraph?</Title>
+            <Title>Epigraph</Title>
             <Text>“It's easier to complicate than simplify.
 
 Simple ideas enter the brain quicker and stay there longer. 
@@ -715,6 +715,7 @@ UTF-8, Unicode, and ASCII
 Software - Text editors, ... One that is recommended and then others.
 Create your own documentation and pull-request back stuff that is useful. Taken a gnuplot approach to development.
 Notetaking via OneNote, though GitHub/GitLab have wiki pages.
+Images in e-books - what are raster image formats such as JPEG, JPG, PNG, APNG and GIF. As well as vector image formats such as SVG and EPS.
 
 ASCII table appendix?
 
@@ -1081,7 +1082,40 @@ This book is interactive. Feel free to check the e-book code on GitHub.</Text>
         </Document>
         <Document ID="9F167921-F2D1-4A95-95BC-62C19E8CBC9C">
             <Title>Recommended Sofrware</Title>
-            <Text>Recommended Software</Text>
+            <Text>Recommended Software
+
+E-book development is made possible using many different pieces of software. My goal is to develop e-books as quickly and affordably as possible with minimal subscriptions. This is my preferred software though I also have some alternatives you can try.
+
+Text editor
+
+Terminal emulator
+
+Git client
+
+PDF reader
+
+Web browser
+
+A web browser is required to test the XHTML and CSS are working correctly and is ti
+
+Image editor and publishing software
+
+British software house Serif develop affordable design software that can be used as an alternative to the costly Adobe Creative Cloud (Adobe CC). Each copy is purchased once per 1.0 version and is currently priced at £47.99 GBP in the UK.
+For some use cases, the Adobe CC subscription may be a better deal as it includes other programs that Serif have not created alternatives for such as Adobe Lightroom, as well as features such as Adobe Typekit.
+
+Affinity Photo
+
+Affinity Photo is a raster image editor comparable to Adobe Photoshop.
+
+Affinity Designer
+
+Affinity Designer is a vector image editor comparable to Adobe Illustrator.
+
+Affinity Publisher
+
+Affinity Publisher is desktop publishing software comparable to Adobe inDesign.
+
+</Text>
         </Document>
         <Document ID="AA04C080-54B1-4AA8-993B-21F0F0F09032">
             <Title>Preface</Title>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-28 10:59:08 +0000" ModID="A535E4E5-F2C8-4B70-B687-210CF6BD9E89">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-28 12:35:06 +0000" ModID="D540EB5A-3030-49C5-AB90-96791880F296">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
             <Title>Draft</Title>
@@ -7,13 +7,13 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
         </BinderItem>
-        <BinderItem UUID="37F16950-E69B-4500-A55A-EAE8596C6A1E" Type="Text" Created="2022-02-20 15:29:49 +0000" Modified="2022-02-26 23:16:39 +0000">
-            <Title>Epigraph?</Title>
+        <BinderItem UUID="37F16950-E69B-4500-A55A-EAE8596C6A1E" Type="Text" Created="2022-02-20 15:29:49 +0000" Modified="2022-02-28 12:22:34 +0000">
+            <Title>Epigraph</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>246,0</TextSelection>
+                <TextSelection>207,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="AA04C080-54B1-4AA8-993B-21F0F0F09032" Type="Text" Created="2022-01-27 13:35:50 +0000" Modified="2022-02-26 22:55:09 +0000">
@@ -25,13 +25,13 @@
                 <TextSelection>4374,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="9F167921-F2D1-4A95-95BC-62C19E8CBC9C" Type="Text" Created="2022-02-26 23:22:32 +0000" Modified="2022-02-26 23:23:01 +0000">
+        <BinderItem UUID="9F167921-F2D1-4A95-95BC-62C19E8CBC9C" Type="Text" Created="2022-02-26 23:22:32 +0000" Modified="2022-02-28 12:34:53 +0000">
             <Title>Recommended Sofrware</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection Caret="20">0,20</TextSelection>
+                <TextSelection Caret="274">194,80</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="7433E120-006A-4AE3-BCA4-90A934374CA0" Type="Text" Created="2022-02-06 00:23:12 +0000" Modified="2022-02-26 22:07:47 +0000">
@@ -189,13 +189,13 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
         </BinderItem>
-        <BinderItem UUID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F" Type="Text" Created="2022-01-25 11:32:37 +0000" Modified="2022-02-14 15:39:06 +0000">
+        <BinderItem UUID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F" Type="Text" Created="2022-01-25 11:32:37 +0000" Modified="2022-02-28 12:23:52 +0000">
             <Title>Google Keep notes</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>1488,0</TextSelection>
+                <TextSelection>1606,0</TextSelection>
             </TextSettings>
         </BinderItem>
     </Binder>
@@ -255,13 +255,13 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="355" Characters="2436" Date="2022-02-28 10:59:08 +0000"/>
+        <PreviousSession Words="570" Characters="3760" Date="2022-02-28 12:35:06 +0000"/>
     </ProjectTargets>
     <RecentWritingHistory Date="2022-02-28 00:00:00 +0000">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
-        <OtherWordCount>347</OtherWordCount>
-        <OtherCharCount>2388</OtherCharCount>
+        <OtherWordCount>562</OtherWordCount>
+        <OtherCharCount>3712</OtherCharCount>
     </RecentWritingHistory>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="iso-a4" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>
