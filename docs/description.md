@@ -1,0 +1,1 @@
+This manual is a thorough yet concise curriculum on how to create e-books effectively. I've designed it to be **the** guide I wanted when I started e-book development in 2014.

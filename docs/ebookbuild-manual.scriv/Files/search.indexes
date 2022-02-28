@@ -993,6 +993,21 @@ https://www.toptal.com/designers/typography/typeface-classification
 https://unicode.org/charts/PDF/U0000.pdf
 The ampersand diagram is courtesy of Alatius on Wikicommons. </Text>
         </Document>
+        <Document ID="7598A473-DB1A-4476-B50D-A6DE35EB2A73">
+            <Title>Introduction to Markdown</Title>
+            <Text>Introduction to Markdown
+
+Markdown is a relatively new markup language designed as a simpler (and potentially more secure) alternative to HTML for creating documents. It was created by the late Aaron Schwartz and John Gruber in 2004.
+Both GitHub and GitLab support Markdown extensively and it is recommended text-heavy content such as a repository’s wiki pages and for files such as the README.
+There is no official Markdown file extension, though .md and .markdown are commonly accepted and supported. I prefer .md as it’s easier to type and takes up less characters.
+For this tutorial I am focussing on “GitHub-flavored Markdown” which is a derivative of CommonMark that was developed for use on GitHub.
+
+
+
+Further reading:
+https://github.github.com/gfm/#introduction
+https://daringfireball.net/projects/markdown/</Text>
+        </Document>
         <Document ID="8D684E13-8902-49E2-A46A-324120DAFE12">
             <Title>What is an e-book?</Title>
             <Text>What is an e-book?

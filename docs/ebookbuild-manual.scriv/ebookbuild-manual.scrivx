@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-28 17:44:55 +0000" ModID="EF9ECAD4-987E-404B-BFE7-5316664B46AA">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-02-28 17:55:24 +0000" ModID="5246140A-421F-4FEB-8275-4A6492789BD4">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
             <Title>Draft</Title>
@@ -86,6 +86,15 @@
             </MetaData>
             <TextSettings>
                 <TextSelection>34,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="7598A473-DB1A-4476-B50D-A6DE35EB2A73" Type="Text" Created="2022-02-28 17:47:32 +0000" Modified="2022-02-28 17:55:24 +0000">
+            <Title>Introduction to Markdown</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>165,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="25AA13C0-6D21-4383-A6B6-50B28003E7F9" Type="Text" Created="2022-02-10 13:46:28 +0000" Modified="2022-02-26 23:04:58 +0000">
@@ -264,13 +273,13 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="990" Characters="6555" Date="2022-02-28 17:44:55 +0000"/>
+        <PreviousSession Words="1114" Characters="7370" Date="2022-02-28 17:55:24 +0000"/>
     </ProjectTargets>
     <RecentWritingHistory Date="2022-02-28 00:00:00 +0000">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
-        <OtherWordCount>945</OtherWordCount>
-        <OtherCharCount>6234</OtherCharCount>
+        <OtherWordCount>1069</OtherWordCount>
+        <OtherCharCount>7049</OtherCharCount>
     </RecentWritingHistory>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="iso-a4" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>
