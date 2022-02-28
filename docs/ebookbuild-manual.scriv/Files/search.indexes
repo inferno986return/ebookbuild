@@ -716,6 +716,7 @@ Software - Text editors, ... One that is recommended and then others.
 Create your own documentation and pull-request back stuff that is useful. Taken a gnuplot approach to development.
 Notetaking via OneNote, though GitHub/GitLab have wiki pages.
 Images in e-books - what are raster image formats such as JPEG, JPG, PNG, APNG and GIF. As well as vector image formats such as SVG and EPS.
+Pagination is the process of splitting an XHTML file into distinct pages.
 
 ASCII table appendix?
 
@@ -909,7 +910,7 @@ Sans-serif
 Monospaced (or fixed width)
 
 #
-As you can see when comparing Times New Roman and Consolas, each glyph in a monospaced font takes up the same amount of space. 
+Comparison of Times New Roman and Consolas. Each glyph in a monospaced font takes up the same amount of space.
 
 Monospaced (also called fixed-width) fonts have each letter, number and symbol as the same width to assist with readability. They are usually used for technical purposes such as for programming or scriptwriting.
 The two best known monospaced fonts are Courier and its successor Courier New.
@@ -917,7 +918,7 @@ Historically, Courier was designed by IBM for typewriters but was development in
 Courier New was a redesign by legendary typographer Adrian Frutiger for Monotype with improved punctuation and to include support for more languages. It has been pre-installed as a system font since Microsoft Windows 3.1 and is a popular choice, particularly for older programmers.
 Nowadays, there are many monospaced fonts to choose from that are either pre-installed on the operating system or can be downloaded for free. Since the mid-2000s it is common to include monospaced counterparts to proportional designs. Examples include Consolas, IBM Plex Mono, Ubuntu Mono, Fira Mono.
 
-‘’Diagram comparing Consolas to Calibri, IBM Plex Sans Mono to IBM Plex Sans, Ubuntu to Ubuntu Mono, Fira Mono to Fira Sans, Roboto Mono to Roboto, Amazon Ember to Amazon Ember Mono.
+//Diagram comparing Consolas to Calibri, IBM Plex Sans Mono to IBM Plex Sans, Ubuntu to Ubuntu Mono, Fira Mono to Fira Sans, Roboto Mono to Roboto, Amazon Ember to Amazon Ember Mono.
 
 JetBrains Mono is my current choice of monospaced font as it has clear lettering and is readable. When choosing a monospaced font for e-book development I would recommend checking the quote marks as they are often not clear at smaller sizes. //example
 
@@ -937,33 +938,71 @@ It’s also worth knowing about Windows Glyph List (WGL) fonts
 
 Ligatures
 
-Ligatures are two or more conjoined glyphs that usually (though not always) provide improved readability and are used for aesthetic purposes. As with any typographical feature, it’s support may vary between each e-reader.
+Ligatures are two or more conjoined glyphs that usually (though not always) provide improved readability and are used for aesthetic purposes. As with any typographical feature, it’s support may vary between each e-reader and should not be guaranteed.
 
-//Ligature example diagram
+#
 The letters “fi” and “fl” are commonly presented as a ligature
 
-In software development there is are certainly monospaced fonts that support ligature symbols such as Fira Code (a modification of Fira Mono) and JetBrains Mono. Most programming languages rely on certain sequences of symbols as part of the syntax such as “!=”, “==” and “++”.
+Some characters such as the ampersand (&amp;) were previously ligatures that became a individual glyph over time.
+
+Old Roman cursive, reed pen, 131 AD.
+New Roman cursive, middle of 4th century.
+New Roman cursive, ca 346 AD.
+From a manuscript (St. Hilarius), before 509.
+From a manuscript (St. Maximus), 7th century.
+Carolingian minuscule, 810.
+#
+The evolution of the ampersand from the word “et” to an individual glyph.
+
+In software development there are several monospaced fonts that support ligature symbols such as Cascadia Code, Fira Code (a modification of Fira Mono) and JetBrains Mono. Most programming languages rely on certain sequences of symbols as part of the syntax such as “!=”, “==” and “++”.
 
 //Symbol ligature example diagram
 
 Text figures
 
-Text figures are numerals with alternating dimensions for readability within paragraphs. They are mostly historic, though some fonts such as Georgia support them by default or as stylistic alternates.
+Text figures (also called old-style figures) are numerals with alternating dimensions for readability within paragraphs. They are mostly historic and prevalent in antiquarian books, though some fonts such as Georgia support them by default or as stylistic alternates.
+Usually text figures are drawn with the following pattern:
 
-//
+The 0, 1 and 2 share the x-height with the rest of the lowercase letters. 
+3 goes below the baseline.
+4 goes above the x-height.
+5 goes below the baseline.
+6 goes above the x-height.
+7 goes below the baseline.
+8 goes above the x-height.
+9 goes below the baseline.
+
+#
+Example of the text figures from the Hoefler Text typeface
 
 Lining figures
 
 Tabular figures
 
+Tabular figures are numerals that consume the same width (just like with monospaced fonts) and are recommended for typesetting documents such as financial reports.
+
 Stylistic alternates
+
+Stylisitic alternates are
 
 
 References:
 https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New
 https://www.fonts.com/content/learning/fontology/level-1/type-anatomy
 https://www.toptal.com/designers/typography/typeface-classification
-https://unicode.org/charts/PDF/U0000.pdf</Text>
+https://unicode.org/charts/PDF/U0000.pdf
+The ampersand diagram is courtesy of Alatius on Wikicommons. </Text>
+        </Document>
+        <Document ID="8D684E13-8902-49E2-A46A-324120DAFE12">
+            <Title>What is an e-book?</Title>
+            <Text>What is an e-book?
+
+“From a technical perspective an e-book is just a basic website inside of a zip file.”
+—My concise definition of an e-book
+
+Overview of XHTML, CSS, pagination…
+
+</Text>
         </Document>
         <Document ID="93C40D99-4B3D-4900-9243-676053C92F0D">
             <Title>Future content</Title>
@@ -1096,12 +1135,20 @@ PDF reader
 
 Web browser
 
-A web browser is required to test the XHTML and CSS are working correctly and is ti
+A web browser is required to test the XHTML and CSS are working correctly, as well as testing the compiled ePub on Google Play Books web reader (https://play.google.com/books).
+
+Brave
+I use the Brave as my everyday web browser which includes e-book development. Brave is a modification of Chrome with support for the majority of tested Chrome extensions and includes additional advert-blocking functionality built-in to the browser.
+Brave Sync replaces Google Sync and can be used to syncronise settings and preferences across multiple devices using a unique password.
+Brave uniquely rewards its userbase for viewing advert notifications and sponsored “billboard” images on the new tab screen with the Etherum-based cryptocurrency called Basic Attention Token (BAT). Users can then donate BAT to websites or certain social media profiles based on the amount of time they spend on those pages.
+
+Chrome
+Chrome is the dominant web browser and needs little introduction. It is Google’s own web browser.
 
 Image editor and publishing software
 
-British software house Serif develop affordable design software that can be used as an alternative to the costly Adobe Creative Cloud (Adobe CC). Each copy is purchased once per 1.0 version and is currently priced at £47.99 GBP in the UK.
-For some use cases, the Adobe CC subscription may be a better deal as it includes other programs that Serif have not created alternatives for such as Adobe Lightroom, as well as features such as Adobe Typekit.
+British software house Serif develop affordable design software for Microsoft Windows, Apple macOS and the iPad that can be used as an alternative to the costly Adobe Creative Cloud (Adobe CC). Each program is purchased once per 1.0 version and is currently priced at £47.99 GBP in the UK.
+For some use cases, the Adobe CC subscription may be a better deal as it includes other programs that Serif have not created alternatives for such as Adobe Lightroom, as well as additional features such as Adobe Typekit.
 
 Affinity Photo
 
@@ -1185,10 +1232,13 @@ You may have paid money to get copies of a free program, or you may have obtaine
 Before Git
 
 Back at Oxford eBooks we simply mounted shared folders from a company network-attached storage (NAS) server onto our work computers using the Server Message Block (SMB) protocol. We then altered the contents of the e-book project directly using File Explorer.
+
+//A demonstrated screenshot of SMB
+
 Presumably, this NAS server was configured with multiple hard drives in a redundant arrangement of independent disks (RAID) configuration. It would then have regular backups to reduce data loss. In simple terms, RAID combines hard drives together to make them work more efficiently. The company had a strict on-premises data policy and use of the cloud was avoided due to concern of a possible data breach.
 While a NAS solution is acceptable for an individual or small team developing e-books, I prefer using a version control system such as Git which is connected to a cloud hosting service such as GitHub or GitLab for the following reasons:
 
-Allows developers to log alterations made with commit logs and clearly shows differences between each commit
+Allows developers to log alterations made with commit logs and clearly shows differences between each commit.
 Commits can be reverted easily without guesswork as to what was changed previously
 Easily syncronises the data between multiple servers and user computers
 Designed specifically for collaboration
@@ -1387,6 +1437,8 @@ The other formats</Text>
         </Document>
         <Document ID="FE5C06C7-3D7B-46D6-BE96-8034DA158070">
             <Title>List of Illustrations</Title>
+            <Text>https://commons.wikimedia.org/wiki/File:Historical_ampersand_evolution.svg
+https://commons.wikimedia.org/wiki/File:Mediaevalziffern.svg</Text>
         </Document>
     </Documents>
 </SearchIndexes>
