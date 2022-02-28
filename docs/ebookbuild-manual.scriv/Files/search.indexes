@@ -443,19 +443,27 @@ XHTML) and associated application logic to give it semantics.”
 
 XHTML (eXtensible HyperText Markup Language) is the recommended language for creating the actual chapters of an e-book, it combines regular HTML (HyperText Markup Language) that is used to create webpages with XML (eXtensible Markup Language). Alternatively, you can use regular HTML though you can’t define custom tags (or can you?) and web browsers are more tolerant of obvious syntax errors when testing.
 
-So what is XHTML? To start with I have used Eric S. Raymond’s definition of XML as a springboard. All three standards are markup languages this means that the developer has to define what the file’s content will look like using some kind of syntax (if you understand LaTeX or Markdown this should be familiar), which in this case are tags.
+So what is XHTML? To start with I have used Eric S. Raymond’s definition of XML as a springboard. All three standards are markup languages this means that the developer has to define what the file’s content will look like using some kind of text syntax (if you understand LaTeX or Markdown this should be familiar), which in this case are tags.
 
-Tags are made using a less-than symbol (&lt;) followed by one word, abbreviation or letter then by a greater-than symbol (&gt;), the text content itself is then written inside the tag and then closed with a closing tag that is identical though with a forward slash (/) after the less-than symbol. Some tags are “self-closing” this means that they are defined in just one tag with a less-than symbol, tag name, then the forward slash and the greater-than symbol. Each tag represents a specific type of content such as headings, paragraphs, images, tables, or numbered and bullet point lists. 
+Elements and Tags
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
-Attributes are parameters used by tags. Some attributes such as “class” are applicable to most tags and other attributes are specific to the individual tag.
+Tags are made using a less-than symbol (&lt;) followed by the name of an element which is one word, abbreviation or letter, then by a greater-than symbol (&gt;), the text content itself is then written inside the tag and then closed with a closing tag that is identical though with a forward slash (/) after the less-than symbol. 
+Some tags are “self-closing” which means that they are defined in just one tag with a less-than symbol, tag name, then the forward slash and the greater-than symbol. Each tag represents specific types of content such as headings, paragraphs, images, tables, or numbered and bullet point lists.
+
+Attributes
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+
+Attributes are parameters used by tags and are declared within a tag using the attribute name, equals sign (=) and single quotes (‘ ‘) or double quotes (“ “). 
+Some attributes such as “id” and “class” are applicable to most tags. Other tags have attributes that required for the tag to function such as “href” used in anchor tags and “src” used in image tags.
 
 I would recommend taking a look at one of the .xhtml files of this e-book while I explain the concepts. 
 
 There are 3 parts to an XHTML file:
 
-Declaration - defines to the web browser or e-reader what the file is, what standard of HTML/XML and what character encoding it uses.
-Head - defines to the web browser or e-reader, the files and metadata the XHTML file uses.
-Body - defines the actual content that the user will see in their web browser or e-reader.
+Declaration – defines to the web browser or e-reader what the file is, what standard of HTML/XML and what character encoding it uses.
+Head – defines to the web browser or e-reader, the files and metadata the XHTML file uses.
+Body – defines the actual content that the user will see in their web browser or e-reader.
 
 Declaration
 We start the file with a declaration to let the e-reader or web browser know this is an XHTML file. I usually copy-paste this and leave it alone.
@@ -465,6 +473,7 @@ We start the file with a declaration to let the e-reader or web browser know thi
 I always use UTF-8 as it has a large language support including accented Latin characters, Greek and Cyrillic (the writing system used in Russia, Ukraine and several Baltic states).
 
 Head
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head
 
 The head defines information about the XHTML file that the user doesn’t see. Similarly to the declaration, I barely change this except for the optional title tag so I can see the chapter’s name in my web browser during testing.
 
@@ -474,9 +483,13 @@ The head defines information about the XHTML file that the user doesn’t see. S
 	&lt;title&gt;Acknowledgements&lt;/title&gt;
 &lt;/head&gt;
 
-The head tag is where external CSS (Cascading StyleSheets) files (that use the .css file extension) are declared, more on that in the Introduction to Cascading Stylesheets chapters.
+The head tag is where the XHTML’s page name can be optionally declared for using in a web browser with the &lt;title&gt;&lt;/title&gt; tags. 
+
+The link tag &lt;link&gt;&lt;/link&gt; declares external CSS (Cascading StyleSheets) files (that use the .css file extension), for more information on this refer to the Introduction to Cascading StyleSheets (CSS) chapter.
 
 Body
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body
+
 The body is all the content that the user will see (with the exception of comments) and is the majority of the XHTML file. Each piece of content is separated into tags depending on what the content is and where it should go on the page. XHTML is interpreted linearly by the web browser and e-reader starting from top to bottom.
 
 Some tags can be used on their own, though most require text content between the tags and specific attributes and classes in order to work correctly.
@@ -487,17 +500,25 @@ There are six separate tags for declaring headings in XHTML and regular HTML, wh
 I haven’t used all six heading tags in a project because CSS allows me to define what size each heading should be, as well as whether it uses emphasis (bold, italic or none) and want font type (sans-serif or serif).
 
 Paragraphs
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
+
 Paragraphs and other areas of the book that solely display text are declared with the &lt;p&gt;&lt;/p&gt; tags.
 
 I also use paragraph tags to force images to be centred.
 
 Bold
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
+
 Bold is declared within content using the &lt;b&gt;&lt;/b&gt;. Historically, bold was declared with &lt;strong&gt;&lt;/strong&gt; tags and they should also theoretically work.
 
 Italic
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
+
 Italic is declared with content using the &lt;i&gt;&lt;/i&gt;. Historically, bold was declared with &lt;em&gt;&lt;/em&gt; tags and they should also theoretically work.
 
-Spans
+Span
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span
+
 Span tags are used to add CSS formating to specified content within other tags. Some formatting such as text colour, underlining and strikethroughs have no specific tag. For example, I have this sentence:
 
 This text is red and underlined.
@@ -506,7 +527,7 @@ The simplest way to put this sentence into XHTML is with the following:
 
 &lt;p&gt;This text is &lt;span class=”red-word”&gt;red&lt;/span&gt; and underlined.&lt;/p&gt;
 
-The CSS class is as follows:
+The CSS class for red-word is as follows:
 
 .red-word {
   color: #f00;
@@ -515,6 +536,8 @@ The CSS class is as follows:
 }
 
 Hyperlinks
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+
 Hyperlinks are declared with the anchor tags &lt;a&gt;&lt;/a&gt;. The anchor tags require the “href” attribute to define an internal or external hyperlink.
 
 Internal links can refer to a particular XHTML file within the ePub just like an image source declaration:
@@ -541,17 +564,23 @@ Superscript and subscript have their own tags which are &lt;sup&gt;,&lt;/sup&gt;
 &lt;p&gt;The chemical formula to carbon dioxide is CO&lt;sub&gt;2&lt;/sub&gt;.&lt;/p&gt;
 
 Images
-Images are declared with the self-closing &lt;img/&gt; tag. The &lt;img/&gt; tag requires several attributes to work which are “src” and “alt”. For example I want to embed a photograph of a flower into a XHTML page:
+Mozilla documentation: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+
+All images are declared with the self-closing &lt;img/&gt; tag. The &lt;img/&gt; tag requires several attributes to work which are “src” and “alt”. For example, I want to embed a photograph of a flower into a XHTML page:
 
 &lt;img src=”images/flower.jpg” alt=””/&gt;
 
 The “src” attribute is the source, it takes a filepath to the image that is to be displayed starting from the location of the .xhtml file. In this example the flower image is in an appropriately named “images” folder.
 
-The “alt” attribute is used to define alternative text in the even the image doesn’t load and is mandatory within the ePub standard (not sure why as the image should be part of the ePub file).
+The “alt” attribute is used to define alternative text in the even the image doesn’t load and is mandatory within the ePub standard even if it’s left empty (not sure why as the image should be part of the ePub file).
 
 There are additional attributes such as “width” and “height” which define dimensions, though I prefer to crop down to the desired dimensions to ensure my ePub’s file size isn’t excessively large.
 
 Bullet point lists
+Mozilla references:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
+
 Bullet point lists are referred to as “unordered lists” and use the &lt;ul&gt;&lt;/ul&gt; tags, followed by &lt;li&gt;&lt;/li&gt; for each bullet point. Using CSS it is possible to specify which type of bullet should precede each list entry.
 
 For example, take this list of ingredients for a Victoria sponge cake:
@@ -569,6 +598,8 @@ Castor sugar
 Flour
 
 Numbered lists
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol
+
 Numbered lists are referred to as “unordered lists” and use the &lt;ol&gt;&lt;/ol&gt; tags, as well as &lt;li&gt;&lt;/li&gt; for each bullet point. Using CSS it is possible to specify which type of numbering (such as the Latin alphabet or Roman numerals) should be used for each entry. 
 
 For example, take this list of ingredients for a Victoria sponge cake:
@@ -579,15 +610,65 @@ The &lt;ol&gt;&lt;/ol&gt; tag has an addition attribute called “start” which
 &lt;/ol&gt;
 
 Tables
-Tables are a bit more difficult to define in XHTML, so I recommend arranging them neatly to avoid getting confused. There are 4 tags for defining tables &lt;table&gt;&lt;/table&gt;, &lt;tr&gt;&lt;/tr&gt;, &lt;th&gt;&lt;/th&gt; and &lt;td&gt;&lt;/td&gt;.
+Mozilla references: 
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
+
+Tables are a bit more difficult to define in XHTML, so I recommend arranging them neatly to avoid getting confused with each line representing a table row. There are 4 tags for defining tables:
 
 &lt;table&gt;&lt;/table&gt; are the parent tags for the whole table. All table content will go inside these.
-
 &lt;tr&gt;&lt;/tr&gt; are the table row tags and define each row.
-
 &lt;th&gt;&lt;/th&gt; are the optional table heading tags.
-
 &lt;td&gt;&lt;/td&gt; are the table data tags which defines each cell.
+
+For example, here is a table with the first column of reactive metals from the periodic table of elements with their name, symbol, mass number and atomic number:
+
+
+Name
+Symbol
+Mass number
+Atomic number
+Hydrogen
+H
+
+1
+Sodium
+Na
+
+3
+Lithium
+Li
+
+11
+Potassium
+K
+
+19
+Rubidium
+Rb
+
+37
+Caesium
+Cs
+132.91
+55
+Francium
+Fr
+223
+87
+
+
+This is the accompanying XHTML code to make this table:
+
+&lt;table&gt;
+	&lt;tr&gt;&lt;th class=”heading&gt;Name&lt;/th&gt;&lt;th class=”heading”&gt;Symbol&lt;/th&gt;&lt;th&gt;Mass number&lt;/th&gt;&lt;th&gt;Atomic number&lt;/th&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt;Hydrogen&lt;/td&gt;
+&lt;/table&gt;
+
+Some tables have wider columns, this can be achieved with the column span (“colspan”) attribute.
 
 Further reading
 
