@@ -143,6 +143,68 @@ SOMA fm
 Spotify
 YouTube - Odysseus</Text>
         </Document>
+        <Document ID="1D572E7F-F737-4ABE-A22A-B3DCB57794A0">
+            <Title>Advanced Typography</Title>
+            <Text>Advanced Typography
+
+OpenType is popular font format and replacement for TrueType. Some of these features require software that has complete support for OpenType such as Microsoft Word and Affinity Designer.
+Adobe licences fonts with the “Pro” suffix that support OpenType extensively, several of which are installed with the Adobe Creative Cloud such as Minion Pro and Myriad Pro.
+
+Ligatures
+
+Ligatures are two or more conjoined glyphs that usually (though not always) provide improved readability and are used for aesthetic purposes. As with any typographical feature, it’s support may vary between each e-reader and should not be guaranteed.
+
+#
+The letters “fi”, “ff” and “fl” are commonly presented as a ligature
+
+Some characters such as the ampersand (&amp;) were previously ligatures that became a individual glyph over time.
+
+Old Roman cursive, reed pen, 131 AD.
+New Roman cursive, middle of 4th century.
+New Roman cursive, ca 346 AD.
+From a manuscript (St. Hilarius), before 509.
+From a manuscript (St. Maximus), 7th century.
+Carolingian minuscule, 810.
+#
+The evolution of the ampersand from the word “et” to an individual glyph.
+
+In software development there are several monospaced fonts that support ligature symbols such as Cascadia Code, Fira Code (a modification of Fira Mono) and JetBrains Mono. Most programming languages rely on certain sequences of symbols as part of the syntax such as “!=”, “==” and “++”.
+
+//Symbol ligature example diagram
+
+Text figures
+
+Text figures (also called old-style figures) are numerals with alternating dimensions for readability within paragraphs. They are mostly historic and prevalent in antiquarian books, though some fonts such as Georgia support them by default or as stylistic alternates.
+Usually text figures are drawn with the following pattern:
+
+The 0, 1 and 2 share the x-height with the rest of the lowercase letters. 
+3 goes below the baseline.
+4 goes above the x-height.
+5 goes below the baseline.
+6 goes above the x-height.
+7 goes below the baseline.
+8 goes above the x-height.
+9 goes below the baseline.
+
+#
+Example of the text figures from the Hoefler Text typeface
+
+Lining figures
+
+Tabular figures
+
+Tabular figures are numerals that consume the same width (just like with monospaced fonts) and are recommended for typesetting documents such as financial reports.
+
+Stylistic alternates
+
+Stylisitic alternates are
+
+Further reading:
+https://www.adobe.com/products/type/opentype.html
+
+References:
+The ampersand diagram is courtesy of Alatius on Wikicommons. </Text>
+        </Document>
         <Document ID="1FA5F5C6-0355-406C-9FFE-4A6AC35F4C61">
             <Title>Ackowledgments and Legal</Title>
             <Text>Acknowledgements and Legal
@@ -311,6 +373,20 @@ Parenthetical referencing uses… It’s best known as Harvard referencing as it
 
 Miscellaneous:
 
+Fiat currencies:
+For fiat currencies I use the ISO 4217 currency code in front of the currency symbol. ISO 4217 ties the currency name to the country code to remove ambiguity and is recommended for currency names that are shared across many countries such as the dollar, pound, crown, lira, won and rupee.
+Here is a concise table of the most common currencies and their respective ISO 4217 code:
+
+USD, EUR, GBP, INR, KOW, JPY, RUB, CZK
+
+
+Some countries have unique currency names with accompanying symbols such as the Euro (€), Israeli new shekel (₪), Japanese yen (¥), Russian ruble (₽) and Thai Baht (฿).
+Support for certain currency symbols is not guaranteed among fonts, in those situations just use the ISO 4217 code on its own.
+Some currencies also don’t have an official currency symbol.
+
+Cryptocurrencies:
+I refer to cryptocurrencies in full and with their suggested currency symbol (and pseudo-ISO 4217 code if applicable). Bitcoin (₿) is the only cryptocurrency with a recognised currency symbol within Unicode which supersedes the Thai Baht symbol unless the chosen font doesn’t support it.
+
 Checksums:
 Checksums are used for verifying file integrity (though not folders) to ensure it has not been altered in transmission.
 
@@ -322,6 +398,9 @@ https://www.biblegateway.com/passage/?search=Genesis+12&amp;version=KJV
 https://www.grammarly.com/blog/en-dash/
 https://www.grammarly.com/blog/why-you-should-love-the-em-dash/
 https://en.wikipedia.org/wiki/Quotation_mark</Text>
+        </Document>
+        <Document ID="35ED26F8-7611-4ADF-87DB-E00627E56530">
+            <Title>ISO 4217 currency code table</Title>
         </Document>
         <Document ID="37F16950-E69B-4500-A55A-EAE8596C6A1E">
             <Title>Epigraph</Title>
@@ -717,6 +796,7 @@ Create your own documentation and pull-request back stuff that is useful. Taken 
 Notetaking via OneNote, though GitHub/GitLab have wiki pages.
 Images in e-books - what are raster image formats such as JPEG, JPG, PNG, APNG and GIF. As well as vector image formats such as SVG and EPS.
 Pagination is the process of splitting an XHTML file into distinct pages.
+Typesetting - leading, initial letters, indentation, margins,
 
 ASCII table appendix?
 
@@ -936,62 +1016,14 @@ Unicode is instead a more complete representation of the world’s writing syste
 Each supported glyph within Unicode is part of a group of glyphs called a block. As it’s a superset of ASCII, the first block called Basic Latin contains all the ASCII characters. If you need a particular character it is likely already available in a Unicode block, though keep in mind very few fonts support Unicode completely.
 It’s also worth knowing about Windows Glyph List (WGL) fonts
 
-Ligatures
 
-Ligatures are two or more conjoined glyphs that usually (though not always) provide improved readability and are used for aesthetic purposes. As with any typographical feature, it’s support may vary between each e-reader and should not be guaranteed.
-
-#
-The letters “fi” and “fl” are commonly presented as a ligature
-
-Some characters such as the ampersand (&amp;) were previously ligatures that became a individual glyph over time.
-
-Old Roman cursive, reed pen, 131 AD.
-New Roman cursive, middle of 4th century.
-New Roman cursive, ca 346 AD.
-From a manuscript (St. Hilarius), before 509.
-From a manuscript (St. Maximus), 7th century.
-Carolingian minuscule, 810.
-#
-The evolution of the ampersand from the word “et” to an individual glyph.
-
-In software development there are several monospaced fonts that support ligature symbols such as Cascadia Code, Fira Code (a modification of Fira Mono) and JetBrains Mono. Most programming languages rely on certain sequences of symbols as part of the syntax such as “!=”, “==” and “++”.
-
-//Symbol ligature example diagram
-
-Text figures
-
-Text figures (also called old-style figures) are numerals with alternating dimensions for readability within paragraphs. They are mostly historic and prevalent in antiquarian books, though some fonts such as Georgia support them by default or as stylistic alternates.
-Usually text figures are drawn with the following pattern:
-
-The 0, 1 and 2 share the x-height with the rest of the lowercase letters. 
-3 goes below the baseline.
-4 goes above the x-height.
-5 goes below the baseline.
-6 goes above the x-height.
-7 goes below the baseline.
-8 goes above the x-height.
-9 goes below the baseline.
-
-#
-Example of the text figures from the Hoefler Text typeface
-
-Lining figures
-
-Tabular figures
-
-Tabular figures are numerals that consume the same width (just like with monospaced fonts) and are recommended for typesetting documents such as financial reports.
-
-Stylistic alternates
-
-Stylisitic alternates are
 
 
 References:
 https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New
 https://www.fonts.com/content/learning/fontology/level-1/type-anatomy
 https://www.toptal.com/designers/typography/typeface-classification
-https://unicode.org/charts/PDF/U0000.pdf
-The ampersand diagram is courtesy of Alatius on Wikicommons. </Text>
+https://unicode.org/charts/PDF/U0000.pdf</Text>
         </Document>
         <Document ID="7598A473-DB1A-4476-B50D-A6DE35EB2A73">
             <Title>Introduction to Markdown</Title>
@@ -1000,7 +1032,7 @@ The ampersand diagram is courtesy of Alatius on Wikicommons. </Text>
 Markdown is a relatively new markup language designed as a simpler (and potentially more secure) alternative to HTML for creating documents. It was created by the late Aaron Schwartz and John Gruber in 2004.
 Both GitHub and GitLab support Markdown extensively and it is recommended text-heavy content such as a repository’s wiki pages and for files such as the README.
 There is no official Markdown file extension, though .md and .markdown are commonly accepted and supported. I prefer .md as it’s easier to type and takes up less characters.
-For this tutorial I am focussing on “GitHub-flavored Markdown” which is a derivative of CommonMark that was developed for use on GitHub.
+This chapter is specifically about “GitHub-flavored Markdown” which is a derivative of CommonMark that was developed for use on GitHub.
 
 
 
@@ -1012,10 +1044,25 @@ https://daringfireball.net/projects/markdown/</Text>
             <Title>What is an e-book?</Title>
             <Text>What is an e-book?
 
-“From a technical perspective an e-book is just a basic website inside of a zip file.”
+“From a technical perspective, an e-book is just a basic website inside of a zip file.”
 —My concise definition of an e-book
 
-Overview of XHTML, CSS, pagination…
+
+Overview of XHTML, CSS, pagination, responsive…
+
+#
+A reflowable e-book’s content should scale to the device it is being read on.
+
+PDFs are not e-books
+
+Adobe’s Portable Document Format (PDF) has taken the world by storm and has become the standardised format for read-only documents under International Organization for Standardization (ISO) 32000-2. The PDF is an open format that anyone can use then adapt freely and there is a seemingly endless choice of software for reading and editing them, including modern desktop web browsers.
+
+PDFs are documents that are designed to preserve page sizing and layout making them appropriate for storing publications. Combine this with the ubiquitous reader options and you can see why they are mistaken for e-books.
+Confusingly, Amazon Kindle and Google Play Books both allow the sale of PDF files in their e-book stores with little to differentiate them from reflowable e-books. PDFs provide from an inferior digital reading experience, particularly on small screens.
+Another trend are companies who incentivise prospective customers with a free “e-book” to encourage them to sign up for a newsletter. Alan Dib explains in his book 1-Page Marketing Plan that physical books themselves are considered valuable and are unlikely to be thrown away, so this desire to use the word “e-book” could be a psychological effort for prospects to engage with content they would otherwise forget or outright ignore.
+
+“Books, CDs and DVDs are other excellent items you can insert in envelopes to make them lumpy. Other than just attracting attention once off when being opened, these items generally don’t get thrown away. Your customers and prospects will likely keep what you sent them indefinitely and it will be a constant reminder of you.”
+-Alan Dib, describing shock and awe marketing
 
 </Text>
         </Document>
@@ -1250,7 +1297,7 @@ Back at Oxford eBooks we simply mounted shared folders from a company network-at
 
 //A demonstrated screenshot of SMB
 
-Presumably, this NAS server was configured with multiple hard drives in a redundant arrangement of independent disks (RAID) configuration. It would then have regular backups to reduce data loss. In simple terms, RAID combines hard drives together to make them work more efficiently. The company had a strict on-premises data policy and use of the cloud was avoided due to concern of a possible data breach.
+I assume this NAS server was configured with multiple hard drives in a redundant arrangement of independent disks (RAID) configuration. It would then have regular backups to reduce data loss. In simple terms, RAID combines hard drives together to make them work more efficiently. The company had a strict on-premises data policy and use of the cloud was avoided due to concern of a possible data breach.
 While a NAS solution is acceptable for an individual or small team developing e-books, I prefer using a version control system such as Git which is connected to a cloud hosting service such as GitHub or GitLab for the following reasons:
 
 Allows developers to log alterations made with commit logs and clearly shows differences between each commit.
@@ -1268,7 +1315,9 @@ What is Git?
 The Git logo
 
 Git is a version control system and a popular way of managing software development by ensuring code is backed up and easily retrievable. 
-The Git project itself was designed by none other than Linus Torvalds himself who needed a way to manage the development of the Linux kernel because the current BitKeeper version control system used at the time had pulled their free service, after Andrew Tridgell reverse-engineered their proprietary protocol (he would later do the same to the aforementioned SMB protocol and call it Samba).
+The Git project itself was designed by none other than Linus Torvalds himself who needed a way to manage the development of the Linux kernel because the current BitKeeper version control system used at the time had stopped offering free repository hosting for free software developers.
+The story behind BitKeeper pulling their free hosting service is an interesting into the ethics of free software and vendor lock-in. Fellow developer Andrew Tridgell reverse-engineered the BitKeeper proprietary protocol to facilitate the creation of an alternative to BitKeeper’s proprietary client software which was required to interact with files in the repository on the local computer. BitKeeper’s management was unhappy their protocol had been reverse-engineered and pulled their free hosting service. Tridgell would later reverse engineer the aforementioned SMB protocol and call it Samba, a project that lives on today!
+As for BitKeeper it is still available and ironically released under the Apache License in 2016. Development has reportedly stopped in 2018 and the project is now abandoned.
 
 #
 Linus Torvalds invented the Linux kernel, Git and a diving app called Subsurface
@@ -1299,14 +1348,24 @@ Git clients
 
 
 To get started, I recommend using a Git client. There are a lot of Git clients, and official Git website keeps a list of them.
-My personal choice of client is GitHub Desktop. GitHub Desktop is free and open-source with ports for Windows and macOS (and also albeit unofficially Debian, Fedora and AppImage). As its name heavily implies the client is owned by GitHub (now Microsoft) and connects with GitHub seamlessly, however it also supports connecting to other Git hosting services such as GitLab and Bitbucket along with self-hosted Git servers.
-GitKraken is also a superb client with a beautiful user interface and has official builds for Windows, macOS and Ubuntu. However, for commercial use you must pay $50 per year.
+
+My personal choice of client is GitHub Desktop. GitHub Desktop is free and open-source with ports for Windows and macOS (and also albeit unofficially Debian, Fedora and AppImage).
+As its name heavily implies the client is owned by GitHub (now Microsoft) and connects with GitHub seamlessly, however it also supports connecting to other Git hosting services such as GitLab and Bitbucket along with self-hosted Git servers.
+
+GitKraken is also a superb client with a beautiful user interface and has official builds for Windows, macOS, Ubuntu, Fedora and Red Hat Enterprise Linux (RHEL). 
+However, for commercial use you must pay an annual subscription of GBP£ 4.95 (USD$ 4.95) a month . This includes access to private repositories on GitHub and other Git hosting services. GitKraken’s justification for the cost is that GitHub Desktop is a simplified Git command line replacement whereas GitKraken is an outright replacement for both with a number of features.
 
 
 The basics of Git
 
-I find the easiest metaphor to describe Git is to think of a filing cabinet.
-The repository is the cabinet itself and a branch is each drawer. You pull out a filing cabinet draw to access its contents, make your changes to the drawer, then note down the changes as a commit and you push the drawer closed when you are finished. A pull request in this analogy would be when one office worker requests access to another filing cabinet to alter a few files inside.
+I find the easiest metaphor to describe Git is to think of a filing cabinet:
+
+The repository is the cabinet itself and a branch is each drawer. 
+You pull out a filing cabinet draw to access its contents
+Make your changes to the drawer
+Note down the changes that were made and you push the drawer closed when you are finished. 
+A pull request in this analogy would be when one office worker requests access to another filing cabinet to alter a few files inside and needs the key.
+
 Here is a glossary of common terms used by Git with its corresponding icon on GitHub Desktop:
 
 # Repository – A repository is the of Git that holds a project and covers an entire folder and its contents including files and subfolders. This is where a project will be placed and all the source code files and resources that make it.
@@ -1332,11 +1391,10 @@ Most Git clients will show the differences between the files using colour-coding
 Clone a repository from GitHub using GitHub Desktop
 
 As mentioned earlier, setting up GitHub Desktop with GitHub is a snap. 
-First and foremost you need to decide if the repository is already on GitHub or you want to add a repository to GitHub.
+// First and foremost, you need to decide if the repository is already on GitHub or you want to add a repository to GitHub Desktop…
 
 
 If the repository is already on GitHub, you can make a local copy of that repository on your development machine’s hard drive:
-
 
 1. Go to File → Clone repository… (Ctrl-Shift-O).
 2. Select the “GitHub.com” tab (the default) and click the “Sign in” button.
@@ -1378,16 +1436,19 @@ Once changes have been made to the development machine’s copy of the repositor
 References:
 
 https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README
+https://www.gitkraken.com/compare/gitkraken-vs-github-desktop (https://archive.ph/l9sDu)
+https://www.infoworld.com/article/2670360/linus-torvalds--bitkeeper-blunder.html (https://archive.ph/Ud4ld)
+https://lwn.net/Articles/132938/ (archive: https://archive.ph/t768x)
 
 Further reading
 Git’s popularity means there is a lot of documentation that goes into a more detail than I have in this chapter:
 
-(Wikipedia page for Git)[https://en.wikipedia.org/wiki/Git], (archive)[https://archive.ph/Sm4Yf]
+(Wikipedia page for Git)[https://en.wikipedia.org/wiki/Git], (archive: https://archive.ph/Sm4Yf)
 * (Git-SCM.com)[https://www.git-scm.com/] – the official website for the Git source code management tool with documentation on Git, a list of Git clients and a download for the current version.
 * (Pro Git)[https://git-scm.com/book/en/v2] – the official and freely available book (and e-book) for Git which is available in multiple languages.
 * (Learn Git)[https://try.github.io/] – GitHub’s official documentation on Git with many learning resources
 * (Git Cheat Sheet)[https://about.gitlab.com/images/press/git-cheat-sheet.pdf] – a quick point of reference provided by GitLab showing a wide-range of common Git commands and what they do.
-* (Git vs SVN)[https://backlog.com/blog/git-vs-svn-version-control-system/], (archive)[https://archive.ph/ysbaQ] – an insightful through rather advanced comparison of Git and SVN that suggests that one isn't necessarily superior to the other.
+* (Git vs SVN)[https://backlog.com/blog/git-vs-svn-version-control-system/], (archive: https://archive.ph/ysbaQ) – an insightful through rather advanced comparison of Git and SVN that suggests that one isn't necessarily superior to the other.
 
 </Text>
         </Document>
@@ -1453,7 +1514,8 @@ The other formats</Text>
         <Document ID="FE5C06C7-3D7B-46D6-BE96-8034DA158070">
             <Title>List of Illustrations</Title>
             <Text>https://commons.wikimedia.org/wiki/File:Historical_ampersand_evolution.svg
-https://commons.wikimedia.org/wiki/File:Mediaevalziffern.svg</Text>
+https://commons.wikimedia.org/wiki/File:Mediaevalziffern.svg
+https://commons.wikimedia.org/wiki/File:Content-is-like-water.svg</Text>
         </Document>
     </Documents>
 </SearchIndexes>
