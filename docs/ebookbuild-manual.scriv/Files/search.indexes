@@ -1199,6 +1199,10 @@ Brave
 Chrome, Firefox
 GitHub Desktop
 GitKraken
+Adobe Digital Editions
+Google Play Books
+Kindle Previewer
+N/A
 Adobe Reader DC
 Evince
 Affinity Photo
@@ -1232,6 +1236,12 @@ It is pre-installed on Windows 11. For Windows 10, it is recommended to install 
 
 
 Git client
+Git is a popular version control system (VCS) and I recommend using it for e-book development.
+
+E-book reader
+
+Adobe Digital Editions
+Kindle Previewer
 
 PDF reader
 
