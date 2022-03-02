@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-03-01 15:20:07 +0000" ModID="B20397C9-32E9-4ACE-8818-C3DD9589BE8B">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-03-02 14:11:07 +0000" ModID="2C989750-B5A4-4EF2-B671-AA4EBC2B1466">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
             <Title>Draft</Title>
@@ -151,13 +151,13 @@
                 <TextSelection>699,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="1FA5F5C6-0355-406C-9FFE-4A6AC35F4C61" Type="Text" Created="2022-02-26 23:10:09 +0000" Modified="2022-02-26 23:16:00 +0000">
+        <BinderItem UUID="1FA5F5C6-0355-406C-9FFE-4A6AC35F4C61" Type="Text" Created="2022-02-26 23:10:09 +0000" Modified="2022-03-02 14:08:18 +0000">
             <Title>Ackowledgments and Legal</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>637,0</TextSelection>
+                <TextSelection>636,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="C8BC8F14-C5A8-4C2C-9645-062BF504A309" Type="ResearchFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
@@ -234,13 +234,13 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
         </BinderItem>
-        <BinderItem UUID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F" Type="Text" Created="2022-01-25 11:32:37 +0000" Modified="2022-03-01 10:37:35 +0000">
+        <BinderItem UUID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F" Type="Text" Created="2022-01-25 11:32:37 +0000" Modified="2022-03-02 14:10:59 +0000">
             <Title>Google Keep notes</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>1742,0</TextSelection>
+                <TextSelection>1959,0</TextSelection>
             </TextSettings>
         </BinderItem>
     </Binder>
@@ -300,13 +300,13 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="1508" Characters="9869" Date="2022-03-01 15:20:07 +0000"/>
+        <PreviousSession Words="65" Characters="501" Date="2022-03-02 14:11:07 +0000"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-03-01 00:00:00 +0000">
+    <RecentWritingHistory Date="2022-03-02 00:00:00 +0000">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
-        <OtherWordCount>1052</OtherWordCount>
-        <OtherCharCount>6986</OtherCharCount>
+        <OtherWordCount>65</OtherWordCount>
+        <OtherCharCount>500</OtherCharCount>
     </RecentWritingHistory>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="iso-a4" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>

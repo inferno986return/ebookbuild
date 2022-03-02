@@ -213,8 +213,7 @@ The ampersand diagram is courtesy of Alatius on Wikicommons. </Text>
 All intellectual property belongs to their respective owners.
 GITHUB®, the GITHUB® logo design, OCTOCAT® and the OCTOCAT® logo design are exclusive trademarks registered in the United States by GitHub, Inc.
 The GitHub icons which referred to as “Octicons” belong to GitHub and are used for demonstration of both GitHub Desktop and the GitHub website. I claim fair use of these icons.
-I have a list of illustrations to credit each diagram. Many are from Wikimedia Commons and I am grateful there are so many good quality diagrams available for re-use under Creative Commons licencing or in the public domain.
-</Text>
+I have a list of illustrations to credit each diagram. Many are from Wikimedia Commons and I am grateful there are so many good quality diagrams available for re-use under Creative Commons licencing or in the public domain.</Text>
         </Document>
         <Document ID="25AA13C0-6D21-4383-A6B6-50B28003E7F9">
             <Title>Manual of Style</Title>
@@ -797,6 +796,8 @@ Notetaking via OneNote, though GitHub/GitLab have wiki pages.
 Images in e-books - what are raster image formats such as JPEG, JPG, PNG, APNG and GIF. As well as vector image formats such as SVG and EPS.
 Pagination is the process of splitting an XHTML file into distinct pages.
 Typesetting - leading, initial letters, indentation, margins,
+Eric Muss-Barnes got me back into e-book development with his excellent albeit outdated tutorial. My technique makes use of Python’s ZipFile library rather than using a 3rd party archival tool such as 7-Zip or WinZip: https://web.archive.org/web/20210615055026/http://www.inkshard.com/how-to-make-an-ebook-epub-file/ (archive: https://archive.ph/1vPvC), https://www.youtube.com/watch?v=EiUMb7bgYeQ
+As an additional mirror I’ve included Eric Muss-Barnes’ helpful template in the ebookbuild repository.
 
 ASCII table appendix?
 
