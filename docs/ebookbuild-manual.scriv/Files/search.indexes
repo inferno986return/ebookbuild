@@ -10,8 +10,9 @@
 
 Regular expression (or simply regex) is a programming language designed to match text via patterns rather than an exact string. Regular expressions have been incorporated into the find &amp; replace function of many text editors including Visual Studio Code, Atom and Notepad++.
 Most of the syntax uses symbols called wildcards to represent characters within a text file such as: spaces, tabs, words and end of lines.
-Try not to be put off by the intimidating syntax of regex because learning it is one of the best ways to save time and be efficient in e-book production. When I worked in commercial e-book development my colleague and I would frequently pass around a printout of Dave Child’s Regex cheatsheet (archive).
+Try not to be put off by the intimidating syntax of regex because learning it is one of the best ways to save time and be efficient in e-book production. When I worked in commercial e-book development my colleague and I would frequently pass around a printout of Dave Child’s Regex cheatsheet (archive) as a handy reference.
 I recommend trying these examples yourself. You can modify an XHTML file or instead use RegEx Pal to test each regular expression safely away from your production code.
+Keep in mind that the regular expression syntax can vary between software or programming language. Both Atom and Visual Studio Code use JavaScript regex rules, but Notepad++ uses Perl-Compatible Regex Engine (PCRE) rules instead.
 
 Tabs
 
@@ -24,18 +25,61 @@ Now for the regex to add the two tabs:
 
 \t\t&lt;p&gt;
 
-The \t wildcard represents a tab, so I’ve added two of them. Doing this indents your XHTML code nicely making it much easier to read. Try and imitate the indentation the text uses in the web browser to make debugging a lot easier.
+The \t wildcard represents a tab, so I’ve added two of them. Doing this indents your XHTML code nicely making it much easier to read. Try and imitate the indentation and spacing of the XHTML code that the content has in the web browser to make debugging a lot easier.
 You can recreate this example on RegEx Pal by typing this in the Test String box:
 
 &lt;p&gt;
 
+Newlines
+
+
+
+
 Spaces
 
+\s
+
+Dot-plus-question mark
+The dot-plus-question (.+?) mark is a sequence of wildcards that can be defined as ‘anything’. More specifically, this sequence utilises the following:
+
+The dot (.) matches any single character except end of line characers such as 
+ or 
+The plus (+) marches one
+
+Registers
+Registers are used to save text that doesn’t need to be changed. Use standard parentheses () in the find and then recall the saved text with the dollar sign ($) (or backslash (\) in Notepad++)
+In the context of e-book production this tends to be content between tags to alter the opening and closing tags.
+
+&lt;strong&gt;(.+?)&lt;/strong&gt; 
+&lt;b&gt;$1&lt;/b&gt;
+
+&lt;em&gt;(.+?)&lt;/em&gt;
+&lt;i&gt;$1&lt;/i&gt;
+
+Alternatively, I could have simply changed each tag at a time. Whoever, by using registers I can implement the modern bold and italic tags (as described in my Introduction to XHTML chapter) with just 2 pairs of regex statements.
+I did this for each chapter of the e-book adaptation of the open-source Survival Manual by Ligi , due to my use of the pandoc documentation conversion software to convert the files from Markdown which is used on GitHub’s wiki pages to XHTML.
+Another example of a suitable use for regex registers would be changing the heading tag numbering, such as from &lt;h1&gt; to &lt;h2&gt;.
+
+Wildcard character escaping
+Sometimes your desired pattern contains a reserved symbol that regex syntax uses. Refer to the table below with reserved regex wildcard characters: 
+
+//Regex reservation table
+
+In these situations a backslash (\) is required before the symbol itself. For example, if I want to match all text included in a pair of paratheses I would use the following:
+
+\(.+?\)
+
+A backlash can also be used recursively to escape the backslash itself:
+
+\\
 
 Further reading
 
 Introducing Regular Expressions (2012), Michael Fitzgerald, O’Reilly Publishing, ISBN: 978-1-449-39268-0
 
+Cheatsheets
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet
+http://cheatography.com/davechild/cheat-sheets/regular-expressions/ archive.ph/QUo3k
 
 
 
@@ -563,6 +607,8 @@ The head defines information about the XHTML file that the user doesn’t see. S
 
 The head tag is where the XHTML’s page name can be optionally declared for using in a web browser with the &lt;title&gt;&lt;/title&gt; tags. 
 
+The meta tag &lt;meta/&gt; defines metadata that the web browser or e-reader can use as a reference.
+
 The link tag &lt;link&gt;&lt;/link&gt; declares external CSS (Cascading StyleSheets) files (that use the .css file extension), for more information on this refer to the Introduction to Cascading StyleSheets (CSS) chapter.
 
 Body
@@ -580,7 +626,10 @@ I haven’t used all six heading tags in a project because CSS allows me to defi
 Paragraphs
 Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
 
-Paragraphs and other areas of the book that solely display text are declared with the &lt;p&gt;&lt;/p&gt; tags.
+Paragraphs and other areas of the book that solely display body text are declared with the &lt;p&gt;&lt;/p&gt; tags. 
+Most of an e-book’s content will use paragraph tags, unless the book is image-heavy such as graphic novel. 
+
+
 
 I also use paragraph tags to force images to be centred.
 
@@ -777,6 +826,7 @@ Scene break
 Dropcaps
 Function keys on a keyboard
 Anatomy of a book
+Superfamily - define it
 The ePub standard documentation - epubcheck
 Openness and transparency
 How I got into e-book production – learnt at my first job where I attempted an apprenticeship.
@@ -796,8 +846,24 @@ Notetaking via OneNote, though GitHub/GitLab have wiki pages.
 Images in e-books - what are raster image formats such as JPEG, JPG, PNG, APNG and GIF. As well as vector image formats such as SVG and EPS.
 Pagination is the process of splitting an XHTML file into distinct pages.
 Typesetting - leading, initial letters, indentation, margins,
+
 Eric Muss-Barnes got me back into e-book development with his excellent albeit outdated tutorial. My technique makes use of Python’s ZipFile library rather than using a 3rd party archival tool such as 7-Zip or WinZip: https://web.archive.org/web/20210615055026/http://www.inkshard.com/how-to-make-an-ebook-epub-file/ (archive: https://archive.ph/1vPvC), https://www.youtube.com/watch?v=EiUMb7bgYeQ
 As an additional mirror I’ve included Eric Muss-Barnes’ helpful template in the ebookbuild repository.
+
+Phone numbersPostal addressesPrimes and double primesUnits of measurementAbbreviations&lt;div&gt;&lt;/div&gt; tagsEric Muss-Barnes - use back coverI want people to make beautiful books!Why release it for free? As a promotional tool and also expertise is monetisable. Just because...Explain the ebookbuild directory structure with a tree diagram. Also explain what filepaths are, as well as Windows and UNIX using different slashes. What is a URL?
+
+Amazon punish very large e-books. What is an ISBN and ASIN. Distribution 101
+
+Make lighter sections that can be easily jumped into. People don’t like walls of text.
+
+E-book development computer setup
+
+use 2 IPS monitors with a desktop or laptop. In-Plane Switching (IPS) Light Emitting Diode (LED) monitors have better colour differentiation and contrast ratios than conventional TN LCD monitors making them suitable for design. When testing put the source file on the left monitor and the web browser / e-reading software on the right.
+If you have the budget you can buy a dock or port replicator.
+You can use Windows, macOS or even GNU/Linux - though some software only works on Windows or macOS.
+macOS and GNU/Linux are both unix-like, this means they operate very similarly.
+
+ebookbuild sectionPeople want to learn more about things that interest themCasual curiosity – laundromat guy getting changeSoma.FM
 
 ASCII table appendix?
 
@@ -1328,7 +1394,8 @@ Another desire, was to release the source code publicly under a licence approved
 //Picture of the Pokétch Digital watchface
 
 The old tools that used and I can barely speak of in fear of reprisal weren’t ideal and violated core principles. I had become accustomed to these principles when reading about the history and philosophy of free software (as defined by Richard Stallman and the GNU project), so I wanted something I had complete control over that could grow into a useful set of tools for anyone with an interest in creating e-books from scratch.
-I created the ebookbuild so it had no proprietary dependencies and could be used cross-platform. Then made it available under GNU General Public License 3 (GPLv3) to encourage, but also enforce sharing the tool to make it available to as many interested people as possible.
+To familarise myself with e-book development I was fortunate to stumble upon Eric Muss-Barnes’ tutorial for creating ePub files. 
+I created ebookbuild so it had no proprietary dependencies and could be used cross-platform. Then made it available under GNU General Public License 3 (GPLv3) to encourage, but also enforce sharing the tool to make it available to as many interested people as possible.
 
 #
 Much of the ebookbuild project is licenced under GNU GPLv3.

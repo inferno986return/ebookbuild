@@ -1,10 +1,12 @@
 {\rtf1\ansi\ansicpg1252\uc1\deff0
-{\fonttbl{\f0\fmodern\fcharset0\fprq2 Sitka Text;}{\f1\fmodern\fcharset0\fprq2 SegoeUI-Bold;}{\f2\fmodern\fcharset0\fprq2 SegoeUI;}{\f3\fmodern\fcharset0\fprq2 SegoeUI-Italic;}{\f4\fmodern\fcharset0\fprq2 JetBrainsMono-Regular;}}
+{\fonttbl{\f0\fmodern\fcharset0\fprq2 Sitka Text;}{\f1\fmodern\fcharset0\fprq2 SegoeUI-Bold;}{\f2\fmodern\fcharset0\fprq2 SegoeUI;}{\f3\fmodern\fcharset0\fprq2 SegoeUI-Italic;}{\f4\fmodern\fcharset0\fprq2 JetBrainsMono-Regular;}{\f5\fmodern\fcharset0\fprq2 SegoeUI-BoldItalic;}}
 {\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red128\green128\blue128;}
 {\*\listtable
 {\list\listtemplateid1\listhybrid
-{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\f3\fs24\b0\i1\fi-1185\li1707\lin1707}{\listname ;}\listid1}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\loch\af0\hich\af0\dbch\af0\uc1\u8226\'95;}{\levelnumbers;}\f2\fs24\b0\i0\fi-667\li960\lin960}{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid
+{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\f3\fs24\b0\i1\fi-1580\li2276\lin2276}{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
 \paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\f0\fs24\cf0
 \pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f1\fs36\b1\i0 Introduction to Regular Expression}
 \par\plain \f2\fs24\b0\i0
@@ -13,12 +15,13 @@
 \par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
 \par\plain {\f2\fs24\b0\i0 Regular expression (or simply regex) is a programming language designed to match text via patterns rather than an exact string. Regular expressions have been incorporated into the find & replace function of many text editors including Visual Studio Code, Atom and Notepad++.}
 \par\plain {\f2\fs24\b0\i0 Most of the syntax uses symbols called wildcards to represent characters within a text file such as: spaces, tabs, words and end of lines.}
-\par\plain {\f2\fs24\b0\i0 Try not to be put off by the intimidating syntax of regex because learning it is one of the best ways to save time and be efficient in e-book production. When I worked in commercial e-book development my colleague and I would frequently pass around a printout of }{\field{\*\fldinst HYPERLINK "http://cheatography.com/davechild/cheat-sheets/regular-expressions/"}{\fldrslt\f2\fs24\b0\i0 Dave Child\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s Regex cheatsheet}}{\f2\fs24\b0\i0  (}{\field{\*\fldinst HYPERLINK "https://archive.ph/QUo3k"}{\fldrslt\f2\fs24\b0\i0 archive}}{\f2\fs24\b0\i0 ).}
+\par\plain {\f2\fs24\b0\i0 Try not to be put off by the intimidating syntax of regex because learning it is one of the best ways to save time and be efficient in e-book production. When I worked in commercial e-book development my colleague and I would frequently pass around a printout of }{\field{\*\fldinst HYPERLINK "http://cheatography.com/davechild/cheat-sheets/regular-expressions/"}{\fldrslt\f2\fs24\b0\i0 Dave Child\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s Regex cheatsheet}}{\f2\fs24\b0\i0  (}{\field{\*\fldinst HYPERLINK "https://archive.ph/QUo3k"}{\fldrslt\f2\fs24\b0\i0 archive}}{\f2\fs24\b0\i0 ) as a handy reference.}
 \par\plain {\f2\fs24\b0\i0 I recommend trying these examples yourself. You can modify an XHTML file or instead use }{\field{\*\fldinst HYPERLINK "https://www.regexpal.com/"}{\fldrslt\f2\fs24\b0\i0 RegEx Pal}}{\f2\fs24\b0\i0  to test each regular expression safely away from your production code.}
+\par\plain {\f2\fs24\b0\i0 Keep in mind that the regular expression syntax can vary between software or programming language. Both Atom and Visual Studio Code use JavaScript regex rules, but Notepad++ uses Perl-Compatible Regex Engine (PCRE) rules instead.}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f1\fs24\b1\i0 Tabs}
 \par\plain \f2\fs24\b0\i0
-\par\plain {\f2\fs24\b0\i0 Let\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s start by adding two tabs to indent our indented paragraphs that use the <p></p> tags.    Type this in the find textbox within the Find function:}
+\par\plain {\f2\fs24\b0\i0 Let\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s start by adding two tabs to indent our indented paragraphs that use the }{\f4\fs22\b0\i0 <p></p>}{\f2\fs24\b0\i0  tags.    Type this in the find textbox within the Find function:}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f4\fs22\b0\i0 ^<p>}
 \par\plain \f4\fs22\b0\i0
@@ -27,19 +30,60 @@
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f4\fs22\b0\i0 \\t\\t<p>}
 \par\plain \f4\fs22\b0\i0
-\par\plain {\f2\fs24\b0\i0 The }{\f4\fs22\b0\i0 \\t}{\f2\fs24\b0\i0  wildcard represents a tab, so I\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92ve added two of them. Doing this indents your XHTML code nicely making it much easier to read. Try and imitate the indentation the text uses in the web browser to make debugging a lot easier.}
+\par\plain {\f2\fs24\b0\i0 The }{\f4\fs22\b0\i0 \\t}{\f2\fs24\b0\i0  wildcard represents a tab, so I\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92ve added two of them. Doing this indents your XHTML code nicely making it much easier to read. Try and imitate the indentation and spacing of the XHTML code that the content has in the web browser to make debugging a lot easier.}
 \par\plain {\f2\fs24\b0\i0 You can recreate this example on RegEx Pal by typing this in the Test String box:}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f4\fs22\b0\i0 <p>}
 \par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Newlines}
+\par\plain \f1\fs24\b1\i0
+\par\plain {\f2\fs24\b0\i0 \\n}
+\par\plain \f2\fs24\b0\i0
 \par\plain {\f1\fs24\b1\i0 Spaces}
 \par\plain \f1\fs24\b1\i0
+\par\plain {\f2\fs24\b0\i0 \\s}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Dot-plus-question mark}
+\par\plain {\f2\fs24\b0\i0 The dot-plus-question (}{\f4\fs22\b0\i0 .+?}{\f2\fs24\b0\i0 ) mark is a sequence of wildcards that can be defined as \loch\af2\hich\af2\dbch\af2\uc1\u8216\'91anything\u8217\'92. More specifically, this sequence utilises the following:}
+\par\plain \f2\fs24\b0\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls1\ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 The dot (.) matches any single character except end of line characers such as \\n or \\r}
+\par\plain \ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\f2\fs24\b0\i0 The plus (+) marches one}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Registers}
+\par\plain {\f2\fs24\b0\i0 Registers are used to save text that doesn\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92t need to be changed. Use standard parentheses () in the find and then recall the saved text with the dollar sign ($) (or backslash (\\) in Notepad++)}
+\par\plain {\f2\fs24\b0\i0 In the context of e-book production this tends to be content between tags to alter the opening and closing tags.}
+\par\plain \f2\fs24\b0\i0
+\par\pard\plain \ltrch\loch {\f4\fs22\b0\i0 <strong>(.+?)</strong> }
+\par\plain {\f4\fs22\b0\i0 <b>$1</b>}
+\par\plain \f4\fs22\b0\i0
+\par\plain {\f4\fs22 <em>(.+?)</em>}
+\par\plain {\f4\fs22 <i>$1</i>}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch 
+\par\plain {\f2\fs24 Alternatively, I could have simply changed each tag at a time. Whoever, by using registers I can implement the modern bold and italic tags (as described in my Introduction to XHTML chapter) with just 2 pairs of regex statements.}
+\par\plain {\f2\fs24\b0\i0 I did this for each chapter of the e-book adaptation of the open-source }{\f3\fs24\b0\i1 Survival Manual}{\f5\fs24\b1\i1  }{\f2\fs24\b0\i0 by Ligi , due to my use of the pandoc documentation conversion software to convert the files from Markdown which is used on GitHub\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s wiki pages to XHTML.}
+\par\plain {\f2\fs24\b0\i0 Another example of a suitable use for regex registers would be changing the heading tag numbering, such as from <h1> to <h2>.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 Wildcard character escaping}
+\par\plain {\f2\fs24\b0\i0 Sometimes your desired pattern contains a reserved symbol that regex syntax uses. Refer to the table below with reserved regex wildcard characters: }
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 //Regex reservation table}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 In these situations a backslash (\\) is required before the symbol itself. For example, if I want to match all text included in a pair of paratheses I would use the following:}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f4\fs22\b0\i0 \\(.+?\\)}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 A backlash can also be used recursively to escape the backslash itself:}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 \\\\}
 \par\plain \f2\fs24\b0\i0
 \par\plain {\f1\fs24\b1\i0 Further reading}
 \par\plain \f2\fs24\b0\i0
-\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls1\ilvl0{\listtext	\f3\fs24\b0\i1 1.	}{\f3\fs24\b0\i1 Introducing Regular Expressions}{\f2\fs24\b0\i0  (2012), Michael Fitzgerald, O\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92Reilly Publishing, ISBN: 978-1-449-39268-0}
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls2\ilvl0{\listtext	\f3\fs24\b0\i1 1.	}{\f3\fs24\b0\i1 Introducing Regular Expressions}{\f2\fs24\b0\i0  (2012), Michael Fitzgerald, O\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92Reilly Publishing, ISBN: 978-1-449-39268-0}
 \par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f4\fs24\b0\i0
-\par\plain \f2\fs24\b0\i0
+\par\plain {\f4\fs24\b0\i0 Cheatsheets}
+\par\pard\plain \ltrch\loch {\field{\*\fldinst HYPERLINK "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet"}{\fldrslt\f0\fs24 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Cheatsheet}}
+\par\plain {\field{\*\fldinst HYPERLINK "http://cheatography.com/davechild/cheat-sheets/regular-expressions"}{\fldrslt\f0\fs24 http://cheatography.com/davechild/cheat-sheets/regular-expressions}}{/ archive.ph/QUo3k}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
 \par\plain \f2\fs24\b0\i0
