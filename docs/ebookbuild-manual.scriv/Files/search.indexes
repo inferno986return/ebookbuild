@@ -275,10 +275,13 @@ Italic:
 Italic is used as alternative to bold for emphasis to make a particular word or phrase more prominent to a reader. It is also common to italicise the names of works such as books, films, music and video games. For example I italicised the Chicago Manual of Style in this chapter’s introductory paragraph.
 
 Superscript:
-Superscripting makes the font smaller and places it above the cap height. It is commonly used for numerical ordinals such as 1st, 2nd, 3rd and 4th. As well as citational references inside paragraphs, as you’ll have noticed throughout this book.
+Superscripting makes the font smaller and places it above the cap height. 
+Superscript is used for numerical ordinals such as 1st, 2nd, 3rd and 4th. As well as citational references inside paragraphs, as you’ll have noticed throughout this book.
+Some large brands such Amazon and Microsoft superscript currency subunits (along with or without the decimal point) at medium to large font sizes. Such as: £11.99
 
 Subscript:
-Subscripting makes the font smaller and places it below the baseline. It is commonly used for chemical formulae such as carbon dioxide (CO2) or sulphuric acid (H2SO4).
+Subscripting makes the font smaller and places it below the baseline. 
+It is commonly used for chemical formulae such as carbon dioxide (CO2) or sulphuric acid (H2SO4).
 
 Small caps:
 Small caps (Small Caps) are capital letters that are the same height as the lowercase letters (i.e. the font’s x-height).
@@ -286,7 +289,7 @@ They are commonly used stylistically for the names of people as a form of emphas
 
 “12 Now the Lord had said unto Abram, Get thee out of thy country, and from thy kindred, and from thy father's house, unto a land that I will shew thee:” —Genesis 12:1, King James Version (KJV)
 
-Unfortunately, some e-book reading software such as Adobe Digital Editions does not support small caps and ignores them. I don’t recommend relying on small caps compatibility for digital documents unless a supported font has been embedded.
+Unfortunately, some e-reading software such as Adobe Digital Editions does not support small caps and ignores them. I don’t recommend relying on small caps compatibility for digital documents unless a supported font has been embedded.
 
 Hyperlinks:
 Hyperlinks are used to connect text, images or other content to an external resource. In most webpages and documents, hyperlinks appear underlined blue for unvisited and then turn purple once clicked.
@@ -303,8 +306,13 @@ For example, hyperlinks to a product page on Amazon can be written concisely wit
 
 Redaction
 Redaction is obfuscation of text for confidentiality purposes.
+Usually redaction is performed via two techniques:
 
-Pixelation has be proven to not be secure… F-Secure also has a great video on this.
+Pixelation is where the redacted content has been distorted usually into pixels. Pixelation has be proven to be algorithmically reversible via tools. Dan Petro, a researcher at cybersecurity firm Bishop Fox created the Unredactor tool which can convert a formerly pixelated image and reveal the redacted text in cleartext. There are also algorithms that can remove pixelation and blur fro
+https://bishopfox.com/blog/unredacter-tool-never-pixelation (archive: https://archive.ph/I2GHz)
+
+Box drawing is where a coloured box covers the redacted content. F-Secure demonstrated it is possible to reverse box drawing, but only when it’s improperly drawn using a PDF editor such as Nitro. They recommend printing and then scanning the document once the redactions have been applied by hand, perhaps using a permanent marker. https://www.youtube.com/watch?v=nujqq8GXIA4
+
 
 Symbols:
 
@@ -328,7 +336,7 @@ An em dash is the same width as a lowercase “m”. Em dashes are used for quot
 Speech marks:
 Double speech marks (“, ”, &quot;)
 Double speech marks (or quote marks) are used for speech in most European languages and can be used for defining attributes in XHTML. There are three double quote marks, a left quote (“), right quote (”) and a straight quote (&quot;). I prefer to use the curled left and right quote marks as they look more presentable. Some books such as How I Live Now by Meg Rossoff forgo speech marks entirely.
-There are languages such as German, Hungarian and Polish that use different quote marks with the left pair sitting on the baseline.
+There are languages such as German, Hungarian and Polish that use different quote marks with the left pair sitting on the baseline. 
 
 Single speech marks (‘, ‘, ‘)
 Double speech marks (or quote marks) are also used for speech in most European languages and can also be used for defining attributes in XHTML. There are three double quote marks, a left quote (‘), right quote (‘) and a straight quote (‘). 
@@ -347,7 +355,9 @@ A pilcrow is commonly used for stylistic purposes. For example, in the 1931 book
 
 “¶ The theme of this book is Typography, and Typography as it is affected by the conditions of the year 1931. The conflict between industrialism &amp; the ancient methods of handicraftsmen which resulted in the muddle of the 19th century is now coming to its term.”
 
-Some typefaces such as Doves Type and Lyon Display have distinctive pilcrow symbols. //diagram
+Some typefaces such as Doves Type and Lyon Display have distinctive pilcrow symbols. The standard pilcrow has a distinct “P” shape, though some type designers prefer the “C” shape from the pilcrow’s predecessor, the capitulum symbol.
+
+//diagram
 
 Section (§)
 The section symbol is used to mark individual numbered sections of a large document and is commonly used in the law profession. For example, section 1201 of Title 17 expressly forbids the circumvention of digital rights management (DRM) systems:
