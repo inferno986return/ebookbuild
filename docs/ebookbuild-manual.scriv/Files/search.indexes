@@ -196,12 +196,12 @@ Adobe licences fonts with the “Pro” suffix that support OpenType extensively
 
 Ligatures
 
-Ligatures are two or more conjoined glyphs that usually (though not always) provide improved readability and are used for aesthetic purposes. As with any typographical feature, it’s support may vary between each e-reader and should not be guaranteed.
+Ligatures are two or more conjoined glyphs used for aesthetic purposes, which usually (though not always) provide improved readability. As with any typographical feature, it’s support may vary between each e-reader and should not be guaranteed.
 
 #
 The letters “fi”, “ff” and “fl” are commonly presented as a ligature
 
-Some characters such as the ampersand (&amp;) were previously ligatures that became a individual glyph over time.
+Some characters such as the ampersand (&amp;) were previously ligatures that became an individual glyph over time.
 
 Old Roman cursive, reed pen, 131 AD.
 New Roman cursive, middle of 4th century.
@@ -241,7 +241,9 @@ Tabular figures are numerals that consume the same width (just like with monospa
 
 Stylistic alternates
 
-Stylisitic alternates are
+Stylistic alternates are alternative glyphs that can be optionally substituted with the original glyph. Usually stylistic alternates allow a designer to decide if they want a typeface’s single-storey or double-storey letters such as “a” and “g”.
+
+The popular font Inter includes many different stylistic alternates
 
 Further reading:
 https://www.adobe.com/products/type/opentype.html
@@ -355,8 +357,10 @@ The section symbol is used to mark individual numbered sections of a large docum
 It is also the Simoleon currency symbol in the video game series SimCity and The Sims.
 
 Asterisk (*)
-The asterisk (*) means “little star” in Greek and is commonly used as the first reference in a chapter that uses citational referencing. It is also used a lot for print advertising such as billboards, posters and magazines.
-Three asterisks in a series is often used to denote a scene break (***) between paragraphs.
+The asterisk (*) means “little star” in Greek and is commonly used as the first reference in a chapter that uses non-numerical citational referencing, especially in print advertising such as billboards, posters and magazines.
+The asterisk is also used on online forms to denote mandatory fields that are required for submission. Usually these asterisks are red to increase their visibility.
+
+Three asterisks in a series is called a dinkus, which is used as a scene break or section break  between paragraphs. Alternatively, an asterism can be used which places three asterisks in a triangular formulation.
 
 Dagger (†)
 The dagger (†) is commonly used for marking deceased people or extinct species to the right of their name. It is also used as the second reference in a chapter that uses citational referencing.
@@ -555,13 +559,15 @@ Following these trends, I would anticipate the Nintendo Switch eShop will be clo
         </Document>
         <Document ID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8">
             <Title>Introduction to XHTML</Title>
-            <Text>Introduction to XHTML
+            <Text>Introduction to XHTML (eXtensible HyperText Markup Language) 
 
 “XML is a very simple syntax resembling HTML — angle-bracketed tags and ampersand-led literal
 sequences. It is about as simple as a plain-text markup can be and yet express recursively nested
 data structures. XML is just a low-level syntax; it requires a document type definition (such as
 XHTML) and associated application logic to give it semantics.” 
 —Eric S. Raymond, Art of Unix Programming
+
+HTML (HyperText Markup Lanaguage) is a markup language that is used to define the content on webpages. This technology is the backbone of e-books because it allows book content to be defined and placed.
 
 XHTML (eXtensible HyperText Markup Language) is the recommended language for creating the actual chapters of an e-book, it combines regular HTML (HyperText Markup Language) that is used to create webpages with XML (eXtensible Markup Language). Alternatively, you can use regular HTML though you can’t define custom tags (or can you?) and web browsers are more tolerant of obvious syntax errors when testing.
 
@@ -806,7 +812,48 @@ Several websites have exhaustive documentation of each HTML/XHTML tag, its attri
         </Document>
         <Document ID="472A1080-2E72-4AB9-8779-23F6B1122C37">
             <Title>Introduction to CSS</Title>
-            <Text>Introduction to Cascading StyleSheets (CSS)</Text>
+            <Text>Introduction to Cascading StyleSheets (CSS)
+
+Cascading StyleSheets (CSS) is a stylesheet language used to define the appearance of HTML (and by extension, XHTML) elements. CSS facilitates beautiful e-book typesetting and should be the forefront of an e-book’s design.
+It is best to use external CSS where the classes are defined with one or several dedicated .css files. However, I will demonstrate the two other ways of adding CSS to an e-book project.
+
+In-line CSS via the style attribute
+
+Note: In-line CSS definitions are recommended solely for prototyping CSS classes and should not be used in production.
+
+Each XHTML tag supports the “style” attribute, which facilitates in-line CSS definitions. This means CSS attributes can be applied to an individual tag without creating a CSS class. For example, adding bold and italic to span tag:
+
+&lt;p&gt;The cat &lt;span style=”font-weight: bold; font-style: italic”&gt;sat&lt;/span&gt; on the mat.&lt;/p&gt;
+
+The cat sat on the mat.
+
+In a real e-book project, I would combine the bold &lt;b&gt;&lt;/b&gt; and italic &lt;i&gt;&lt;/i&gt; tags instead of using a span to create bold italic for emphasis. 
+
+Internal CSS via the head tag
+
+Note: Internal CSS definitions are recommended solely for prototyping CSS classes and should not be used in production.
+
+Internal CSS uses the style &lt;style&gt;&lt;/style&gt; tag within the head tags to define one or more CSS classes for a specific XHTML file.
+
+&lt;head&gt;
+	&lt;meta content=&quot;http://www.w3.org/1999/xhtml; charset=utf-8&quot; http-equiv=&quot;Content-Type&quot;/&gt;
+	&lt;title&gt;Acknowledgements&lt;/title&gt;
+	&lt;style&gt;
+		span.bold-italic {
+			font-weight: bold;
+			font-style: italic;
+		}
+	&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+	&lt;p&gt;The cat &lt;span class=”bold-italic”&gt;sat&lt;/span&gt; on the mat.&lt;/p&gt;
+&lt;/body&gt;
+
+External CSS via a dedicated .css file
+
+References:
+https://www.w3schools.com/css/css_howto.asp</Text>
         </Document>
         <Document ID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F">
             <Title>Google Keep notes</Title>
@@ -1025,10 +1072,14 @@ oindent{I have included as many references as I can for further reading and watc
 
 Let’s start with some definitions:
 
-Fonts are a representation of a typeface for a specific use such as on a computer.
 Typography refers to the study, use and creation of typefaces.
+Fonts are a representation of a typeface for a specific use, such as on a computer.
 Typefaces are lettering designs which can be upright or slanted, with different stroke thickness
-Glyphs are each character, number, letter or symbol within a typeface.
+Families are collections of weights and styles which a typeface has.
+Glyphs are each individual character, number, letter or symbol within a typeface.
+Weights refer to the difference in line thickness between one typeface and another in the same family. Many typeface families offer multiple weights intended for different uses.
+
+//Diagram demonstrating different font weights (maybe use Roboto)
 
 Typography relies on several imaginary lines to ensure each glyph is positioned appropriately.
 
@@ -1036,9 +1087,9 @@ Typography relies on several imaginary lines to ensure each glyph is positioned 
 The different typographical lines and how they relate to the position of the word “Sphinx”
 
 Baseline is the line which all letters sit upon.
-Ascender is the line above the cap height. For example, letters that have a tall stem such as “h”, “b” and “d”.
+Ascender is the line above the cap height. For example, letters that have a tall stem such as “h”, “l” (lowercase “L”), “b” and “d”.
 Descender is the line below the baseline. For example, letters such as “p” and “q” .
-X-height is the height of the lowercase “x” and most other lowercase letters.
+X-height is the height of the lowercase “x” and most other lowercase letters such as “a”, “c”, “e”, “m” and “n”.
 
 Typography has been an important part of book design since its inception and remains significant when typesetting books and documents for either print or screen. 
 In the case of e-books usually the default fonts are selected by the e-reader’s developer.
@@ -1087,6 +1138,8 @@ It’s also worth knowing about Windows Glyph List (WGL) fonts
 
 
 References:
+
+https://careerfoundry.com/en/blog/ui-design/beginners-guide-to-typography/
 https://en.wikipedia.org/wiki/Courier_(typeface)#Courier_New
 https://www.fonts.com/content/learning/fontology/level-1/type-anatomy
 https://www.toptal.com/designers/typography/typeface-classification
@@ -1225,6 +1278,18 @@ Fingerprinting
 
 Fingerprinting is a method for identifying unique builds of an e-book. This could be used for review copies or ARC (advanced reader copies) to identify who leaked an e-book prior to release.
 So far my only approach is to rely on checksums as they are unique to each build. Another way is to add comments referring to the reviewer in the XHTML or CSS code.</Text>
+        </Document>
+        <Document ID="99410295-9476-468A-84A0-70AC6917D0D3">
+            <Title>Legal</Title>
+            <Text>Legal
+
+
+This book is licenced under Creative Commons CC-By-SA-ND.
+All intellectual property belongs to their respective owners.
+GITHUB®, the GITHUB® logo design, OCTOCAT® and the OCTOCAT® logo design are exclusive trademarks registered in the United States by GitHub, Inc.
+The GitHub icons which referred to as “Octicons” belong to GitHub and are used for demonstration of both GitHub Desktop and the GitHub website. I claim fair use of these icons.
+I have a list of illustrations to credit each diagram. Many are from Wikimedia Commons and I am grateful there are so many good quality diagrams available for re-use under Creative Commons licencing or in the public domain.
+All copyrighted content is used in this book for the purposes of education and demonstration, as encouraged by US fair use doctrine.</Text>
         </Document>
         <Document ID="9C43D21D-C973-4DD8-857E-08EB9C396879">
             <Title>Preface</Title>
@@ -1637,6 +1702,10 @@ Symbol entities
 
 
 </Text>
+        </Document>
+        <Document ID="F04CF11A-06C8-4F16-A0A8-3B3721D4E02D">
+            <Title>What is a book?</Title>
+            <Text>What is a book?</Text>
         </Document>
         <Document ID="F2985C11-FAA4-4B9D-BD6D-01F2EE8EFB29">
             <Title>What is an e-book?</Title>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-03-04 18:24:50 +0000" ModID="CBED6D62-8E13-4F2E-ACCF-A79E743E4CD6">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-03-09 12:36:53 +0000" ModID="02CE175C-B96D-479E-8F27-29E661CE7F0F">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
             <Title>Draft</Title>
@@ -34,13 +34,22 @@
                 <TextSelection>1869,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="8D684E13-8902-49E2-A46A-324120DAFE12" Type="Text" Created="2022-02-28 17:36:35 +0000" Modified="2022-03-01 13:57:15 +0000">
+        <BinderItem UUID="F04CF11A-06C8-4F16-A0A8-3B3721D4E02D" Type="Text" Created="2022-03-09 12:07:55 +0000" Modified="2022-03-09 12:08:19 +0000">
+            <Title>What is a book?</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>15,0</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="8D684E13-8902-49E2-A46A-324120DAFE12" Type="Text" Created="2022-02-28 17:36:35 +0000" Modified="2022-03-09 12:07:53 +0000">
             <Title>What is an e-book?</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>194,0</TextSelection>
+                <TextSelection>19,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="A5453BE0-6885-4AAC-9191-17CC87209EBA" Type="Text" Created="2022-03-01 13:59:52 +0000" Modified="2022-03-01 14:17:33 +0000">
@@ -52,40 +61,40 @@
                 <TextSelection>175,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="7433E120-006A-4AE3-BCA4-90A934374CA0" Type="Text" Created="2022-02-06 00:23:12 +0000" Modified="2022-03-01 11:04:47 +0000">
+        <BinderItem UUID="7433E120-006A-4AE3-BCA4-90A934374CA0" Type="Text" Created="2022-02-06 00:23:12 +0000" Modified="2022-03-09 12:08:29 +0000">
             <Title>Introduction to Typography</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>4998,0</TextSelection>
+                <TextSelection>531,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="1D572E7F-F737-4ABE-A22A-B3DCB57794A0" Type="Text" Created="2022-03-01 10:27:33 +0000" Modified="2022-03-01 11:05:31 +0000">
+        <BinderItem UUID="1D572E7F-F737-4ABE-A22A-B3DCB57794A0" Type="Text" Created="2022-03-01 10:27:33 +0000" Modified="2022-03-08 12:15:03 +0000">
             <Title>Advanced Typography</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>2374,0</TextSelection>
+                <TextSelection>638,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8" Type="Text" Created="2022-02-06 00:45:13 +0000" Modified="2022-03-04 17:46:31 +0000">
+        <BinderItem UUID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8" Type="Text" Created="2022-02-06 00:45:13 +0000" Modified="2022-03-09 12:04:47 +0000">
             <Title>Introduction to XHTML</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>5478,0</TextSelection>
+                <TextSelection>3806,208</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="472A1080-2E72-4AB9-8779-23F6B1122C37" Type="Text" Created="2022-02-26 23:19:56 +0000" Modified="2022-02-26 23:20:39 +0000">
+        <BinderItem UUID="472A1080-2E72-4AB9-8779-23F6B1122C37" Type="Text" Created="2022-02-26 23:19:56 +0000" Modified="2022-03-09 12:36:35 +0000">
             <Title>Introduction to CSS</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>43,0</TextSelection>
+                <TextSelection>1694,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="ACD131AA-5177-42FB-8152-CC3A73D2FF81" Type="Text" Created="2022-02-13 17:12:01 +0000" Modified="2022-03-01 13:56:40 +0000">
@@ -115,13 +124,13 @@
                 <TextSelection>612,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="25AA13C0-6D21-4383-A6B6-50B28003E7F9" Type="Text" Created="2022-02-10 13:46:28 +0000" Modified="2022-03-01 12:59:42 +0000">
+        <BinderItem UUID="25AA13C0-6D21-4383-A6B6-50B28003E7F9" Type="Text" Created="2022-02-10 13:46:28 +0000" Modified="2022-03-09 10:36:00 +0000">
             <Title>Manual of Style</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>10562,0</TextSelection>
+                <TextSelection>8517,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="394DAC75-CF1D-4F47-9D22-8608BA998D6C" Type="Text" Created="2022-02-20 14:45:49 +0000" Modified="2022-02-20 16:33:32 +0000">
@@ -157,7 +166,16 @@
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>636,0</TextSelection>
+                <TextSelection>29,607</TextSelection>
+            </TextSettings>
+        </BinderItem>
+        <BinderItem UUID="99410295-9476-468A-84A0-70AC6917D0D3" Type="Text" Created="2022-03-09 12:09:09 +0000" Modified="2022-03-09 12:11:00 +0000">
+            <Title>Legal</Title>
+            <MetaData>
+                <IncludeInCompile>Yes</IncludeInCompile>
+            </MetaData>
+            <TextSettings>
+                <TextSelection>806,0</TextSelection>
             </TextSettings>
         </BinderItem>
         <BinderItem UUID="C8BC8F14-C5A8-4C2C-9645-062BF504A309" Type="ResearchFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
@@ -300,13 +318,13 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="531" Characters="3370" Date="2022-03-04 18:24:50 +0000"/>
+        <PreviousSession Words="557" Characters="3577" Date="2022-03-09 12:36:53 +0000"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-03-04 00:00:00 +0000">
+    <RecentWritingHistory Date="2022-03-09 00:00:00 +0000">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
-        <OtherWordCount>531</OtherWordCount>
-        <OtherCharCount>3369</OtherCharCount>
+        <OtherWordCount>554</OtherWordCount>
+        <OtherCharCount>3562</OtherCharCount>
     </RecentWritingHistory>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="iso-a4" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>
