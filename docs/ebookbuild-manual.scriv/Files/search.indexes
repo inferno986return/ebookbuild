@@ -1371,7 +1371,7 @@ Syntax highlighting for XHTML, CSS, JSON and Markdown.
 Find and replace with regular expressions
 
 Visual Studio Code
-Microsoft Windows, macOS, Ubuntu
+# Microsoft Windows, macOS, Ubuntu
 Visual Studio Code is my preferred text editor for several years.
 
 
@@ -1380,50 +1380,80 @@ Both macOS and GNU/Linux have an excellent preinstalled terminal which requires 
 For Microsoft Windows I recommend installing Windows Subsystem for Linux (WSL) which allows installation of a minimal GNU/Linux environment including the Bash shell.
 
 Windows Terminal
-Microsoft Windows
+# Microsoft Windows
+
 Windows Terminal is the terminal emulator I’ve been waiting for and I was eagerly awaiting its stability when I first tested it in 2019. 
 It is pre-installed on Windows 11. For Windows 10, it is recommended to install via the Microsoft Store, though it can be downloaded and installed manually or even compiled from source code in Visual Studio.
 
 
 Git client
-Git is a popular version control system (VCS) and I recommend using it for e-book development.
+Git is a popular version control system (VCS) and I recommend using it for e-book development, so much so there’s a whole dedicated Introduction to Git and GitHub chapter included in this book.
 
-E-book reader
+GitHub Desktop
+# Microsoft Windows, macOS, GNU/Linux
+GitHub Desktop is
+GitKraken
+
+
+E-book reader (e-reader)
+E-book readers (or e-readers) are software specifically designed to open and display e-book formats. There are many e-readers, though some are unreliable and do not render CSS correctly.
 
 Adobe Digital Editions
+# Microsoft Windows, macOS
+Adobe Digitial Editions (ADE) is
+
 Kindle Previewer
+# Microsoft Windows, macOS
+Google Play Books
+Android, iOS, web
 
 PDF reader
+Adobe Reader DC
+# Microsoft Windows, macOS, iOS, Android
+
+Evince
+# Microsoft Windows, Ubuntu
 
 Web browser
 
 A web browser is required to test the XHTML and CSS are working correctly, as well as testing the compiled ePub on Google Play Books web reader (https://play.google.com/books).
 
 Brave
-Microsoft Windows, macOS, GNU/Linux, Android, iOS
+#
+# Microsoft Windows, macOS, Ubuntu, Android, iOS
 
-I use the Brave as my everyday web browser which includes e-book development. Brave is a modification of Chrome with support for the majority of tested Chrome extensions and includes additional advert-blocking functionality built-in to the browser.
-Brave Sync replaces Google Sync and can be used to syncronise settings and preferences across multiple devices using a unique password.
-Brave uniquely rewards its userbase for viewing advert notifications and sponsored “billboard” images on the new tab screen with the Etherum-based cryptocurrency called Basic Attention Token (BAT). Users can then donate BAT to websites or certain social media profiles based on the amount of time they spend on those pages.
+I use the Brave as my everyday web browser which includes e-book development. The debug tools allow simulation of different screen-sizes to test responsiveness.
+Brave is a modification of the Chrome web browser with support for the majority of tested Chrome extensions. It also has the following notable features:
+Brave Shields - contains advert and tracker blocking functionality built-in to the browser.
+Brave Sync - replaces Google Sync and can be used to syncronise settings and preferences across multiple devices using a unique password or by scanning a quick response (QR) code.
+Brave Rewards - Brave rewards its userbase for viewing advert notifications and sponsored “billboard” images on the new tab screen with the Ethereum-based cryptocurrency called Basic Attention Token (BAT). The user can then donate BAT to websites or certain social media profiles based on the amount of time they spend on those pages.
+Decentralised networking - Brave also has support for the InterPlanetary File System (IPFS) and The Onion Router (TOR).
+
+According to the BAT whitepaper, traditional internet advertising by design doesn’t respect user privacy and often irritates them with tracking adverts. Brave boasts that user data doesn’t leave the browser and users are rewarded for the time they take viewing adverts.
 
 Chrome
+# Microsoft Windows, macOS, Ubuntu, Android, iOS
+
 Chrome is the dominant web browser and needs little introduction. It is Google’s own web browser.
 
 Image editor and publishing software
 
-British software house Serif develop affordable design software for Microsoft Windows, Apple macOS and the iPad that can be used as an alternative to the costly Adobe Creative Cloud (Adobe CC). Each program is purchased once per 1.0 version and is currently priced at £47.99 GBP in the UK.
-For some use cases, the Adobe CC subscription may be a better deal as it includes other programs that Serif have not created alternatives for such as Adobe Lightroom and Adobe XD, as well as additional features such as Adobe Typekit and Adobe Stock.
+British software house Serif develop affordable design software for Microsoft Windows, Apple macOS and the iPad that can be used as an alternative to the costly Adobe Creative Cloud (Adobe CC). Each program is purchased once per 1.0 version and is currently priced at £47.99 GBP for each program in the UK.
+For some use cases, the Adobe CC subscription may be a better deal as it includes other programs that Serif have not created alternatives for such as Adobe Lightroom and Adobe XD, as well as services such as Adobe Typekit and Adobe Stock.
 
 Affinity Photo
 # Microsoft Windows, macOS, iOS (iPad)
+
 Affinity Photo is a raster image editor comparable to Adobe Photoshop.
 
 Affinity Designer
 # Microsoft Windows, macOS, iOS (iPad)
+
 Affinity Designer is a vector image editor comparable to Adobe Illustrator.
 
 Affinity Publisher
 # Microsoft Windows, macOS, iOS (iPad)
+
 Affinity Publisher is desktop publishing software comparable to Adobe inDesign.
 
 Word processor
@@ -1433,17 +1463,22 @@ Microsoft Word
 
 Scrivener
 
+LibreOffice Writer
+
 E-book library software
 
 Music player
 
 Spotify
-# Microsoft Windows, macOS, GNU/Linux (experimental), iOS, Android, web
+# Microsoft Windows, macOS, Ubuntu, iOS, Android, web
 
 Spotify
 
 SOMA.fm
-SOMA.fm (https://somafm.com) is an independent advert-free radio station run by Rusty Hodge boasting 30 different playlists. Back at Oxford eBooks, the go-to station to listen to was Groove Salad which plays ambient music.
+#
+iOS, Android, web
+
+SOMA.fm (https://somafm.com) is an independent advert-free radio station run by Rusty Hodge boasting 30 different playlists. Back at Oxford eBooks, the go-to station for background music while developing e-books was Groove Salad which plays ambient music.
 
 There is also an unofficial Groove Salad Spotify playlist called Groove Salad Complete by beautifully chilled which contains an assortment of tracks that are typically played on Groove Salad.
 
