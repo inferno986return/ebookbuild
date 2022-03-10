@@ -1327,7 +1327,7 @@ This book is interactive. Feel free to check the e-book code on GitHub.</Text>
             <Title>Recommended Software</Title>
             <Text>Recommended Software
 
-E-book development is made possible using many different pieces of software. My goal is to develop e-books as quickly and affordably as possible with minimal subscriptions. 
+E-book development is made possible using many different pieces of software. My goal is to develop e-books as quickly and affordably as possible with minimal subscriptions.
 This is my preferred software though I also have some alternatives you can try:
 
 
@@ -1362,10 +1362,17 @@ Apple Music
 
 
 Text editor
-A text editor is needed to create and then edit the XHTML, CSS and metadata.json files. Most of the time spent on an e-book will be using a text editor so it’s important that you can find it comfortable and easy to use. 
+A text editor is needed to create and then edit the XHTML, CSS and metadata.json files. Most of the time spent on an e-book will be using a text editor so it’s important that you can find it comfortable and easy to use.
+Text editors may be the most common type of computer program with many options to choose from and I am aware of just how defensive some users can be of their preferred text editor (especially the vi vs. emacs editor wars).
+Back at Oxford eBooks, we used Notepad++ for the bulk of our text editing. Notepad++ has an outdated user interface and is restricted to Microsoft Windows. For those reasons I consider Atom and Visual Studio Code to be suitable replacements. 
+An appropriate text editor for e-book development should support the following features:
+
+Syntax highlighting for XHTML, CSS, JSON and Markdown.
+Find and replace with regular expressions
 
 Visual Studio Code
-There are many text editors. However, my preferred text editor for several years has been Microsoft Visual Studio Code.
+Microsoft Windows, macOS, Ubuntu
+Visual Studio Code is my preferred text editor for several years.
 
 
 Terminal emulator
@@ -1373,6 +1380,7 @@ Both macOS and GNU/Linux have an excellent preinstalled terminal which requires 
 For Microsoft Windows I recommend installing Windows Subsystem for Linux (WSL) which allows installation of a minimal GNU/Linux environment including the Bash shell.
 
 Windows Terminal
+Microsoft Windows
 Windows Terminal is the terminal emulator I’ve been waiting for and I was eagerly awaiting its stability when I first tested it in 2019. 
 It is pre-installed on Windows 11. For Windows 10, it is recommended to install via the Microsoft Store, though it can be downloaded and installed manually or even compiled from source code in Visual Studio.
 
@@ -1392,6 +1400,8 @@ Web browser
 A web browser is required to test the XHTML and CSS are working correctly, as well as testing the compiled ePub on Google Play Books web reader (https://play.google.com/books).
 
 Brave
+Microsoft Windows, macOS, GNU/Linux, Android, iOS
+
 I use the Brave as my everyday web browser which includes e-book development. Brave is a modification of Chrome with support for the majority of tested Chrome extensions and includes additional advert-blocking functionality built-in to the browser.
 Brave Sync replaces Google Sync and can be used to syncronise settings and preferences across multiple devices using a unique password.
 Brave uniquely rewards its userbase for viewing advert notifications and sponsored “billboard” images on the new tab screen with the Etherum-based cryptocurrency called Basic Attention Token (BAT). Users can then donate BAT to websites or certain social media profiles based on the amount of time they spend on those pages.
@@ -1402,18 +1412,18 @@ Chrome is the dominant web browser and needs little introduction. It is Google�
 Image editor and publishing software
 
 British software house Serif develop affordable design software for Microsoft Windows, Apple macOS and the iPad that can be used as an alternative to the costly Adobe Creative Cloud (Adobe CC). Each program is purchased once per 1.0 version and is currently priced at £47.99 GBP in the UK.
-For some use cases, the Adobe CC subscription may be a better deal as it includes other programs that Serif have not created alternatives for such as Adobe Lightroom, as well as additional features such as Adobe Typekit.
+For some use cases, the Adobe CC subscription may be a better deal as it includes other programs that Serif have not created alternatives for such as Adobe Lightroom and Adobe XD, as well as additional features such as Adobe Typekit and Adobe Stock.
 
 Affinity Photo
-
+# Microsoft Windows, macOS, iOS (iPad)
 Affinity Photo is a raster image editor comparable to Adobe Photoshop.
 
 Affinity Designer
-
+# Microsoft Windows, macOS, iOS (iPad)
 Affinity Designer is a vector image editor comparable to Adobe Illustrator.
 
 Affinity Publisher
-
+# Microsoft Windows, macOS, iOS (iPad)
 Affinity Publisher is desktop publishing software comparable to Adobe inDesign.
 
 Word processor
@@ -1426,7 +1436,22 @@ Scrivener
 E-book library software
 
 Music player
-</Text>
+
+Spotify
+# Microsoft Windows, macOS, GNU/Linux (experimental), iOS, Android, web
+
+Spotify
+
+SOMA.fm
+SOMA.fm (https://somafm.com) is an independent advert-free radio station run by Rusty Hodge boasting 30 different playlists. Back at Oxford eBooks, the go-to station to listen to was Groove Salad which plays ambient music.
+
+There is also an unofficial Groove Salad Spotify playlist called Groove Salad Complete by beautifully chilled which contains an assortment of tracks that are typically played on Groove Salad.
+
+#
+Spotify code for the Groove Salad Complete playlist
+(https://open.spotify.com/playlist/65Ex6VuPx5RDnRyfEV7oE8?si=828e6526d2394b62)
+
+If you find SOMA.fm to be music to your ears then consider making a donation or buying their merchandise.</Text>
         </Document>
         <Document ID="A5453BE0-6885-4AAC-9191-17CC87209EBA">
             <Title>Introduction to Text Editing</Title>
@@ -1476,7 +1501,7 @@ I created ebookbuild so it had no proprietary dependencies and could be used cro
 Much of the ebookbuild project is licenced under GNU GPLv3.
 
 One of the prerequisites for free software is thorough documentation, preferably easy to understand. So I have created an e-book that references as much as I have learnt in my one year in commercial e-book development, as well as what I have found out on my own since then. I want to make it accessible as possible so I have released it under a Creative Commons licence to encourage mass-sharing. The source code is on GitHub and I encourage raising issues and pull requests.
-Lastly, I released technical files that are required for e-book production such as XHTML, CSS and JSON files under the Creative Commons Zero (CC0) licence, making them effectively public domain. I don’t think the code used for these files isn’t particularly special or unique, so they can be re-purposed outside of ebookbuild uncredited, though credit is appreciated.
+Lastly, I released technical files that are required for e-book production such as XHTML, CSS and JSON files under the Creative Commons Zero (CC0) licence, effectively putting them into the public domain. I don’t think the code used for these files isn’t particularly special or unique, so they can be re-purposed outside of ebookbuild uncredited, though credit is always appreciated.
 
 
 References:
