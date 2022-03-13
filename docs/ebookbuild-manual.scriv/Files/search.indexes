@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SearchIndexes Version="1.0">
     <Documents>
+        <Document ID="0D86D13D-4384-48FE-A035-61001037284E">
+            <Title>Introduction to JavaScript Object Notation (JSON)</Title>
+        </Document>
         <Document ID="0E872B99-EAAB-4308-B919-44645867118A">
             <Title>Introduction to Regular Expressions</Title>
             <Text>Introduction to Regular Expression
@@ -370,7 +373,7 @@ Asterisk (*)
 The asterisk (*) means “little star” in Greek and is commonly used as the first reference in a chapter that uses non-numerical citational referencing, especially in print advertising such as billboards, posters and magazines.
 The asterisk is also used on online forms to denote mandatory fields that are required for submission. Usually these asterisks are red to increase their visibility.
 
-Three asterisks in a series is called a dinkus, which is used as a scene break or section break  between paragraphs. Alternatively, an asterism can be used which places three asterisks in a triangular formulation.
+Asterisks can also be used as a dinkus (often referred to as a section break or scene break) to separate paragraphs. Usually there are three asterisks in a series between the paragraphs. Alternatively, an asterism symbol can be used which places three asterisks in a triangular formulation.
 
 Dagger (†)
 The dagger (†) is commonly used for marking deceased people or extinct species to the right of their name. It is also used as the second reference in a chapter that uses citational referencing.
@@ -394,13 +397,21 @@ The ampersand (&amp;) is commonly used to…
 Ellipsis (…)
 The ellipsis (…) is a series of three dots without a space and usually used to denote a quote or phrase which has more content.
 
+Primes (′) and double primes (″)
+Primes and double primes are respectively used for abbreviating feet and inches, though they have apparent other uses in typesetting scientific, linguistic and musical works.
+Some typefaces, notably Adobe Garamond don’t have prime symbols. An acceptable substitute for primes in this case are quote marks, preferable curly quote marks.
+
+#
+In Literata 12pt, the measurement 5 feet, 3 inches can be abbreviated in three different ways:
+1. Primes 2. Curly quotes 3. Straight quotes
+
 Basic mathematical symbols:
 These are the simple mathematical symbols for arithmetic usage which most fonts are likely to support.
 
 Multiplication (×)
 The multiplication symbol is used for multiplying values together. It’s also the correct way to write out screen resolutions. For example:
 
-“A high definition monitor supports the 1920 x 1080 resolution.”
+“A high definition monitor supports the 1920 × 1080 resolution.”
 
 Divide ()
 
@@ -645,24 +656,22 @@ Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
 Paragraphs and other areas of the book that solely display body text are declared with the &lt;p&gt;&lt;/p&gt; tags. 
 Most of an e-book’s content will use paragraph tags, unless the book is image-heavy such as graphic novel. 
 
-
-
 I also use paragraph tags to force images to be centred.
 
 Bold
 Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
 
-Bold is declared within content using the &lt;b&gt;&lt;/b&gt;. Historically, bold was declared with &lt;strong&gt;&lt;/strong&gt; tags and they should also theoretically work.
+Bold is declared within content using the &lt;b&gt;&lt;/b&gt;. Historically, bold was declared with &lt;strong&gt;&lt;/strong&gt; tags and they should also theoretically work in modern e-readers.
 
 Italic
 Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
 
-Italic is declared with content using the &lt;i&gt;&lt;/i&gt;. Historically, bold was declared with &lt;em&gt;&lt;/em&gt; tags and they should also theoretically work.
+Italic is declared with content using the &lt;i&gt;&lt;/i&gt;. Historically, bold was declared with &lt;em&gt;&lt;/em&gt; tags and they should also theoretically work in modern e-readers.
 
 Span
 Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span
 
-Span tags are used to add CSS formating to specified content within other tags. Some formatting such as text colour, underlining and strikethroughs have no specific tag. For example, I have this sentence:
+Span tags are used to apply CSS formatting to specified content within other tags. Some formatting such as text colour, underlining and strikethroughs have no specific tag and require span tags to be used. For example, I have this sentence:
 
 This text is red and underlined.
 
@@ -695,16 +704,22 @@ External links can be declared using HyperText Transfer Protocol Secure (HTTPS) 
 
 //
 
-E-mail addresses can be hyperlinked using mailto: 
+E-mail addresses can be hyperlinked using “mailto:”, though some e-readers such as Google Play Books don’t support them:
 
 &lt;p&gt;E-mail: &lt;a href=”mailto:hal@example.com”&gt;hal@example.com&lt;/a&gt;&lt;/p&gt;
+
+hal@example.com
 
 Superscripting and subscripting
 Superscript and subscript have their own tags which are &lt;sup&gt;,&lt;/sup&gt; and &lt;sub&gt;&lt;/sub&gt; respectively. For example:
 
-&lt;p&gt;Payday is each 1&lt;sup&gt;st&lt;/sup&gt; of the month.&lt;/p&gt;
+&lt;p&gt;Payday is the 1&lt;sup&gt;st&lt;/sup&gt; of each month.&lt;/p&gt;
 
-&lt;p&gt;The chemical formula to carbon dioxide is CO&lt;sub&gt;2&lt;/sub&gt;.&lt;/p&gt;
+&lt;p&gt;The chemical formula for carbon dioxide is CO&lt;sub&gt;2&lt;/sub&gt;.&lt;/p&gt;
+
+Payday is the 1st of each month.
+
+The chemical formula for carbon dioxide is CO2.
 
 Images
 Mozilla documentation: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
@@ -1357,7 +1372,7 @@ Microsoft Word, Scrivener
 LibreOffice Writer
 Calibre
 N/A
-Spotify
+Spotify, Bandcamp, SOMA.fm, Miscellaneous
 Apple Music
 
 
@@ -1387,11 +1402,15 @@ It is pre-installed on Windows 11. For Windows 10, it is recommended to install 
 
 
 Git client
-Git is a popular version control system (VCS) and I recommend using it for e-book development, so much so there’s a whole dedicated Introduction to Git and GitHub chapter included in this book.
+Git is a popular version control system (VCS) and I recommend using it for e-book development because it organises your workflow and backs up your work. In this book I have provided a dedicated Introduction to Git and GitHub chapter for information Git clients and how to get started with Git if you are complete newcomer.
 
 GitHub Desktop
 # Microsoft Windows, macOS, GNU/Linux
-GitHub Desktop is
+
+GitHub Desktop is GitHub’s own official client, primarily designed for GitHub accounts though ti works with third-party hosting sites such as GitLab. 
+GitHub Desktop was designed as a graphical user interface (GUI) alternative to the standard Git command-line program. It’s very easy to use and contains most functionality that is needed for e-book development.
+There are unofficial GNU/Linux builds for Debian, AppImage and Fedora/Red Hat Enterprise Linux (RHEL) courtesy of the developer Shiftkey. Despite GitHub publicly acknowledging and appreicating these builds, there are no plans at the time of writing for official GNU/Linux builds.
+
 GitKraken
 
 
@@ -1474,6 +1493,9 @@ Spotify
 
 Spotify
 
+Bandcamp
+iOS, Android, web
+
 SOMA.fm
 #
 iOS, Android, web
@@ -1486,7 +1508,31 @@ There is also an unofficial Groove Salad Spotify playlist called Groove Salad Co
 Spotify code for the Groove Salad Complete playlist
 (https://open.spotify.com/playlist/65Ex6VuPx5RDnRyfEV7oE8?si=828e6526d2394b62)
 
-If you find SOMA.fm to be music to your ears then consider making a donation or buying their merchandise.</Text>
+If you find SOMA.fm to be music to your ears, then consider making a donation or buying their merchandise.
+
+Miscellaneous:
+
+The video game Grand Theft Auto: IV (GTA IV) has an in-game radio station called The Journey which has several ambient tracks.
+
+Global Communication - 5:23 (Maiden Voyage) (1994)
+Terry Riley - A Rainbow In Curved Air (1969)
+Steve Roach - Arrival (1986)
+Michael Shrieve - Communique: 'Approach Spiral' (1984)
+Jean Michel Jarre - Oxygène, Part 4 (1976)
+Phillip Glass - Pruit Igoe (1983)
+Tangerine Dream - Remote Viewing (1981)
+Aphex Twin - Z Twig (1994)
+Ray Lynch - The Oh Of Pleasure (1984)
+
+
+Odysseus is a YouTuber who creates synthwave and chillwave playlists. Chillwave music can be good background music. I recommend the following playlists:
+
+Night Drive - A Chillwave Mix
+Waves - A Chillwave Mix
+
+References:
+Pruit Igoe is notably more frantic than most tracks on the The Journey playlist. It was used as soundtrack for the film Koyaanisqatsi which depicts the demolition of the Pruitt-Igoe social housing in St. Louis, Missouri. https://philipglass.com/glassnotes/pruit_igoe/ https://archive.ph/H2GBT
+</Text>
         </Document>
         <Document ID="A5453BE0-6885-4AAC-9191-17CC87209EBA">
             <Title>Introduction to Text Editing</Title>
