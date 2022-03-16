@@ -1,0 +1,42 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0
+{\fonttbl{\f0\fmodern\fcharset0\fprq2 Sitka Text;}{\f1\fmodern\fcharset0\fprq2 SegoeUI-Bold;}{\f2\fmodern\fcharset0\fprq2 SegoeUI;}{\f3\fmodern\fcharset0\fprq2 JetBrainsMono-Regular;}{\f4\fmodern\fcharset0\fprq2 SegoeUI-Italic;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red128\green128\blue128;}
+{\*\listtable
+{\list\listtemplateid1\listhybrid
+{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\loch\af0\hich\af0\dbch\af0\uc1\u8226\'95;}{\levelnumbers;}\f2\fs24\b0\i0\fi-667\li960\lin960}{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\f0\fs24\cf0
+\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch {\f1\fs36\b1\i0 Introduction to JavaScript Object Notation (JSON)}
+\par\plain \f1\fs36\b1\i0
+\par\plain {\f2\fs24\b0\i0 JavaScript Object Notation (JSON) is a information exchange standard that can be a used as an efficient alternative to eXtensible Markup Language (XML) by using JavaScript syntax rather than tags.}
+\par\plain {\f2\fs24\b0\i0 JSON is not part of the ePub standard, though it used by }{\f3\fs22\b0\i0 ebookbuild}{\f2\fs24\b0\i0  to store the e-book metadata and the page order in each project\loch\af2\hich\af2\dbch\af2\uc1\u8217\'92s metadata.json file. I chose this format because it\u8217\'92s human-readable and an open standard that is natively supported by the Python programming language (among others).}
+\par\plain {\f2\fs24\b0\i0 In the current version of }{\f3\fs22\b0\i0 ebookbuild}{\f2\fs24\b0\i0 , the metadata.json file has to be modified manually. I plan on implementing a graphical user interface (GUI) frontend that makes retrieving and editing the e-book metadata even faster in the future.}
+\par\plain {\f2\fs24\b0\i0 Here is an example of a metadata.json file:}
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f2\fs24\b0\i0 JSON Syntax}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Objects}
+\par\pard\plain \ltrch\loch {\f2\fs22\b0 \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93An\~}{\f4\fs22\b0\i1 object}{\f2\fs22\b0 \~is an unordered set of name/value pairs. An object begins with\~}{\f1\fs22\b1 \{}{\f2\fs20\b0 left brace}{\f2\fs22\b0 \~and ends with\~}{\f1\fs22\b1 \}}{\f2\fs20\b0 right brace}{\f2\fs22\b0 . Each name is followed by\~}{\f1\fs22\b1 :}{\f2\fs20\b0 colon}{\f2\fs22\b0 \~and the name/value pairs are separated by\~}{\f1\fs22\b1 ,}{\f2\fs20\b0 comma}{\f2\fs22\b0 .\loch\af2\hich\af2\dbch\af2\uc1\u8221\'94}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\qr\ltrch\loch {\f2\fs22\b0\i0 -}{\f4\fs22\b0\i1  Introducing JSON, }{\f2\fs22\b0\i0 JSON.org}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs22\b0\i0
+\par\plain {\f2\fs24\b0\i0 Most of a JSON file consists of objects which are defined with a name and then a value.}
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Arrays}
+\par\plain {\f2\fs22\b0 \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93An\~}{\f4\fs22\b0\i1 array}{\f2\fs22\b0 \~is an ordered collection of values. An array begins with\~}{\f1\fs22\b1 [}{\f2\fs20\b0 left bracket}{\f2\fs22\b0 \~and ends with\~}{\f1\fs22\b1 ]}{\f2\fs20\b0 right bracket}{\f2\fs22\b0 . Values are separated by\~}{\f1\fs22\b1 ,}{\f2\fs20\b0 comma}{\f2\fs22\b0 .}{\f2\fs22 \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\qr\ltrch\loch {\f2\fs22\b0\i0 -}{\f4\fs22\b0\i1  Introducing JSON, }{\f2\fs22\b0\i0 JSON.org}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs22
+\par\plain {\f2\fs24\b0\i0 Arrays are a collection of JSON objects with consistent attributes. I use an array to define the page order.}
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Comments}
+\par\plain {\f2\fs24\b0\i0 Comments are not supported by JSON, though I have created a series of JSON objects called \loch\af2\hich\af2\dbch\af2\uc1\u8220\'93comment\u8221\'94 such as \u8220\'93comment1\u8221\'94, \u8220\'93comment2\u8221\'94, \u8220\'93comment3\u8221\'94. Keep in mind these are live data and can be manipulated as such.}
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain {\f1\fs24\b1\i0 Further reading:}
+\par\plain \f1\fs24\b1\i0
+\par\pard\plain \tx235\tx720\li720\fi-500\ltrch\loch \ls1\ilvl0{\listtext	\f2\fs24\b0\i0 \uc0\u8226 	}{\field{\*\fldinst HYPERLINK "https://www.json.org/json-en.html"}{\fldrslt\f2\fs24\b0\i0 JSON.org}}{\f2\fs24\b0\i0  - official website with information about the standard and many of its libraries for use in programming language}
+\par\pard\plain \tx0\tx360\tx720\tx1080\tx1440\tx1800\tx2160\tx2880\tx3600\tx4320\fi360\ltrch\loch \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0
+\par\plain \f2\fs24\b0\i0}

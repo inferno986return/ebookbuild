@@ -3,6 +3,40 @@
     <Documents>
         <Document ID="0D86D13D-4384-48FE-A035-61001037284E">
             <Title>Introduction to JavaScript Object Notation (JSON)</Title>
+            <Text>Introduction to JavaScript Object Notation (JSON)
+
+JavaScript Object Notation (JSON) is a information exchange standard that can be a used as an efficient alternative to eXtensible Markup Language (XML) by using JavaScript syntax rather than tags.
+JSON is not part of the ePub standard, though it used by ebookbuild to store the e-book metadata and the page order in each project’s metadata.json file. I chose this format because it’s human-readable and an open standard that is natively supported by the Python programming language (among others).
+In the current version of ebookbuild, the metadata.json file has to be modified manually. I plan on implementing a graphical user interface (GUI) frontend that makes retrieving and editing the e-book metadata even faster in the future.
+Here is an example of a metadata.json file:
+
+
+
+JSON Syntax
+
+Objects
+“An object is an unordered set of name/value pairs. An object begins with {left brace and ends with }right brace. Each name is followed by :colon and the name/value pairs are separated by ,comma.”
+- Introducing JSON, JSON.org
+
+Most of a JSON file consists of objects which are defined with a name and then a value.
+
+Arrays
+“An array is an ordered collection of values. An array begins with [left bracket and ends with ]right bracket. Values are separated by ,comma.“
+- Introducing JSON, JSON.org
+
+Arrays are a collection of JSON objects with consistent attributes. I use an array to define the page order.
+
+
+Comments
+Comments are not supported by JSON, though I have created a series of JSON objects called “comment” such as “comment1”, “comment2”, “comment3”. Keep in mind these are live data and can be manipulated as such.
+
+
+Further reading:
+
+JSON.org - official website with information about the standard and many of its libraries for use in programming language
+
+
+</Text>
         </Document>
         <Document ID="0E872B99-EAAB-4308-B919-44645867118A">
             <Title>Introduction to Regular Expressions</Title>
@@ -758,7 +792,7 @@ Flour
 Numbered lists
 Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol
 
-Numbered lists are referred to as “unordered lists” and use the &lt;ol&gt;&lt;/ol&gt; tags, as well as &lt;li&gt;&lt;/li&gt; for each bullet point. Using CSS it is possible to specify which type of numbering (such as the Latin alphabet or Roman numerals) should be used for each entry. 
+Numbered lists are referred to as “ordered lists” and use the &lt;ol&gt;&lt;/ol&gt; tags, as well as &lt;li&gt;&lt;/li&gt; for each bullet point. Using CSS it is possible to specify which type of numbering (such as the Latin alphabet or Roman numerals) should be used for each entry. 
 
 For example, take this list of ingredients for a Victoria sponge cake:
 
@@ -766,6 +800,9 @@ The &lt;ol&gt;&lt;/ol&gt; tag has an addition attribute called “start” which
 
 &lt;ol start=”5”&gt;
 &lt;/ol&gt;
+
+Nested lists
+Lists can be nested inside other lists to establish a hierarchy by inserting another set of &lt;ol&gt;&lt;/ol&gt; or &lt;ul&gt;&lt;/ul&gt; tags.
 
 Tables
 Mozilla references: 
@@ -1179,7 +1216,30 @@ Both GitHub and GitLab support Markdown extensively and it is recommended text-h
 There is no official Markdown file extension, though .md and .markdown are commonly accepted and supported. I prefer .md as it’s easier to type and takes up less characters.
 This chapter is specifically about “GitHub-flavored Markdown” which is a derivative of CommonMark that was developed for use on GitHub.
 
+Headings
+Referring back to the XHTML tutorial, you may recall the different heading tags such as &lt;h1&gt;&lt;/h1&gt;, &lt;h2&gt;&lt;/h2&gt;, &lt;h3&gt;&lt;/h3&gt;, &lt;h4&gt;&lt;/h4&gt;, &lt;h5&gt;&lt;/h5&gt; and &lt;h6&gt;&lt;/h6&gt;. Markdown uses a similar convention with the hash symbol (also confusingly called the “pound sign”). For example, I have created a main heading and subheading below:
 
+# This is a heading
+
+This is a heading
+
+## This is a heading
+
+This is a heading
+
+Paragraphs
+There is no symbol used for declaring paragraphs.
+
+Ordered lists
+
+Unordered lists
+Unordered lists are defined with an asterisk before the
+
+Hyperlinks
+
+Images
+
+Tables
 
 Further reading:
 https://github.github.com/gfm/#introduction
@@ -1443,6 +1503,7 @@ Brave
 
 I use the Brave as my everyday web browser which includes e-book development. The debug tools allow simulation of different screen-sizes to test responsiveness.
 Brave is a modification of the Chrome web browser with support for the majority of tested Chrome extensions. It also has the following notable features:
+
 Brave Shields - contains advert and tracker blocking functionality built-in to the browser.
 Brave Sync - replaces Google Sync and can be used to syncronise settings and preferences across multiple devices using a unique password or by scanning a quick response (QR) code.
 Brave Rewards - Brave rewards its userbase for viewing advert notifications and sponsored “billboard” images on the new tab screen with the Ethereum-based cryptocurrency called Basic Attention Token (BAT). The user can then donate BAT to websites or certain social media profiles based on the amount of time they spend on those pages.
@@ -1476,11 +1537,13 @@ Affinity Publisher
 Affinity Publisher is desktop publishing software comparable to Adobe inDesign.
 
 Word processor
-I have two recommendations for a word processor
 
 Microsoft Word
+# Microsoft Windows, macOS, iOS, Android
+
 
 Scrivener
+# Microsoft Windows, macOS, iOS (iPad)
 
 LibreOffice Writer
 
@@ -1524,11 +1587,11 @@ Tangerine Dream - Remote Viewing (1981)
 Aphex Twin - Z Twig (1994)
 Ray Lynch - The Oh Of Pleasure (1984)
 
-
 Odysseus is a YouTuber who creates synthwave and chillwave playlists. Chillwave music can be good background music. I recommend the following playlists:
 
 Night Drive - A Chillwave Mix
 Waves - A Chillwave Mix
+Tokyo Drive - A Chillwave Mix
 
 References:
 Pruit Igoe is notably more frantic than most tracks on the The Journey playlist. It was used as soundtrack for the film Koyaanisqatsi which depicts the demolition of the Pruitt-Igoe social housing in St. Louis, Missouri. https://philipglass.com/glassnotes/pruit_igoe/ https://archive.ph/H2GBT
