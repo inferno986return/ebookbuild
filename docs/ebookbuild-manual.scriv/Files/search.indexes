@@ -1882,6 +1882,37 @@ Symbol entities
 
 </Text>
         </Document>
+        <Document ID="EB5E357B-9535-4E98-B627-20DD9228293E">
+            <Text>Free, libre and open-source software (FOSS) licencing
+
+The ebookbuild project makes use of several free, libre and open-source software (FLOSS) licences. This chapter provides an easy explanation for each one and what their purpose is for, though keep in mind that it is recommended to read the licence thoroughly.
+
+Copyleft
+Copyleft licensing requires publicly-released derivatives of a project to have all the available source code and documentation to facilitate further modifications.
+Richard Stallman first outlined copyleft intentions in the famous GNU Manifesto which was released in 1985.
+
+“GNU is not in the public domain. Everyone will be permitted to modify and redistribute GNU, but no distributor will be allowed to restrict its further redistribution. That is to say, proprietary modifications will not be allowed. I want to make sure that all versions of GNU remain free.”
+-How GNU Will Be Available, GNU Manifesto
+
+GNU General Public License (GNU GPL)
+V2
+V3
+GNU GPLv3 is designed to prevent “Tivotization”
+
+Mozilla Public License (MPL)
+
+Permissive (or copyfree)
+Permissive licenses allow derivative projects to withhold source code and often only require attribution from the original project’s authors.
+
+Apache License
+Berkeley Software Distribution (BSD) License
+MIT (or X11) license
+
+
+Public domain
+The Unlicense
+Creative Commons Zero (CC0)</Text>
+        </Document>
         <Document ID="F04CF11A-06C8-4F16-A0A8-3B3721D4E02D">
             <Title>What is a book?</Title>
             <Text>What is a book?</Text>
