@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-03-21 13:58:23 +0000" ModID="8FF09A74-550D-492C-8D75-BF23222BB845">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-03-31 11:46:29 +0100" ModID="5870C3D4-8B71-492E-A8C7-0E22F39502D0">
     <Binder>
-        <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
+        <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0100" Modified="2022-01-24 14:45:06 +0100">
             <Title>Draft</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
         </BinderItem>
-        <BinderItem UUID="37F16950-E69B-4500-A55A-EAE8596C6A1E" Type="Text" Created="2022-02-20 15:29:49 +0000" Modified="2022-03-01 13:57:29 +0000">
+        <BinderItem UUID="37F16950-E69B-4500-A55A-EAE8596C6A1E" Type="Text" Created="2022-02-20 15:29:49 +0100" Modified="2022-03-01 13:57:29 +0100">
             <Title>Epigraph</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -16,7 +16,7 @@
                 <TextSelection>246,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="AA04C080-54B1-4AA8-993B-21F0F0F09032" Type="Text" Created="2022-01-27 13:35:50 +0000" Modified="2022-03-10 11:29:20 +0000">
+        <BinderItem UUID="AA04C080-54B1-4AA8-993B-21F0F0F09032" Type="Text" Created="2022-01-27 13:35:50 +0100" Modified="2022-03-10 11:29:20 +0100">
             <Title>Preface</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -25,7 +25,7 @@
                 <TextSelection>324,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="9F167921-F2D1-4A95-95BC-62C19E8CBC9C" Type="Text" Created="2022-02-26 23:22:32 +0000" Modified="2022-03-16 17:25:08 +0000">
+        <BinderItem UUID="9F167921-F2D1-4A95-95BC-62C19E8CBC9C" Type="Text" Created="2022-02-26 23:22:32 +0100" Modified="2022-03-16 17:25:08 +0100">
             <Title>Recommended Software</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -34,7 +34,7 @@
                 <TextSelection>4541,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="F04CF11A-06C8-4F16-A0A8-3B3721D4E02D" Type="Text" Created="2022-03-09 12:07:55 +0000" Modified="2022-03-09 12:08:19 +0000">
+        <BinderItem UUID="F04CF11A-06C8-4F16-A0A8-3B3721D4E02D" Type="Text" Created="2022-03-09 12:07:55 +0100" Modified="2022-03-09 12:08:19 +0100">
             <Title>What is a book?</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -43,7 +43,7 @@
                 <TextSelection>15,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="8D684E13-8902-49E2-A46A-324120DAFE12" Type="Text" Created="2022-02-28 17:36:35 +0000" Modified="2022-03-09 12:07:53 +0000">
+        <BinderItem UUID="8D684E13-8902-49E2-A46A-324120DAFE12" Type="Text" Created="2022-02-28 17:36:35 +0100" Modified="2022-03-09 12:07:53 +0100">
             <Title>What is an e-book?</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -52,7 +52,7 @@
                 <TextSelection>19,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="A5453BE0-6885-4AAC-9191-17CC87209EBA" Type="Text" Created="2022-03-01 13:59:52 +0000" Modified="2022-03-01 14:17:33 +0000">
+        <BinderItem UUID="A5453BE0-6885-4AAC-9191-17CC87209EBA" Type="Text" Created="2022-03-01 13:59:52 +0100" Modified="2022-03-01 14:17:33 +0100">
             <Title>Introduction to Text Editing</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -61,7 +61,7 @@
                 <TextSelection>175,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="7433E120-006A-4AE3-BCA4-90A934374CA0" Type="Text" Created="2022-02-06 00:23:12 +0000" Modified="2022-03-09 12:08:29 +0000">
+        <BinderItem UUID="7433E120-006A-4AE3-BCA4-90A934374CA0" Type="Text" Created="2022-02-06 00:23:12 +0100" Modified="2022-03-09 12:08:29 +0100">
             <Title>Introduction to Typography</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -70,7 +70,7 @@
                 <TextSelection>531,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="1D572E7F-F737-4ABE-A22A-B3DCB57794A0" Type="Text" Created="2022-03-01 10:27:33 +0000" Modified="2022-03-08 12:15:03 +0000">
+        <BinderItem UUID="1D572E7F-F737-4ABE-A22A-B3DCB57794A0" Type="Text" Created="2022-03-01 10:27:33 +0100" Modified="2022-03-08 12:15:03 +0100">
             <Title>Advanced Typography</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -79,7 +79,7 @@
                 <TextSelection>638,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8" Type="Text" Created="2022-02-06 00:45:13 +0000" Modified="2022-03-16 18:01:23 +0000">
+        <BinderItem UUID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8" Type="Text" Created="2022-02-06 00:45:13 +0100" Modified="2022-03-16 18:01:23 +0100">
             <Title>Introduction to XHTML</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -88,7 +88,7 @@
                 <TextSelection>10410,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="EB5E357B-9535-4E98-B627-20DD9228293E" Type="Text" Created="2022-03-21 13:16:44 +0000" Modified="2022-03-21 13:58:20 +0000">
+        <BinderItem UUID="EB5E357B-9535-4E98-B627-20DD9228293E" Type="Text" Created="2022-03-21 13:16:44 +0100" Modified="2022-03-21 13:58:20 +0100">
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
@@ -96,7 +96,7 @@
                 <TextSelection>1021,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="472A1080-2E72-4AB9-8779-23F6B1122C37" Type="Text" Created="2022-02-26 23:19:56 +0000" Modified="2022-03-09 12:36:35 +0000">
+        <BinderItem UUID="472A1080-2E72-4AB9-8779-23F6B1122C37" Type="Text" Created="2022-02-26 23:19:56 +0100" Modified="2022-03-09 12:36:35 +0100">
             <Title>Introduction to CSS</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -105,7 +105,7 @@
                 <TextSelection>1694,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="ACD131AA-5177-42FB-8152-CC3A73D2FF81" Type="Text" Created="2022-02-13 17:12:01 +0000" Modified="2022-03-01 13:56:40 +0000">
+        <BinderItem UUID="ACD131AA-5177-42FB-8152-CC3A73D2FF81" Type="Text" Created="2022-02-13 17:12:01 +0100" Modified="2022-03-01 13:56:40 +0100">
             <Title>Introduction to Git and GitHub</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -114,7 +114,7 @@
                 <TextSelection>11341,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="0E872B99-EAAB-4308-B919-44645867118A" Type="Text" Created="2022-02-14 12:00:12 +0000" Modified="2022-03-04 18:24:48 +0000">
+        <BinderItem UUID="0E872B99-EAAB-4308-B919-44645867118A" Type="Text" Created="2022-02-14 12:00:12 +0100" Modified="2022-03-04 18:24:48 +0100">
             <Title>Introduction to Regular Expressions</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -123,7 +123,7 @@
                 <TextSelection>3983,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="7598A473-DB1A-4476-B50D-A6DE35EB2A73" Type="Text" Created="2022-02-28 17:47:32 +0000" Modified="2022-03-16 17:59:57 +0000">
+        <BinderItem UUID="7598A473-DB1A-4476-B50D-A6DE35EB2A73" Type="Text" Created="2022-02-28 17:47:32 +0100" Modified="2022-03-16 17:59:57 +0100">
             <Title>Introduction to Markdown</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -132,7 +132,7 @@
                 <TextSelection>1267,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="0D86D13D-4384-48FE-A035-61001037284E" Type="Text" Created="2022-03-13 01:38:59 +0000" Modified="2022-03-16 17:53:47 +0000">
+        <BinderItem UUID="0D86D13D-4384-48FE-A035-61001037284E" Type="Text" Created="2022-03-13 01:38:59 +0100" Modified="2022-03-16 17:53:47 +0100">
             <Title>Introduction to JavaScript Object Notation (JSON)</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -141,16 +141,16 @@
                 <TextSelection>830,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="25AA13C0-6D21-4383-A6B6-50B28003E7F9" Type="Text" Created="2022-02-10 13:46:28 +0000" Modified="2022-03-13 01:38:17 +0000">
+        <BinderItem UUID="25AA13C0-6D21-4383-A6B6-50B28003E7F9" Type="Text" Created="2022-02-10 13:46:28 +0100" Modified="2022-03-31 11:46:27 +0100">
             <Title>Manual of Style</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
             <TextSettings>
-                <TextSelection>9300,0</TextSelection>
+                <TextSelection>16701,52</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="394DAC75-CF1D-4F47-9D22-8608BA998D6C" Type="Text" Created="2022-02-20 14:45:49 +0000" Modified="2022-02-20 16:33:32 +0000">
+        <BinderItem UUID="394DAC75-CF1D-4F47-9D22-8608BA998D6C" Type="Text" Created="2022-02-20 14:45:49 +0100" Modified="2022-02-20 16:33:32 +0100">
             <Title>Essay: A Pragmatic Approach to Piracy</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -159,7 +159,7 @@
                 <TextSelection>10526,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="FE5C06C7-3D7B-46D6-BE96-8034DA158070" Type="Text" Created="2022-02-14 15:21:48 +0000" Modified="2022-03-01 09:59:50 +0000">
+        <BinderItem UUID="FE5C06C7-3D7B-46D6-BE96-8034DA158070" Type="Text" Created="2022-02-14 15:21:48 +0100" Modified="2022-03-01 09:59:50 +0100">
             <Title>List of Illustrations</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -168,7 +168,7 @@
                 <TextSelection>201,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="DA8FD144-AEE3-48E4-A3F9-3394F12D2A60" Type="Text" Created="2022-01-24 14:45:06 +0000" Modified="2022-02-14 19:03:41 +0000">
+        <BinderItem UUID="DA8FD144-AEE3-48E4-A3F9-3394F12D2A60" Type="Text" Created="2022-01-24 14:45:06 +0100" Modified="2022-02-14 19:03:41 +0100">
             <Title>HTML entity tables</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -177,7 +177,7 @@
                 <TextSelection>699,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="1FA5F5C6-0355-406C-9FFE-4A6AC35F4C61" Type="Text" Created="2022-02-26 23:10:09 +0000" Modified="2022-03-02 14:08:18 +0000">
+        <BinderItem UUID="1FA5F5C6-0355-406C-9FFE-4A6AC35F4C61" Type="Text" Created="2022-02-26 23:10:09 +0100" Modified="2022-03-02 14:08:18 +0100">
             <Title>Ackowledgments and Legal</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -186,7 +186,7 @@
                 <TextSelection>636,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="99410295-9476-468A-84A0-70AC6917D0D3" Type="Text" Created="2022-03-09 12:09:09 +0000" Modified="2022-03-09 12:11:00 +0000">
+        <BinderItem UUID="99410295-9476-468A-84A0-70AC6917D0D3" Type="Text" Created="2022-03-09 12:09:09 +0100" Modified="2022-03-09 12:11:00 +0100">
             <Title>Legal</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -195,7 +195,7 @@
                 <TextSelection>806,0</TextSelection>
             </TextSettings>
         </BinderItem>
-        <BinderItem UUID="C8BC8F14-C5A8-4C2C-9645-062BF504A309" Type="ResearchFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
+        <BinderItem UUID="C8BC8F14-C5A8-4C2C-9645-062BF504A309" Type="ResearchFolder" Created="2022-01-24 14:45:06 +0100" Modified="2022-01-24 14:45:06 +0100">
             <Title>Research</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -207,7 +207,7 @@
                 </CorkboardSettings>
             </CorkboardAndOutliner>
             <Children>
-                <BinderItem UUID="35ED26F8-7611-4ADF-87DB-E00627E56530" Type="Text" Created="2022-03-01 12:49:49 +0000" Modified="2022-03-01 12:49:57 +0000">
+                <BinderItem UUID="35ED26F8-7611-4ADF-87DB-E00627E56530" Type="Text" Created="2022-03-01 12:49:49 +0100" Modified="2022-03-01 12:49:57 +0100">
                     <Title>ISO 4217 currency code table</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -216,7 +216,7 @@
                         <TextSelection>0,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="1B67AA19-6CBA-493E-AEBF-1E45B25BE441" Type="Text" Created="2022-01-24 14:45:18 +0000" Modified="2022-02-06 01:16:09 +0000">
+                <BinderItem UUID="1B67AA19-6CBA-493E-AEBF-1E45B25BE441" Type="Text" Created="2022-01-24 14:45:18 +0100" Modified="2022-02-06 01:16:09 +0100">
                     <Title>Outline</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -225,7 +225,7 @@
                         <TextSelection>1936,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="9C43D21D-C973-4DD8-857E-08EB9C396879" Type="Text" Created="2022-01-24 14:50:21 +0000" Modified="2022-01-27 13:35:32 +0000">
+                <BinderItem UUID="9C43D21D-C973-4DD8-857E-08EB9C396879" Type="Text" Created="2022-01-24 14:50:21 +0100" Modified="2022-01-27 13:35:32 +0100">
                     <Title>Preface</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -234,7 +234,7 @@
                         <TextSelection>101,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="F2985C11-FAA4-4B9D-BD6D-01F2EE8EFB29" Type="Text" Created="2022-01-24 16:01:33 +0000" Modified="2022-01-24 16:02:06 +0000">
+                <BinderItem UUID="F2985C11-FAA4-4B9D-BD6D-01F2EE8EFB29" Type="Text" Created="2022-01-24 16:01:33 +0100" Modified="2022-01-24 16:02:06 +0100">
                     <Title>What is an e-book?</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -243,7 +243,7 @@
                         <TextSelection>0,18</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="93C40D99-4B3D-4900-9243-676053C92F0D" Type="Text" Created="2022-01-25 10:51:19 +0000" Modified="2022-02-26 23:19:03 +0000">
+                <BinderItem UUID="93C40D99-4B3D-4900-9243-676053C92F0D" Type="Text" Created="2022-01-25 10:51:19 +0100" Modified="2022-02-26 23:19:03 +0100">
                     <Title>Future content</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -252,7 +252,7 @@
                         <TextSelection>655,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="6A41FE28-E5C2-4572-A02A-152832AE0A32" Type="Text" Created="2022-02-20 16:10:17 +0000" Modified="2022-02-20 16:10:34 +0000">
+                <BinderItem UUID="6A41FE28-E5C2-4572-A02A-152832AE0A32" Type="Text" Created="2022-02-20 16:10:17 +0100" Modified="2022-02-20 16:10:34 +0100">
                     <Title>Anti-Piracy Manifesto notes</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
@@ -263,13 +263,13 @@
                 </BinderItem>
             </Children>
         </BinderItem>
-        <BinderItem UUID="81F8B733-B17E-4B98-8899-C0885A238E3A" Type="TrashFolder" Created="2022-01-24 14:45:06 +0000" Modified="2022-01-24 14:45:06 +0000">
+        <BinderItem UUID="81F8B733-B17E-4B98-8899-C0885A238E3A" Type="TrashFolder" Created="2022-01-24 14:45:06 +0100" Modified="2022-01-24 14:45:06 +0100">
             <Title>Trash</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
             </MetaData>
         </BinderItem>
-        <BinderItem UUID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F" Type="Text" Created="2022-01-25 11:32:37 +0000" Modified="2022-03-04 17:47:26 +0000">
+        <BinderItem UUID="4CC8D85D-0226-4243-BBEF-174ED2BCCF7F" Type="Text" Created="2022-01-25 11:32:37 +0100" Modified="2022-03-04 17:47:26 +0100">
             <Title>Google Keep notes</Title>
             <MetaData>
                 <IncludeInCompile>Yes</IncludeInCompile>
@@ -335,13 +335,13 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="203" Characters="1359" Date="2022-03-21 13:58:23 +0000"/>
+        <PreviousSession Words="500" Characters="3255" Date="2022-03-31 11:46:29 +0100"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-03-21 00:00:00 +0000">
+    <RecentWritingHistory Date="2022-03-31 00:00:00 +0100">
         <DraftWordCount>0</DraftWordCount>
         <DraftCharCount>0</DraftCharCount>
-        <OtherWordCount>203</OtherWordCount>
-        <OtherCharCount>1359</OtherCharCount>
+        <OtherWordCount>453</OtherWordCount>
+        <OtherCharCount>2963</OtherCharCount>
     </RecentWritingHistory>
     <PrintSettings PaperSize="595.0,842.0" LeftMargin="72.0" RightMargin="72.0" TopMargin="72.0" BottomMargin="72.0" PaperType="iso-a4" Orientation="Portrait" ScaleFactor="1.0" HorizontallyCentered="Yes" VerticallyCentered="Yes" Collates="No" PagesAcross="1" PagesDown="1"/>
 </ScrivenerProject>

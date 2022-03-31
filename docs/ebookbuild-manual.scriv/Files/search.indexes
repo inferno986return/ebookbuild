@@ -304,7 +304,21 @@ I have a list of illustrations to credit each diagram. Many are from Wikimedia C
 
 The Chicago Manual of Style is a popular reference book for formal writing that is used worldwide. Taking inspiration from this I want to define best practices for writing that aren’t necessarily confined to just e-book development.
 
-Paragraph alignment:
+Paragraphs:
+
+Scene break:
+
+A scene break separates paragraphs without the use of a heading and is common in novelwriting, where it behaves similarly to a scene transition effect in film-making.
+Usually a dinkus (see asterisk in Manual of Style) which is a line of three asterisks (* * *) is used for a scene break.
+Alternatively use a fleuron or another piece of decorative typography that clearly shows the reader where the scene break is. For example, the author Violet E.C makes use of a decorative fleuron from Adobe Garamond:
+
+#
+
+Adobe Garamond has this decorative fleuron that can be used for scene breaks
+
+Another example of a non-dinkus scene break was used on the PowerPoint presentation for theChristmas carol services back at my secondary school. This break would show the end of a Christmas carol and is comprised of a hyphen (-), lowercase (o), number zero (0), lowercase (o) and another hyphen (-).
+#
+Back at my secondary school this symbol was used to show the end of a Christmas carol.
 
 Text formatting:
 
@@ -314,7 +328,7 @@ Italic is used as alternative to bold for emphasis to make a particular word or 
 Superscript:
 Superscripting makes the font smaller and places it above the cap height. 
 Superscript is used for numerical ordinals such as 1st, 2nd, 3rd and 4th. As well as citational references inside paragraphs, as you’ll have noticed throughout this book.
-Some large brands such Amazon and Microsoft superscript currency subunits (along with or without the decimal point) at medium to large font sizes. Such as: £11.99
+Some large brands such Amazon and Microsoft superscript currency subunits (along with or without the decimal point) at medium to large font sizes. Such as: £1199
 
 Subscript:
 Subscripting makes the font smaller and places it below the baseline. 
@@ -327,12 +341,14 @@ They are commonly used stylistically for the names of people as a form of emphas
 “12 Now the Lord had said unto Abram, Get thee out of thy country, and from thy kindred, and from thy father's house, unto a land that I will shew thee:” —Genesis 12:1, King James Version (KJV)
 
 Unfortunately, some e-reading software such as Adobe Digital Editions does not support small caps and ignores them. I don’t recommend relying on small caps compatibility for digital documents unless a supported font has been embedded.
+True small caps are an an Opentype feature of a font are different to the x-height adjusted capital letters that programs such as Microsoft Word utilise. Matthew Broderick, author of Typography for Lawyers refers to these pseudo-small caps as “inferior counterfeits” and strongly advises against using them.
+https://typographyforlawyers.com/small-caps.html (archive: https://archive.ph/XUfty)
 
 Hyperlinks:
 Hyperlinks are used to connect text, images or other content to an external resource. In most webpages and documents, hyperlinks appear underlined blue for unvisited and then turn purple once clicked.
 
 For web hyperlinks, I try to use HyperText Transport Protocol Secure (HTTPS) to force security on the web browser such as Brave, Chrome or Firefox.
-I also add an archive link in parentheses from archive.today (or one of its aliases such as archive.is or archive.me) or alternatively from archive.org’s Wayback Machine to prevent link rot. I have an explanation of link rot in my example below:
+I also add an archive link in parentheses from archive.today (or one of its aliases such as archive.is or archive.me), or alternatively from archive.org’s Wayback Machine to prevent link rot. I have an explanation of link rot in my example below:
 
 Link rot (Wikipedia article, archive) is a situation when a hyperlink no longer brings a person to the correct webpage on the internet. This is a concern for any kind of project that relies on websites for researching information, therefore I recommend making use of archive websites (such as archive.today or the Wayback Machine) to preserve references. One alternative to archive websites is to save each required webpage as a PDF file.
 
@@ -385,14 +401,41 @@ Single guillemets (‹, ›)
  Single guillemets are reportedly used for nested quotes (quotes within quotes) though I haven’t used them.
 
 Paragraph symbols:
+//Alphabetise
+
+Degree (°)
+The degree (°) symbol is used for mathematical purposes.
+The degree symbol is commonly used to denote units of temperature, particularly on the Celsius or Fahrenheit scales.
+While there are combined ℃ and ℉ symbols in Unicode, these are discouraged by the Unicode Consortium due to being legacy characters. It’s recommended to use the degree symbol followed by the unit of temperature.
+
+Unicode symbols:
+
+U+00B0 ° DEGREE SIGN 
+U+2103 ℃ DEGREE CELSIUS (deprecated)
+U+2109 ℉ DEGREE FAHRENHEIT  (deprecated)
+
 
 Pilcrow (¶)
 The pilcrow (¶) is a mostly obsolete symbol used for defining the start of paragraphs. Pilcrows can be enabled in word processors such as Microsoft Word to assist with document layout.
-A pilcrow is commonly used for stylistic purposes. For example, in the 1931 book An Essay on Typography by Eric Gill starts each paragraph with a pilcrow:
+A pilcrow is commonly used for stylistic purposes. For example, in the 1931 book An Essay on Typography by Eric Gill starts each paragraph is set with a pilcrow:
 
 “¶ The theme of this book is Typography, and Typography as it is affected by the conditions of the year 1931. The conflict between industrialism &amp; the ancient methods of handicraftsmen which resulted in the muddle of the 19th century is now coming to its term.”
 
 Some typefaces such as Doves Type and Lyon Display have distinctive pilcrow symbols. The standard pilcrow has a distinct “P” shape, though some type designers prefer the “C” shape from the pilcrow’s predecessor, the capitulum symbol.
+I recommend using only use the standard pilcrow symbol unless the font supports it and the font is unlikely to change.
+
+Unicode symbols:
+
+U+00B6 ¶ PILCROW SIGN
+U+204B ⁋ REVERSED PILCROW SIGN
+U+2761 ❡ CURVED STEM PARAGRAPH SIGN ORNAMENT
+U+2E3F ⸿ CAPITULUM
+
+
+
+HTML entities:
+
+¶ - &amp;para; or &amp;#182;
 
 //diagram
 
@@ -401,29 +444,37 @@ The section symbol is used to mark individual numbered sections of a large docum
 
 “17 U.S. Code § 1201 - Circumvention of copyright protection systems”
 
-It is also the Simoleon currency symbol in the video game series SimCity and The Sims.
+It is also a less commonly used non-numerical citational referencing symbol and the Simoleon currency symbol in the video game series SimCity and The Sims.
 
 Asterisk (*)
 The asterisk (*) means “little star” in Greek and is commonly used as the first reference in a chapter that uses non-numerical citational referencing, especially in print advertising such as billboards, posters and magazines.
 The asterisk is also used on online forms to denote mandatory fields that are required for submission. Usually these asterisks are red to increase their visibility.
+Asterisks can also be used as a dinkus (often referred to as a section break or scene break) to separate paragraphs. Usually there are three asterisks in a series between the paragraphs. Alternatively, an asterism symbol can be used which places three asterisks in a triangular formulation though this is considered outdated.
 
-Asterisks can also be used as a dinkus (often referred to as a section break or scene break) to separate paragraphs. Usually there are three asterisks in a series between the paragraphs. Alternatively, an asterism symbol can be used which places three asterisks in a triangular formulation.
+Unicode symbols:
+
+U+002A * ASTERISK
+
+HTML entities:
+
+* - &amp;#42; or &amp;ast; or &amp;midast;
 
 Dagger (†)
-The dagger (†) is commonly used for marking deceased people or extinct species to the right of their name. It is also used as the second reference in a chapter that uses citational referencing.
+The dagger (†) is commonly used for marking deceased people or extinct species to the left or right of their name. It is also used as the second reference in a chapter that uses non-numerical citational referencing.
 
 Double dagger (‡)
-The double dagger (‡) is commonly used for the third reference in a chapter that uses citational referencing.
+The double dagger (‡) is commonly used for the third reference in a chapter that uses non-numerical citational referencing.
 
 Triple dagger
-There is a triple dagger symbol, though it has not been approved by Unicode and few fonts support it. If it does get ratified by the Unicode Consortium it could be used as a potential fourth symbol in citational referencing.
+There is a triple dagger symbol, though it has not been approved by Unicode and few fonts support it. If it does get ratified by the Unicode Consortium it could be used as a potential fourth symbol in non-numerical citational referencing.
 
 At symbol (@)
 The at symbol (@) is mostly used for separating the mailbox name from the domain name in e-mail addresses. Some brands use…
 
 Hash symbol (#)
 The hash symbol (#) (also called the pound sign) is commonly used for hashtags. As well as for deno…
-In e-book development, the hash symbol used for declaring numerical entities in XHTML by following the ampersand (&amp;). For example the entity &amp;#160; is for a non-breaking space. The hash symbol is also used in CSS to declare a hexadecimal colour. For example, the colour red is #FF0000.
+In e-book development, the hash symbol used for declaring numerical entities in XHTML by following the ampersand (&amp;). For example the entity &amp;#160; is for a non-breaking space. The hash symbol is also used in CSS to declare a hexadecimal colour. For example, the colour red is #FF0000. 
+The hash symbol is used for adding comments in Python which are ignored by the interpreter when the program is run.
 
 Ampersand (&amp;)
 The ampersand (&amp;) is commonly used to…
@@ -433,11 +484,12 @@ The ellipsis (…) is a series of three dots without a space and usually used to
 
 Primes (′) and double primes (″)
 Primes and double primes are respectively used for abbreviating feet and inches, though they have apparent other uses in typesetting scientific, linguistic and musical works.
-Some typefaces, notably Adobe Garamond don’t have prime symbols. An acceptable substitute for primes in this case are quote marks, preferable curly quote marks.
+Some typefaces, notably Adobe Garamond don’t have prime symbols. An acceptable substitute for primes in this case are quote marks, preferably straight quote marks.
+
 
 #
-In Literata 12pt, the measurement 5 feet, 3 inches can be abbreviated in three different ways:
-1. Primes 2. Curly quotes 3. Straight quotes
+In Literata 12pt, the measurement 5 feet, 3 inches can be abbreviated in four different ways:
+1. Primes 2. Curly quotes 3. Straight quotes 4. Oblique straight quotes with a 15° right-tilt
 
 Basic mathematical symbols:
 These are the simple mathematical symbols for arithmetic usage which most fonts are likely to support.
@@ -476,7 +528,7 @@ Parenthetical referencing uses… It’s best known as Harvard referencing as it
 Miscellaneous:
 
 Fiat currencies:
-For fiat currencies I use the ISO 4217 currency code in front of the currency symbol. ISO 4217 ties the currency name to the country code to remove ambiguity and is recommended for currency names that are shared across many countries such as the dollar, pound, crown, lira, won and rupee.
+For fiat currencies, I use the ISO 4217 currency code in front of the currency symbol. ISO 4217 ties the currency name to the country code to remove ambiguity and is recommended for currency names that are shared across many countries such as the dollar, pound, crown, lira, won and rupee.
 Here is a concise table of the most common currencies and their respective ISO 4217 code:
 
 USD, EUR, GBP, INR, KOW, JPY, RUB, CZK
@@ -484,6 +536,7 @@ USD, EUR, GBP, INR, KOW, JPY, RUB, CZK
 
 Some countries have unique currency names with accompanying symbols such as the Euro (€), Israeli new shekel (₪), Japanese yen (¥), Russian ruble (₽) and Thai Baht (฿).
 Support for certain currency symbols is not guaranteed among fonts, in those situations just use the ISO 4217 code on its own.
+There is a generic currency symbol (¤) which can be used for unspecified currencies.
 Some currencies also don’t have an official currency symbol.
 
 Cryptocurrencies:
@@ -492,14 +545,17 @@ I refer to cryptocurrencies in full and with their suggested currency symbol (an
 Checksums:
 Checksums are used for verifying file integrity (though not folders) to ensure it has not been altered in transmission.
 
-The Message Digest 5 (MD5) algorithm has been proven to be vulnerable to malicious alternation and shouldn’t be trusted. I may remove MD5 support from ebookbuild in the future.
-
+The Message Digest 5 (MD5) algorithm has been proven to be vulnerable to malicious alternation and shouldn’t be trusted. The 2013 research paper Fast Collision Attack on MD5 by Tao Xie, Fanbao Liu and Dengguo Feng demonstrates it has been progressively easier to exploit MD5. I may remove MD5 support from ebookbuild in the future.
 
 References:
 https://www.biblegateway.com/passage/?search=Genesis+12&amp;version=KJV
 https://www.grammarly.com/blog/en-dash/
 https://www.grammarly.com/blog/why-you-should-love-the-em-dash/
-https://en.wikipedia.org/wiki/Quotation_mark</Text>
+https://en.wikipedia.org/wiki/Quotation_mark
+https://eprint.iacr.org/2013/170.pdf
+
+Further reading:
+https://standardebooks.org/manual/1.6.3/8-typography</Text>
         </Document>
         <Document ID="35ED26F8-7611-4ADF-87DB-E00627E56530">
             <Title>ISO 4217 currency code table</Title>
