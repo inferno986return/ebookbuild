@@ -983,6 +983,7 @@ Serif
 Sans-serif
 Monospace (or fixed-width)
 E-book reader fonts
+Comparison of e-book reader software
 Unicode
 Latin
 Monotonic/Polytonic Greek
@@ -1476,7 +1477,7 @@ Adobe Digital Editions
 Google Play Books
 Kindle Previewer
 N/A
-Adobe Reader DC
+Adobe Acrobat Reader DC
 Evince
 Affinity Photo
 Adobe Photoshop
@@ -1495,7 +1496,7 @@ Apple Music
 Text editor
 A text editor is needed to create and then edit the XHTML, CSS and metadata.json files. Most of the time spent on an e-book will be using a text editor so it’s important that you can find it comfortable and easy to use.
 Text editors may be the most common type of computer program with many options to choose from and I am aware of just how defensive some users can be of their preferred text editor (especially the vi vs. emacs editor wars).
-Back at Oxford eBooks, we used Notepad++ for the bulk of our text editing. Notepad++ has an outdated user interface and is restricted to Microsoft Windows. For those reasons I consider Atom and Visual Studio Code to be suitable replacements. 
+I previously used Notepad++ for the bulk of the text editing, though it has an outdated user interface and is restricted to Microsoft Windows. For those reasons I consider Atom and Visual Studio Code to be suitable replacements. 
 An appropriate text editor for e-book development should support the following features:
 
 Syntax highlighting for XHTML, CSS, JSON and Markdown.
