@@ -233,7 +233,7 @@ Adobe licences fonts with the “Pro” suffix that support OpenType extensively
 
 Ligatures
 
-Ligatures are two or more conjoined glyphs used for aesthetic purposes, which usually (though not always) provide improved readability. As with any typographical feature, it’s support may vary between each e-reader and should not be guaranteed.
+Ligatures are two or more conjoined glyphs used for aesthetic purposes, which usually (though not always) provides improved readability. As with any typographical feature, it’s support may vary between each e-reader and should not be guaranteed.
 
 #
 The letters “fi”, “ff” and “fl” are commonly presented as a ligature
@@ -309,14 +309,14 @@ Paragraphs:
 Scene break:
 
 A scene break separates paragraphs without the use of a heading and is common in novelwriting, where it behaves similarly to a scene transition effect in film-making.
-Usually a dinkus (see asterisk in Manual of Style) which is a line of three asterisks (* * *) is used for a scene break.
-Alternatively use a fleuron or another piece of decorative typography that clearly shows the reader where the scene break is. For example, the author Violet E.C makes use of a decorative fleuron from Adobe Garamond:
+Usually a dinkus (see asterisk in Manual of Style) symbol is used to separate scenes. Often a line of three asterisks (* * *) is used for a scene break.
+Alternatively, use a fleuron or another piece of decorative typography that clearly shows the reader where the scene break is. For example, the author Violet E.C makes use of a decorative fleuron from Adobe Garamond:
 
 #
 
 Adobe Garamond has this decorative fleuron that can be used for scene breaks
 
-Another example of a non-dinkus scene break was used on the PowerPoint presentation for theChristmas carol services back at my secondary school. This break would show the end of a Christmas carol and is comprised of a hyphen (-), lowercase (o), number zero (0), lowercase (o) and another hyphen (-).
+Another example of a non-dinkus scene break was used on the PowerPoint presentation for the Christmas carol services back at my secondary school. This break would show the end of a Christmas carol and is comprised of a hyphen (-), lowercase (o), number zero (0), lowercase (o) and another hyphen (-) using a serif typeface such as Times New Roman.
 #
 Back at my secondary school this symbol was used to show the end of a Christmas carol.
 
@@ -340,8 +340,8 @@ They are commonly used stylistically for the names of people as a form of emphas
 
 “12 Now the Lord had said unto Abram, Get thee out of thy country, and from thy kindred, and from thy father's house, unto a land that I will shew thee:” —Genesis 12:1, King James Version (KJV)
 
-Unfortunately, some e-reading software such as Adobe Digital Editions does not support small caps and ignores them. I don’t recommend relying on small caps compatibility for digital documents unless a supported font has been embedded.
-True small caps are an an Opentype feature of a font are different to the x-height adjusted capital letters that programs such as Microsoft Word utilise. Matthew Broderick, author of Typography for Lawyers refers to these pseudo-small caps as “inferior counterfeits” and strongly advises against using them.
+Unfortunately, some e-reading software such as Adobe Digital Editions do not support small caps and subsequently treat them as lowercase letters. I don’t recommend relying on small caps compatibility for digital documents unless a supported font has been embedded.
+True small caps are an an Opentype feature of a font with dedicated glyphs for each letter. These are different to the x-height adjusted capital letters that programs such as Microsoft Word utilises. Matthew Broderick, author of Typography for Lawyers refers to these pseudo-small caps as “inferior counterfeits” and strongly advises against using them.
 https://typographyforlawyers.com/small-caps.html (archive: https://archive.ph/XUfty)
 
 Hyperlinks:
@@ -377,12 +377,14 @@ A hyphen is used to join (or concatenate) words together. For example:
 	e-mail, e-book
 
 En dash (–)
-An en dash gets its name because is the same width as a lowercase “n”. En dashes are used to join statements or to provide a numerical range. Using the English civil war Wikipedia page as an example, notice how the dates are connected with an en dash:
+An en dash gets its name because is the same width as a uppercase “N”. En dashes are used to join statements or to provide a numerical range. Using the English civil war Wikipedia page as an example, notice how the dates are connected with an en dash:
 
 “The English Civil War (1642–1651) was a series of civil wars and political machinations between Parliamentarians (&quot;Roundheads&quot;) and Royalists (&quot;Cavaliers&quot;),”
 
+En dashes are also used to join sentences together with a space and could be used in a bullet list instead of a traditional bullet point.
+
 Em dash (—)
-An em dash is the same width as a lowercase “m”. Em dashes are used for quote attribution, such as:
+An em dash is the same width as a uppercase “M”. Em dashes are used for quote attribution, such as:
 
 “I am not young enough to know everything.” —J.M. Barrie
 
@@ -485,7 +487,6 @@ The ellipsis (…) is a series of three dots without a space and usually used to
 Primes (′) and double primes (″)
 Primes and double primes are respectively used for abbreviating feet and inches, though they have apparent other uses in typesetting scientific, linguistic and musical works.
 Some typefaces, notably Adobe Garamond don’t have prime symbols. An acceptable substitute for primes in this case are quote marks, preferably straight quote marks.
-
 
 #
 In Literata 12pt, the measurement 5 feet, 3 inches can be abbreviated in four different ways:
@@ -678,29 +679,36 @@ data structures. XML is just a low-level syntax; it requires a document type def
 XHTML) and associated application logic to give it semantics.” 
 —Eric S. Raymond, Art of Unix Programming
 
-HTML (HyperText Markup Lanaguage) is a markup language that is used to define the content on webpages. This technology is the backbone of e-books because it allows book content to be defined and placed.
+HTML (HyperText Markup Language) is a markup language that is used to define the content on webpages. This technology is the backbone of e-books because it allows book content to be defined and placed each page.
 
 XHTML (eXtensible HyperText Markup Language) is the recommended language for creating the actual chapters of an e-book, it combines regular HTML (HyperText Markup Language) that is used to create webpages with XML (eXtensible Markup Language). Alternatively, you can use regular HTML though you can’t define custom tags (or can you?) and web browsers are more tolerant of obvious syntax errors when testing.
 
-So what is XHTML? To start with I have used Eric S. Raymond’s definition of XML as a springboard. All three standards are markup languages this means that the developer has to define what the file’s content will look like using some kind of text syntax (if you understand LaTeX or Markdown this should be familiar), which in this case are tags.
+So what is XHTML? To start with I have used Eric S. Raymond’s definition of XML as a springboard. All three standards are markup languages, which means that the developer has to define what the file’s content will look like using some kind of text-based syntax (if you understand LaTeX or Markdown, this should be familiar), which in this case are tags.
 
 Elements and Tags
 Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element
 
-Tags are made using a less-than symbol (&lt;) followed by the name of an element which is one word, abbreviation or letter, then by a greater-than symbol (&gt;), the text content itself is then written inside the tag and then closed with a closing tag that is identical though with a forward slash (/) after the less-than symbol. 
-Some tags are “self-closing” which means that they are defined in just one tag with a less-than symbol, tag name, then the forward slash and the greater-than symbol. Each tag represents specific types of content such as headings, paragraphs, images, tables, or numbered and bullet point lists.
+Tags are made using a less-than symbol (&lt;) followed by the name of an element (one word, an abbreviation or a single letter), followed by a greater-than symbol (&gt;). The text content itself is then written inside the tag and then closed with a closing tag that is identical though with a forward slash (/) after the less-than symbol. 
+Some tags are “self-closing” this means that they are defined with just one tag using a less-than symbol, tag name, then the forward slash and the greater-than symbol. There is no corresponding closing tag needed. Each tag represents specific types of content such as headings, paragraphs, images, tables, or numbered and bullet point lists.
 
 Attributes
 Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
 
 Attributes are parameters used by tags and are declared within a tag using the attribute name, equals sign (=) and single quotes (‘ ‘) or double quotes (“ “). 
-Some attributes such as “id” and “class” are applicable to most tags. Other tags have attributes that required for the tag to function such as “href” used in anchor tags and “src” used in image tags.
+Some attributes such as “id” and “class” are applicable to all tags, these are referred to as global attributes. Other tags have attributes that required for the tag to function such as “href” used in anchor tags and “src” used in image tags.
+
+Examples of global attributes:
+Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes
+
+Id – used to uniquely identify the tag, usually for the purposes of creating a direct hyperlink to it
+Class – used to declare which CSS class applies to a tag
+Style – used to apply an in-line CSS class to a tag, which can be useful for prototyping or debugging CSS
 
 I would recommend taking a look at one of the .xhtml files of this e-book while I explain the concepts. 
 
 There are 3 parts to an XHTML file:
 
-Declaration – defines to the web browser or e-reader what the file is, what standard of HTML/XML and what character encoding it uses.
+Declaration – declares to the web browser or e-reader what the file is, what standard of HTML/XML and what character encoding it uses.
 Head – defines to the web browser or e-reader, the files and metadata the XHTML file uses.
 Body – defines the actual content that the user will see in their web browser or e-reader.
 
@@ -738,7 +746,7 @@ Some tags can be used on their own, though most require text content between the
 Headings
 There are six separate tags for declaring headings in XHTML and regular HTML, which go as follows: &lt;h1&gt;&lt;/h1&gt;, &lt;h2&gt;&lt;/h2&gt;, &lt;h3&gt;&lt;/h3&gt;, &lt;h4&gt;&lt;/h4&gt;, &lt;h5&gt;&lt;/h5&gt; and &lt;h6&gt;&lt;/h6&gt;. 
 
-I haven’t used all six heading tags in a project because CSS allows me to define what size each heading should be, as well as whether it uses emphasis (bold, italic or none) and want font type (sans-serif or serif).
+It’s unlikely you will need to use all six heading tags because CSS classes allow you to define the headings and subheadings. This includes what size each heading should be, as well as whether it uses emphasis (bold, italic or none) and the font family (sans-serif or serif).
 
 Paragraphs
 Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
@@ -801,7 +809,7 @@ E-mail addresses can be hyperlinked using “mailto:”, though some e-readers s
 hal@example.com
 
 Superscripting and subscripting
-Superscript and subscript have their own tags which are &lt;sup&gt;,&lt;/sup&gt; and &lt;sub&gt;&lt;/sub&gt; respectively. For example:
+Superscript and subscript have their own tags. These are &lt;sup&gt;,&lt;/sup&gt; and &lt;sub&gt;&lt;/sub&gt; respectively. For example:
 
 &lt;p&gt;Payday is the 1&lt;sup&gt;st&lt;/sup&gt; of each month.&lt;/p&gt;
 
@@ -834,9 +842,9 @@ Bullet point lists are referred to as “unordered lists” and use the &lt;ul&g
 For example, take this list of ingredients for a Victoria sponge cake:
 
 &lt;ul&gt;
- &lt;li&gt;Unsalted butter&lt;/li&gt;
-	 &lt;li&gt;Castor sugar&lt;/li&gt;
- &lt;li&gt;Flour&lt;/li&gt;
+		&lt;li&gt;Unsalted butter&lt;/li&gt;
+		&lt;li&gt;Castor sugar&lt;/li&gt;
+		&lt;li&gt;Flour&lt;/li&gt;
 &lt;/ul&gt;
 
 Which creates the following list:
@@ -852,10 +860,17 @@ Numbered lists are referred to as “ordered lists” and use the &lt;ol&gt;&lt;
 
 For example, take this list of ingredients for a Victoria sponge cake:
 
-The &lt;ol&gt;&lt;/ol&gt; tag has an addition attribute called “start” which defines where the numbering should start. Keep in mind support for this is subject to the e-reader.
+The &lt;ol&gt;&lt;/ol&gt; tag has an addition attribute called “start” which defines where the numbering should start. Keep in mind that support for this attribute depends on the e-reader.
 
 &lt;ol start=”5”&gt;
+		&lt;li&gt;5&lt;/li&gt;
+		&lt;li&gt;6&lt;/li&gt;
+		&lt;li&gt;7&lt;/li&gt;
 &lt;/ol&gt;
+
+5
+6
+7
 
 Nested lists
 Lists can be nested inside other lists to establish a hierarchy by inserting another set of &lt;ol&gt;&lt;/ol&gt; or &lt;ul&gt;&lt;/ul&gt; tags.
@@ -868,14 +883,14 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tr
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/th
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td
 
-Tables are a bit more difficult to define in XHTML, so I recommend arranging them neatly to avoid getting confused with each line representing a table row. There are 4 tags for defining tables:
+Tables are more difficult to define in XHTML, so I recommend arranging them neatly to avoid getting confused. Make sure each line represents each table row. There are 4 tags for defining tables:
 
 &lt;table&gt;&lt;/table&gt; are the parent tags for the whole table. All table content will go inside these.
 &lt;tr&gt;&lt;/tr&gt; are the table row tags and define each row.
 &lt;th&gt;&lt;/th&gt; are the optional table heading tags.
 &lt;td&gt;&lt;/td&gt; are the table data tags which defines each cell.
 
-For example, here is a table with the first column of reactive metals from the periodic table of elements with their name, symbol, mass number and atomic number:
+For example, here is a table with the first column of reactive metals from the periodic table of elements with their name, symbol, mass number (to two decimal places) and atomic number:
 
 
 Name
@@ -884,23 +899,23 @@ Mass number
 Atomic number
 Hydrogen
 H
-
+1.01
 1
 Sodium
 Na
-
+22.99
 3
 Lithium
 Li
-
+6.94
 11
 Potassium
 K
-
+39.098
 19
 Rubidium
 Rb
-
+85.47
 37
 Caesium
 Cs
@@ -912,18 +927,25 @@ Fr
 87
 
 
-This is the accompanying XHTML code to make this table:
+This is the accompanying XHTML code to make this table. Try copying and pasting it into a .xhtml file to see it for yourself:
 
 &lt;table&gt;
 	&lt;tr&gt;&lt;th class=”heading&gt;Name&lt;/th&gt;&lt;th class=”heading”&gt;Symbol&lt;/th&gt;&lt;th&gt;Mass number&lt;/th&gt;&lt;th&gt;Atomic number&lt;/th&gt;&lt;/tr&gt;
-	&lt;tr&gt;&lt;td&gt;Hydrogen&lt;/td&gt;
+	&lt;tr&gt;&lt;td&gt;Hydrogen&lt;/td&gt;&lt;td&gt;H&lt;/td&gt;&lt;t&gt;1.01&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt;Sodium&lt;/td&gt;&lt;td&gt;Na&lt;/td&gt;&lt;td&gt;22.99&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt;Lithium&lt;/td&gt;&lt;td&gt;Li&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt;Potassium&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt;Rubidium&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt;Caesium&lt;/td&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;td&gt;Francium&lt;/td&gt;
 &lt;/table&gt;
 
 Some tables have wider columns, this can be achieved with the column span (“colspan”) attribute.
 
 Further reading
 
-Several websites have exhaustive documentation of each HTML/XHTML tag, its attributes and compatibility across different web browsers. Visual Studio Code includes hyperlinks to Mozilla’s documentation and in the past I would refer to W3Schools for information of each tag.
+Several websites have exhaustive documentation of each HTML/XHTML tag, its attributes and compatibility across different web browsers.1.00784
+Visual Studio Code includes hyperlinks to Mozilla’s documentation and in the past I would refer to W3Schools for information of each tag.
 
 
 </Text>
@@ -1519,14 +1541,14 @@ It is pre-installed on Windows 11. For Windows 10, it is recommended to install 
 
 
 Git client
-Git is a popular version control system (VCS) and I recommend using it for e-book development because it organises your workflow and backs up your work. In this book I have provided a dedicated Introduction to Git and GitHub chapter for information Git clients and how to get started with Git if you are complete newcomer.
+Git is a popular version control system (VCS) and I recommend using it for e-book development because it organises your workflow and backs up your work. In this book, I have provided a dedicated Introduction to Git and GitHub chapter for information Git clients and how to get started with Git if you are complete newcomer.
 
 GitHub Desktop
 # Microsoft Windows, macOS, GNU/Linux
 
-GitHub Desktop is GitHub’s own official client, primarily designed for GitHub accounts though ti works with third-party hosting sites such as GitLab. 
-GitHub Desktop was designed as a graphical user interface (GUI) alternative to the standard Git command-line program. It’s very easy to use and contains most functionality that is needed for e-book development.
-There are unofficial GNU/Linux builds for Debian, AppImage and Fedora/Red Hat Enterprise Linux (RHEL) courtesy of the developer Shiftkey. Despite GitHub publicly acknowledging and appreicating these builds, there are no plans at the time of writing for official GNU/Linux builds.
+GitHub Desktop is GitHub’s own official client. It is primarily designed for GitHub accounts, though there is support for third-party Git hosting sites such as GitLab. 
+GitHub Desktop was designed as a graphical user interface (GUI) alternative to the standard git command-line program. It’s very easy to use and contains most functionality that is needed for e-book development.
+There are unofficial GNU/Linux builds courtesy of the developer Shiftkey. These are packages for Debian (.deb), AppImage (.appimage) and Fedora/Red Hat Enterprise Linux (RHEL) (.rpm). Despite GitHub publicly acknowledging and appreciating these builds, there are no stated plans at the time of writing for official GNU/Linux support.
 
 GitKraken
 
@@ -1558,13 +1580,13 @@ Brave
 #
 # Microsoft Windows, macOS, Ubuntu, Android, iOS
 
-I use the Brave as my everyday web browser which includes e-book development. The debug tools allow simulation of different screen-sizes to test responsiveness.
-Brave is a modification of the Chrome web browser with support for the majority of tested Chrome extensions. It also has the following notable features:
+I use the Brave as my everyday web browser which includes e-book development. The debug tools which have been inherited from Chromium allow simulation of different screen-sizes to test responsiveness.
+Brave is a modification of the Chromium web browser with support for the majority of tested Chrome extensions. It also has the following notable features:
 
-Brave Shields - contains advert and tracker blocking functionality built-in to the browser.
-Brave Sync - replaces Google Sync and can be used to syncronise settings and preferences across multiple devices using a unique password or by scanning a quick response (QR) code.
-Brave Rewards - Brave rewards its userbase for viewing advert notifications and sponsored “billboard” images on the new tab screen with the Ethereum-based cryptocurrency called Basic Attention Token (BAT). The user can then donate BAT to websites or certain social media profiles based on the amount of time they spend on those pages.
-Decentralised networking - Brave also has support for the InterPlanetary File System (IPFS) and The Onion Router (TOR).
+Brave Shields – contains advert and tracker blocking functionality built-in to the browser.
+Brave Sync – replaces Google Sync and can be used to syncronise settings and preferences across multiple devices using a unique password or by scanning a quick response (QR) code.
+Brave Rewards – Brave rewards its userbase for viewing advert notifications and sponsored “billboard” images on the new tab screen with an Ethereum-based cryptocurrency called Basic Attention Token (BAT). The user can then donate BAT to websites or certain social media profiles based on the amount of time they spend on those pages.
+Decentralised networking – Brave also has support for the InterPlanetary File System (IPFS), WebTorrent (a JavaScript Bittorrent client) and The Onion Router (TOR).
 
 According to the BAT whitepaper, traditional internet advertising by design doesn’t respect user privacy and often irritates them with tracking adverts. Brave boasts that user data doesn’t leave the browser and users are rewarded for the time they take viewing adverts.
 
@@ -1611,11 +1633,11 @@ Music player
 Spotify
 # Microsoft Windows, macOS, Ubuntu, iOS, Android, web
 
-Spotify
+Spotify is a popular music streaming service with a high coverage of many different artists. It has a free service with adverts and a paid subscription called Spotify Premium. Spotify Premium downloads the music
 
 Bandcamp
 iOS, Android, web
-
+Bandcamp is a music service aimed at independent artists. Music can be purchased and downloaded in several formats such as .mp3, .flac and .ogg.
 SOMA.fm
 #
 iOS, Android, web
@@ -1628,21 +1650,21 @@ There is also an unofficial Groove Salad Spotify playlist called Groove Salad Co
 Spotify code for the Groove Salad Complete playlist
 (https://open.spotify.com/playlist/65Ex6VuPx5RDnRyfEV7oE8?si=828e6526d2394b62)
 
-If you find SOMA.fm to be music to your ears, then consider making a donation or buying their merchandise.
+If you find SOMA.fm to be music to your ears, then consider making a donation or buying their merchandise. It can’t be cheap to operate a datacentre in San Francisco!
 
 Miscellaneous:
 
-The video game Grand Theft Auto: IV (GTA IV) has an in-game radio station called The Journey which has several ambient tracks.
+The video game Grand Theft Auto: IV (GTA IV) has an in-game radio station called The Journey which has several ambient tracks which mostly work well as background music:
 
-Global Communication - 5:23 (Maiden Voyage) (1994)
-Terry Riley - A Rainbow In Curved Air (1969)
-Steve Roach - Arrival (1986)
-Michael Shrieve - Communique: 'Approach Spiral' (1984)
-Jean Michel Jarre - Oxygène, Part 4 (1976)
-Phillip Glass - Pruit Igoe (1983)
-Tangerine Dream - Remote Viewing (1981)
-Aphex Twin - Z Twig (1994)
-Ray Lynch - The Oh Of Pleasure (1984)
+Global Communication – 5:23 (Maiden Voyage) (1994)
+Terry Riley – A Rainbow In Curved Air (1969)
+Steve Roach – Arrival (1986)
+Michael Shrieve – Communique: 'Approach Spiral' (1984)
+Jean Michel Jarre – Oxygène, Part 4 (1976)
+Phillip Glass – Pruit Igoe (1983)
+Tangerine Dream – Remote Viewing (1981)
+Aphex Twin – Z Twig (1994)
+Ray Lynch – The Oh Of Pleasure (1984)
 
 Odysseus is a YouTuber who creates synthwave and chillwave playlists. Chillwave music can be good background music. I recommend the following playlists:
 
@@ -1651,6 +1673,7 @@ Waves - A Chillwave Mix
 Tokyo Drive - A Chillwave Mix
 
 References:
+The Chromium project contains most of Google Chrome’s source code and is licenced under the BSD licence. This allows projects such as Microsoft Edge, Opera, Brave
 Pruit Igoe is notably more frantic than most tracks on the The Journey playlist. It was used as soundtrack for the film Koyaanisqatsi which depicts the demolition of the Pruitt-Igoe social housing in St. Louis, Missouri. https://philipglass.com/glassnotes/pruit_igoe/ https://archive.ph/H2GBT
 </Text>
         </Document>
@@ -1692,7 +1715,11 @@ At the time I created Project Zylon as a means to continue e-book development af
 I had formally been introduced to both the concept and development process of an e-book, but wanted to do more with the technology as much of the e-book projects I worked on were novels, religious books and the occasional non-fiction biography. I wanted new projects such as cookbooks, technology books and antiquarian remasters.
 Another desire, was to release the source code publicly under a licence approved by either the Open Source Initiative (OSI) or the Free Software Foundation (FSF) to facilitate further improvements and usage. I have admired the concept of free software since I first learnt about it in 2012 and my affection for it went up when I released my Pokétch Digital watchface for the Pebble smartwatch under the permissive MIT licence. The project has 10 stars on GitHub and been forked several times which is impressive considering I am by no means a C programmer.
 
-//Picture of the Pokétch Digital watchface
+#
+Screenshot of the Pokétch watchface for the Pebble smartwatch
+
+#
+Reference screenshot taken from Pokémon Diamond
 
 The old tools that used and I can barely speak of in fear of reprisal weren’t ideal and violated core principles. I had become accustomed to these principles when reading about the history and philosophy of free software (as defined by Richard Stallman and the GNU project), so I wanted something I had complete control over that could grow into a useful set of tools for anyone with an interest in creating e-books from scratch.
 To familarise myself with e-book development I was fortunate to stumble upon Eric Muss-Barnes’ tutorial for creating ePub files. 
@@ -1704,6 +1731,14 @@ Much of the ebookbuild project is licenced under GNU GPLv3.
 One of the prerequisites for free software is thorough documentation, preferably easy to understand. So I have created an e-book that references as much as I have learnt in my one year in commercial e-book development, as well as what I have found out on my own since then. I want to make it accessible as possible so I have released it under a Creative Commons licence to encourage mass-sharing. The source code is on GitHub and I encourage raising issues and pull requests.
 Lastly, I released technical files that are required for e-book production such as XHTML, CSS and JSON files under the Creative Commons Zero (CC0) licence, effectively putting them into the public domain. I don’t think the code used for these files isn’t particularly special or unique, so they can be re-purposed outside of ebookbuild uncredited, though credit is always appreciated.
 
+The five icons
+
+I really like the icon system used in the popular For Dummies series by Wiley. In a similar vein, I have utilised five icons to emphasise important points to keep in mind:
+
+# University cap – advanced content with some extra commentary that I recommend researching for yourself, though this is completely optional
+#Lightbulb – tips
+#Floppy disk – technologies and processes that are effectively obsolete and not commonly used
+#Warning triangle – dangerous to yourself or the technology being discussed
 
 References:
 
@@ -1962,7 +1997,20 @@ Permissive (or copyfree)
 Permissive licenses allow derivative projects to withhold source code and often only require attribution from the original project’s authors.
 
 Apache License
+
 Berkeley Software Distribution (BSD) License
+
+The BSD License is a short copyfree license that only enforces that the licence text is retained (in both source code and compiled binary form) and disclaimers against useage and promotion by an unauthorised 3rd party.
+
+The exact text for the 3-clause BSD License has been taken from the Open Source Initiative (OSI) website:
+
+Copyright &lt;YEAR&gt; &lt;COPYRIGHT HOLDER&gt;
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 MIT (or X11) license
 
 
