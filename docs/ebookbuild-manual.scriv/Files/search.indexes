@@ -1747,10 +1747,9 @@ References:
 2. The GNU project defines free software as: “Free software” means software that respects users' freedom and community. Roughly, it means that the users have the freedom to run, copy, distribute, study, change and improve the software. Thus, “free software” is a matter of liberty, not price. To understand the concept, you should think of “free” as in “free speech,” not as in “free beer.” We sometimes call it “libre software,” borrowing the French or Spanish word for “free” as in freedom, to show we do not mean the software is gratis.
 You may have paid money to get copies of a free program, or you may have obtained copies at no charge. But regardless of how you got your copies, you always have the freedom to copy and change the software, even to sell copies.
 
-3. It’s worth juxtaposing copyleft with copyfree.
-	Copyleft licencing such as GPLv3 ensures all publicly released copies of a program must have their source code available with the permission to make alterations and compile them into a new program.
-	Copyfree licencing such as MIT ensures the developer who first modifies the source code has control over the availability of the source code, alterations made to it and distribution of the new program.
-
+3. It’s worth comparing copyleft and copyfree licencing.
+Copyleft licencing such as GPLv3 and MPL ensures all publicly released copies of a program must have their source code available with the permission to make alterations and compile them into a new program.
+Copyfree licencing such as MIT and BSD ensures the developer who first modifies the source code has control over the availability of the source code, alterations made to it and distribution of the new program.
 
 
 
@@ -1926,9 +1925,9 @@ Git’s popularity means there is a lot of documentation that goes into a more d
             <Title>HTML entity tables</Title>
             <Text>HTML entity tables
 
-As mentioned in the Introduction to XHTML chapter, entities allow the insertion of Unicode characters into both XHTML and regular HTML. Entities are declared using the ampersand (&amp;) character, its name or numeric value and then closed with a semi colon (;),
+As mentioned in the Introduction to XHTML chapter, entities allow the insertion of Unicode characters into both XHTML and regular HTML. Entities are declared using the ampersand (&amp;) character, its name or numerical value , then closed with a semi colon (;).
 For convenience, I have provided tables which can be referred to when you need to insert a character into your e-book project. Keep in mind that some glyphs may not render if the font doesn’t support the required character set.
-As mentioned previously I try to avoid using too many entities as it can make the XHTML pages less human-readable.
+As mentioned previously I try to avoid using too many entities as it can make the XHTML pages less human-readable and also adds to the number of characters in each XHTML page.
 
 Reserved entities
 
@@ -1936,15 +1935,19 @@ The following characters must be used as entities because they form the HTML syn
 
 
 Character
+Unicode reference
 Entity name
 Entity value
 Ampersand (&amp;)
+
 &amp;amp;
 &amp;#38;
 Less than (&lt;)
+
 &amp;lt;
 &amp;#60;
 Greater than (&gt;)
+
 &amp;gt;
 &amp;#62;
 
@@ -1952,29 +1955,124 @@ Greater than (&gt;)
 Diacritic entities
 
 Diacritics are accents that are applied letters to indicate pronunciation or vocal emphasis. Strangely, English doesn’t use diacritics except for loan words though most languages use them in some form.
-Depending on your keyboard layout, some characters are easy to insert and would easier to
+Depending on your keyboard layout, some characters are easy to insert and it would easier to type it in rather than using its entity.
 
 
 Character
+Unicode reference
 Entity name
 Entity value
-Latin “a” with acute (á)
+Latin uppercase “A” with acute (Á)
+
+
+
+Latin lowercase “a” with acute (á)
+
 &amp;amp;
 &amp;#38;
-Less than (&lt;)
+Latin lowercase “a” with grave (à)
+
 &amp;lt;
 &amp;#60;
-Greater than (&gt;)
+Latin lowercase “a” with diaeresis/umlaut (ä)
+
 &amp;gt;
 &amp;#62;
+Latin lowercase “a” with circumflex (â)
+
+
+
+Latin lowercase “a” with caret (ǎ)
+
+
+
+Latin uppercase “C” with cedilla ()
+
+
+
+Latin lowercase “c” with cedilla (ç)
+
+
+
+Latin uppercase “N” with tilde (Ñ)
+
+
+
+Latin lowercase “n” with tilde (ñ)
+
+
+
 
 
 Symbol entities
 
 
+Character
+Unicode reference
+Entity name
+Entity value
+Hyphen (-)
+
+&amp;amp;
+&amp;#38;
+En dash (–)
+
+&amp;lt;
+&amp;#60;
+Em dash (—)
+
+&amp;gt;
+&amp;#62;
+Ellipsis (…)
+
+
+
+Single left quote ()
+
+
+
+Single right quote ()
+
+
+
+Double left quote ()
+
+
+
+Double right quote ()
+
+
+
+Copyright symbol (©)
+
+
+
+Trademark symbol (™)
+
+
+
+Registered trademark symbol (®)
+
+
+
+Numero symbol (№)
+
+
+
+Per mile symbol (‰)
+
+
+
+Pilcrow symbol (¶)
+
+
+
+
+
 </Text>
         </Document>
         <Document ID="EB5E357B-9535-4E98-B627-20DD9228293E">
+            <Title>Free, libre and open-source software (FOSS) licencing</Title>
             <Text>Free, libre and open-source software (FOSS) licencing
 
 The ebookbuild project makes use of several free, libre and open-source software (FLOSS) licences. This chapter provides an easy explanation for each one and what their purpose is for, though keep in mind that it is recommended to read the licence thoroughly.
@@ -1988,8 +2086,9 @@ Richard Stallman first outlined copyleft intentions in the famous GNU Manifesto 
 
 GNU General Public License (GNU GPL)
 V2
-V3
-GNU GPLv3 is designed to prevent “Tivotization”
+
+GNU GPLv3 is designed to prevent “Tivoization”, a situation where a copyleft-licenced free software is used on closed-source proprietary hardware. 
+While the free software’s source code is available and can be modified, the limitations of proprietary hardware could prevent a user being able to implement their modifications onto a hardware device they have purchased. Such devices are referred to as “tyrants” by the FSF.
 
 Mozilla Public License (MPL)
 
