@@ -1939,15 +1939,15 @@ Unicode reference
 Entity name
 Entity value
 Ampersand (&amp;)
-
+U+0026
 &amp;amp;
 &amp;#38;
 Less than (&lt;)
-
+U+003C
 &amp;lt;
 &amp;#60;
 Greater than (&gt;)
-
+U+003E
 &amp;gt;
 &amp;#62;
 
@@ -1955,7 +1955,7 @@ Greater than (&gt;)
 Diacritic entities
 
 Diacritics are accents that are applied letters to indicate pronunciation or vocal emphasis. Strangely, English doesn’t use diacritics except for loan words though most languages use them in some form.
-Depending on your keyboard layout, some characters are easy to insert and it would easier to type it in rather than using its entity.
+Depending on your keyboard layout, some characters are easy to insert and it would easier to type it in rather than using its entity. Keep in mind there are programs such as Character Map which make it easier to input characters.
 
 
 Character
@@ -2005,6 +2005,7 @@ Latin lowercase “n” with tilde (ñ)
 
 
 Symbol entities
+Paragraph symbols
 
 
 Character
@@ -2016,11 +2017,11 @@ Hyphen (-)
 &amp;amp;
 &amp;#38;
 En dash (–)
-
+U+2013
 &amp;lt;
 &amp;#60;
 Em dash (—)
-
+U+2014
 &amp;gt;
 &amp;#62;
 Ellipsis (…)
@@ -2043,19 +2044,114 @@ Double right quote ()
 
 
 
-Copyright symbol (©)
+Pilcrow symbol (¶)
 
 
 
-Trademark symbol (™)
+Section symbol (§)
 
 
 
-Registered trademark symbol (®)
+Asterisk (*)
 
 
 
+Dagger symbol ()
+
+
+
+Double dagger symbol ()
+
+
+
+
+
+Currency symbols
+In-use
+
+
+Character
+Unicode reference
+Entity name
+Entity value
+Dollar sign ($)
+
+&amp;amp;
+&amp;#38;
+Cent sign (¢)
+
+
+
+Pound sign (£)
+U+2013
+&amp;lt;
+&amp;#60;
+Euro symbol (€)
+U+2014
+&amp;gt;
+&amp;#62;
+Yen symbol (¥)
+
+
+
+Rupee symbol (₹)
+
+
+
+Ruble symbol ()
+
+
+
+Baht symbol ()
+
+
+
+Won symbol ()
+
+
+
+Bitcoin symbol (₿)
+
+
+
+
+
+Historic
+
+
+Character
+Unicode reference
+Entity name
+Entity value
+Pesata symbol (₧)
+
+
+
+Lira symbol (₤)
+
+
+
+Rupee symbol (₨)
+
+
+
+
+
+
+Mathematical symbols
+
+These are common mathematical symbols that are supported by most fonts. For advanced mathematical symbol support (i.e. set theory symbols) and typesetting, I recommend using MathML which is part of the EPUB3 standard.
+
+
+Character
+Unicode reference
+Entity name
+Entity value
 Numero symbol (№)
+
+
+
+Percentage symbol (%)
 
 
 
@@ -2063,9 +2159,81 @@ Per mile symbol (‰)
 
 
 
-Pilcrow symbol (¶)
+Multiply (×)
 
 
+
+Divide (÷)
+
+
+
+Minus (−)
+
+
+
+Plus (+)
+
+
+
+Plus-minus ()
+
+
+
+Less than or equal to ()
+
+
+
+Greater than or equal to ()
+
+
+
+Degree symbol (º)
+
+
+
+Tilde symbol (~)
+
+
+
+Hash/pound symbol (#)
+
+
+
+Single prime ()
+
+
+
+Double prime ()
+
+
+
+Ratio symbol ()
+
+
+
+
+
+Intellectual property symbols
+
+
+Character
+Unicode reference
+Entity name
+Entity value
+Copyright symbol (©)
+U+00A9
+
+
+Trademark symbol (™)
+U+2122
+
+
+Registered trademark symbol (®)
+U+00AE
+
+
+Phonogram symbol (℗)
+U+2117
 
 
 
