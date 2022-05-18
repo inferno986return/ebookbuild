@@ -1926,8 +1926,9 @@ Git’s popularity means there is a lot of documentation that goes into a more d
             <Text>HTML entity tables
 
 As mentioned in the Introduction to XHTML chapter, entities allow the insertion of Unicode characters into both XHTML and regular HTML. Entities are declared using the ampersand (&amp;) character, its name or numerical value , then closed with a semi colon (;).
-For convenience, I have provided tables which can be referred to when you need to insert a character into your e-book project. Keep in mind that some glyphs may not render if the font doesn’t support the required character set.
+For convenience, I have provided non-exhaustive tables which can be referred to when you need to insert a character into your e-book project. Keep in mind that some glyphs may not render if the font doesn’t support the required character set.
 As mentioned previously I try to avoid using too many entities as it can make the XHTML pages less human-readable and also adds to the number of characters in each XHTML page.
+https://dev.w3.org/html5/html-author/charref
 
 Reserved entities
 
@@ -2026,8 +2027,8 @@ U+2014
 &amp;#62;
 Ellipsis (…)
 
-
-
+&amp;hellip;
+&amp;8230;
 Single left quote ()
 
 
@@ -2052,16 +2053,20 @@ Section symbol (§)
 
 
 
+Bullet (•)
+
+&amp;bull; &amp;bullet;
+&amp;#8226;
 Asterisk (*)
 
 
 
-Dagger symbol ()
+Dagger symbol (†)
+U+2020
 
 
-
-Double dagger symbol ()
-
+Double dagger symbol (‡)
+U+2021
 
 
 
@@ -2098,15 +2103,23 @@ Rupee symbol (₹)
 
 
 
-Ruble symbol ()
+Israeli new shekel (₪)
 
 
 
-Baht symbol ()
+Filipino peso (₱)
 
 
 
-Won symbol ()
+Ruble symbol (₽)
+
+
+
+Baht symbol (฿)
+
+
+
+Won symbol (₩)
 
 
 
@@ -2123,7 +2136,11 @@ Character
 Unicode reference
 Entity name
 Entity value
-Pesata symbol (₧)
+Franc symbol (₣)
+
+
+
+Peseta symbol (₧)
 
 
 
@@ -2175,20 +2192,24 @@ Plus (+)
 
 
 
-Plus-minus ()
-
-
-
+Plus-minus (±)
+U+00B1
+&amp;plusmn; &amp;pm;
+&amp;#177;
 Less than or equal to ()
 
-
+&amp;le;
 
 Greater than or equal to ()
 
+&amp;ge;
+
+Square root symbol (√)
 
 
-Degree symbol (º)
 
+Degree symbol (°)
+U+00B0
 
 
 Tilde symbol (~)
@@ -2211,6 +2232,14 @@ Ratio symbol ()
 
 
 
+Greek uppercase Sigma (Σ)
+
+
+
+Greek lowercase mu ()
+
+
+
 
 
 Intellectual property symbols
@@ -2222,8 +2251,8 @@ Entity name
 Entity value
 Copyright symbol (©)
 U+00A9
-
-
+&amp;copy;
+&amp;#169;
 Trademark symbol (™)
 U+2122
 
