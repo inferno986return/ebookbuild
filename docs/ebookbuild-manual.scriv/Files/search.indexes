@@ -290,13 +290,13 @@ The ampersand diagram is courtesy of Alatius on Wikicommons. </Text>
         </Document>
         <Document ID="1FA5F5C6-0355-406C-9FFE-4A6AC35F4C61">
             <Title>Ackowledgments and Legal</Title>
-            <Text>Acknowledgements and Legal
+            <Text>Acknowledgements
 
-
-All intellectual property belongs to their respective owners.
-GITHUB®, the GITHUB® logo design, OCTOCAT® and the OCTOCAT® logo design are exclusive trademarks registered in the United States by GitHub, Inc.
-The GitHub icons which referred to as “Octicons” belong to GitHub and are used for demonstration of both GitHub Desktop and the GitHub website. I claim fair use of these icons.
-I have a list of illustrations to credit each diagram. Many are from Wikimedia Commons and I am grateful there are so many good quality diagrams available for re-use under Creative Commons licencing or in the public domain.</Text>
+Michael Motley – for teaching me a lot about book authorship and publishing. As a former literary agent he had a very interesting insight into the industry.
+Andy Severn – for offering me my first paid job as an apprentice at Oxford eBooks and introducing me to the world of e-book production.
+Eric S. Raymond – for The Art of UNIX Programming which has been very helpful for technical definitions of technologies used in this book.
+Keith Blount – for developing Scrivener, which has made writing this book possible.
+Eric Muss Barnes – for creating the InkShard videos and website which re-invigorated my interest in e-book development and helped me develop a fresh approach of my own to creating e-books from scratch.</Text>
         </Document>
         <Document ID="25AA13C0-6D21-4383-A6B6-50B28003E7F9">
             <Title>Manual of Style</Title>
@@ -1276,8 +1276,6 @@ Each supported glyph within Unicode is part of a group of glyphs called a block.
 It’s also worth knowing about Windows Glyph List (WGL) fonts
 
 
-
-
 References:
 
 https://careerfoundry.com/en/blog/ui-design/beginners-guide-to-typography/
@@ -1332,6 +1330,7 @@ https://daringfireball.net/projects/markdown/</Text>
 —My concise definition of an e-book
 
 
+An e-book is file that contains the contents of a physical book… E-books use web technologies such as HTML and CSS to scale content to the size of the screen.
 Overview of XHTML, CSS, pagination, responsive…
 
 #
@@ -1448,12 +1447,11 @@ So far my only approach is to rely on checksums as they are unique to each build
             <Text>Legal
 
 
-This book is licenced under Creative Commons CC-By-SA-ND.
+//Many of this will movie to an indicia
 All intellectual property belongs to their respective owners.
 GITHUB®, the GITHUB® logo design, OCTOCAT® and the OCTOCAT® logo design are exclusive trademarks registered in the United States by GitHub, Inc.
 The GitHub icons which referred to as “Octicons” belong to GitHub and are used for demonstration of both GitHub Desktop and the GitHub website. I claim fair use of these icons.
-I have a list of illustrations to credit each diagram. Many are from Wikimedia Commons and I am grateful there are so many good quality diagrams available for re-use under Creative Commons licencing or in the public domain.
-All copyrighted content is used in this book for the purposes of education and demonstration, as encouraged by US fair use doctrine.</Text>
+I have a list of illustrations to credit each diagram. Many are from Wikimedia Commons and I am grateful there are so many good quality diagrams available for re-use under Creative Commons licencing or in the public domain.</Text>
         </Document>
         <Document ID="9C43D21D-C973-4DD8-857E-08EB9C396879">
             <Title>Preface</Title>
@@ -1530,47 +1528,65 @@ Visual Studio Code is my preferred text editor for several years.
 
 
 Terminal emulator
-Both macOS and GNU/Linux have an excellent preinstalled terminal which requires little modification except cosmetic changes such as the font size and background colour.
-For Microsoft Windows I recommend installing Windows Subsystem for Linux (WSL) which allows installation of a minimal GNU/Linux environment including the Bash shell.
+Both macOS and GNU/Linux have an excellent preinstalled terminal which requires little modification except for minor cosmetic changes such as the font size and background colour.
+Microsoft Windows on the other hand requires some configuration to get ebookbuild working. First, I recommend installing Windows Subsystem for Linux (WSL) which allows installation of a minimal GNU/Linux environment including the Bash shell.
 
 Windows Terminal
 # Microsoft Windows
 
-Windows Terminal is the terminal emulator I’ve been waiting for and I was eagerly awaiting its stability when I first tested it in 2019. 
-It is pre-installed on Windows 11. For Windows 10, it is recommended to install via the Microsoft Store, though it can be downloaded and installed manually or even compiled from source code in Visual Studio.
+Windows Terminal is the terminal emulator I’ve been waiting patiently for its stable release since I first tested it in early to mid-2019. It has extensive customisability options (which are all written to a JSON file) and a tab system that allows different shells to run simultaneously, so I can run PowerShell and Bash in parallel.
+It is pre-installed on Windows 11. For Windows 10, it is recommended to install via the Microsoft Store. Alternatively it can be installed by alternative means such as via winget, separately as a .appx file or even compiled from source code in Visual Studio.
+
 
 
 Git client
-Git is a popular version control system (VCS) and I recommend using it for e-book development because it organises your workflow and backs up your work. In this book, I have provided a dedicated Introduction to Git and GitHub chapter for information Git clients and how to get started with Git if you are complete newcomer.
+Git is a popular version control system (VCS) and I recommend using it for e-book development because it organises your workflow and backs up your work. In this book, I have provided a dedicated Introduction to Git and GitHub chapter for information about Git clients and how to get started with Git if you are complete newcomer.
 
 GitHub Desktop
 # Microsoft Windows, macOS, GNU/Linux
 
-GitHub Desktop is GitHub’s own official client. It is primarily designed for GitHub accounts, though there is support for third-party Git hosting sites such as GitLab. 
+GitHub Desktop is GitHub’s own official Git client which directly connects to the website. It is primarily designed for GitHub accounts, though there is support for third-party Git hosting sites such as GitLab and Bitbucket by using the URL option when importing repositories.
 GitHub Desktop was designed as a graphical user interface (GUI) alternative to the standard git command-line program. It’s very easy to use and contains most functionality that is needed for e-book development.
-There are unofficial GNU/Linux builds courtesy of the developer Shiftkey. These are packages for Debian (.deb), AppImage (.appimage) and Fedora/Red Hat Enterprise Linux (RHEL) (.rpm). Despite GitHub publicly acknowledging and appreciating these builds, there are no stated plans at the time of writing for official GNU/Linux support.
+There are unofficial GNU/Linux packages courtesy of the developer Shiftkey. These are packages for Debian (.deb), AppImage (.appimage) and Fedora/Red Hat Enterprise Linux (RHEL) (.rpm). Despite GitHub publicly acknowledging and appreciating these builds, there are no stated plans at the time of writing for official GNU/Linux support.
 
 GitKraken
 
+GitKraken is a
 
 E-book reader (e-reader)
 E-book readers (or e-readers) are software specifically designed to open and display e-book formats. There are many e-readers, though some are unreliable and do not render CSS correctly.
 
 Adobe Digital Editions
 # Microsoft Windows, macOS
-Adobe Digitial Editions (ADE) is
+
+Adobe Digital Editions (ADE) is an ePub library and e-reader software designed to read ePub files that have been locked using the Adobe ADEPT digital rights management system. It also has a library similar to iTunes which allows users to add their books for convenient reading.
+ADE was the defacto standard for e-book reading when I started my career in 2014 and was used to test an ePub was fit for purpose.
 
 Kindle Previewer
 # Microsoft Windows, macOS
+
+Kindle Previewer is the official emulator for Android Kindle that can be used to test and convert ePub files for their suitability on the Amazon Kindle. Conversion is slow, though this is a useful way to see how the e-book will look on a Kindle. Testing on a Kindle is important given how large Amazon’s marketshare of publishing is even in 2022.
+
 Google Play Books
 Android, iOS, web
 
+Google Play Books is Google’s own e-reader software which is available on the web and via apps for Apple iOS and Google Android.
+This is my preferred and recommended way to test e-books. I can compile an ePub and test it when I am on the go using the Android app, then make highlighted notes for any of the flaws I find within the e-book. These notes can then be accessed on the web reader on my desktop or laptop with Visual Studio Code to make changes.
+
+Web reader − https://play.google.com/books
+
+
 PDF reader
-Adobe Reader DC
+Adobe Acrobat Reader DC
 # Microsoft Windows, macOS, iOS, Android
+
+Adobe Acrobat Reader DC is the PDF reader offered by Adobe, the company behind the standard (and related standards such as PostScript). The PDF is an open standard and is very widely used. I use Adobe Acrobat Reader DC solely for reading, in relation to e-book development this is mostly manuscripts or testing Calibre’s PDF output. 
+I don’t pay for a PDF editor because most of those require a subscription (including Adobe Acrobat Pro). Instead, I edit PDF files within Affinity Designer. I also use the Google Drive app which has its own PDF reader on my Android smartphone.
 
 Evince
 # Microsoft Windows, Ubuntu
+
+Evince is a free and open-source PDF reader used by the GNOME desktop, a popular desktop used by many GNU/Linux distros. Evince is useful for testing outside of Microsoft Windows and has the additional benefit of saving images embedded into PDFs.
 
 Web browser
 
@@ -1580,15 +1596,16 @@ Brave
 #
 # Microsoft Windows, macOS, Ubuntu, Android, iOS
 
-I use the Brave as my everyday web browser which includes e-book development. The debug tools which have been inherited from Chromium allow simulation of different screen-sizes to test responsiveness.
-Brave is a modification of the Chromium web browser with support for the majority of tested Chrome extensions. It also has the following notable features:
+I use the Brave as my everyday web browser which includes e-book development. The debug tools which have been inherited from Chromium allow simulation of different screen-sizes to test responsiveness and I can check that the CSS is behaving as it should be.
+Brave is a modification of the Chromium web browser with support for the majority of tested Chrome extensions (though I couldn’t get the Kindle Cloud Reader extension working). It also has the following notable features:
 
 Brave Shields – contains advert and tracker blocking functionality built-in to the browser.
 Brave Sync – replaces Google Sync and can be used to syncronise settings and preferences across multiple devices using a unique password or by scanning a quick response (QR) code.
 Brave Rewards – Brave rewards its userbase for viewing advert notifications and sponsored “billboard” images on the new tab screen with an Ethereum-based cryptocurrency called Basic Attention Token (BAT). The user can then donate BAT to websites or certain social media profiles based on the amount of time they spend on those pages.
-Decentralised networking – Brave also has support for the InterPlanetary File System (IPFS), WebTorrent (a JavaScript Bittorrent client) and The Onion Router (TOR).
+Brave Wallet – a cryptocurrency wallet with access to live market data and the ability to store and transfer Ethereum (and other cryptocurrencies).
+Decentralised networking – Brave also has support for the InterPlanetary File System (IPFS), WebTorrent (a JavaScript Bittorrent client) and The Onion Router (TOR). Also a virtual private network (VPN) service that is provided by Guardian.
 
-According to the BAT whitepaper, traditional internet advertising by design doesn’t respect user privacy and often irritates them with tracking adverts. Brave boasts that user data doesn’t leave the browser and users are rewarded for the time they take viewing adverts.
+According to the BAT whitepaper, traditional internet advertising by design doesn’t respect user privacy and often irritates them with tracking adverts. Brave boasts that user data doesn’t leave the browser and users are rewarded with BAT for the time they take viewing adverts.
 
 Chrome
 # Microsoft Windows, macOS, Ubuntu, Android, iOS
@@ -1597,13 +1614,14 @@ Chrome is the dominant web browser and needs little introduction. It is Google�
 
 Image editor and publishing software
 
-British software house Serif develop affordable design software for Microsoft Windows, Apple macOS and the iPad that can be used as an alternative to the costly Adobe Creative Cloud (Adobe CC). Each program is purchased once per 1.0 version and is currently priced at £47.99 GBP for each program in the UK.
+British software house Serif develop affordable design software  called the Affinity trilogy for Microsoft Windows, Apple macOS and the iPad that can be used as an alternative to the costly Adobe Creative Cloud (Adobe CC). The main unique selling point is the Studiolink functionality that allows tools from Affinity program to be used in another without the need to export a file.
+Each program is purchased once per 1.0 version and is currently priced at £47.99 GBP. There are also frequent 50% off sales for the Affinity trilogy making the software more affordable.
 For some use cases, the Adobe CC subscription may be a better deal as it includes other programs that Serif have not created alternatives for such as Adobe Lightroom and Adobe XD, as well as services such as Adobe Typekit and Adobe Stock.
 
 Affinity Photo
 # Microsoft Windows, macOS, iOS (iPad)
 
-Affinity Photo is a raster image editor comparable to Adobe Photoshop.
+Affinity Photo is a raster image editor comparable to Adobe Photoshop. I primarily use it to crop raster images, though it’s mean
 
 Affinity Designer
 # Microsoft Windows, macOS, iOS (iPad)
@@ -1633,18 +1651,19 @@ Music player
 Spotify
 # Microsoft Windows, macOS, Ubuntu, iOS, Android, web
 
-Spotify is a popular music streaming service with a high coverage of many different artists. It has a free service with adverts and a paid subscription called Spotify Premium. Spotify Premium downloads the music
+Spotify is a popular music streaming service with a high coverage of many different artists. It has a free service with adverts and a paid subscription called Spotify Premium. Spotify Premium downloads the music and doesn’t interrupt playback with adverts.
 
 Bandcamp
 iOS, Android, web
 Bandcamp is a music service aimed at independent artists. Music can be purchased and downloaded in several formats such as .mp3, .flac and .ogg.
+
 SOMA.fm
 #
 iOS, Android, web
 
-SOMA.fm (https://somafm.com) is an independent advert-free radio station run by Rusty Hodge boasting 30 different playlists. Back at Oxford eBooks, the go-to station for background music while developing e-books was Groove Salad which plays ambient music.
+SOMA.fm (https://somafm.com) is an independent advert-free radio station run by Rusty Hodge boasting 30 different playlists. Back at Oxford eBooks, Groove Salad which plays ambient music was the go-to station for background music while developing e-books.
 
-There is also an unofficial Groove Salad Spotify playlist called Groove Salad Complete by beautifully chilled which contains an assortment of tracks that are typically played on Groove Salad.
+There is also an unofficial Groove Salad Spotify playlist called Gove Salad Complete by beautifully chilled which contains an assortment of tracks that are typically played on Groove Salad.
 
 #
 Spotify code for the Groove Salad Complete playlist
@@ -1673,7 +1692,7 @@ Waves - A Chillwave Mix
 Tokyo Drive - A Chillwave Mix
 
 References:
-The Chromium project contains most of Google Chrome’s source code and is licenced under the BSD licence. This allows projects such as Microsoft Edge, Opera, Brave
+The Chromium project contains most of Google Chrome’s source code and is licenced under the BSD licence. This allows projects such as Microsoft Edge, Opera, Brave and Vivaldi to both exist and thrive!
 Pruit Igoe is notably more frantic than most tracks on the The Journey playlist. It was used as soundtrack for the film Koyaanisqatsi which depicts the demolition of the Pruitt-Igoe social housing in St. Louis, Missouri. https://philipglass.com/glassnotes/pruit_igoe/ https://archive.ph/H2GBT
 </Text>
         </Document>
