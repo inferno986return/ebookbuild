@@ -1485,6 +1485,8 @@ This is my preferred software though I also have some alternatives you can try:
 
 Recommended
 Alternative
+7-Zip
+WinRAR, The Unarchiver
 Visual Studio Code
 Atom, Notepad++
 Windows Terminal
@@ -1499,6 +1501,8 @@ Kindle Previewer
 N/A
 Adobe Acrobat Reader DC
 Evince
+Kofax OmniPage Ultimate
+ABBYY FineReader, FreeOCR
 Affinity Photo
 Adobe Photoshop
 Affinity Designer
@@ -1514,20 +1518,25 @@ Apple Music
 
 
 Text editor
-A text editor is needed to create and then edit the XHTML, CSS and metadata.json files. Most of the time spent on an e-book will be using a text editor so it’s important that you can find it comfortable and easy to use.
-Text editors may be the most common type of computer program with many options to choose from and I am aware of just how defensive some users can be of their preferred text editor (especially the vi vs. emacs editor wars).
+
+A text editor is needed to create and then edit the XHTML, CSS and metadata.json files. Most of the time spent on an e-book will be using a text editor, so it’s important that you can find a program that is comfortable and easy to use.
+Text editors may be the most common type of computer program with many options to choose from and I am aware of just how defensive some users can be towards their preferred text editor (see the vi vs. emacs editor wars(https://en.wikipedia.org/wiki/Editor_war)).
 I previously used Notepad++ for the bulk of the text editing, though it has an outdated user interface and is restricted to Microsoft Windows. For those reasons I consider Atom and Visual Studio Code to be suitable replacements. 
 An appropriate text editor for e-book development should support the following features:
 
-Syntax highlighting for XHTML, CSS, JSON and Markdown.
-Find and replace with regular expressions
+Syntax highlighting for XHTML, CSS, JSON, Markdown and Python.
+Find and replace with regular expressions.
+A tabbed interface
 
 Visual Studio Code
 # Microsoft Windows, macOS, Ubuntu
 Visual Studio Code is my preferred text editor for several years.
 
+Atom
+
 
 Terminal emulator
+
 Both macOS and GNU/Linux have an excellent preinstalled terminal which requires little modification except for minor cosmetic changes such as the font size and background colour.
 Microsoft Windows on the other hand requires some configuration to get ebookbuild working. First, I recommend installing Windows Subsystem for Linux (WSL) which allows installation of a minimal GNU/Linux environment including the Bash shell.
 
@@ -1537,9 +1546,8 @@ Windows Terminal
 Windows Terminal is the terminal emulator I’ve been waiting patiently for its stable release since I first tested it in early to mid-2019. It has extensive customisability options (which are all written to a JSON file) and a tab system that allows different shells to run simultaneously, so I can run PowerShell and Bash in parallel.
 It is pre-installed on Windows 11. For Windows 10, it is recommended to install via the Microsoft Store. Alternatively it can be installed by alternative means such as via winget, separately as a .appx file or even compiled from source code in Visual Studio.
 
-
-
 Git client
+
 Git is a popular version control system (VCS) and I recommend using it for e-book development because it organises your workflow and backs up your work. In this book, I have provided a dedicated Introduction to Git and GitHub chapter for information about Git clients and how to get started with Git if you are complete newcomer.
 
 GitHub Desktop
@@ -1577,6 +1585,7 @@ Web reader − https://play.google.com/books
 
 
 PDF reader
+
 Adobe Acrobat Reader DC
 # Microsoft Windows, macOS, iOS, Android
 
@@ -1593,10 +1602,11 @@ Web browser
 A web browser is required to test the XHTML and CSS are working correctly, as well as testing the compiled ePub on Google Play Books web reader (https://play.google.com/books).
 
 Brave
+
 #
 # Microsoft Windows, macOS, Ubuntu, Android, iOS
 
-I use the Brave as my everyday web browser which includes e-book development. The debug tools which have been inherited from Chromium allow simulation of different screen-sizes to test responsiveness and I can check that the CSS is behaving as it should be.
+Brave is a web browser that has been forked from the Chromium project. I use the Brave as my everyday web browser which includes e-book development. The debug tools which have been inherited from Chromium allow simulation of different screen-sizes to test responsiveness and I can check that the CSS is behaving as it should be.
 Brave is a modification of the Chromium web browser with support for the majority of tested Chrome extensions (though I couldn’t get the Kindle Cloud Reader extension working). It also has the following notable features:
 
 Brave Shields – contains advert and tracker blocking functionality built-in to the browser.
@@ -1607,10 +1617,10 @@ Decentralised networking – Brave also has support for the InterPlanetary File 
 
 According to the BAT whitepaper, traditional internet advertising by design doesn’t respect user privacy and often irritates them with tracking adverts. Brave boasts that user data doesn’t leave the browser and users are rewarded with BAT for the time they take viewing adverts.
 
-Chrome
+Google Chrome
 # Microsoft Windows, macOS, Ubuntu, Android, iOS
 
-Chrome is the dominant web browser and needs little introduction. It is Google’s own web browser.
+Google Chrome is the dominant web browser and needs little introduction. It is Google’s own web browser since its inception in 2009.
 
 Image editor and publishing software
 
@@ -1621,7 +1631,7 @@ For some use cases, the Adobe CC subscription may be a better deal as it include
 Affinity Photo
 # Microsoft Windows, macOS, iOS (iPad)
 
-Affinity Photo is a raster image editor comparable to Adobe Photoshop. I primarily use it to crop raster images, though it’s mean
+Affinity Photo is a raster image editor comparable to Adobe Photoshop. I primarily use it to crop raster images, though it’s meant to be used for editing photographs.
 
 Affinity Designer
 # Microsoft Windows, macOS, iOS (iPad)
@@ -1646,6 +1656,8 @@ LibreOffice Writer
 
 E-book library software
 
+Calibri
+
 Music player
 
 Spotify
@@ -1654,15 +1666,18 @@ Spotify
 Spotify is a popular music streaming service with a high coverage of many different artists. It has a free service with adverts and a paid subscription called Spotify Premium. Spotify Premium downloads the music and doesn’t interrupt playback with adverts.
 
 Bandcamp
+
 iOS, Android, web
-Bandcamp is a music service aimed at independent artists. Music can be purchased and downloaded in several formats such as .mp3, .flac and .ogg.
+
+Bandcamp is a music service aimed at independent artists. Music can be purchased and then streamed on the mobile apps or downloaded in several formats such as .mp3, .flac and .ogg.
+There is a lot of independent music on Bandcamp that cannot be found on Spotify or Apple Music.
 
 SOMA.fm
+
 #
 iOS, Android, web
 
 SOMA.fm (https://somafm.com) is an independent advert-free radio station run by Rusty Hodge boasting 30 different playlists. Back at Oxford eBooks, Groove Salad which plays ambient music was the go-to station for background music while developing e-books.
-
 There is also an unofficial Groove Salad Spotify playlist called Gove Salad Complete by beautifully chilled which contains an assortment of tracks that are typically played on Groove Salad.
 
 #
@@ -1673,7 +1688,7 @@ If you find SOMA.fm to be music to your ears, then consider making a donation or
 
 Miscellaneous:
 
-The video game Grand Theft Auto: IV (GTA IV) has an in-game radio station called The Journey which has several ambient tracks which mostly work well as background music:
+The video game Grand Theft Auto: IV (GTA IV) has an in-game radio station called The Journey which has several ambient tracks that mostly work well as background music:
 
 Global Communication – 5:23 (Maiden Voyage) (1994)
 Terry Riley – A Rainbow In Curved Air (1969)
@@ -1693,6 +1708,7 @@ Tokyo Drive - A Chillwave Mix
 
 References:
 The Chromium project contains most of Google Chrome’s source code and is licenced under the BSD licence. This allows projects such as Microsoft Edge, Opera, Brave and Vivaldi to both exist and thrive!
+
 Pruit Igoe is notably more frantic than most tracks on the The Journey playlist. It was used as soundtrack for the film Koyaanisqatsi which depicts the demolition of the Pruitt-Igoe social housing in St. Louis, Missouri. https://philipglass.com/glassnotes/pruit_igoe/ https://archive.ph/H2GBT
 </Text>
         </Document>
