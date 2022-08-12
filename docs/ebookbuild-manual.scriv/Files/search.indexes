@@ -679,6 +679,8 @@ data structures. XML is just a low-level syntax; it requires a document type def
 XHTML) and associated application logic to give it semantics.” 
 —Eric S. Raymond, Art of Unix Programming
 
+//Need to mention the DOM and how the hierarchy works https://www.w3.org/TR/DOM-Level-1/introduction.html (https://archive.ph/5FrkB)
+
 HTML (HyperText Markup Language) is a markup language that is used to define the content on webpages. This technology is the backbone of e-books because it allows book content to be defined and placed each page.
 
 XHTML (eXtensible HyperText Markup Language) is the recommended language for creating the actual chapters of an e-book, it combines regular HTML (HyperText Markup Language) that is used to create webpages with XML (eXtensible Markup Language). Alternatively, you can use regular HTML though you can’t define custom tags (or can you?) and web browsers are more tolerant of obvious syntax errors when testing.
@@ -1501,6 +1503,8 @@ Kindle Previewer
 N/A
 Adobe Acrobat Reader DC
 Evince
+Windows Scan
+Not Another Printer Scanner 2 (NAPS2)
 Kofax OmniPage Ultimate
 ABBYY FineReader, FreeOCR
 Affinity Photo
@@ -1513,7 +1517,7 @@ Microsoft Word, Scrivener
 LibreOffice Writer
 Calibre
 N/A
-Spotify, Bandcamp, SOMA.fm, Miscellaneous
+Spotify, Bandcamp, SOMA.fm, miscellaneous
 Apple Music
 
 

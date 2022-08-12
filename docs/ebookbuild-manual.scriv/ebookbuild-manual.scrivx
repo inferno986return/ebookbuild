@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-06-16 12:13:24 +0100" ModID="D69B8934-2FE7-46F6-BCA1-A048DF429167">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-08-12 09:44:37 +0100" ModID="70EBDDF9-96A0-40A8-9E96-A09902486737">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0100" Modified="2022-01-24 14:45:06 +0100">
             <Title>Draft</Title>
@@ -25,13 +25,13 @@
                         <TextSelection>6669,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="9F167921-F2D1-4A95-95BC-62C19E8CBC9C" Type="Text" Created="2022-02-26 23:22:32 +0100" Modified="2022-06-16 12:13:23 +0100">
+                <BinderItem UUID="9F167921-F2D1-4A95-95BC-62C19E8CBC9C" Type="Text" Created="2022-02-26 23:22:32 +0100" Modified="2022-06-25 18:49:52 +0100">
                     <Title>Recommended Software</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>329,0</TextSelection>
+                        <TextSelection>6867,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="F04CF11A-06C8-4F16-A0A8-3B3721D4E02D" Type="Text" Created="2022-03-09 12:07:55 +0100" Modified="2022-03-09 12:08:19 +0100">
@@ -79,13 +79,13 @@
                         <TextSelection>583,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8" Type="Text" Created="2022-02-06 00:45:13 +0100" Modified="2022-05-10 12:10:44 +0100">
+                <BinderItem UUID="3E735A02-28ED-44F4-94C9-EDEF228BF9A8" Type="Text" Created="2022-02-06 00:45:13 +0100" Modified="2022-08-12 09:44:34 +0100">
                     <Title>Introduction to XHTML</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>8383,0</TextSelection>
+                        <TextSelection>805,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="EB5E357B-9535-4E98-B627-20DD9228293E" Type="Text" Created="2022-03-21 13:16:44 +0100" Modified="2022-05-16 12:25:30 +0100">
@@ -106,13 +106,13 @@
                         <TextSelection>1694,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
-                <BinderItem UUID="ACD131AA-5177-42FB-8152-CC3A73D2FF81" Type="Text" Created="2022-02-13 17:12:01 +0100" Modified="2022-03-01 13:56:40 +0100">
+                <BinderItem UUID="ACD131AA-5177-42FB-8152-CC3A73D2FF81" Type="Text" Created="2022-02-13 17:12:01 +0100" Modified="2022-08-08 15:02:00 +0100">
                     <Title>Introduction to Git and GitHub</Title>
                     <MetaData>
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>11341,0</TextSelection>
+                        <TextSelection>1486,0</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="0E872B99-EAAB-4308-B919-44645867118A" Type="Text" Created="2022-02-14 12:00:12 +0100" Modified="2022-03-04 18:24:48 +0100">
@@ -338,11 +338,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="4" Characters="29" Date="2022-06-16 12:13:24 +0100"/>
+        <PreviousSession Words="18" Characters="134" Date="2022-08-12 09:44:37 +0100"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-06-16 00:00:00 +0100">
-        <DraftWordCount>4</DraftWordCount>
-        <DraftCharCount>29</DraftCharCount>
+    <RecentWritingHistory Date="2022-08-12 00:00:00 +0100">
+        <DraftWordCount>18</DraftWordCount>
+        <DraftCharCount>134</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
