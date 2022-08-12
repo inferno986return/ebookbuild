@@ -771,7 +771,7 @@ Italic is declared with content using the &lt;i&gt;&lt;/i&gt;. Historically, bol
 Span
 Mozilla reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span
 
-Span tags are used to apply CSS formatting to specified content within other tags. Some formatting such as text colour, underlining and strikethroughs have no specific tag and require span tags to be used. For example, I have this sentence:
+Span tags are used to apply CSS formatting to specified content within other tags. Some formatting such as text colour, underlining and strikethroughs have no specific tag themselves or their tag within HTML is incomptable with the EPUB standard. They require span tags to be used. For example, I have this sentence:
 
 This text is red and underlined.
 
@@ -804,14 +804,20 @@ External links can be declared using HyperText Transfer Protocol Secure (HTTPS) 
 
 //
 
-E-mail addresses can be hyperlinked using “mailto:”, though some e-readers such as Google Play Books don’t support them:
+The anchor tag also supports various Uniform Resource Identifier (URI) schemes for content such as e-mail addresses and telephone numbers.
+
+E-mail addresses can be hyperlinked using “mailto:” though some e-readers such as Google Play Books don’t support them:
 
 &lt;p&gt;E-mail: &lt;a href=”mailto:hal@example.com”&gt;hal@example.com&lt;/a&gt;&lt;/p&gt;
 
 hal@example.com
 
+Telephone numbers can be hyperlined using “tel:”:
+
+&lt;p&gt;Telephone: &lt;a href=”tel:555029544”&gt;555-0295-444&lt;/a&gt;&lt;/p&gt;
+
 Superscripting and subscripting
-Superscript and subscript have their own tags. These are &lt;sup&gt;,&lt;/sup&gt; and &lt;sub&gt;&lt;/sub&gt; respectively. For example:
+Superscript and subscript have their own tags. These are &lt;sup&gt;&lt;/sup&gt; and &lt;sub&gt;&lt;/sub&gt; respectively. For example:
 
 &lt;p&gt;Payday is the 1&lt;sup&gt;st&lt;/sup&gt; of each month.&lt;/p&gt;
 
