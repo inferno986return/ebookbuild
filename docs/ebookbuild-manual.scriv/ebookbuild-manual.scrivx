@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-08-12 09:55:21 +0100" ModID="F00C3700-0023-4303-A966-8FD9F001459C">
+<ScrivenerProject Template="No" Version="2.0" Identifier="BD97059C-8497-46D8-841A-D05FF303EA8A" Creator="SCRWIN-3.1.1.0" Device="SSLAP2777" Modified="2022-09-20 11:15:29 +0100" ModID="F00C3700-0023-4303-A966-8FD9F001459C">
     <Binder>
         <BinderItem UUID="13B4601C-AF6A-42FD-ABE0-A3FBC61428D6" Type="DraftFolder" Created="2022-01-24 14:45:06 +0100" Modified="2022-01-24 14:45:06 +0100">
             <Title>Draft</Title>
@@ -13,7 +13,7 @@
                         <IncludeInCompile>Yes</IncludeInCompile>
                     </MetaData>
                     <TextSettings>
-                        <TextSelection>246,0</TextSelection>
+                        <TextSelection Caret="244">0,244</TextSelection>
                     </TextSettings>
                 </BinderItem>
                 <BinderItem UUID="AA04C080-54B1-4AA8-993B-21F0F0F09032" Type="Text" Created="2022-01-27 13:35:50 +0100" Modified="2022-05-16 12:11:46 +0100">
@@ -338,11 +338,11 @@
     <ProjectTargets Notify="No">
         <DraftTarget Type="Words" CountIncludedOnly="Yes" CurrentCompileGroupOnly="No" Deadline="2022-01-24 14:45:06 +0000" IgnoreDeadline="Yes">0</DraftTarget>
         <SessionTarget Type="Words" CountDraftOnly="No" AllowNegatives="No" ResetType="Time" ResetTime="01:00" DeterminedFromDeadline="No" CanWriteOnDeadlineDate="Yes" WritingDays="">0</SessionTarget>
-        <PreviousSession Words="65" Characters="459" Date="2022-08-12 09:55:21 +0100"/>
+        <PreviousSession Words="0" Characters="0" Date="2022-09-20 11:15:29 +0100"/>
     </ProjectTargets>
-    <RecentWritingHistory Date="2022-08-12 00:00:00 +0100">
-        <DraftWordCount>65</DraftWordCount>
-        <DraftCharCount>459</DraftCharCount>
+    <RecentWritingHistory Date="2022-09-20 00:00:00 +0100">
+        <DraftWordCount>0</DraftWordCount>
+        <DraftCharCount>0</DraftCharCount>
         <OtherWordCount>0</OtherWordCount>
         <OtherCharCount>0</OtherCharCount>
     </RecentWritingHistory>
