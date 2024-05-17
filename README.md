@@ -30,7 +30,9 @@ These are required to make `ebookbuild` work though I do try to minimise externa
 
 a. **Download and install Python 3.12** – on Microsoft Windows this can be done by downloading Python 3.12 from the [official Python website](https://www.python.org/). In WSL Ubuntu, use the following command `sudo apt update && sudo apt upgrade python3` to ensure the latest version.
 
-b. **Download the latest epubcheck** – [epubcheck](https://www.w3.org/publishing/epubcheck/) is provided from the official W3C website and is used to ensure .epub file compliance with the standard. I recommend using the latest version as this GitHub repository may fall behind.
+b. **Install the OpenJDK** – this is to run epubcheck which is a Java application
+
+c. **Download the latest epubcheck** – [epubcheck](https://www.w3.org/publishing/epubcheck/) is provided from the official W3C website and is used to ensure .epub file compliance with the standard. I recommend using the latest version as this GitHub repository may fall behind.
 
 ### 4. How to compile and test a .epub
 
