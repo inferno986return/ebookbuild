@@ -6,6 +6,8 @@ The sample file included is the free documentation as required by GNU GPLv3 to g
 
 I have plans to write a premium how-to guide which goes into much more detail.
 
+`ebookbuild` is stylistically written in lowercase and with a monospaced font to resemble a Bash command.
+
 ## Summary
 You can use `ebookbuild` on Microsoft Windows, macOS and GNU/Linux. My approach to e-book development was designed to be as cross-platform as possible.
 
