@@ -32,6 +32,12 @@ a. **Download and install Python 3.12** – on Microsoft Windows this can be don
 
 b. **Download the latest epubcheck** – [epubcheck](https://www.w3.org/publishing/epubcheck/) is provided from the official W3C website and is used to ensure .epub file compliance with the standard. I recommend using the latest version as this GitHub repository may fall behind.
 
+### 4. How to compile and test a .epub
+
+a. **Open Terminal and change directory to the `e-book` folder** - the command should look like `cd e-book`
+
+b. **Run ebookbuild and check the .epub file's compliance** - I use this command to build a new .epub and run epubcheck all at once `python3 ebookbuild.py && java -jar epubcheck.jar epubfile.epub` 
+
 ## Licencing
 
 `ebookbuild` is designed to be always free. Both free as in freedom and free as in beer, so it is licenced under the strong copyleft GNU General Public License 3 (GPLv3).
