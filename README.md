@@ -1,85 +1,38 @@
-# ebookbuild
+# `ebookbuild`
 
-*Get started with `ebookbuild` by reading the [wiki](https://github.com/inferno986return/ebookbuild/wiki).*
+This is the GitHub repository for `ebookbuild` which is a Python 3 script that can create compliant EPUB 2.0.1 files, with plans to support EPUB 3.3 in the future.
 
-A very WIP cross-platform FOSS tool to create e-books properly, built entirely with FOSS technologies (so no vendor lock-in). Currently ebookbuild makes both reflowable and fixed-layout ePub 2.0.1 e-books.
+The sample file included is the free documentation as required by GNU GPLv3 to get you started and familiar with how `ebookbuild` works.
 
-Currently the code is found in individual repositories rather than centralised here in this repository. The latest e-book is *The Fall of Western Man*, the version of ebookbuild's main script `CreateE-book.py` is 0.8111 (needs to support nested pages and the rest of the legacy ePub 2.0.1 standard for v1.0).
+I have plans to write a premium how-to guide which goes into much more detail.
 
-ebookbuild is programmed in Python 3, although there are considerations to possibly switch language for speed improvements. I may use tkinter to develop a GUI.
+## Summary
 
-I may develop several scripts related to e-book development under the ebookbuild name.
+### 1. Setup Windows Subsystem for Linux (WSL)
+Windows Subsystem for Linux (WSL) is available for Microsoft Windows 10 and 11. Skip this step if you are not using Microsoft Windows and instead using a Mac or GNU/Linux. 
 
-## Features
-*NOTE: ebookbuild has a bug where it generates backslashes on Windows for the Content.opf. So I recommend compiling e-books using Windows Subsystem for Linux on Windows, or via the native macOS / GNU/Linux terminal.*
+Try this guide from Microsoft: https://learn.microsoft.com/en-us/windows/wsl/install
 
-### v0.8114 Features (current)
-* Fixed SHA-256 generation. I have tested the checksums with the Bash `sha256sum` and PowerShell `Get-FileHash` commands.
-* Added timestamp for the checksums in UTC.
+You will also need a GNU/Linux distribution, I recommend using Ubuntu which can be installed from the Microsoft Store.
 
-### v0.8113 Features
-* Changed script name from `CreateE-book.py` to the simpler `ebookbuild.py`.
-* Saves MD5, SHA-256 and SHA-512 checksums with a datestamps and timestamps.
+### 2. Download and install the following software
+You will need a text editor and a web browser. You can use Microsoft Edge or Google Chrome, but I recommend the Brave Browser:
 
-### v0.8112 Features
+a. **Install a text editor** – Text editors are a matter of personal preference, though I recommend Visual Studio Code as my go-to text editor of choice. However, the ideal text editor should be designed for programming and have built-in syntax highlighting for these file types: `.xhtml`, `.css`, `.json`, `.xml`, `.py`
 
-### v0.8111 Features
-* Added a GNU GPL-compliant (I hope) header to `ebookbuild` when run on the command-line.
-* Changed SHA512 to SHA256 (apparently it requires less resources to generate and is a common standard anyway, I am happy to discuss this and might include all three if desired).
+b. **Install a Git client (optional)** – This is optional but I do recommend using [GitHub Desktop](https://desktop.github.com/) and a Git hosting provider such as GitHub, GitLab or Bitbucket to host the files, keep track of changes and easily revert changes if things go awry.
 
-### v0.811 Features (and prior versions)
-* Supports ePub 2.0.1.
-* Supports reflowable and fixed-layout e-books.
-* Supports 1 layer of anchor tags in the `toc.ncx`.
-* Books generated convert nicely to .Mobi in Kindle Previewer (though images need to be centred with CSS `text-align: center;`).
-* Runs on GNU Bash, IDLE and Thonny (for now).
-* Shows MD5 and SHA512 hashes of the ePub file at the end output (the built-in datestamp and timestamp will ensure different hashes for each ePub generated) and saves them to `checksums.txt`.
-* Fixed a bug so that any number of .otf/.ttf fonts can be added to an ePub.
+c. **Install the Brave Browser (optional)** – This is also optional, but Brave has similar functionality to Chrome along with additional features and an emphasis on privacy.
 
-### Planned features
+### 3. Download the following dependencies
+These are required to make `ebookbuild` work though I do try to minimise external dependencies:
 
-* Support ePub 3.1 and any future ePub releases.
-* Support nested pages in the `toc.ncx`. (for version 1.0)
-* Support 3 layers of anchor tags in the `toc.ncx`. (for version 1.0)
-* Support XHTML and CSS minification and obfuscation.
-* Support compression (particularly desirable for image-heavy e-books).
-* Support the ONIX 3 standard fully within the `metadata.json`.
-* Maybe a better way to uniquely identify individual ePub builds (fingerprint) than just checksums?
+a. **Download and install Python 3.12** – on Microsoft Windows this can be done by downloading Python 3.12 from the official website. In WSL Ubuntu, use the following command `sudo apt update && sudo apt upgrade python3` to ensure the latest version.
 
-## Examples
-ebookbuild has been used to make the following e-books. Projects can be commercial or freely available to download.
+b. **Download the latest epubcheck** – [epubcheck](https://www.w3.org/publishing/epubcheck/) is provided from the official W3C website and is used to ensure .epub file compliance with the standard. I recommend using the latest version as this GitHub repository may fall behind.
 
-### Commercial
+## Licencing
 
-|Title/Website | Author | Description |
-|:------------:|:------:|:-----------:|
-|              |        |             |
+`ebookbuild` is designed to be always free. Both free as in freedom and free as in beer, so it is licenced under the strong copyleft GNU General Public License 3 (GPLv3).
 
-
-### Free and sample projects
-
-| Title/Website | Author | Description |
-|:-------------:|:--------------------:|:----------:|
-|[The Cathedral and the Bazaar](https://github.com/inferno986return/cathedral-bazaar-ebook) | Eric S. Raymond | |
-|[How We Are Entertained: The Consequences of the 1983 Video Game Crash](https://github.com/inferno986return/1983VideoGameCrash-Book) | Hal Motley | |
-|[Soldering is Easy: Here's How to Do It (Extended Version)](https://github.com/inferno986return/FullSolderComic-ebook) | Mitch Altman, Andie Nordgren, Jeff Keyzer | |
-|[Making Games with Python & Pygame (Unofficial 2018 Edition)](https://github.com/inferno986return/Pygame-ebook) | Al Sweigart, Hal Motley | |
-|[Linux is Badass: Slightly More Badass Edition](https://github.com/inferno986return/LinuxIsBadass) | Bryan Lunduke | |
-|[The Fall of Western Man](https://github.com/inferno986return/the-fall-of-western-man) | Mark Collett | |
-|[Ligi's Survival Guide](https://github.com/inferno986return/SurvivalManual-ebook)] | Ligi | |
-|Pirate Cinema | Cory Doctorow | | <!--Need to clone the repo across to GitHub-->
-|Essential C | Nick Parlante | | <!--Need to clone the repo across to GitHub-->
-
-### Templates
-
-| Title/Website | Author | Description |
-|:-------------:|:--------------------:|:----------:|
-|[The Illustrated Book of Patience Games](https://github.com/inferno986return/Illustrated-Patience-Games-ebook) | Professor Hoffman | |
-
-## Licensing
-
-I have licenced ebookbuild under GNU GPLv3. See LICENSE.md for further information.
-
-## And finally...
-
-If ebookbuild has helped you and you want to give back, buy me a coffee (or two) via https://www.paypal.me/HalMotley.
+epubcheck is included within this repository.
