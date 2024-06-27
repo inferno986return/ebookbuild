@@ -40,10 +40,16 @@ c. **Download the latest epubcheck** – [epubcheck](https://www.w3.org/publishi
 
 a. **Open Terminal and change directory to the `e-book` folder** - the command should look like `cd e-book`
 
-b. **Run ebookbuild and check the .epub file's compliance** - I use this command to build a new .epub and run epubcheck all at once `python3 ebookbuild.py && java -jar epubcheck.jar epubfile.epub` 
+b. **Run ebookbuild and check the .epub file's compliance** - I use this command to build a new .epub and run epubcheck all at once `python3 ebookbuild.py && java -jar epubcheck.jar epubfile.epub`
+
+## Checksums
+
+`ebookbuild` generates checksums for the output EPUB using the MD5, SHA-256 and SHA-512 hash algorithms using the built-in Python 3 module `hashlib`. This can be useful for verifying the EPUB file's integrity and to catch potential leakers of advance reader copies (ARCs).
+
+Also, some piracy websites allow searching by MD5 which would heavily imply the file was uploaded directly by the recipient.
 
 ## Licencing
 
-`ebookbuild` is designed to be always free. Both free as in freedom and free as in beer, so it is licenced under the strong copyleft GNU General Public License 3 (GPLv3).
+`ebookbuild` is designed to be always free. Both free as in freedom and free as in beer, so it is licenced under the strong copyleft GNU General Public License 3 (GPLv3). It's also free of non-disclosure agreements (NDAs), so I encourage the promotion and discusion of this tool in addition to its continued development.
 
 epubcheck is included within this repository.
