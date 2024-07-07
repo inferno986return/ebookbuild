@@ -50,6 +50,6 @@ Also, some piracy websites allow searching by MD5 which would heavily imply the 
 
 ## Licencing
 
-`ebookbuild` is designed to be always free. Both free as in freedom and free as in beer, so it is licenced under the strong copyleft GNU General Public License 3 (GPLv3). It's also free of non-disclosure agreements (NDAs), so I encourage the promotion and discusion of this tool in addition to its continued development.
+`ebookbuild` is designed to be always free. Both free as in freedom and free as in beer, so it is licenced under the strong copyleft GNU General Public License 3 (GPLv3). It's also free of non-disclosure agreements (NDAs), so I encourage the promotion and discussion of this tool in addition to its continued development.
 
 epubcheck is included within this repository.
