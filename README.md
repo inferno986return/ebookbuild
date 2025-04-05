@@ -32,9 +32,11 @@ These are required to make `ebookbuild` work though I do try to minimise externa
 
 a. **Download and install Python 3.12** – on Microsoft Windows this can be done by downloading Python 3.12 from the [official Python website](https://www.python.org/). In WSL Ubuntu, use the following command `sudo apt update && sudo apt upgrade python3` to ensure the latest version.
 
-b. **Install the OpenJDK** – this is to run epubcheck which is a Java application
+b. **Install the lxml library** – `ebookbuild` now relies upon the extensive lxml library to create the XML files used by the EPUB standard. In WSL Ubuntu, use the following command `pip install lxml` to install the latest version of lxml.
 
-c. **Download the latest epubcheck** – [epubcheck](https://www.w3.org/publishing/epubcheck/) is provided from the official W3C website and is used to ensure .epub file compliance with the standard. I recommend using the latest version as this GitHub repository may fall behind.
+c. **Install the OpenJDK** – this is to run epubcheck which is a Java application
+
+d. **Download the latest epubcheck** – [epubcheck](https://www.w3.org/publishing/epubcheck/) is provided from the official W3C website and is used to ensure .epub file compliance with the standard. I recommend using the latest version as this GitHub repository may fall behind.
 
 ### 4. How to compile and test a .epub
 
@@ -46,7 +48,7 @@ b. **Run ebookbuild and check the .epub file's compliance** - I use this command
 
 `ebookbuild` generates checksums for the output EPUB using the MD5, SHA-256 and SHA-512 hash algorithms using the built-in Python 3 module `hashlib`. This can be useful for verifying the EPUB file's integrity and to catch potential leakers of advance reader copies (ARCs).
 
-Also, some piracy websites allow searching by MD5 which would heavily imply the file was uploaded directly by the recipient.
+Also, some shadow libaries (i.e. piracy websites) allow searching for e-books by their MD5 checksum which would heavily imply the file was uploaded directly by the recipient.
 
 ## Licencing
 
