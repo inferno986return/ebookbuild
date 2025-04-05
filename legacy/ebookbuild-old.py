@@ -1,40 +1,41 @@
 #!/usr/bin/env python
 
-#ebookbuild.py v0.8115 - Generates an ePub file using data from the metadata.json.
+#ebookbuild.py v0.82.3 - Generates an ePub file using data from the metadata.json.
 
 #This file is part of the ebookbuild project (also known as Project Zylon) which is licensed under GNU General Public License v3.0 (GNU GPLv3): https://www.gnu.org/licenses/gpl-3.0.en.html
 
 #opf = "OEBPS/content.opf"
 #ncx = "OEBPS/toc.ncx"
 
-import os
-import datetime, time
-import json
-from collections import OrderedDict
-import re
-import zipfile
-import hashlib
+# remove time from import
+
+import os, datetime, json, zipfile, hashlib, re
+# from collections import OrderedDict
 
 #Intro text
-print()
-print("================================================")
-print("ebookbuild, v0.8115 - Copyright (C) 2021 Hal Motley")
-print("https://www.github.com/inferno986return/ebookbuild/")
-print()
-print("This program comes with ABSOLUTELY NO WARRANTY, for details see GPL-3.txt.")
-print("This is free software and you are welcome to redistribute it under certain conditions.")
-print("================================================")
-print()
+print(f"""
+================================================
+ebookbuild, v0.82.3 - Copyright (C) 2025 Hal Motley
+https://www.github.com/inferno986return/ebookbuild/
+================================================
+
+This program comes with ABSOLUTELY NO WARRANTY, for details see GPL-3.txt.
+This is free software and you are welcome to redistribute it under certain conditions.
+
+""")
 
 #JSON extraction magic
 with open("metadata.json") as json_file:
-    data = json.load((json_file), object_pairs_hook=OrderedDict) #For some reason the order is randomised, this preserves the order.
+    data = json.load((json_file)) # Removed OrderedDict - Python 3.6+
 
 #Create a compatible content.opf from scratch.
 def GenOPF():
-    utctime = datetime.datetime.utcnow().replace(microsecond=0).isoformat()
+    utctime = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
+    reflowable = ("Reflowable", "reflowable", "reflow", "r")
+    fixed_layout = ("Fixed layout", "Fixed Layout", "fixed layout", "fixed", "f")
 
     opf = open(data["containerFolder"] + os.sep + "content.opf", "w", encoding="utf-8")
+
     opf.write('<?xml version="1.0" encoding="UTF-8" standalone="no"?>')
     opf.write('<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">\n')
 
@@ -48,13 +49,14 @@ def GenOPF():
     opf.write('\t\t<dc:date>' + utctime + '</dc:date>\n') #Date and time using ISO 8601 to ensure a unique checksum (YYYY-MM-DDThh:mm:ss)
     opf.write('\t\t<dc:language>' + data["language"] + '</dc:language>\n')
     opf.write('\t\t<dc:rights>' + data["rights"] + '</dc:rights>\n')
+    opf.write('\t\t<dc:description>' + data["description"] + '</dc:description>\n')
     opf.write('\t\t<meta content="cover" name="cover"/>\n')
 
     #Fixed (non-reflowable) support
-    if (data["textPresentation"] == "Reflowable" or data["textPresentation"] == "reflowable" or data["textPresentation"] == "reflow"):
+    if (data["textPresentation"] in reflowable):
         print('e-book type: Reflowable')
 
-    elif (data["textPresentation"] == "Fixed layout" or data["textPresentation"] == "Fixed Layout" or data["textPresentation"] == "fixed layout" or data["textPresentation"] == "fixed"):
+    elif (data["textPresentation"] in fixed_layout):
         opf.write('\t\t<meta name="fixed-layout" content="true"/>\n')
         print('e-book type: Fixed layout')
 
@@ -93,44 +95,39 @@ def GenOPF():
             filepath = subdir + os.sep + file
             correctfilepath = filepath.replace(data["containerFolder"] + os.sep, "") #removes the redudant OEBPS
 
+            jpeg_files = (".jpg", ".JPG", ".jpeg", ".JPEG", ".jpe", ".JPE")
+            png_files = (".png", ".PNG")
+            gif_files = (".gif", ".GIF")
+
             if file == data["epubCover"]:
 
-                if filepath.endswith(".jpg") or filepath.endswith(".jpeg") or filepath.endswith(".jpe"):
+                if filepath.endswith(jpeg_files):
                     opf.write('\t\t<item href="' + correctfilepath + '" id="cover" media-type="image/jpeg"/>\n')
                     print (filepath)
 
-                elif filepath.endswith(".png"):
+                elif filepath.endswith(png_files):
                     opf.write('\t\t<item href="' + correctfilepath + '" id="cover" media-type="image/png"/>\n')
                     print (filepath)
 
-                elif filepath.endswith(".gif"):
+                elif filepath.endswith(gif_files):
                     opf.write('\t\t<item href="' + correctfilepath + '" id="cover" media-type="image/gif"/>\n')
                     print (filepath)
                     imageindex += 1
 
-                elif filepath.endswith(".svg"):
-                    opf.write('\t\t<item href="' + correctfilepath + '" id="cover" media-type="image/svg+xml"/>\n')
-                    print (filepath)
-
             if file != data["epubCover"]:
 
-                if filepath.endswith(".jpg") or filepath.endswith(".jpeg") or filepath.endswith(".jpe"):
+                if filepath.endswith(jpeg_files):
                     opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/jpeg"/>\n')
                     print (filepath)
                     imageindex += 1
 
-                elif filepath.endswith(".png"):
+                elif filepath.endswith(png_files):
                     opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/png"/>\n')
                     print (filepath)
                     imageindex += 1
 
-                elif filepath.endswith(".gif"):
+                elif filepath.endswith(gif_files):
                     opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/gif"/>\n')
-                    print (filepath)
-                    imageindex += 1
-
-                elif filepath.endswith(".svg"):
-                    opf.write('\t\t<item href="' + correctfilepath + '" id="image' + str(imageindex) + '" media-type="image/svg+xml"/>\n')
                     print (filepath)
                     imageindex += 1
 
@@ -163,12 +160,15 @@ def GenOPF():
             filepath = subdir + os.sep + file
             correctfilepath = filepath.replace(data["containerFolder"] + os.sep, "") #removes the redudant OEBPS
 
-            if filepath.endswith(".ttf"):
+            ttf_files = (".ttf", ".TTF")
+            otf_files = (".otf", ".OTF")
+
+            if filepath.endswith(ttf_files):
                 opf.write('\t\t<item href="' + correctfilepath + '" id="font' + str(fontindex) + '" media-type="font/truetype"/>\n')
                 print (filepath)
                 fontindex += 1
 
-            elif filepath.endswith(".otf"):
+            elif filepath.endswith(otf_files):
                 opf.write('\t\t<item href="' + correctfilepath + '" id="font' + str(fontindex) + '" media-type="font/opentype"/>\n')
                 print (filepath)
                 fontindex += 1
@@ -198,6 +198,17 @@ def GenOPF():
         currentpage += 1
 
     opf.write('\t</spine>\n')
+
+    #Write the guide tags - need to make these optional
+    if data["enableGuide"] == "true":
+        opf.write('\t<guide>\n')
+        opf.write('\t\t<reference type="text" ' + 'href="' + data["startReadingfile"] + '" ' + 'title="' + data["startReadingpage"] + '"/>\n')
+        # <reference type="text" href="pages/page001.html" title="Front Page"/>
+        opf.write('\t\t<reference type="toc" ' + 'href="' + data["tocFile"] + '" ' + 'title="' + data["tocPage"] + '"/>\n')
+        # <reference type="toc" href="pages/page005.html" title="Contents"/>
+        opf.write('\t\t<reference type="cover" ' + 'href="' + data["frontCoverfile"] + '" ' + 'title="' + data["frontCoverpage"] + '"/>\n')
+        # <reference type="cover" href="titlepage.xhtml" title="Cover"/>
+        opf.write('\t</guide>\n')
 
     #End of file
     opf.write('</package>')
@@ -348,40 +359,47 @@ def GenEpub():
 
 def GenChksum():
 #Generate and show MD5 and SHA512 checksums for the ePub using hashlib
-    utctime = datetime.datetime.utcnow().replace(microsecond=0).isoformat(' ')
+    enable_checksums = ["True", "true", "Yes", "yes", "Y", "y"]
 
-    md5 = hashlib.md5()
-    sha256 = hashlib.sha256()
-    sha512 = hashlib.sha512()
+    if data["enableChecksums"] in enable_checksums:
+        utctime = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat(' ')
 
-    with open(data["fileName"] + ".epub", 'rb') as afile:
-        buffer = afile.read()
+        md5 = hashlib.md5()
+        sha256 = hashlib.sha256()
+        sha512 = hashlib.sha512()
 
-        md5.update(buffer)
-        sha256.update(buffer)
-        sha512.update(buffer)
+        with open(data["fileName"] + ".epub", 'rb') as afile:
+            buffer = afile.read()
 
-        # Seperates the checksum output from the files going into the book.
-        print()
-        print("-This output is saved to checksums.txt-")
-        print()
-        print("Checksum values for " + data["fileName"] + ".epub on " + str(utctime) + " UTC")
-        print("=============================================================================")
-        print()
-        print("MD5: "+ md5.hexdigest())
-        print("SHA-256: "+ sha256.hexdigest())
-        print("SHA-512: "+ sha512.hexdigest())
-        print()
+            md5.update(buffer)
+            sha256.update(buffer)
+            sha512.update(buffer)
 
-        chksum = metainf = open("checksums.txt", "w")
+            # Seperates the checksum output from the files going into the book.
+            print(f"""
+    -This output is saved to checksums.txt-
+                  
+    WARNING: MD5 is cryptographically weak and is not recommended for verifying file integrity! Use SHA-256 or SHA-512 instead.
+              
+    Checksum values for {data["fileName"]}.epub on {str(utctime)} UTC
+    ==========================================================
 
-        chksum.write("Checksum values for " + data["fileName"] + ".epub on " + str(utctime) + "UTC" + "\n")
-        chksum.write("=================================================================================\n")
-        chksum.write("\n")
+    MD5: {md5.hexdigest()}
+    SHA-256: {sha256.hexdigest()}
+    SHA-512: {sha512.hexdigest()}
+            """)
 
-        chksum.write("MD5: " + md5.hexdigest() + "\n")
-        chksum.write("SHA-256: " + sha256.hexdigest() + "\n")
-        chksum.write("SHA-512: " + sha512.hexdigest() + "\n")
+            chksum = metainf = open("checksums.txt", "w")
+
+            chksum.write("Checksum values for " + data["fileName"] + ".epub on " + str(utctime) + "UTC" + "\n\n")
+
+            chksum.write("WARNING: MD5 is cryptographically weak and is not recommended for verifying file integrity! Use SHA-256 or SHA-512 instead.\n\n")
+
+            chksum.write("=================================================================================\n\n")
+
+            chksum.write("MD5: " + md5.hexdigest() + "\n")
+            chksum.write("SHA-256: " + sha256.hexdigest() + "\n")
+            chksum.write("SHA-512: " + sha512.hexdigest() + "\n")
 
 
 GenOPF()
