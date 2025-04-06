@@ -21,7 +21,7 @@ ebookbuild is a program is designed to do one thing well. It is a Python 3 scrip
 
 Not working? Try installing lxml via pip with 'pip install lxml'.
 
-The v1.0 release will include support and testing for the 4 layers of indentation.
+The v1.0 release will include support and testing for the 4 layers of indentation. I may also support .html files for the sake of completion but I don't recommend using them over .xhtml.
 
 This program comes with ABSOLUTELY NO WARRANTY, for details see GPL-3.txt.
 This is free software and you are welcome to redistribute it under certain conditions.
