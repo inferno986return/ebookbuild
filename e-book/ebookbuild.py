@@ -11,7 +11,7 @@ from lxml import etree
 print(
     """
 ======================================================
-ebookbuild 2.0.1, v0.9 - Copyright (C) 2025 Hal Motley
+ebookbuild 2.0.1, v1.0 - Copyright (C) 2025 Hal Motley
 https://www.github.com/inferno986return/ebookbuild/
 ======================================================
 
@@ -21,7 +21,7 @@ ebookbuild is a program is designed to do one thing well. It is a Python 3 scrip
 
 Not working? Try installing lxml via pip with 'pip install lxml'.
 
-The v1.0 release will include support and testing for the 4 layers of indentation. I may also support .html files for the sake of completion but I don't recommend using them over .xhtml.
+The v1.0 release includes support for infinite heading nesting in the toc.ncx but you should use up to 4 at most. There is also support for .html files as they are supported within EPUB 2.0.1 for the sake of completion but I don't recommend using them over .xhtml.
 
 This program comes with ABSOLUTELY NO WARRANTY, for details see GPL-3.txt.
 This is free software and you are welcome to redistribute it under certain conditions.
@@ -34,7 +34,6 @@ All trademarks belong to their respective owners.
 with open("metadata.json", "r") as json_file:
     data = json.load(json_file)
 
-# Function to generate content.opf using lxml
 def GenOPF():
     # Get current UTC time in ISO format
     utctime = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat()
@@ -117,10 +116,11 @@ def GenOPF():
 
     # Add page files to the manifest
     for page in data["pages"]:
-        page_id = page["fileName"].replace(".xhtml", "")
+        page_id = page["fileName"].replace(".xhtml", "").replace(".html", "") # Remove both extensions
         page_id = re.sub(r"^\d+", "", page_id)
         page_id = re.sub(r"\-", "", page_id)
-        etree.SubElement(manifest, "item", attrib={"href": page["fileName"], "id": page_id, "media-type": "application/xhtml+xml"})
+        media_type = "application/xhtml+xml" if page["fileName"].endswith(".xhtml") else "application/xhtml+xml" if page["fileName"].endswith(".html") else "application/xhtml+xml" # Default to xhtml
+        etree.SubElement(manifest, "item", attrib={"href": page["fileName"], "id": page_id, "media-type": media_type})
 
     # Add font files to the manifest
     fontindex = 0
@@ -141,7 +141,7 @@ def GenOPF():
 
     # Add page references to the spine
     for page in data["pages"]:
-        page_id = page["fileName"].replace(".xhtml", "")
+        page_id = page["fileName"].replace(".xhtml", "").replace(".html", "") # Remove both extensions
         page_id = re.sub(r"^\d+", "", page_id)
         page_id = re.sub(r"\-", "", page_id)
         etree.SubElement(spine, "itemref", idref=page_id)
@@ -165,9 +165,8 @@ def GenNCX():
     head = etree.SubElement(ncx, "head")
     etree.SubElement(head, "meta", name="dtb:uid", content=data["ISBN"])
 
-    # Determine the maximum depth for the NCX
-    indentations = [page["indentation"] for page in data["pages"]]
-    maxdepth = max(indentations)
+    # Determine the maximum depth for the NCX (this is now less important for generation, but kept for metadata)
+    maxdepth = 1  # We'll calculate this dynamically, but keep a default
     etree.SubElement(head, "meta", name="dtb:depth", content=str(maxdepth))
     etree.SubElement(head, "meta", name="dtb:totalPageCount", content="0")
     etree.SubElement(head, "meta", name="dtb:maxPageNumber", content="0")
@@ -179,28 +178,30 @@ def GenNCX():
     # Create the navMap element
     nav_map = etree.SubElement(ncx, "navMap")
 
-    # Add navPoint elements for each page
     index = 1
-    for page in data["pages"]:
-        nav_point = etree.SubElement(nav_map, "navPoint", id=f"navpoint-{index}", playOrder=str(index))
-        nav_label = etree.SubElement(nav_point, "navLabel")
-        etree.SubElement(nav_label, "text").text = page["pageName"]
-        etree.SubElement(nav_point, "content", src=page["fileName"])
 
-        # Add navPoint elements for anchors if present
-        try:
-            for anchor_index in range(len(page["anchorNames"])):
-                index += 1
-                anchor_nav_point = etree.SubElement(nav_map, "navPoint", id=f"navpoint-{index}", playOrder=str(index))
-                anchor_nav_label = etree.SubElement(anchor_nav_point, "navLabel")
-                etree.SubElement(anchor_nav_label, "text").text = page["anchorNames"][f"anchorName{anchor_index}"]
-                etree.SubElement(anchor_nav_point, "content", src=page["fileName"] + page["anchorLinks"][f"anchorLink{anchor_index}"])
-                
-            print(f'Added anchor tags to page {data["pages"].index(page)}, {page["fileName"]}.')
-        except KeyError:
-            print(f'Skipped page {data["pages"].index(page)}, {page["fileName"]} as it had no anchor tags.')
-        
+    def add_nav_point(parent, item, play_order, current_depth):
+        nonlocal index  # To modify the outer 'index'
+        nav_point = etree.SubElement(parent, "navPoint", id=f"navpoint-{index}", playOrder=str(index))
+        nav_label = etree.SubElement(nav_point, "navLabel")
+        etree.SubElement(nav_label, "text").text = item["pageName"]
+        nav_point_content = etree.SubElement(nav_point, "content", src=item["fileName"])
+
         index += 1
+        nonlocal maxdepth  # To modify the outer 'maxdepth'
+        maxdepth = max(maxdepth, current_depth)
+
+        if "subheadings" in item:
+            sub_index = 1 # Added sub_index to ensure unique playOrder within subheadings
+            for subitem in item["subheadings"]:
+                add_nav_point(nav_point, subitem, play_order + sub_index, current_depth + 1)
+                sub_index += 1
+
+    current_index = 1
+    for page in data["pages"]:
+        add_nav_point(nav_map, page, current_index, 1)
+
+    etree.SubElement(head, "meta", name="dtb:depth", content=str(maxdepth))
 
     # Write the XML to toc.ncx
     tree = etree.ElementTree(ncx)

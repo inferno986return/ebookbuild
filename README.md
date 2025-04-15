@@ -1,10 +1,12 @@
 # `ebookbuild`
 
-This is the GitHub repository for `ebookbuild` which is a Python 3 script that can create compliant EPUB 2.0.1 files, with plans to support EPUB 3.3 in the future.
+**`ebookbuild` is now at v1.0 for creating EPUB 2.0.1 files!**
+
+This is the GitHub repository for `ebookbuild` which is a Python 3 script that can create compliant an EPUB 2.0.1 file from XHTML/HTML and CSS source files with accompanying images and fonts. I have plans to support EPUB 3.3 in the future with a separate script `ebookbuild-3.3.py`.
 
 The sample file included is the free documentation as required by GNU GPLv3 to get you started and familiar with how `ebookbuild` works.
 
-I have plans to write a premium how-to guide which goes into much more detail.
+I have plans to write a premium how-to guide which goes into much more detail. I also want a suite of tools for e-book development, so stay tuned!
 
 `ebookbuild` is stylistically written in lowercase and with a monospaced font to resemble a Bash command.
 

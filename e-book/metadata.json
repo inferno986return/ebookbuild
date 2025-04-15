@@ -1,127 +1,519 @@
 {
-		"comment0": "Metadata.json - Insert the e-book's metadata here, so that the content.opf and toc.ncx files can be filled. May use data for ONIX3 too. WIP",
-
-		"comment1": "Folder metadata - This contains the names of the technical folders, if you change the default names please update them here.",
-		"containerFolder": "OEBPS",
-		"cssFolder": "styles",
-		"imagesFolder": "images",
-		"fontsFolder": "fonts",
-
-		"comment2": "Technical metadata - This is the where the cover image is specified. Recommended to use ePub V2.0.1 over 3.0 for epubVersion and Reflowable rather than Fixed for textPresentation (unless doing a project that requires a specific layout). mobiCover and generateKindle are currently unused but added for futureproofing.",
-		"epubCover": "cover.jpg",
-		"mobiCover": "cover.jpg",
-		"fileName": "KarlMarxNeverBathed",
-		"epubVersion": "2.0.1",
-		"textPresentation": "Reflowable",
-		"generateKindle": "no",
-		"generateGoogle": "yes",
-
-		"comment3": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. ISBN number can be declared, as well as the Amazon ASIN. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
-		"title": "Karl Marx Never Bathed: The Staggeringly Messed Up Life of The World’s First Social Justice Warrior",
-		"titleShort": "Karl Marx Never Bathed",
-		"creator": "Sander Laanemaa, Wesley Messamore",
-		"subject": "Politics",
-		"publisher": "Culture-Wars",
-		"ISBN": "-",
-		"ASIN": "B0722GYT9B",
-		"language": "en",
-		"rights": "All rights reserved.",
-
-		"comment4": "This is the page order that the e-book has. The first number before the colon is the page order, the second is the indentation (default is 1, allowed upto 4), third is the page name and fourth is file itself.",
-		"pages": [
-					{
-						"pageNumber": "0",
-						"indentation": "1",
-						"pageName": "Front Cover",
-						"fileName": "bookcover.xhtml"
-					},
-					{
-						"pageNumber": "1",
-						"indentation": "1",
-						"pageName": "Title",
-						"fileName": "title.xhtml"
-					},
-					{
-						"pageNumber": "2",
-						"indentation": "1",
-						"pageName": "Indicia",
-						"fileName": "indicia.xhtml"
-					},
-					{
-						"pageNumber": "3",
-						"indentation": "1",
-						"pageName": "Table of Contents",
-						"fileName": "toc.xhtml"
-					},
-					{
-						"pageNumber": "4",
-						"indentation": "1",
-						"pageName": "Foreword",
-						"fileName": "foreword.xhtml"
-					},
-					{
-						"pageNumber": "5",
-						"indentation": "1",
-						"pageName": "About the Authors",
-						"fileName": "abouttheauthor.xhtml"
-					},
-					{
-						"pageNumber": "6",
-						"indentation": "1",
-						"pageName": "Introduction",
-						"fileName": "introduction.xhtml",
-						"anchorNames": {
-							"anchorName0": "The Setting For This Book",
-							"anchorName1": "&#8220;Why This Book Now?&#8221;",
-							"anchorName2": "Crisis on Campus"
-						},
-						"anchorLinks": {
-							"anchorLink0": "#the-setting-for-this-book",
-							"anchorLink1": "#why-this-book-now",
-							"anchorLink2": "#crisis-on-campus"
-						}
-					},
-					{
-						"pageNumber": "7",
-						"indentation": "1",
-						"pageName": "Essay 1: Karl Marx, The Disturbed Youth",
-						"fileName": "essay1.xhtml"
-					},
-					{
-						"pageNumber": "8",
-						"indentation": "1",
-						"pageName": "Essay 2: Karl Marx, The Dysfunctional Adult",
-						"fileName": "essay2.xhtml"
-					},
-					{
-						"pageNumber": "9",
-						"indentation": "1",
-						"pageName": "Essay 3: Karl Marx, The Impotent Radical",
-						"fileName": "essay3.xhtml"
-					},
-					{
-						"pageNumber": "10",
-						"indentation": "1",
-						"pageName": "Essay 4: The Red Nightmare",
-						"fileName": "essay4.xhtml"
-					},
-					{
-						"pageNumber": "11",
-						"indentation": "1",
-						"pageName": "Conclusion",
-						"fileName": "conclusion.xhtml",
-						"anchorNames": {
-							"anchorName0": "The American Dream"
-						},
-						"anchorLinks": {
-							"anchorLink0": "#the-american-dream"
-						}
-					},
-					{
-						"pageNumber": "12",
-						"indentation": "1",
-						"pageName": "Culture Wars Cashback Card",
-						"fileName": "culturewarscard.xhtml"
-					}
-				]
+    "comment0": "Metadata.json - Insert the e-book's metadata here, so that the content.opf and toc.ncx files can be filled. May use data for ONIX too. WIP",
+    "comment1": "Folder metadata - This contains the names of the technical folders, if you change the default names please update them here.",
+    "containerFolder": "OEBPS",
+    "cssFolder": "styles",
+    "imagesFolder": "images",
+    "fontsFolder": "fonts",
+    "comment2": "Technical metadata - This is the where the cover image is specified. Recommended to use ePub V2.0.1 over 3. Reflowable rather than Fixed for textPresentation (unless doing a project that requires a specific layout).",
+    "epubCover": "cover.png",
+    "mobiCover": "cover.png",
+    "fileName": "TheMarkOfStCrispin",
+    "textPresentation": "Reflowable",
+    "enableNcx": "true",
+    "enableChecksums": "true",
+    "comment3": "Book metadata - Information about the e-book itself. Language is specified with ISO 639-1. ISBN number can be declared, as well as the Amazon ASIN. Rights can be worldwide, country specific or under a permissable license such as Creative-Commons SA",
+    "title": "The Mark of St. Crispin and other short stories",
+    "titleShort": "The Mark of St. Crispin",
+    "creator": "Virginia Moriconi",
+    "subject": "fiction",
+    "publisher": "Motley Press",
+    "ISBN": "-",
+    "ASIN": "-",
+    "language": "en",
+    "rights": "worldwide",
+    "description": "The Mark of St. Crispin and other short stories is the complete collection of nine short stories written by Virginia Moriconi between 1953 and 1982. Motley Press invites you to plunge into the profoundly unsettling world she created and witness her masterful incorporation of bizarre and disturbing situations that lurk beneath the surface of everyday life. These short stories masterfully blend the everyday with the surreal. We meet a shoe salesman lost in mundane daydreams, a son watching his mother harden into a statue, a wife unearthing her husband’s secrets, and a doctor grappling with hippies and a dead baby. Relationships disintegrate under collapsing bridges, the veneer of rural peace shatters into neighbourly war and a sickly quail takes over an entire family. For this new edition in 2025, we included the  rediscovered story “The Innocence of Rachel Crewe”. In this haunting tale, a bookseller’s marriage to a beautiful and intelligent young woman holds terrible secrets that threaten to shatter their present. Accompanying these stories are the editor’s notes to offer valuable historical context and commentary on the social and cultural landscapes that shaped Moriconi’s writing.",
+    "comment4": "This specifies the tags used by Amazon Kindle's start reading, the table of contents and the front cover using the <guide></guide> tags. Optional and enable it.",
+    "enableGuide": "true",
+    "startReadingfile": "themarkofstcrispin.xhtml",
+    "startReadingpage": "The Mark of St. Crispin",
+    "tocFile": "toc.xhtml",
+    "tocPage": "Contents",
+    "frontCoverfile": "frontcover.xhtml",
+    "frontCoverpage": "Front Cover",
+    "comment5": "This is the page order that the e-book has. The first number before the colon is the page order, the second is the indentation (default is 1, allowed upto 4), third is the page name and fourth is file itself.",
+    "pages": [
+        {
+            "pageName": "Front Cover",
+            "fileName": "frontcover.xhtml"
+        },
+        {
+            "pageName": "Title",
+            "fileName": "title.xhtml"
+        },
+        {
+            "pageName": "Indicia",
+            "fileName": "indicia.xhtml"
+        },
+        {
+            "pageName": "Dedication",
+            "fileName": "dedication.xhtml"
+        },
+        {
+            "pageName": "Contents",
+            "fileName": "toc.xhtml"
+        },
+        {
+            "pageName": "Foreword",
+            "fileName": "foreword.xhtml"
+        },
+        {
+            "pageName": "The Mark of St. Crispin",
+            "fileName": "themarkofstcrispin.xhtml"
+        },
+        {
+            "pageName": "The World Well Lost",
+            "fileName": "theworldwelllost.xhtml"
+        },
+        {
+            "pageName": "Simple Arithmetic",
+            "fileName": "simplearithmetic.xhtml",
+            "subheadings": [
+                {
+                    "pageName": "1. Geneva, January 15 – Dear Father",
+                    "fileName": "simplearithmetic.xhtml#letter-one"
+                },
+                {
+                    "pageName": "2. New York, January 19 – Dear Stephen",
+                    "fileName": "simplearithmetic.xhtml#letter-two"
+                },
+                {
+                    "pageName": "3. Geneva, January 22 – Dear Mummy",
+                    "fileName": "simplearithmetic.xhtml#letter-three"
+                },
+                {
+                    "pageName": "4. Geneva, January 29 – Dear Father",
+                    "fileName": "simplearithmetic.xhtml#letter-four"
+                },
+                {
+                    "pageName": "5. New York, February 2 – Dear Stephen",
+                    "fileName": "simplearithmetic.xhtml#letter-five"
+                },
+                {
+                    "pageName": "6. Geneva, February 5 – Dear Father",
+                    "fileName": "simplearithmetic.xhtml#letter-six"
+                },
+                {
+                    "pageName": "7. New York, February 8 – Dear Stephen",
+                    "fileName": "simplearithmetic.xhtml#letter-seven"
+                },
+                {
+                    "pageName": "8. Geneva, February 12 – Dear Mummy",
+                    "fileName": "simplearithmetic.xhtml#letter-eight"
+                },
+                {
+                    "pageName": "9. New York, February 15 – Dear Stephen",
+                    "fileName": "simplearithmetic.xhtml#letter-nine"
+                },
+                {
+                    "pageName": "10. Geneva, February 19 – Dear Father",
+                    "fileName": "simplearithmetic.xhtml#letter-ten"
+                },
+                {
+                    "pageName": "11. New York, February 23 – Dear Stephen",
+                    "fileName": "simplearithmetic.xhtml#letter-eleven"
+                },
+                {
+                    "pageName": "12. Geneva, February 26 – Dear Father",
+                    "fileName": "simplearithmetic.xhtml#letter-twelve"
+                },
+                {
+                    "pageName": "13. New York, March 2 – Night Letter",
+                    "fileName": "simplearithmetic.xhtml#letter-thirteen"
+                },
+                {
+                    "pageName": "14. Geneva, March 12 – Dear Father",
+                    "fileName": "simplearithmetic.xhtml#letter-fourteen"
+                },
+                {
+                    "pageName": "15. New York, March 16 – Dear Stephen",
+                    "fileName": "simplearithmetic.xhtml#letter-fifteen"
+                },
+                {
+                    "pageName": "16. Geneva, March 19 – Dear Mummy",
+                    "fileName": "simplearithmetic.xhtml#letter-sixteen"
+                },
+                {
+                    "pageName": "17. Geneva, March 26 – Dear Father",
+                    "fileName": "simplearithmetic.xhtml#letter-seventeen"
+                }
+            ]
+        },
+        {
+            "pageName": "Folksong",
+            "fileName": "folksong.xhtml"
+        },
+        {
+            "pageName": "The Worsting of Signor Gaspardo",
+            "fileName": "theworstingofsignorgaspardo.xhtml",
+            "subheadings": [
+                {
+                    "pageName": "The Prologue",
+                    "fileName": "theworstingofsignorgaspardo.xhtml#the-prologue"
+                },
+                {
+                    "pageName": "The Struggle",
+                    "fileName": "theworstingofsignorgaspardo.xhtml#the-struggle"
+                },
+                {
+                    "pageName": "The Revelation",
+                    "fileName": "theworstingofsignorgaspardo.xhtml#the-revelation"
+                },
+                {
+                    "pageName": "Envoi",
+                    "fileName": "theworstingofsignorgaspardo.xhtml#envoi"
+                }
+            ]
+        },
+        {
+            "pageName": "The Gypsy Heralds",
+            "fileName": "thegypsyheralds.xhtml"
+        },
+        {
+            "pageName": "The Maternal Element",
+            "fileName": "thematernalelement.xhtml"
+        },
+        {
+            "pageName": "Henry",
+            "fileName": "henry.xhtml",
+            "subheadings": [
+                {
+                    "pageName": "I",
+                    "fileName": "henry.xhtml#one"
+                },
+                {
+                    "pageName": "II",
+                    "fileName": "henry.xhtml#two"
+                },
+                {
+                    "pageName": "III",
+                    "fileName": "henry.xhtml#three"
+                },
+                {
+                    "pageName": "IV",
+                    "fileName": "henry.xhtml#four"
+                },
+                {
+                    "pageName": "V",
+                    "fileName": "henry.xhtml#five"
+                },
+                {
+                    "pageName": "VI",
+                    "fileName": "henry.xhtml#six"
+                },
+                {
+                    "pageName": "VII",
+                    "fileName": "henry.xhtml#seven"
+                },
+                {
+                    "pageName": "Envoi",
+                    "fileName": "henry.xhtml#envoi"
+                }
+            ]
+        },
+        {
+            "pageName": "The Innocence of Rachel Crewe",
+            "fileName": "rachelcrewe.xhtml"
+        },
+        {
+            "pageName": "Editor’s Notes",
+            "fileName": "editorsnotes.xhtml",
+            "subheadings": [
+                {
+                    "pageName": "Original blurb",
+                    "fileName": "editorsnotes.xhtml#blurb",
+                    "subheadings": []
+                },
+                {
+                    "pageName": "Original dedication",
+                    "fileName": "editorsnotes.xhtml#dedication",
+                    "subheadings": []
+                },
+                {
+                    "pageName": "Saint Crispin and Saint Crispinian",
+                    "fileName": "editorsnotes.xhtml#saints",
+                    "subheadings": []
+                },
+                {
+                    "pageName": "St. Crispin’s Day speech",
+                    "fileName": "editorsnotes.xhtml#st-crispins-day",
+                    "subheadings": []
+                },
+                {
+                    "pageName": "The legacy of Simple Arithmetic",
+                    "fileName": "editorsnotes.xhtml#legacy-simple-arithmetic",
+                    "subheadings": []
+                },
+                {
+                    "pageName": "Signor Gaspardo’s waistcoats",
+                    "fileName": "editorsnotes.xhtml#signor-gaspardo-waitcoats",
+                    "subheadings": []
+                },
+                {
+                    "pageName": "Three murderous women",
+                    "fileName": "editorsnotes.xhtml#three-murderous-women",
+                    "subheadings": [
+                        {
+                            "pageName": "Poisons",
+                            "fileName": "editorsnotes.xhtml#poisons",
+                            "subheadings": [
+                                {
+                                    "pageName": "Arsenic (As)",
+                                    "fileName": "editorsnotes.xhtml#arsenic",
+                                    "subheadings": []
+                                },
+                                {
+                                    "pageName": "Mercury (Hg)",
+                                    "fileName": "editorsnotes.xhtml#mercury",
+                                    "subheadings": []
+                                },
+                                {
+                                    "pageName": "Chloroform (CHCl3)",
+                                    "fileName": "editorsnotes.xhtml#chloroform",
+                                    "subheadings": []
+                                },
+                                {
+                                    "pageName": "Potassium cyanide (KCN)",
+                                    "fileName": "editorsnotes.xhtml#potassium-cyanide",
+                                    "subheadings": []
+                                }
+                            ]
+                        },
+                        {
+                            "pageName": "Florence Maybrick",
+                            "fileName": "editorsnotes.xhtml#florence-maybrick",
+                            "subheadings": [
+                                {
+                                    "pageName": "1. Limited assets",
+                                    "fileName": "editorsnotes.xhtml#limited-assets",
+                                    "subheadings": []
+                                },
+                                {
+                                    "pageName": "2. Hypochondria",
+                                    "fileName": "editorsnotes.xhtml#hypochondria",
+                                    "subheadings": []
+                                },
+                                {
+                                    "pageName": "3.  A disgruntled employee and an incriminating letter",
+                                    "fileName": "editorsnotes.xhtml#disgruntled-employee",
+                                    "subheadings": []
+                                },
+                                {
+                                    "pageName": "4. Victim of a serial killer",
+                                    "fileName": "editorsnotes.xhtml#serial-killer",
+                                    "subheadings": []
+                                }
+                            ]
+                        },
+                        {
+                            "pageName": "Adelaide Bartlett",
+                            "fileName": "editorsnotes.xhtml#adelaide-bartlett",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Madeleine Smith",
+                            "fileName": "editorsnotes.xhtml#madeleine-smith",
+                            "subheadings": [
+                                {
+                                    "pageName": "1. A lack of witnesses for the prosecution",
+                                    "fileName": "editorsnotes.xhtml#lack-of-witnesses",
+                                    "subheadings": []
+                                },
+                                {
+                                    "pageName": "2. Difficulty establishing a timeline",
+                                    "fileName": "editorsnotes.xhtml#difficulty-timeline",
+                                    "subheadings": []
+                                }
+                            ]
+                        },
+                        {
+                            "pageName": "Giulia Tofana",
+                            "fileName": "editorsnotes.xhtml#giulia-tofana",
+                            "subheadings": [
+                                {
+                                    "pageName": "1. The Masonic poisoning conspiracy",
+                                    "fileName": "editorsnotes.xhtml#mason-conspiracy",
+                                    "subheadings": []
+                                },
+                                {
+                                    "pageName": "2. The Love Potion painting",
+                                    "fileName": "editorsnotes.xhtml#the-love-potion",
+                                    "subheadings": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "pageName": "Forbidden love stories",
+                    "fileName": "editorsnotes.xhtml#forbidden-love-stories",
+                    "subheadings": [
+                        {
+                            "pageName": "Héloïse and Peter Abélard",
+                            "fileName": "editorsnotes.xhtml#heloise-and-peter",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Elsie Cameron and Norman Thorne",
+                            "fileName": "editorsnotes.xhtml#elsie-and-norman",
+                            "subheadings": []
+                        }
+                    ]
+                },
+                {
+                    "pageName": "The cost of Signor Gaspardo’s antics",
+                    "fileName": "editorsnotes.xhtml#cost-signor-gaspardo",
+                    "subheadings": [
+                        {
+                            "pageName": "Story setting",
+                            "fileName": "editorsnotes.xhtml#story-setting",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "The cousins",
+                            "fileName": "editorsnotes.xhtml#the-cousins",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "How many hours were worked?",
+                            "fileName": "editorsnotes.xhtml#hours-worked",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Expenditure table",
+                            "fileName": "editorsnotes.xhtml#expenditure-table",
+                            "subheadings": []
+                        }
+                    ]
+                },
+                {
+                    "pageName": "Spaghetti al burro",
+                    "fileName": "editorsnotes.xhtml#spaghetti-al-burro",
+                    "subheadings": []
+                },
+                {
+                    "pageName": "Rediscovering The Innocence of Rachel Crewe",
+                    "fileName": "editorsnotes.xhtml#rediscovering-rachel-crewe",
+                    "subheadings": []
+                },
+                {
+                    "pageName": "Typos and inconsistencies",
+                    "fileName": "editorsnotes.xhtml#typos-and-inconsistencies",
+                    "subheadings": [
+                        {
+                            "pageName": "The Mark of St. Crispin",
+                            "fileName": "editorsnotes.xhtml#mark-of-st-crispin",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Simple Arithmetic",
+                            "fileName": "editorsnotes.xhtml#simple-arithmetic",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "The World Well Lost",
+                            "fileName": "editorsnotes.xhtml#the-world-well-lost",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "The Worsting of Signor Gaspardo",
+                            "fileName": "editorsnotes.xhtml#the-worsting-of-signor-gaspardo",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "The Maternal Element",
+                            "fileName": "editorsnotes.xhtml#the-maternal-element",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Henry",
+                            "fileName": "editorsnotes.xhtml#henry",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "The Innocence of Rachel Crewe",
+                            "fileName": "editorsnotes.xhtml#the-innocence-of-rachel-crewe",
+                            "subheadings": []
+                        }
+                    ]
+                },
+                {
+                    "pageName": "Manual of Style",
+                    "fileName": "editorsnotes.xhtml#manual-of-style",
+                    "subheadings": [
+                        {
+                            "pageName": "English spellings",
+                            "fileName": "editorsnotes.xhtml#english-spellings",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Quotation marks",
+                            "fileName": "editorsnotes.xhtml#quotation-marks",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Hyphenations and dashes",
+                            "fileName": "editorsnotes.xhtml#hyphenations-and-dashes",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Abbreviations",
+                            "fileName": "editorsnotes.xhtml#abbreviations",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Diacritics",
+                            "fileName": "editorsnotes.xhtml#diacritics",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Superscript and subscript",
+                            "fileName": "editorsnotes.xhtml#superscript-and-subscript",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Accent colours",
+                            "fileName": "editorsnotes.xhtml#accent-colours",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Young Serif",
+                            "fileName": "editorsnotes.xhtml#young-serif",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "EB Garamond",
+                            "fileName": "editorsnotes.xhtml#eb-garamond",
+                            "subheadings": []
+                        },
+                        {
+                            "pageName": "Latin Modern Mono",
+                            "fileName": "editorsnotes.xhtml#latin-modern-mono",
+                            "subheadings": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "pageName": "About the Author",
+            "fileName": "abouttheauthor.xhtml"
+        },
+        {
+            "pageName": "About the Moriconi imprint",
+            "fileName": "moriconi-imprint.xhtml"
+        },
+        {
+            "pageName": "Also by Virginia Moriconi",
+            "fileName": "alsobytheauthor.xhtml"
+        },
+        {
+            "pageName": "Motley Press",
+            "fileName": "motleypress.xhtml"
+        },
+        {
+            "pageName": "Back Cover",
+            "fileName": "backcover.xhtml"
+        }
+    ]
 }
