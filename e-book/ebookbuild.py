@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# ebookbuild.py v0.9 - Generates a EPUB 2.0.1 file using data from metadata.json, now with lxml.
+# ebookbuild.py v1.0 - Generates a EPUB 2.0.1 file using data from metadata.json, now with lxml.
 
 # This file is part of the ebookbuild project (also known as Project Zylon) which is licensed under GNU General Public License v3.0 (GNU GPLv3): https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -17,7 +17,7 @@ https://www.github.com/inferno986return/ebookbuild/
 
 NOTE: This program creates legacy EPUB files! Please use ebookbuild-3.3.py to create compliant EPUB 3.3 files that are recommended by the W3C.
 
-ebookbuild is a program is designed to do one thing well. It is a Python 3 script that uses the lxml library to create fully-compliant EPUB 2.0.1 files that pass epubcheck and can be read with most e-readers including: Amazon Kindle, Google Play Books, Apple Books, Kobo, Nook, etc.
+ebookbuild is a program is designed to do one thing well. It is a Python 3 script for Windows, macOS or GNU/Linux that uses the lxml library to create fully-compliant EPUB 2.0.1 files that pass epubcheck and can be read with most e-readers including: Amazon Kindle, Google Play Books, Apple Books, Kobo, Nook, etc.
 
 Not working? Try installing lxml via pip with 'pip install lxml'.
 
